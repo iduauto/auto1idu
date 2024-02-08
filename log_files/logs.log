@@ -1,4 +1,92 @@
 24-02-08 14:47:44 [DEBUG] Initializing Chrome WebDriver
+<<<<<<< HEAD
 24-02-08 14:57:32 [DEBUG] Initializing Chrome WebDriver
 24-02-08 15:00:26 [DEBUG] Initializing Chrome WebDriver
 24-02-08 15:01:49 [DEBUG] Initializing Chrome WebDriver
+=======
+24-02-08 14:51:33 [DEBUG] Initializing Chrome WebDriver
+24-02-08 14:51:38 [ERROR] An Error Occurred While Initializing Chrome WebDriver: Message: session not created: This version of ChromeDriver only supports Chrome version 105
+Current browser version is 121.0.6167.140 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00F6DF13+2219795]
+	Ordinal0 [0x00F02841+1779777]
+	Ordinal0 [0x00E1423D+803389]
+	Ordinal0 [0x00E364AC+943276]
+	Ordinal0 [0x00E319F0+924144]
+	Ordinal0 [0x00E2F179+913785]
+	Ordinal0 [0x00E636B9+1128121]
+	Ordinal0 [0x00E6331A+1127194]
+	Ordinal0 [0x00E5E616+1107478]
+	Ordinal0 [0x00E37F89+950153]
+	Ordinal0 [0x00E38F56+954198]
+	GetHandleVerifier [0x01262CB2+3040210]
+	GetHandleVerifier [0x01252BB4+2974420]
+	GetHandleVerifier [0x01006A0A+565546]
+	GetHandleVerifier [0x01005680+560544]
+	Ordinal0 [0x00F09A5C+1808988]
+	Ordinal0 [0x00F0E3A8+1827752]
+	Ordinal0 [0x00F0E495+1827989]
+	Ordinal0 [0x00F180A4+1867940]
+	BaseThreadInitThunk [0x759DFCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x775F7C6E+286]
+	RtlGetAppContainerNamedObjectPath [0x775F7C3E+238]
+
+24-02-08 14:54:19 [DEBUG] Initializing Chrome WebDriver
+24-02-08 14:54:22 [ERROR] An Error Occurred While Initializing Chrome WebDriver: Message: session not created: This version of ChromeDriver only supports Chrome version 105
+Current browser version is 121.0.6167.140 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00F6DF13+2219795]
+	Ordinal0 [0x00F02841+1779777]
+	Ordinal0 [0x00E1423D+803389]
+	Ordinal0 [0x00E364AC+943276]
+	Ordinal0 [0x00E319F0+924144]
+	Ordinal0 [0x00E2F179+913785]
+	Ordinal0 [0x00E636B9+1128121]
+	Ordinal0 [0x00E6331A+1127194]
+	Ordinal0 [0x00E5E616+1107478]
+	Ordinal0 [0x00E37F89+950153]
+	Ordinal0 [0x00E38F56+954198]
+	GetHandleVerifier [0x01262CB2+3040210]
+	GetHandleVerifier [0x01252BB4+2974420]
+	GetHandleVerifier [0x01006A0A+565546]
+	GetHandleVerifier [0x01005680+560544]
+	Ordinal0 [0x00F09A5C+1808988]
+	Ordinal0 [0x00F0E3A8+1827752]
+	Ordinal0 [0x00F0E495+1827989]
+	Ordinal0 [0x00F180A4+1867940]
+	BaseThreadInitThunk [0x759DFCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x775F7C6E+286]
+	RtlGetAppContainerNamedObjectPath [0x775F7C3E+238]
+
+24-02-08 14:54:50 [INFO] Updating Chromedriver
+24-02-08 14:58:05 [DEBUG] Initializing Chrome WebDriver
+>>>>>>> b7e6f2d5745e3647d754d410ae5b95f36c1a98b3
+24-02-08 15:09:27 [DEBUG] Initializing Chrome WebDriver
+24-02-08 15:09:38 [INFO] Try to Login Through WebGUI
+24-02-08 15:09:38 [ERROR] Error Occurred While Login Through WebGUI: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=121.0.6167.140)
+Stacktrace:
+	GetHandleVerifier [0x00EC1673+52979]
+	(No symbol) [0x00E47961]
+	(No symbol) [0x00D2DD3D]
+	(No symbol) [0x00D1239A]
+	(No symbol) [0x00D8A71B]
+	(No symbol) [0x00D9ACB6]
+	(No symbol) [0x00D84286]
+	(No symbol) [0x00D5C063]
+	(No symbol) [0x00D5CECD]
+	GetHandleVerifier [0x011D8D83+3294723]
+	GetHandleVerifier [0x01216CC2+3548482]
+	GetHandleVerifier [0x01211C9C+3527964]
+	GetHandleVerifier [0x00F5870E+671630]
+	(No symbol) [0x00E51EB4]
+	(No symbol) [0x00E4D808]
+	(No symbol) [0x00E4D92D]
+	(No symbol) [0x00E3F7E0]
+	BaseThreadInitThunk [0x75D9FCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x77BF7C6E+286]
+	RtlGetAppContainerNamedObjectPath [0x77BF7C3E+238]
+

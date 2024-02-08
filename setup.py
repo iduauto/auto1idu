@@ -4,6 +4,8 @@ import os
 from selenium import webdriver
 from logger import setup_logger
 
+# from webdriver_auto_update.webdriver_auto_update import WebdriverAutoUpdate
+
 # Path to store chromedriver
 driver_directory = "C:\\Users\\ontvi\\AppData\\Local\\Programs\\Python\\Python310\\Scripts"
 chromedriver_path = os.path.join(driver_directory, "chromedriver.exe")
