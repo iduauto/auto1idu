@@ -1,4 +1,6 @@
-
+import datetime
+import subprocess
+import time
 
 from selenium.common.exceptions import NoSuchElementException, TimeoutException
 from selenium.webdriver import Keys
@@ -48,6 +50,7 @@ class Utils:
         except (TimeoutException,NoSuchElementException):
             return False
 
+
     #Find input field and send keys
     def clear_and_send_keys(self,keys,xpath=None, css_selector=None, id=None,timeout=30):
         try:
@@ -56,6 +59,7 @@ class Utils:
             input_field.send_keys(keys)
         except (TimeoutException,NoSuchElementException,timeout):
             raise NoSuchElementException("Element not found within the specified timeout")
+
 
     #Searching the keyword in Web GUI search bar
     def search_WebGUI(self, value):
@@ -73,15 +77,44 @@ class Utils:
                 if value.lower() in link.text.lower():
                     link.click()
                     logger.debug(f"Found and Clicked on the Result Containing '{value}'")
+                    time.sleep(5)
                     return
 
             logger.warning(f"No Search Result Found for Keyword: '{value}'")
         except Exception as e:
             logger.error(f"Error Occurred While Searching for the Keyword: '{value}': {str(e)}")
 
-    # def ipv6_info:
+
+    #Ping check
+    def check_ping(self,target , protocol):
+        try:
+            logger.info( f"Checking Ping {str( protocol ).upper()} to {target}" )
+            loss_packet_count = 20
+            command = f'ping -{protocol} -n 20 {target}'
+            p = subprocess.run( command , shell=True , stdin=subprocess.PIPE , capture_output=True , text=True )
+
+            ping_status=""
+            for line in p.stdout.splitlines():
+                if 'Packets: Sent' in line:
+                    ping_status=line
+                    loss_packet_count = int( line.split( 'Lost = ' )[1].split( ' (' )[0] )
+                    break
+
+            logger.debug(ping_status)
+
+            if loss_packet_count < 10:
+                logger.info( f'Ping {str( protocol ).upper()} Passed' )
+                return True
+            else:
+                logger.error( f'Ping {str( protocol ).upper()} Failed' )
+                return False
+
+        except Exception as e:
+            logger.error( f'An error occurred during {str( protocol ).upper()} ping: {e}' )
+            return False
 
 
+    # Checking IPv6 status
     def get_ipv6_info(self):
         logger.info( "Getting WAN IPv6 Information" )
         result = {"status": False , "value": ""}
@@ -106,76 +139,91 @@ class Utils:
 
         return result
 
+
+    # Checking Firmware Version
     def get_firmware_version(self):
         logger.info( "Getting WAN Firmware Version" )
         result = {"status": False , "value": ""}
 
         try:
             self.search_WebGUI( "WAN Information" )
-
             firmware_version_element = self.find_element( *locaters.SysInfo_FirmwareVersion )
             firmware_version = firmware_version_element.text
             result["value"] = firmware_version
 
             if firmware_version and firmware_version == input.latest_firmware_version:
                 result["status"] = True
-                logger.info( f"Device is have latest firmware: {firmware_version}" )
+                logger.info( f"Device is having latest firmware: {firmware_version}" )
             else:
-                result["status"] = True
-                logger.error( f"Device is NOT Getting WAN IPv6 Address: {firmware_version}" )
+                result["status"] = False
+                logger.error( f"Device is NOT having the latest firmware: {firmware_version}" )
 
         except NoSuchElementException:
-            logger.error( "Firmware Version element not found on the page" )
+            logger.error( "Firmware Version element not found on the page " )
         except Exception as e:
             logger.error( f"An error occurred while fetching Firmware Version: {e}" )
 
         return result
 
+    #Taking DBG logs
+    def get_DBGLogs(self):
+        logger.error( 'Taking DBG log after an issue' )
+        self.driver.get( 'http://192.168.31.1/dbglog.cgi' )
+        logger.debug( 'dbglog taken at: {}'.format( datetime.datetime.now() ) )
+        time.sleep( 30 )
 
 
-    #Getting System Information
-    def get_system_info(self):
-        logger.info( "Getting System Information" )
-        result = {"Firmware Version": "" , "Serial Number": "" , "Model Name": ""}
 
-        try:
-            self.search_WebGUI( "System Information" )
-            self.find_element( '//div[@class="iconRefresh"]//*[name()="svg"]' ).click()
-            result["Firmware Version"] = self.find_element( *locaters.SysInfo_FirmwareVersion ).text
-            result["Serial Number"] = self.find_element( *locaters.SysInfo_SerialNumber ).text
-            result["Model Name"] = self.find_element( *locaters.SysInfo_ModelName ).text
 
-            logger.info( "Successfully retrieved System Information" )
 
-        except NoSuchElementException as e:
-            logger.error( f"Element not found while fetching System Information: {e}" )
-        except Exception as e:
-            logger.error( f"An error occurred while fetching System Information: {e}" )
 
-        return result
 
-    #Getting System Information
-    def get_LAN_info(self):
-        logger.info( "Getting LAN Information" )
-        result = {"MAC Address": "" , "IPv4 IP Address": "" , "IPv6 IP Address": "","IPv4 DHCP Server":""}
+    # Getting System Information
+    # def get_system_info(self):
+    #     logger.info( "Getting System Information" )
+    #     result = {"Firmware Version": "" , "Serial Number": "" , "Model Name": ""}
+    #
+    #     try:
+    #         self.search_WebGUI( "System Information" )
+    #         self.find_element( '//div[@class="iconRefresh"]//*[name()="svg"]' ).click()
+    #         result["Firmware Version"] = self.find_element( *locaters.SysInfo_FirmwareVersion ).text
+    #         result["Serial Number"] = self.find_element( *locaters.SysInfo_SerialNumber ).text
+    #         result["Model Name"] = self.find_element( *locaters.SysInfo_ModelName ).text
+    #
+    #         logger.info( "Successfully retrieved System Information" )
+    #
+    #     except NoSuchElementException as e:
+    #         logger.error( f"Element not found while fetching System Information: {e}" )
+    #     except Exception as e:
+    #         logger.error( f"An error occurred while fetching System Information: {e}" )
+    #
+    #     return result
+    #
+    # #Getting System Information
+    # def get_LAN_info(self):
+    #     logger.info( "Fetching LAN Information..." )
+    #
+    #     result = {"MAC Address": "" , "IPv4 IP Address": "" , "IPv6 IP Address": "" , "IPv4 DHCP Server": ""}
+    #
+    #     try:
+    #         self.search_WebGUI( "LAN Information" )
+    #         self.find_element( '//div[@class="iconRefresh"]//*[name()="svg"]' ).click()
+    #
+    #         result["MAC Address"] = self.find_element( *locaters.LANInfo_MACAddress ).text
+    #         result["IPv4 IP Address"] = self.find_element( *locaters.LANInfo_IPv4Address ).text
+    #         result["IPv6 IP Address"] = self.find_element( *locaters.LANInfo_IPv6Address ).text
+    #         result["IPv4 DHCP Server"] = self.find_element( *locaters.LANInfo_IPv4DHCPServer ).text
+    #
+    #         logger.info( "LAN Information successfully retrieved." )
+    #
+    #     except NoSuchElementException as e:
+    #         logger.error( f"Element not found while fetching LAN Information: {e}" )
+    #     except Exception as e:
+    #         logger.error( f"An error occurred while fetching LAN Information: {e}" )
+    #     finally:
+    #         logger.debug( result )
+    #         return result
 
-        try:
-            self.search_WebGUI( "LAN Information" )
-            self.find_element('//div[@class="iconRefresh"]//*[name()="svg"]').click()
-
-            result["MAC Address"] = self.find_element( *locaters.LANInfo_MACAddress ).text
-            result["IPv4 IP Address"] = self.find_element( *locaters.LANInfo_IPv4Address ).text
-            result["IPv6 IP Address"] = self.find_element( *locaters.LANInfo_IPv6Address ).text
-            result["IPv4 DHCP Server"] = self.find_element( *locaters.LANInfo_IPv4DHCPServer ).text
-
-            logger.info( "Successfully retrieved LAN Information" )
-
-        except NoSuchElementException as e:
-            logger.error( f"Element not found while fetching LAN Information: {e}" )
-        except Exception as e:
-            logger.error( f"An error occurred while fetching LAN Information: {e}" )
-
-        return result
 
 
 

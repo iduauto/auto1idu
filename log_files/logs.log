@@ -90,3 +90,899 @@ Stacktrace:
 	RtlGetAppContainerNamedObjectPath [0x77BF7C6E+286]
 	RtlGetAppContainerNamedObjectPath [0x77BF7C3E+238]
 
+24-02-08 16:02:37 [DEBUG] Initializing Chrome WebDriver
+24-02-08 16:03:13 [DEBUG] Initializing Chrome WebDriver
+24-02-09 11:44:14 [DEBUG] Initializing Chrome WebDriver
+24-02-09 11:44:18 [INFO] Try to Login Through WebGUI
+24-02-09 11:45:00 [INFO] Getting System Information
+24-02-09 11:45:00 [DEBUG] Searching for the Keyword: 'System Information'
+24-02-09 11:45:01 [DEBUG] Found and Clicked on the Result Containing 'System Information'
+24-02-09 11:45:02 [INFO] Successfully retrieved System Information
+24-02-09 12:35:58 [INFO] --------- Checking Ping 4 & 6 ---------
+24-02-09 12:35:59 [INFO] Ping 6 and Ping 4 Packet Loss in 20 Packets is 20 and 20
+24-02-09 12:35:59 [INFO] --------- Ping Failed ---------
+24-02-09 12:36:48 [INFO] --------- Checking Ping 4 & 6 ---------
+24-02-09 12:36:48 [INFO] Ping 6 and Ping 4 Packet Loss in 20 Packets is 20 and 20
+24-02-09 12:36:48 [INFO] --------- Ping Failed ---------
+24-02-09 12:40:25 [INFO] --------- Checking Ping 4 & 6 ---------
+24-02-09 12:41:03 [INFO] Ping 6 and Ping 4 Packet Loss in 20 Packets is 0 and 0
+24-02-09 12:41:03 [INFO] --------- Ping 4 and Ping 6 Passed ---------
+24-02-09 12:57:19 [INFO] Checking Ping 4
+24-02-09 12:57:38 [INFO] 
+Pinging google.com [172.217.166.46] with 32 bytes of data:
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=5ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=5ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=5ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=5ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=5ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=5ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=5ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=5ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+
+Ping statistics for 172.217.166.46:
+    Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 4ms, Maximum = 5ms, Average = 4ms
+
+24-02-09 12:57:38 [INFO] Ping4 Packet Loss  is 0
+24-02-09 12:57:38 [INFO] Ping4 Packet Loss  is 0
+24-02-09 12:57:38 [INFO] Ping4 Passed
+24-02-09 12:57:38 [INFO] Checking Ping 4
+24-02-09 12:57:58 [INFO] 
+Pinging google.com [172.217.166.46] with 32 bytes of data:
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=5ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=5ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=5ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=5ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=5ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+
+Ping statistics for 172.217.166.46:
+    Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 4ms, Maximum = 5ms, Average = 4ms
+
+24-02-09 12:57:58 [INFO] Ping6 Packet Loss  is 0
+24-02-09 12:57:58 [INFO] Ping6 Passed
+24-02-09 12:58:02 [INFO] Checking Ping 4
+24-02-09 12:58:22 [DEBUG] 
+Pinging google.com [172.217.166.46] with 32 bytes of data:
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=5ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=5ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=5ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=5ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+
+Ping statistics for 172.217.166.46:
+    Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 4ms, Maximum = 5ms, Average = 4ms
+
+24-02-09 12:58:22 [INFO] Ping4 Packet Loss  is 0
+24-02-09 12:58:22 [INFO] Ping4 Packet Loss  is 0
+24-02-09 12:58:22 [INFO] Ping4 Passed
+24-02-09 12:58:22 [INFO] Checking Ping 4
+24-02-09 12:58:41 [DEBUG] 
+Pinging google.com [172.217.166.46] with 32 bytes of data:
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=5ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=6ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=5ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=5ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=5ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+
+Ping statistics for 172.217.166.46:
+    Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 4ms, Maximum = 6ms, Average = 4ms
+
+24-02-09 12:58:41 [INFO] Ping6 Packet Loss  is 0
+24-02-09 12:58:41 [INFO] Ping6 Passed
+24-02-09 14:24:51 [INFO] Checking Ping 4 to google.com
+24-02-09 14:25:10 [DEBUG] 
+Pinging google.com [172.217.166.46] with 32 bytes of data:
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=5ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=5ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=5ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=5ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+
+Ping statistics for 172.217.166.46:
+    Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 4ms, Maximum = 5ms, Average = 4ms
+
+24-02-09 14:25:56 [INFO] Checking Ping 4 to google.com
+24-02-09 14:26:16 [DEBUG] 
+Pinging google.com [172.217.166.46] with 32 bytes of data:
+Reply from 172.217.166.46: bytes=32 time=5ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=6ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=5ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=5ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=5ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=5ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=5ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=5ms TTL=56
+
+Ping statistics for 172.217.166.46:
+    Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 4ms, Maximum = 6ms, Average = 4ms
+
+24-02-09 14:26:16 [INFO] Ping 4 Packet Loss is 0
+24-02-09 14:26:16 [INFO] Ping 4 Passed
+24-02-09 14:26:16 [INFO] Checking Ping 6 to google.com
+24-02-09 14:26:35 [DEBUG] 
+Pinging google.com [2404:6800:4009:80c::200e] with 32 bytes of data:
+Reply from 2404:6800:4009:80c::200e: time=45ms 
+Reply from 2404:6800:4009:80c::200e: time=46ms 
+Reply from 2404:6800:4009:80c::200e: time=45ms 
+Reply from 2404:6800:4009:80c::200e: time=45ms 
+Reply from 2404:6800:4009:80c::200e: time=45ms 
+Reply from 2404:6800:4009:80c::200e: time=45ms 
+Reply from 2404:6800:4009:80c::200e: time=45ms 
+Reply from 2404:6800:4009:80c::200e: time=45ms 
+Reply from 2404:6800:4009:80c::200e: time=46ms 
+Reply from 2404:6800:4009:80c::200e: time=46ms 
+Reply from 2404:6800:4009:80c::200e: time=45ms 
+Reply from 2404:6800:4009:80c::200e: time=46ms 
+Reply from 2404:6800:4009:80c::200e: time=45ms 
+Reply from 2404:6800:4009:80c::200e: time=46ms 
+Reply from 2404:6800:4009:80c::200e: time=45ms 
+Reply from 2404:6800:4009:80c::200e: time=45ms 
+Reply from 2404:6800:4009:80c::200e: time=46ms 
+Reply from 2404:6800:4009:80c::200e: time=45ms 
+Reply from 2404:6800:4009:80c::200e: time=45ms 
+Reply from 2404:6800:4009:80c::200e: time=46ms 
+
+Ping statistics for 2404:6800:4009:80c::200e:
+    Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 45ms, Maximum = 46ms, Average = 45ms
+
+24-02-09 14:26:35 [INFO] Ping 6 Packet Loss is 0
+24-02-09 14:26:35 [INFO] Ping 6 Passed
+24-02-09 14:37:10 [INFO] Checking Ping 4 to google.com
+24-02-09 14:37:29 [DEBUG] 
+Pinging google.com [172.217.166.46] with 32 bytes of data:
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=5ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=6ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=5ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=5ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=5ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=5ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+Reply from 172.217.166.46: bytes=32 time=4ms TTL=56
+
+Ping statistics for 172.217.166.46:
+    Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 4ms, Maximum = 6ms, Average = 4ms
+
+24-02-09 14:37:29 [WARNING] Ping 4 Packet Loss is 0
+24-02-09 14:37:29 [INFO] Ping 4 Passed
+24-02-09 14:37:29 [INFO] Checking Ping 6 to google.com
+24-02-09 14:37:49 [DEBUG] 
+Pinging google.com [2404:6800:4009:80c::200e] with 32 bytes of data:
+Reply from 2404:6800:4009:80c::200e: time=45ms 
+Reply from 2404:6800:4009:80c::200e: time=45ms 
+Reply from 2404:6800:4009:80c::200e: time=46ms 
+Reply from 2404:6800:4009:80c::200e: time=45ms 
+Reply from 2404:6800:4009:80c::200e: time=45ms 
+Reply from 2404:6800:4009:80c::200e: time=46ms 
+Reply from 2404:6800:4009:80c::200e: time=45ms 
+Reply from 2404:6800:4009:80c::200e: time=46ms 
+Reply from 2404:6800:4009:80c::200e: time=46ms 
+Reply from 2404:6800:4009:80c::200e: time=46ms 
+Reply from 2404:6800:4009:80c::200e: time=45ms 
+Reply from 2404:6800:4009:80c::200e: time=48ms 
+Reply from 2404:6800:4009:80c::200e: time=46ms 
+Reply from 2404:6800:4009:80c::200e: time=45ms 
+Reply from 2404:6800:4009:80c::200e: time=45ms 
+Reply from 2404:6800:4009:80c::200e: time=45ms 
+Reply from 2404:6800:4009:80c::200e: time=45ms 
+Reply from 2404:6800:4009:80c::200e: time=45ms 
+Reply from 2404:6800:4009:80c::200e: time=45ms 
+Reply from 2404:6800:4009:80c::200e: time=45ms 
+
+Ping statistics for 2404:6800:4009:80c::200e:
+    Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 45ms, Maximum = 48ms, Average = 45ms
+
+24-02-09 14:37:49 [WARNING] Ping 6 Packet Loss is 0
+24-02-09 14:37:49 [INFO] Ping 6 Passed
+24-02-09 14:38:57 [INFO] Checking Ping 4 to google.com
+24-02-09 14:40:00 [DEBUG] 
+Pinging google.com [172.217.166.46] with 32 bytes of data:
+Request timed out.
+Reply from 192.168.29.1: Destination net unreachable.
+Request timed out.
+Request timed out.
+Request timed out.
+Request timed out.
+Reply from 192.168.29.1: Destination net unreachable.
+Request timed out.
+Request timed out.
+Reply from 192.168.29.1: Destination net unreachable.
+Reply from 192.168.29.1: Destination net unreachable.
+Request timed out.
+Reply from 192.168.29.1: Destination net unreachable.
+Request timed out.
+Reply from 192.168.29.1: Destination net unreachable.
+Reply from 192.168.29.1: Destination net unreachable.
+Reply from 192.168.29.1: Destination net unreachable.
+Request timed out.
+Reply from 192.168.29.1: Destination net unreachable.
+Request timed out.
+
+Ping statistics for 172.217.166.46:
+    Packets: Sent = 20, Received = 9, Lost = 11 (55% loss),
+
+24-02-09 14:40:00 [DEBUG] Ping 4 Packet Loss is 11
+24-02-09 14:40:00 [ERROR] Ping 4 Failed
+24-02-09 14:40:00 [INFO] Checking Ping 6 to google.com
+24-02-09 14:40:11 [DEBUG] Ping request could not find host google.com. Please check the name and try again.
+
+24-02-09 14:40:11 [DEBUG] Ping 6 Packet Loss is 20
+24-02-09 14:40:11 [ERROR] Ping 6 Failed
+24-02-09 14:40:56 [INFO] Checking Ping 4 to google.com
+24-02-09 14:40:56 [DEBUG] Ping request could not find host google.com. Please check the name and try again.
+
+24-02-09 14:40:56 [DEBUG] Ping 4 Packet Loss is 20
+24-02-09 14:40:56 [ERROR] Ping 4 Failed
+24-02-09 14:40:56 [INFO] Checking Ping 6 to google.com
+24-02-09 14:41:07 [DEBUG] Ping request could not find host google.com. Please check the name and try again.
+
+24-02-09 14:41:07 [DEBUG] Ping 6 Packet Loss is 20
+24-02-09 14:41:07 [ERROR] Ping 6 Failed
+24-02-09 14:41:23 [INFO] Checking Ping 4 to google.com
+24-02-09 14:41:34 [DEBUG] Ping request could not find host google.com. Please check the name and try again.
+
+24-02-09 14:41:34 [DEBUG] Ping 4 Packet Loss is 20
+24-02-09 14:41:34 [ERROR] Ping 4 Failed
+24-02-09 14:41:34 [INFO] Checking Ping 6 to google.com
+24-02-09 14:42:00 [DEBUG] 
+Pinging google.com [2404:6800:4009:80c::200e] with 32 bytes of data:
+Reply from 2404:6800:4009:80c::200e: time=46ms 
+Reply from 2404:6800:4009:80c::200e: time=45ms 
+Reply from 2404:6800:4009:80c::200e: time=45ms 
+Reply from 2404:6800:4009:80c::200e: time=46ms 
+Reply from 2404:6800:4009:80c::200e: time=45ms 
+Reply from 2404:6800:4009:80c::200e: time=46ms 
+Reply from 2404:6800:4009:80c::200e: time=45ms 
+Reply from 2404:6800:4009:80c::200e: time=45ms 
+Reply from 2404:6800:4009:80c::200e: time=46ms 
+Reply from 2404:6800:4009:80c::200e: time=45ms 
+Reply from 2404:6800:4009:80c::200e: time=46ms 
+Reply from 2404:6800:4009:80c::200e: time=45ms 
+Reply from 2404:6800:4009:80c::200e: time=45ms 
+Reply from 2404:6800:4009:80c::200e: time=46ms 
+Reply from 2404:6800:4009:80c::200e: time=46ms 
+Reply from 2404:6800:4009:80c::200e: time=47ms 
+Reply from 2404:6800:4009:80c::200e: time=45ms 
+Reply from 2404:6800:4009:80c::200e: time=46ms 
+Reply from 2404:6800:4009:80c::200e: time=46ms 
+Reply from 2404:6800:4009:80c::200e: time=45ms 
+
+Ping statistics for 2404:6800:4009:80c::200e:
+    Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 45ms, Maximum = 47ms, Average = 45ms
+
+24-02-09 14:42:00 [DEBUG] Ping 6 Packet Loss is 0
+24-02-09 14:42:00 [INFO] Ping 6 Passed
+24-02-09 14:47:06 [DEBUG] Initializing Chrome WebDriver
+24-02-09 14:49:14 [DEBUG] Initializing Chrome WebDriver
+24-02-09 14:49:36 [DEBUG] Initializing Chrome WebDriver
+24-02-09 14:49:38 [INFO] Checking Ping 4 to google.com
+24-02-09 14:49:57 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-09 14:49:57 [INFO] Ping 4 Passed
+24-02-09 14:49:57 [INFO] Checking Ping 4 to google.com
+24-02-09 14:50:16 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-09 14:50:16 [INFO] Ping 4 Passed
+24-02-09 14:50:26 [DEBUG] Initializing Chrome WebDriver
+24-02-09 14:50:28 [INFO] Checking Ping 4 to google.com
+24-02-09 14:50:51 [DEBUG]     Packets: Sent = 20, Received = 19, Lost = 1 (5% loss),
+24-02-09 14:50:51 [INFO] Ping 4 Passed
+24-02-09 14:50:51 [INFO] Checking Ping 6 to google.com
+24-02-09 14:51:10 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-09 14:51:10 [INFO] Ping 6 Passed
+24-02-09 15:00:54 [DEBUG] Initializing Chrome WebDriver
+24-02-09 15:00:56 [INFO] Checking Ping 4 to google.com
+24-02-09 15:01:15 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-09 15:01:15 [INFO] Ping 4 Passed
+24-02-09 15:01:15 [INFO] Checking Ping 6 to google.com
+24-02-09 15:01:34 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-09 15:01:34 [INFO] Ping 6 Passed
+24-02-09 15:17:37 [DEBUG] Initializing Chrome WebDriver
+24-02-09 15:17:39 [INFO] Checking Ping 4 to google.com
+24-02-09 15:17:58 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-09 15:17:58 [INFO] Ping 4 Passed
+24-02-09 15:17:58 [INFO] Checking Ping 6 to google.com
+24-02-09 15:18:17 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-09 15:18:17 [INFO] Ping 6 Passed
+24-02-09 15:18:56 [DEBUG] Initializing Chrome WebDriver
+24-02-09 15:18:58 [INFO] Checking Ping 4 to google.com
+24-02-09 15:19:17 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-09 15:19:17 [INFO] Ping 4 Passed
+24-02-09 15:19:17 [INFO] Checking Ping 6 to google.com
+24-02-09 15:19:36 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-09 15:19:36 [INFO] Ping 6 Passed
+24-02-09 15:21:54 [DEBUG] Initializing Chrome WebDriver
+24-02-09 15:21:56 [INFO] Performing health check
+24-02-09 15:21:56 [INFO] Getting WAN Firmware Version
+24-02-09 15:21:56 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-09 15:22:27 [ERROR] Error Occurred While Searching for the Keyword: 'WAN Information': Message: Element not found within the specified timeout
+
+24-02-09 15:22:58 [ERROR] Firmware Version element not found on the page
+24-02-09 15:22:58 [INFO] Getting WAN IPv6 Information
+24-02-09 15:22:58 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-09 15:23:29 [ERROR] Error Occurred While Searching for the Keyword: 'WAN Information': Message: Element not found within the specified timeout
+
+24-02-09 15:23:42 [ERROR] An error occurred while fetching WAN IPv6 info: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=121.0.6167.140)
+Stacktrace:
+	GetHandleVerifier [0x00EC1673+52979]
+	(No symbol) [0x00E47961]
+	(No symbol) [0x00D2DD3D]
+	(No symbol) [0x00D1239A]
+	(No symbol) [0x00D8A71B]
+	(No symbol) [0x00D9ACB6]
+	(No symbol) [0x00D84286]
+	(No symbol) [0x00D5C063]
+	(No symbol) [0x00D5CECD]
+	GetHandleVerifier [0x011D8D83+3294723]
+	GetHandleVerifier [0x01216CC2+3548482]
+	GetHandleVerifier [0x01211C9C+3527964]
+	GetHandleVerifier [0x00F5870E+671630]
+	(No symbol) [0x00E51EB4]
+	(No symbol) [0x00E4D808]
+	(No symbol) [0x00E4D92D]
+	(No symbol) [0x00E3F7E0]
+	BaseThreadInitThunk [0x75D9FCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x77BF7C6E+286]
+	RtlGetAppContainerNamedObjectPath [0x77BF7C3E+238]
+
+24-02-09 15:23:42 [INFO] Checking Ping 4 to google.com
+24-02-09 15:23:42 [DEBUG] 
+24-02-09 15:23:42 [ERROR] Ping 4 Failed
+24-02-09 15:23:42 [INFO] Checking Ping 6 to google.com
+24-02-09 15:23:42 [DEBUG] 
+24-02-09 15:23:42 [ERROR] Ping 6 Failed
+24-02-09 15:28:47 [DEBUG] Initializing Chrome WebDriver
+24-02-09 15:30:31 [DEBUG] Initializing Chrome WebDriver
+24-02-09 15:30:41 [DEBUG] Initializing Chrome WebDriver
+24-02-09 15:31:00 [DEBUG] Initializing Chrome WebDriver
+24-02-09 15:31:23 [INFO] Performing health check
+24-02-09 15:31:23 [INFO] Getting WAN Firmware Version
+24-02-09 15:31:23 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-09 15:31:23 [ERROR] Error Occurred While Searching for the Keyword: 'WAN Information': Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=121.0.6167.140)
+Stacktrace:
+	GetHandleVerifier [0x00EC1673+52979]
+	(No symbol) [0x00E47961]
+	(No symbol) [0x00D2DD3D]
+	(No symbol) [0x00D1239A]
+	(No symbol) [0x00D8A71B]
+	(No symbol) [0x00D9ACB6]
+	(No symbol) [0x00D84286]
+	(No symbol) [0x00D5C063]
+	(No symbol) [0x00D5CECD]
+	GetHandleVerifier [0x011D8D83+3294723]
+	GetHandleVerifier [0x01216CC2+3548482]
+	GetHandleVerifier [0x01211C9C+3527964]
+	GetHandleVerifier [0x00F5870E+671630]
+	(No symbol) [0x00E51EB4]
+	(No symbol) [0x00E4D808]
+	(No symbol) [0x00E4D92D]
+	(No symbol) [0x00E3F7E0]
+	BaseThreadInitThunk [0x75D9FCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x77BF7C6E+286]
+	RtlGetAppContainerNamedObjectPath [0x77BF7C3E+238]
+
+24-02-09 15:31:23 [ERROR] An error occurred while fetching Firmware Version: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=121.0.6167.140)
+Stacktrace:
+	GetHandleVerifier [0x00EC1673+52979]
+	(No symbol) [0x00E47961]
+	(No symbol) [0x00D2DD3D]
+	(No symbol) [0x00D1239A]
+	(No symbol) [0x00D8A71B]
+	(No symbol) [0x00D9ACB6]
+	(No symbol) [0x00D84286]
+	(No symbol) [0x00D5C063]
+	(No symbol) [0x00D5CECD]
+	GetHandleVerifier [0x011D8D83+3294723]
+	GetHandleVerifier [0x01216CC2+3548482]
+	GetHandleVerifier [0x01211C9C+3527964]
+	GetHandleVerifier [0x00F5870E+671630]
+	(No symbol) [0x00E51EB4]
+	(No symbol) [0x00E4D808]
+	(No symbol) [0x00E4D92D]
+	(No symbol) [0x00E3F7E0]
+	BaseThreadInitThunk [0x75D9FCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x77BF7C6E+286]
+	RtlGetAppContainerNamedObjectPath [0x77BF7C3E+238]
+
+24-02-09 15:31:23 [INFO] Getting WAN IPv6 Information
+24-02-09 15:31:23 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-09 15:31:23 [ERROR] Error Occurred While Searching for the Keyword: 'WAN Information': Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=121.0.6167.140)
+Stacktrace:
+	GetHandleVerifier [0x00EC1673+52979]
+	(No symbol) [0x00E47961]
+	(No symbol) [0x00D2DD3D]
+	(No symbol) [0x00D1239A]
+	(No symbol) [0x00D8A71B]
+	(No symbol) [0x00D9ACB6]
+	(No symbol) [0x00D84286]
+	(No symbol) [0x00D5C063]
+	(No symbol) [0x00D5CECD]
+	GetHandleVerifier [0x011D8D83+3294723]
+	GetHandleVerifier [0x01216CC2+3548482]
+	GetHandleVerifier [0x01211C9C+3527964]
+	GetHandleVerifier [0x00F5870E+671630]
+	(No symbol) [0x00E51EB4]
+	(No symbol) [0x00E4D808]
+	(No symbol) [0x00E4D92D]
+	(No symbol) [0x00E3F7E0]
+	BaseThreadInitThunk [0x75D9FCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x77BF7C6E+286]
+	RtlGetAppContainerNamedObjectPath [0x77BF7C3E+238]
+
+24-02-09 15:31:23 [ERROR] An error occurred while fetching WAN IPv6 info: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=121.0.6167.140)
+Stacktrace:
+	GetHandleVerifier [0x00EC1673+52979]
+	(No symbol) [0x00E47961]
+	(No symbol) [0x00D2DD3D]
+	(No symbol) [0x00D1239A]
+	(No symbol) [0x00D8A71B]
+	(No symbol) [0x00D9ACB6]
+	(No symbol) [0x00D84286]
+	(No symbol) [0x00D5C063]
+	(No symbol) [0x00D5CECD]
+	GetHandleVerifier [0x011D8D83+3294723]
+	GetHandleVerifier [0x01216CC2+3548482]
+	GetHandleVerifier [0x01211C9C+3527964]
+	GetHandleVerifier [0x00F5870E+671630]
+	(No symbol) [0x00E51EB4]
+	(No symbol) [0x00E4D808]
+	(No symbol) [0x00E4D92D]
+	(No symbol) [0x00E3F7E0]
+	BaseThreadInitThunk [0x75D9FCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x77BF7C6E+286]
+	RtlGetAppContainerNamedObjectPath [0x77BF7C3E+238]
+
+24-02-09 15:31:23 [INFO] Checking Ping 4 to google.com
+24-02-09 15:31:32 [DEBUG] Initializing Chrome WebDriver
+24-02-09 15:31:35 [INFO] Performing health check
+24-02-09 15:31:35 [INFO] Getting WAN Firmware Version
+24-02-09 15:31:35 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-09 15:32:06 [ERROR] Error Occurred While Searching for the Keyword: 'WAN Information': Message: Element not found within the specified timeout
+
+24-02-09 15:32:37 [ERROR] Firmware Version element not found on the page
+24-02-09 15:32:37 [INFO] Getting WAN IPv6 Information
+24-02-09 15:32:37 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-09 15:33:08 [ERROR] Error Occurred While Searching for the Keyword: 'WAN Information': Message: Element not found within the specified timeout
+
+24-02-09 15:33:40 [ERROR] WAN IPv6 address element not found on the page
+24-02-09 15:33:40 [INFO] Checking Ping 4 to google.com
+24-02-09 15:33:56 [DEBUG] Initializing Chrome WebDriver
+24-02-09 15:33:58 [INFO] Try to Login Through WebGUI
+24-02-09 15:34:34 [ERROR] Error Occurred While Login Through WebGUI: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=121.0.6167.140)
+Stacktrace:
+	GetHandleVerifier [0x00EC1673+52979]
+	(No symbol) [0x00E47961]
+	(No symbol) [0x00D2DD3D]
+	(No symbol) [0x00D2A4C6]
+	(No symbol) [0x00D2090A]
+	(No symbol) [0x00D1FA82]
+	(No symbol) [0x00D1EEEE]
+	(No symbol) [0x00D1EE94]
+	(No symbol) [0x00D1D84D]
+	(No symbol) [0x00D1DFCB]
+	(No symbol) [0x00D2FD26]
+	(No symbol) [0x00D9BB51]
+	(No symbol) [0x00D844EC]
+	(No symbol) [0x00D9B3FE]
+	(No symbol) [0x00D84286]
+	(No symbol) [0x00D5C063]
+	(No symbol) [0x00D5CECD]
+	GetHandleVerifier [0x011D8D83+3294723]
+	GetHandleVerifier [0x01216CC2+3548482]
+	GetHandleVerifier [0x01211C9C+3527964]
+	GetHandleVerifier [0x00F5870E+671630]
+	(No symbol) [0x00E51EB4]
+	(No symbol) [0x00E4D808]
+	(No symbol) [0x00E4D92D]
+	(No symbol) [0x00E3F7E0]
+	BaseThreadInitThunk [0x75D9FCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x77BF7C6E+286]
+	RtlGetAppContainerNamedObjectPath [0x77BF7C3E+238]
+
+24-02-09 15:34:34 [INFO] Performing health check
+24-02-09 15:34:34 [INFO] Getting WAN Firmware Version
+24-02-09 15:34:34 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-09 15:34:55 [DEBUG] Initializing Chrome WebDriver
+24-02-09 15:34:58 [INFO] Try to Login Through WebGUI
+24-02-09 15:35:40 [INFO] Performing health check
+24-02-09 15:35:40 [INFO] Getting WAN Firmware Version
+24-02-09 15:35:40 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-09 15:35:40 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-09 15:35:40 [ERROR] Device is NOT Getting WAN IPv6 Address: 
+24-02-09 15:35:40 [INFO] Getting WAN IPv6 Information
+24-02-09 15:35:40 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-09 15:35:41 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-09 15:35:41 [INFO] Successfully retrieved WAN IPv6 address: 2409:4090:17:1000:cf56:c63:de5c:c84d, 2409:4090:17:1208::/64
+24-02-09 15:35:41 [INFO] Checking Ping 4 to google.com
+24-02-09 15:36:00 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-09 15:36:00 [INFO] Ping 4 Passed
+24-02-09 15:36:00 [INFO] Checking Ping 6 to google.com
+24-02-09 15:36:20 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-09 15:36:20 [INFO] Ping 6 Passed
+24-02-09 15:57:14 [DEBUG] Initializing Chrome WebDriver
+24-02-09 15:57:15 [INFO] Try to Login Through WebGUI
+24-02-09 15:57:59 [INFO] Performing health check
+24-02-09 15:57:59 [INFO] Getting WAN Firmware Version
+24-02-09 15:57:59 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-09 15:58:00 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-09 15:58:00 [ERROR] Device is having NOT latest firmware: 
+24-02-09 15:58:00 [INFO] Getting WAN IPv6 Information
+24-02-09 15:58:00 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-09 15:58:01 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-09 15:58:01 [INFO] Successfully retrieved WAN IPv6 address: 2409:4090:17:1000:cf56:c63:de5c:c84d, 2409:4090:17:1208::/64
+24-02-09 15:58:01 [INFO] Checking Ping 4 to google.com
+24-02-09 15:58:20 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-09 15:58:20 [INFO] Ping 4 Passed
+24-02-09 15:58:20 [INFO] Checking Ping 6 to google.com
+24-02-09 15:58:39 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-09 15:58:39 [INFO] Ping 6 Passed
+24-02-09 15:58:39 [INFO] Device health check completed successfully.
+24-02-09 16:00:46 [DEBUG] Initializing Chrome WebDriver
+24-02-09 16:00:47 [INFO] Try to Login Through WebGUI
+24-02-09 16:01:31 [INFO] Performing health check
+24-02-09 16:01:31 [INFO] Getting WAN Firmware Version
+24-02-09 16:01:31 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-09 16:01:32 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-09 16:01:32 [ERROR] Device is NOT having the latest firmware: 
+24-02-09 16:01:32 [INFO] Getting WAN IPv6 Information
+24-02-09 16:01:32 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-09 16:01:32 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-09 16:01:32 [INFO] Successfully retrieved WAN IPv6 address: 2409:4090:17:1000:cf56:c63:de5c:c84d, 2409:4090:17:1208::/64
+24-02-09 16:01:32 [INFO] Checking Ping 4 to google.com
+24-02-09 16:01:52 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-09 16:01:52 [INFO] Ping 4 Passed
+24-02-09 16:01:52 [INFO] Checking Ping 6 to google.com
+24-02-09 16:02:11 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-09 16:02:11 [INFO] Ping 6 Passed
+24-02-09 16:02:11 [ERROR] Device health check completed with 1 issue(s): Failed to retrieve firmware version.
+24-02-09 16:07:18 [DEBUG] Initializing Chrome WebDriver
+24-02-09 16:07:20 [INFO] Try to Login Through WebGUI
+24-02-09 16:08:04 [INFO] Performing health check
+24-02-09 16:08:04 [INFO] Getting WAN Firmware Version
+24-02-09 16:08:04 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-09 16:08:04 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-09 16:08:04 [ERROR] Device is NOT having the latest firmware: 
+24-02-09 16:08:04 [INFO] Getting WAN IPv6 Information
+24-02-09 16:08:04 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-09 16:08:05 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-09 16:08:05 [ERROR] Device is NOT Getting WAN IPv6 Address: 0::0
+24-02-09 16:08:05 [INFO] Checking Ping 4 to google.com
+24-02-09 16:08:05 [DEBUG] 
+24-02-09 16:08:05 [ERROR] Ping 4 Failed
+24-02-09 16:08:05 [INFO] Checking Ping 6 to google.com
+24-02-09 16:08:05 [DEBUG] 
+24-02-09 16:08:05 [ERROR] Ping 6 Failed
+24-02-09 16:08:05 [ERROR] Device health check completed with 4 issue(s): Failed to retrieve firmware version., Failed to retrieve IPv6 information., Ping to Google IPv4 failed., Ping to Google IPv6 failed.
+24-02-09 16:11:41 [DEBUG] Initializing Chrome WebDriver
+24-02-09 16:11:42 [INFO] Try to Login Through WebGUI
+24-02-09 16:12:26 [INFO] Performing health check
+24-02-09 16:12:26 [INFO] Getting WAN Firmware Version
+24-02-09 16:12:26 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-09 16:12:27 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-09 16:12:27 [ERROR] Device is NOT having the latest firmware: 
+24-02-09 16:12:27 [INFO] Getting WAN IPv6 Information
+24-02-09 16:12:27 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-09 16:12:28 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-09 16:12:28 [INFO] Successfully retrieved WAN IPv6 address: 2409:4090:17:1000:cf56:c63:de5c:c84d, 2409:4090:17:1208::/64
+24-02-09 16:12:28 [INFO] Checking Ping 4 to google.com
+24-02-09 16:12:47 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-09 16:12:47 [INFO] Ping 4 Passed
+24-02-09 16:12:47 [INFO] Checking Ping 6 to google.com
+24-02-09 16:13:06 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-09 16:13:06 [INFO] Ping 6 Passed
+24-02-09 16:13:06 [ERROR] Device health check completed with 1 issue(s): Failed to retrieve firmware version.
+24-02-09 16:14:01 [DEBUG] Initializing Chrome WebDriver
+24-02-09 16:14:03 [INFO] Try to Login Through WebGUI
+24-02-09 16:14:47 [INFO] Performing health check
+24-02-09 16:14:47 [INFO] Getting WAN Firmware Version
+24-02-09 16:14:47 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-09 16:14:47 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-09 16:14:47 [ERROR] Device is NOT having the latest firmware: 
+24-02-09 16:14:47 [INFO] Getting WAN IPv6 Information
+24-02-09 16:14:47 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-09 16:14:48 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-09 16:14:48 [INFO] Successfully retrieved WAN IPv6 address: 2409:4090:17:1000:cf56:c63:de5c:c84d, 2409:4090:17:1208::/64
+24-02-09 16:14:48 [INFO] Checking Ping 4 to google.com
+24-02-09 16:15:07 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-09 16:15:07 [INFO] Ping 4 Passed
+24-02-09 16:15:07 [INFO] Checking Ping 6 to google.com
+24-02-09 16:15:26 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-09 16:15:26 [INFO] Ping 6 Passed
+24-02-09 16:15:26 [ERROR] Device health check completed with 1 issue(s): Failed to retrieve firmware version.
+24-02-09 16:20:13 [DEBUG] Initializing Chrome WebDriver
+24-02-09 16:20:15 [INFO] Try to Login Through WebGUI
+24-02-09 16:20:58 [INFO] Performing health check
+24-02-09 16:20:58 [INFO] Getting WAN Firmware Version
+24-02-09 16:20:58 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-09 16:20:59 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-09 16:20:59 [ERROR] An error occurred while fetching Firmware Version: Utils.find_element() takes from 1 to 5 positional arguments but 306 were given
+24-02-09 16:20:59 [INFO] Getting WAN IPv6 Information
+24-02-09 16:20:59 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-09 16:20:59 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-09 16:20:59 [INFO] Successfully retrieved WAN IPv6 address: 2409:4090:17:1000:cf56:c63:de5c:c84d, 2409:4090:17:1208::/64
+24-02-09 16:20:59 [INFO] Checking Ping 4 to google.com
+24-02-09 16:21:19 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-09 16:21:19 [INFO] Ping 4 Passed
+24-02-09 16:21:19 [INFO] Checking Ping 6 to google.com
+24-02-09 16:21:38 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-09 16:21:38 [INFO] Ping 6 Passed
+24-02-09 16:21:38 [ERROR] Device health check completed with 1 issue(s): Failed to retrieve firmware version.
+24-02-09 16:34:47 [DEBUG] Initializing Chrome WebDriver
+24-02-09 16:34:48 [INFO] Try to Login Through WebGUI
+24-02-09 16:35:10 [DEBUG] Initializing Chrome WebDriver
+24-02-09 16:35:11 [INFO] Try to Login Through WebGUI
+24-02-09 16:35:24 [INFO] Getting WAN Firmware Version
+24-02-09 16:35:24 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-09 16:35:25 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-09 16:35:25 [ERROR] An error occurred while fetching Firmware Version: Utils.find_element() takes from 1 to 5 positional arguments but 306 were given
+24-02-09 16:39:56 [DEBUG] Initializing Chrome WebDriver
+24-02-09 16:39:58 [INFO] Try to Login Through WebGUI
+24-02-09 16:40:10 [INFO] Getting WAN Firmware Version
+24-02-09 16:40:10 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-09 16:40:11 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-09 16:40:11 [ERROR] An error occurred while fetching Firmware Version: Utils.find_element() takes from 1 to 5 positional arguments but 306 were given
+24-02-09 17:32:00 [DEBUG] Initializing Chrome WebDriver
+24-02-09 17:32:01 [INFO] Try to Login Through WebGUI
+24-02-09 17:32:13 [INFO] Getting WAN Firmware Version
+24-02-09 17:32:13 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-09 17:32:14 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-09 17:32:14 [ERROR] An error occurred while fetching Firmware Version: Utils.find_element() takes from 1 to 5 positional arguments but 306 were given
+24-02-09 17:33:13 [DEBUG] Initializing Chrome WebDriver
+24-02-09 17:33:15 [INFO] Try to Login Through WebGUI
+24-02-09 17:33:27 [INFO] Getting WAN Firmware Version
+24-02-09 17:33:27 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-09 17:33:28 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-09 17:33:28 [ERROR] Device is NOT having the latest firmware: 
+24-02-09 17:34:58 [DEBUG] Initializing Chrome WebDriver
+24-02-09 17:35:00 [INFO] Try to Login Through WebGUI
+24-02-09 17:35:13 [INFO] Getting WAN Firmware Version
+24-02-09 17:35:13 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-09 17:35:14 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-09 17:35:14 [ERROR] Device is NOT having the latest firmware: 
+24-02-09 17:36:51 [DEBUG] Initializing Chrome WebDriver
+24-02-09 17:36:52 [INFO] Try to Login Through WebGUI
+24-02-09 17:37:05 [INFO] Getting WAN Firmware Version
+24-02-09 17:37:05 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-09 17:37:06 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-09 17:37:06 [ERROR] Device is NOT having the latest firmware: 
+24-02-09 17:38:51 [DEBUG] Initializing Chrome WebDriver
+24-02-09 17:38:52 [INFO] Try to Login Through WebGUI
+24-02-09 17:39:04 [INFO] Getting WAN Firmware Version
+24-02-09 17:39:04 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-09 17:39:05 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-09 17:39:05 [ERROR] Device is NOT having the latest firmware: 
+24-02-09 17:44:19 [DEBUG] Initializing Chrome WebDriver
+24-02-09 17:44:21 [INFO] Try to Login Through WebGUI
+24-02-09 17:44:33 [INFO] Getting WAN Firmware Version
+24-02-09 17:44:33 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-09 17:44:34 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-09 17:44:34 [ERROR] Device is NOT having the latest firmware: 
+24-02-09 17:46:43 [DEBUG] Initializing Chrome WebDriver
+24-02-09 17:46:44 [INFO] Try to Login Through WebGUI
+24-02-09 17:46:57 [INFO] Getting WAN Firmware Version
+24-02-09 17:46:57 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-09 17:46:58 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-09 17:47:03 [INFO] Device is having latest firmware: ARCNJIO_JIDU6101_D1.9.0
+24-02-09 17:48:48 [DEBUG] Initializing Chrome WebDriver
+24-02-09 17:48:49 [INFO] Try to Login Through WebGUI
+24-02-09 17:49:04 [INFO] Getting WAN Firmware Version
+24-02-09 17:49:04 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-09 17:49:07 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-09 17:49:16 [INFO] Device is having latest firmware: ARCNJIO_JIDU6101_D1.9.0
+24-02-09 17:51:07 [DEBUG] Initializing Chrome WebDriver
+24-02-09 17:51:08 [INFO] Try to Login Through WebGUI
+24-02-09 17:51:23 [INFO] Performing health check
+24-02-09 17:51:23 [INFO] Getting WAN Firmware Version
+24-02-09 17:51:23 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-09 17:51:26 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-09 17:51:35 [INFO] Device is having latest firmware: ARCNJIO_JIDU6101_D1.9.0
+24-02-09 17:51:35 [INFO] Getting WAN IPv6 Information
+24-02-09 17:51:35 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-09 17:51:38 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-09 17:51:41 [INFO] Successfully retrieved WAN IPv6 address: 2409:4090:17:1000:cf56:c63:de5c:c84d, 2409:4090:17:1208::/64
+24-02-09 17:51:41 [INFO] Checking Ping 4 to google.com
+24-02-09 17:52:00 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-09 17:52:00 [INFO] Ping 4 Passed
+24-02-09 17:52:00 [INFO] Checking Ping 6 to google.com
+24-02-09 17:52:20 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-09 17:52:20 [INFO] Ping 6 Passed
+24-02-09 17:52:20 [INFO] Device health check completed successfully.
+24-02-09 17:52:20 [INFO] Try to Login Through WebGUI
+24-02-09 17:52:28 [ERROR] Error Occurred While Login Through WebGUI: catching classes that do not inherit from BaseException is not allowed
+24-02-09 17:52:28 [INFO] Getting WAN Firmware Version
+24-02-09 17:52:28 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-09 17:52:32 [DEBUG] Initializing Chrome WebDriver
+24-02-09 17:52:34 [INFO] Try to Login Through WebGUI
+24-02-09 17:52:49 [INFO] Performing health check
+24-02-09 17:52:49 [INFO] Getting WAN Firmware Version
+24-02-09 17:52:49 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-09 17:52:52 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-09 17:52:56 [INFO] Device is having latest firmware: ARCNJIO_JIDU6101_D1.9.0
+24-02-09 17:52:56 [INFO] Getting WAN IPv6 Information
+24-02-09 17:52:56 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-09 17:52:59 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-09 17:53:02 [INFO] Successfully retrieved WAN IPv6 address: 2409:4090:17:1000:cf56:c63:de5c:c84d, 2409:4090:17:1208::/64
+24-02-09 17:53:02 [INFO] Checking Ping 4 to google.com
+24-02-09 17:53:21 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-09 17:53:21 [INFO] Ping 4 Passed
+24-02-09 17:53:21 [INFO] Checking Ping 6 to google.com
+24-02-09 17:53:41 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-09 17:53:41 [INFO] Ping 6 Passed
+24-02-09 17:53:41 [INFO] Device health check completed successfully.
+24-02-09 17:53:41 [INFO] Try to Login Through WebGUI
+24-02-09 17:54:15 [ERROR] Error Occurred While Login Through WebGUI: catching classes that do not inherit from BaseException is not allowed
+24-02-09 17:54:15 [INFO] Getting WAN Firmware Version
+24-02-09 17:54:15 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-09 17:54:19 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-09 17:54:22 [INFO] Device is having latest firmware: ARCNJIO_JIDU6101_D1.9.0
+24-02-12 10:59:29 [DEBUG] Initializing Chrome WebDriver
+24-02-12 10:59:33 [INFO] Try to Login Through WebGUI
+24-02-12 11:00:51 [INFO] Performing health check
+24-02-12 11:00:51 [INFO] Getting WAN Firmware Version
+24-02-12 11:00:51 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-12 11:00:55 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-12 11:00:58 [INFO] Device is having latest firmware: ARCNJIO_JIDU6101_D1.9.0
+24-02-12 11:00:58 [INFO] Getting WAN IPv6 Information
+24-02-12 11:00:58 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-12 11:01:01 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-12 11:01:04 [INFO] Successfully retrieved WAN IPv6 address: 2409:4090:17:1000:cf56:c63:de5c:c84d, 2409:4090:17:1208::/64
+24-02-12 11:01:04 [INFO] Checking Ping 4 to google.com
+24-02-12 11:01:23 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-12 11:01:23 [INFO] Ping 4 Passed
+24-02-12 11:01:23 [INFO] Checking Ping 6 to google.com
+24-02-12 11:01:43 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-12 11:01:43 [INFO] Ping 6 Passed
+24-02-12 11:01:43 [INFO] Device health check completed successfully.
+24-02-12 11:01:43 [INFO] Try to Login Through WebGUI
+24-02-12 11:02:53 [ERROR] Error Occurred While Login Through WebGUI: catching classes that do not inherit from BaseException is not allowed
+24-02-12 11:02:53 [INFO] Getting WAN Firmware Version
+24-02-12 11:02:53 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-12 11:02:57 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-12 11:03:00 [INFO] Device is having latest firmware: ARCNJIO_JIDU6101_D1.9.0
+24-02-12 11:03:40 [DEBUG] Initializing Chrome WebDriver
+24-02-12 11:03:42 [INFO] Try to Login Through WebGUI
+24-02-12 11:04:21 [INFO] Performing health check
+24-02-12 11:04:21 [INFO] Getting WAN Firmware Version
+24-02-12 11:04:21 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-12 11:04:21 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-12 11:04:26 [INFO] Device is having latest firmware: ARCNJIO_JIDU6101_D1.9.0
+24-02-12 11:04:26 [INFO] Getting WAN IPv6 Information
+24-02-12 11:04:26 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-12 11:04:27 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-12 11:04:32 [INFO] Successfully retrieved WAN IPv6 address: 2409:4090:17:1000:cf56:c63:de5c:c84d, 2409:4090:17:1208::/64
+24-02-12 11:04:32 [INFO] Checking Ping 4 to google.com
+24-02-12 11:04:51 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-12 11:04:51 [INFO] Ping 4 Passed
+24-02-12 11:04:51 [INFO] Checking Ping 6 to google.com
+24-02-12 11:05:14 [DEBUG]     Packets: Sent = 20, Received = 19, Lost = 1 (5% loss),
+24-02-12 11:05:14 [INFO] Ping 6 Passed
+24-02-12 11:05:14 [INFO] Device health check completed successfully.
+24-02-12 11:05:14 [INFO] Try to Login Through WebGUI
+24-02-12 11:06:22 [ERROR] Error Occurred While Login Through WebGUI: catching classes that do not inherit from BaseException is not allowed
+24-02-12 11:06:22 [INFO] Getting WAN Firmware Version
+24-02-12 11:06:22 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-12 11:06:22 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-12 11:06:27 [INFO] Device is having latest firmware: ARCNJIO_JIDU6101_D1.9.0

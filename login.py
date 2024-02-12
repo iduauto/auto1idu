@@ -17,7 +17,7 @@ class Login:
     def WebGUI_login(self):
         logger.info( "Try to Login Through WebGUI" )
         try:
-            self.driver.get( "https://192.168.31.1/" )
+            self.driver.get( "https://192.168.32.1/" )
 
             if self.utils.is_element_visible( "//div[@class='jioWrtErrorColor']" ):
                 logger.info( "Device is in Factory Reset State" )
@@ -33,7 +33,7 @@ class Login:
 
                 self.utils.find_element( *locaters.DefaultLogin_UpdateBtn ).click()
 
-            time.sleep( 10 )
+            time.sleep( 5 )
             self.utils.clear_and_send_keys( input.username , *locaters.Login_Username )
             self.utils.clear_and_send_keys( input.password , *locaters.Login_Password )
             self.utils.find_element( *locaters.Login_LoginBtn ).click()

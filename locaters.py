@@ -57,7 +57,7 @@ WanInfo_IPv6=(
 
 #Device Status
 SysInfo_FirmwareVersion = (
-    "/html[1]/body[1]/mainapp[1]/div[1]/div[2]/div[4]/div[1]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]",
+    '/html/body/mainapp/div[1]/div[2]/div[4]/div[1]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]',
     "body > mainapp:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(4) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(3) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1)"
 )
 SysInfo_SerialNumber = (
