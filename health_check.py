@@ -30,6 +30,7 @@ class HealthCheck:
             if not self.utils.check_ping( "google.com" , 6 ):
                 health_issues.append( "Ping to Google IPv6 failed." )
 
+
             if health_issues:
                 logger.error(
                     f"Device health check completed with {len( health_issues )} issue(s): {', '.join( health_issues )}" )

@@ -24,7 +24,7 @@ class Login:
 
 
             if self.utils.is_element_visible( "//div[@class='jioWrtErrorColor']" ):
-                logger.info( "Device is in Factory Reset State" )
+                logger.debug( "Device is in Factory Reset State" )
                 self.utils.clear_and_send_keys( input.username , *locaters.Login_Username )
                 self.utils.clear_and_send_keys( input.default_password , *locaters.Login_Password )
                 self.utils.find_element( *locaters.Login_LoginBtn ).click()

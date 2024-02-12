@@ -1401,3 +1401,35 @@ Stacktrace:
 24-02-12 17:02:39 [INFO] Device reset to factory defaults completed successfully
 24-02-12 17:02:49 [INFO] Try to Login Through WebGUI
 24-02-12 17:02:51 [INFO] Device is in Factory Reset State
+24-02-12 18:07:16 [DEBUG] Initializing Chrome WebDriver
+24-02-12 18:07:18 [DEBUG] ======================================================================================
+24-02-12 18:07:18 [INFO] Validating multiple factory reset
+24-02-12 18:07:18 [INFO] Try to Login Through WebGUI
+24-02-12 18:07:46 [INFO] Performing health check
+24-02-12 18:07:46 [INFO] Getting WAN Firmware Version
+24-02-12 18:07:46 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-12 18:07:47 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-12 18:07:52 [INFO] Device is having latest firmware: ARCNJIO_JIDU6101_D1.9.0
+24-02-12 18:07:52 [INFO] Getting WAN IPv6 Information
+24-02-12 18:07:52 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-12 18:07:52 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-12 18:07:57 [INFO] Successfully retrieved WAN IPv6 address: 2409:4090:17:1000:cf56:c63:de5c:c84d, 2409:4090:17:1208::/64
+24-02-12 18:07:57 [INFO] Checking Ping 4 to google.com
+24-02-12 18:08:16 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-12 18:08:16 [INFO] Ping 4 Passed
+24-02-12 18:08:16 [INFO] Checking Ping 6 to google.com
+24-02-12 18:08:36 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-12 18:08:36 [INFO] Ping 6 Passed
+24-02-12 18:08:36 [INFO] Device health check completed successfully.
+24-02-12 18:08:36 [INFO] Initiating device reset to factory defaults
+24-02-12 18:08:36 [DEBUG] Searching for the Keyword: 'Factory Defaults / Reboot'
+24-02-12 18:08:36 [DEBUG] Found and Clicked on the Result Containing 'Factory Defaults / Reboot'
+24-02-12 18:14:34 [DEBUG] Initializing Chrome WebDriver
+24-02-12 18:14:35 [DEBUG] ======================================================================================
+24-02-12 18:14:35 [INFO] Validating multiple factory reset
+24-02-12 18:14:35 [INFO] Try to Login Through WebGUI
+24-02-12 18:14:40 [INFO] Device is in Factory Reset State
+24-02-12 18:15:23 [DEBUG] Initializing Chrome WebDriver
+24-02-12 18:15:24 [DEBUG] ======================================================================================
+24-02-12 18:15:24 [INFO] Validating multiple factory reset
+24-02-12 18:15:24 [INFO] Try to Login Through WebGUI
