@@ -18,7 +18,7 @@ login=Login(driver)
 utils=Utils(driver)
 
 
-print('auto3')
+print('him')
 
 
 login.WebGUI_login()
