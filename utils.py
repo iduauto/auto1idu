@@ -12,6 +12,7 @@ import input
 import locaters
 from logger import setup_logger
 
+
 # Initialize logger
 logger = setup_logger( __name__ )
 
@@ -21,7 +22,7 @@ class Utils:
         self.driver = driver
 
     # Find the element in return
-    def find_element(self , xpath=None , css_selector=None , id=None , timeout=30):
+    def find_element(self , xpath=None , css_selector=None , id=None , timeout=10):
         if not any( [xpath , css_selector , id] ):
             raise ValueError( "At least one locator (xpath, css_selector, or ID) must be provided." )
 
@@ -42,7 +43,7 @@ class Utils:
             raise NoSuchElementException( "Element not found within the specified timeout" )
 
     # Check if element is visible or nor
-    def is_element_visible(self , xpath , timeout=30):
+    def is_element_visible(self , xpath , timeout=10):
         try:
             WebDriverWait( self.driver , timeout ).until(
                 EC.visibility_of_element_located( (By.XPATH , xpath) )

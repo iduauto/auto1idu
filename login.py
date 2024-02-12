@@ -1,4 +1,7 @@
+from telnetlib import EC
 
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.wait import WebDriverWait
 
 import input
 import locaters
@@ -19,6 +22,7 @@ class Login:
         try:
             self.driver.get( input.URL )
 
+
             if self.utils.is_element_visible( "//div[@class='jioWrtErrorColor']" ):
                 logger.info( "Device is in Factory Reset State" )
                 self.utils.clear_and_send_keys( input.username , *locaters.Login_Username )
@@ -33,7 +37,7 @@ class Login:
 
                 self.utils.find_element( *locaters.DefaultLogin_UpdateBtn ).click()
 
-            time.sleep( 5 )
+            time.sleep( 10  )
             self.utils.clear_and_send_keys( input.username , *locaters.Login_Username )
             self.utils.clear_and_send_keys( input.password , *locaters.Login_Password )
             self.utils.find_element( *locaters.Login_LoginBtn ).click()
