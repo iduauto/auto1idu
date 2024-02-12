@@ -8,9 +8,10 @@ class Maintenance:
         self.driver = driver
         self.utils = Utils( driver )
 
+    #Reseting the device
     def reset(self):
+        logger.info( "Initiating device reset to factory defaults" )
         try:
-            logger.info( "Initiating device reset to factory defaults" )
             self.utils.search_WebGUI( "Factory Defaults / Reboot" )
             self.utils.find_element( "//span[normalize-space()='Select Option']" ).click()
             self.utils.find_element( "//li[normalize-space()='Restore to Factory Defaults']" ).click()
@@ -22,9 +23,10 @@ class Maintenance:
         except Exception as e:
             logger.error( f"An error occurred while resetting the device to factory defaults: {e}" )
 
+    # Rebooting the device
     def reboot(self):
+        logger.info( "Initiating device reboot" )
         try:
-            logger.info( "Initiating device reboot" )
             self.utils.search_WebGUI( "Factory Defaults / Reboot" )
             self.utils.find_element( "//span[normalize-space()='Select Option']" ).click()
             self.utils.find_element( "//li[normalize-space()='Reboot']" ).click()
