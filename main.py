@@ -17,6 +17,10 @@ health_check.health_check_webgui()
 login=Login(driver)
 utils=Utils(driver)
 
+
+print('auto3')
+
+
 login.WebGUI_login()
 print(utils.get_firmware_version())
 time.sleep(10)
