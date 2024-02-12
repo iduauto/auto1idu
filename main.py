@@ -22,7 +22,7 @@ print('him')
 
 
 login.WebGUI_login()
-print(utils.get_firmware_version())
+print(utils.get_DBGLogs())
 time.sleep(10)
 driver.quit()
 
