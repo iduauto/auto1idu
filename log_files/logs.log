@@ -1052,3 +1052,352 @@ Stacktrace:
 24-02-12 15:08:39 [ERROR] Error Occurred While Login Through WebGUI: catching classes that do not inherit from BaseException is not allowed
 24-02-12 15:08:39 [INFO] Initiating DBG log collection after encountering an issue
 24-02-12 15:08:43 [DEBUG] DBG log collected at: 2024-02-12 15:08:43.682796
+24-02-12 15:17:52 [DEBUG] Initializing Chrome WebDriver
+24-02-12 15:17:53 [INFO] Try to Login Through WebGUI
+24-02-12 15:18:16 [INFO] Performing health check
+24-02-12 15:18:16 [INFO] Getting WAN Firmware Version
+24-02-12 15:18:16 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-12 15:18:17 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-12 15:18:22 [INFO] Device is having latest firmware: ARCNJIO_JIDU6101_D1.9.0
+24-02-12 15:18:22 [INFO] Getting WAN IPv6 Information
+24-02-12 15:18:22 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-12 15:18:22 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-12 15:18:27 [INFO] Successfully retrieved WAN IPv6 address: 2409:4090:17:1000:cf56:c63:de5c:c84d, 2409:4090:17:1208::/64
+24-02-12 15:18:27 [INFO] Checking Ping 4 to google.com
+24-02-12 15:18:47 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-12 15:18:47 [INFO] Ping 4 Passed
+24-02-12 15:18:47 [INFO] Checking Ping 6 to google.com
+24-02-12 15:19:10 [DEBUG]     Packets: Sent = 20, Received = 19, Lost = 1 (5% loss),
+24-02-12 15:19:10 [INFO] Ping 6 Passed
+24-02-12 15:19:10 [INFO] Device health check completed successfully.
+24-02-12 15:19:10 [INFO] Try to Login Through WebGUI
+24-02-12 15:19:46 [ERROR] Error Occurred While Login Through WebGUI: catching classes that do not inherit from BaseException is not allowed
+24-02-12 15:19:46 [WARNING] Initiating DBG log collection after encountering an issue
+24-02-12 15:19:50 [WARNING] DBG log collected at: 2024-02-12 15:19:50.903096
+24-02-12 15:47:49 [DEBUG] Initializing Chrome WebDriver
+24-02-12 15:47:50 [INFO] Try to Login Through WebGUI
+24-02-12 15:48:13 [DEBUG] Searching for the Keyword: 'Factory Defaults / Reboot'
+24-02-12 15:48:14 [DEBUG] Found and Clicked on the Result Containing 'Factory Defaults / Reboot'
+24-02-12 15:50:59 [DEBUG] Initializing Chrome WebDriver
+24-02-12 15:51:00 [INFO] Try to Login Through WebGUI
+24-02-12 15:51:23 [DEBUG] Searching for the Keyword: 'Factory Defaults / Reboot'
+24-02-12 15:51:28 [DEBUG] Found and Clicked on the Result Containing 'Factory Defaults / Reboot'
+24-02-12 15:52:25 [DEBUG] Initializing Chrome WebDriver
+24-02-12 15:52:27 [INFO] Try to Login Through WebGUI
+24-02-12 15:52:49 [DEBUG] Searching for the Keyword: 'Factory Defaults / Reboot'
+24-02-12 15:52:50 [DEBUG] Found and Clicked on the Result Containing 'Factory Defaults / Reboot'
+24-02-12 15:58:07 [DEBUG] Initializing Chrome WebDriver
+24-02-12 15:58:08 [INFO] Try to Login Through WebGUI
+24-02-12 15:58:31 [DEBUG] Searching for the Keyword: 'Factory Defaults / Reboot'
+24-02-12 15:58:32 [DEBUG] Found and Clicked on the Result Containing 'Factory Defaults / Reboot'
+24-02-12 16:00:46 [DEBUG] Initializing Chrome WebDriver
+24-02-12 16:00:47 [INFO] Try to Login Through WebGUI
+24-02-12 16:01:10 [DEBUG] Searching for the Keyword: 'Factory Defaults / Reboot'
+24-02-12 16:01:10 [DEBUG] Found and Clicked on the Result Containing 'Factory Defaults / Reboot'
+24-02-12 16:02:17 [DEBUG] Initializing Chrome WebDriver
+24-02-12 16:02:18 [INFO] Try to Login Through WebGUI
+24-02-12 16:02:42 [DEBUG] Searching for the Keyword: 'Factory Defaults / Reboot'
+24-02-12 16:02:43 [DEBUG] Found and Clicked on the Result Containing 'Factory Defaults / Reboot'
+24-02-12 16:06:19 [DEBUG] Initializing Chrome WebDriver
+24-02-12 16:06:20 [INFO] Try to Login Through WebGUI
+24-02-12 16:06:43 [DEBUG] Searching for the Keyword: 'Factory Defaults / Reboot'
+24-02-12 16:06:44 [DEBUG] Found and Clicked on the Result Containing 'Factory Defaults / Reboot'
+24-02-12 16:11:33 [DEBUG] Initializing Chrome WebDriver
+24-02-12 16:11:35 [INFO] Try to Login Through WebGUI
+24-02-12 16:11:59 [DEBUG] Searching for the Keyword: 'Factory Defaults / Reboot'
+24-02-12 16:11:59 [DEBUG] Found and Clicked on the Result Containing 'Factory Defaults / Reboot'
+24-02-12 16:14:05 [DEBUG] Initializing Chrome WebDriver
+24-02-12 16:14:07 [INFO] Try to Login Through WebGUI
+24-02-12 16:14:30 [DEBUG] Searching for the Keyword: 'Factory Defaults / Reboot'
+24-02-12 16:14:31 [DEBUG] Found and Clicked on the Result Containing 'Factory Defaults / Reboot'
+24-02-12 16:21:53 [DEBUG] Initializing Chrome WebDriver
+24-02-12 16:21:55 [INFO] Try to Login Through WebGUI
+24-02-12 16:22:18 [DEBUG] Searching for the Keyword: 'Factory Defaults / Reboot'
+24-02-12 16:22:19 [DEBUG] Found and Clicked on the Result Containing 'Factory Defaults / Reboot'
+24-02-12 16:34:34 [DEBUG] Initializing Chrome WebDriver
+24-02-12 16:34:35 [INFO] Try to Login Through WebGUI
+24-02-12 16:34:39 [ERROR] Error Occurred While Login Through WebGUI: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=121.0.6167.161)
+Stacktrace:
+	GetHandleVerifier [0x00481673+52979]
+	(No symbol) [0x00407961]
+	(No symbol) [0x002EDD3D]
+	(No symbol) [0x002D239A]
+	(No symbol) [0x0034A71B]
+	(No symbol) [0x0035ACB6]
+	(No symbol) [0x00344286]
+	(No symbol) [0x0031C063]
+	(No symbol) [0x0031CECD]
+	GetHandleVerifier [0x00798D83+3294723]
+	GetHandleVerifier [0x007D6CC2+3548482]
+	GetHandleVerifier [0x007D1C9C+3527964]
+	GetHandleVerifier [0x0051870E+671630]
+	(No symbol) [0x00411EB4]
+	(No symbol) [0x0040D808]
+	(No symbol) [0x0040D92D]
+	(No symbol) [0x003FF7E0]
+	BaseThreadInitThunk [0x77D6FCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x77EB7C6E+286]
+	RtlGetAppContainerNamedObjectPath [0x77EB7C3E+238]
+
+24-02-12 16:34:39 [INFO] Initiating device reboot
+24-02-12 16:34:39 [DEBUG] Searching for the Keyword: 'Factory Defaults / Reboot'
+24-02-12 16:34:39 [ERROR] Error Occurred While Searching for the Keyword: 'Factory Defaults / Reboot': Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=121.0.6167.161)
+Stacktrace:
+	GetHandleVerifier [0x00481673+52979]
+	(No symbol) [0x00407961]
+	(No symbol) [0x002EDD3D]
+	(No symbol) [0x002D239A]
+	(No symbol) [0x0034A71B]
+	(No symbol) [0x0035ACB6]
+	(No symbol) [0x00344286]
+	(No symbol) [0x0031C063]
+	(No symbol) [0x0031CECD]
+	GetHandleVerifier [0x00798D83+3294723]
+	GetHandleVerifier [0x007D6CC2+3548482]
+	GetHandleVerifier [0x007D1C9C+3527964]
+	GetHandleVerifier [0x0051870E+671630]
+	(No symbol) [0x00411EB4]
+	(No symbol) [0x0040D808]
+	(No symbol) [0x0040D92D]
+	(No symbol) [0x003FF7E0]
+	BaseThreadInitThunk [0x77D6FCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x77EB7C6E+286]
+	RtlGetAppContainerNamedObjectPath [0x77EB7C3E+238]
+
+24-02-12 16:34:39 [ERROR] An error occurred while rebooting the device: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=121.0.6167.161)
+Stacktrace:
+	GetHandleVerifier [0x00481673+52979]
+	(No symbol) [0x00407961]
+	(No symbol) [0x002EDD3D]
+	(No symbol) [0x002D239A]
+	(No symbol) [0x0034A71B]
+	(No symbol) [0x0035ACB6]
+	(No symbol) [0x00344286]
+	(No symbol) [0x0031C063]
+	(No symbol) [0x0031CECD]
+	GetHandleVerifier [0x00798D83+3294723]
+	GetHandleVerifier [0x007D6CC2+3548482]
+	GetHandleVerifier [0x007D1C9C+3527964]
+	GetHandleVerifier [0x0051870E+671630]
+	(No symbol) [0x00411EB4]
+	(No symbol) [0x0040D808]
+	(No symbol) [0x0040D92D]
+	(No symbol) [0x003FF7E0]
+	BaseThreadInitThunk [0x77D6FCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x77EB7C6E+286]
+	RtlGetAppContainerNamedObjectPath [0x77EB7C3E+238]
+
+24-02-12 16:35:11 [DEBUG] Initializing Chrome WebDriver
+24-02-12 16:35:13 [INFO] Try to Login Through WebGUI
+24-02-12 16:35:55 [ERROR] Error Occurred While Login Through WebGUI: Message: unknown error: net::ERR_CONNECTION_TIMED_OUT
+  (Session info: chrome=121.0.6167.161)
+Stacktrace:
+	GetHandleVerifier [0x00481673+52979]
+	(No symbol) [0x00407961]
+	(No symbol) [0x002EDD3D]
+	(No symbol) [0x002EA4C6]
+	(No symbol) [0x002E090A]
+	(No symbol) [0x002DFA82]
+	(No symbol) [0x002DEEEE]
+	(No symbol) [0x002DEE94]
+	(No symbol) [0x002DD84D]
+	(No symbol) [0x002DDFCB]
+	(No symbol) [0x002EFD26]
+	(No symbol) [0x0035BB51]
+	(No symbol) [0x003444EC]
+	(No symbol) [0x0035B3FE]
+	(No symbol) [0x00344286]
+	(No symbol) [0x0031C063]
+	(No symbol) [0x0031CECD]
+	GetHandleVerifier [0x00798D83+3294723]
+	GetHandleVerifier [0x007D6CC2+3548482]
+	GetHandleVerifier [0x007D1C9C+3527964]
+	GetHandleVerifier [0x0051870E+671630]
+	(No symbol) [0x00411EB4]
+	(No symbol) [0x0040D808]
+	(No symbol) [0x0040D92D]
+	(No symbol) [0x003FF7E0]
+	BaseThreadInitThunk [0x77D6FCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x77EB7C6E+286]
+	RtlGetAppContainerNamedObjectPath [0x77EB7C3E+238]
+
+24-02-12 16:35:55 [INFO] Initiating device reboot
+24-02-12 16:35:55 [DEBUG] Searching for the Keyword: 'Factory Defaults / Reboot'
+24-02-12 16:36:24 [DEBUG] Initializing Chrome WebDriver
+24-02-12 16:36:26 [INFO] Try to Login Through WebGUI
+24-02-12 16:37:08 [ERROR] Error Occurred While Login Through WebGUI: Message: unknown error: net::ERR_CONNECTION_TIMED_OUT
+  (Session info: chrome=121.0.6167.161)
+Stacktrace:
+	GetHandleVerifier [0x00481673+52979]
+	(No symbol) [0x00407961]
+	(No symbol) [0x002EDD3D]
+	(No symbol) [0x002EA4C6]
+	(No symbol) [0x002E090A]
+	(No symbol) [0x002DFA82]
+	(No symbol) [0x002DEEEE]
+	(No symbol) [0x002DEE94]
+	(No symbol) [0x002DD84D]
+	(No symbol) [0x002DDFCB]
+	(No symbol) [0x002EFD26]
+	(No symbol) [0x0035BB51]
+	(No symbol) [0x003444EC]
+	(No symbol) [0x0035B3FE]
+	(No symbol) [0x00344286]
+	(No symbol) [0x0031C063]
+	(No symbol) [0x0031CECD]
+	GetHandleVerifier [0x00798D83+3294723]
+	GetHandleVerifier [0x007D6CC2+3548482]
+	GetHandleVerifier [0x007D1C9C+3527964]
+	GetHandleVerifier [0x0051870E+671630]
+	(No symbol) [0x00411EB4]
+	(No symbol) [0x0040D808]
+	(No symbol) [0x0040D92D]
+	(No symbol) [0x003FF7E0]
+	BaseThreadInitThunk [0x77D6FCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x77EB7C6E+286]
+	RtlGetAppContainerNamedObjectPath [0x77EB7C3E+238]
+
+24-02-12 16:37:08 [INFO] Initiating device reboot
+24-02-12 16:37:08 [DEBUG] Searching for the Keyword: 'Factory Defaults / Reboot'
+24-02-12 16:37:17 [ERROR] Error Occurred While Searching for the Keyword: 'Factory Defaults / Reboot': Message: disconnected: unable to send message to renderer
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=121.0.6167.161)
+Stacktrace:
+	GetHandleVerifier [0x00481673+52979]
+	(No symbol) [0x00407961]
+	(No symbol) [0x002EDD3D]
+	(No symbol) [0x002DD8C2]
+	(No symbol) [0x002DE0ED]
+	(No symbol) [0x002F04C5]
+	(No symbol) [0x002F0C14]
+	(No symbol) [0x002F3AC2]
+	(No symbol) [0x002F3B50]
+	(No symbol) [0x00325D19]
+	(No symbol) [0x003260FB]
+	(No symbol) [0x0035CF92]
+	(No symbol) [0x00344534]
+	(No symbol) [0x0035B3FE]
+	(No symbol) [0x00344286]
+	(No symbol) [0x0031C063]
+	(No symbol) [0x0031CECD]
+	GetHandleVerifier [0x00798D83+3294723]
+	GetHandleVerifier [0x007D6CC2+3548482]
+	GetHandleVerifier [0x007D1C9C+3527964]
+	GetHandleVerifier [0x0051870E+671630]
+	(No symbol) [0x00411EB4]
+	(No symbol) [0x0040D808]
+	(No symbol) [0x0040D92D]
+	(No symbol) [0x003FF7E0]
+	BaseThreadInitThunk [0x77D6FCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x77EB7C6E+286]
+	RtlGetAppContainerNamedObjectPath [0x77EB7C3E+238]
+
+24-02-12 16:37:17 [ERROR] An error occurred while rebooting the device: Message: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=121.0.6167.161)
+Stacktrace:
+	GetHandleVerifier [0x00481673+52979]
+	(No symbol) [0x00407961]
+	(No symbol) [0x002EDD3D]
+	(No symbol) [0x002DE8A3]
+	(No symbol) [0x002DE449]
+	(No symbol) [0x002EF970]
+	(No symbol) [0x0035ACD6]
+	(No symbol) [0x00344286]
+	(No symbol) [0x0031C063]
+	(No symbol) [0x0031CECD]
+	GetHandleVerifier [0x00798D83+3294723]
+	GetHandleVerifier [0x007D6CC2+3548482]
+	GetHandleVerifier [0x007D1C9C+3527964]
+	GetHandleVerifier [0x0051870E+671630]
+	(No symbol) [0x00411EB4]
+	(No symbol) [0x0040D808]
+	(No symbol) [0x0040D92D]
+	(No symbol) [0x003FF7E0]
+	BaseThreadInitThunk [0x77D6FCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x77EB7C6E+286]
+	RtlGetAppContainerNamedObjectPath [0x77EB7C3E+238]
+
+24-02-12 16:37:27 [INFO] Try to Login Through WebGUI
+24-02-12 16:37:27 [ERROR] Error Occurred While Login Through WebGUI: Message: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=121.0.6167.161)
+Stacktrace:
+	GetHandleVerifier [0x00481673+52979]
+	(No symbol) [0x00407961]
+	(No symbol) [0x002EDD3D]
+	(No symbol) [0x002DE8A3]
+	(No symbol) [0x002DE449]
+	(No symbol) [0x002EF970]
+	(No symbol) [0x0035ACD6]
+	(No symbol) [0x00344286]
+	(No symbol) [0x0031C063]
+	(No symbol) [0x0031CECD]
+	GetHandleVerifier [0x00798D83+3294723]
+	GetHandleVerifier [0x007D6CC2+3548482]
+	GetHandleVerifier [0x007D1C9C+3527964]
+	GetHandleVerifier [0x0051870E+671630]
+	(No symbol) [0x00411EB4]
+	(No symbol) [0x0040D808]
+	(No symbol) [0x0040D92D]
+	(No symbol) [0x003FF7E0]
+	BaseThreadInitThunk [0x77D6FCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x77EB7C6E+286]
+	RtlGetAppContainerNamedObjectPath [0x77EB7C3E+238]
+
+24-02-12 16:37:32 [DEBUG] Initializing Chrome WebDriver
+24-02-12 16:37:33 [INFO] Try to Login Through WebGUI
+24-02-12 16:37:37 [INFO] Device is in Factory Reset State
+24-02-12 16:37:56 [ERROR] Error Occurred While Login Through WebGUI: catching classes that do not inherit from BaseException is not allowed
+24-02-12 16:37:56 [INFO] Initiating device reboot
+24-02-12 16:37:56 [DEBUG] Searching for the Keyword: 'Factory Defaults / Reboot'
+24-02-12 16:38:12 [ERROR] Error Occurred While Searching for the Keyword: 'Factory Defaults / Reboot': Message: Element not found within the specified timeout
+
+24-02-12 16:38:27 [ERROR] An error occurred while rebooting the device: Message: Element not found within the specified timeout
+
+24-02-12 16:38:37 [INFO] Try to Login Through WebGUI
+24-02-12 16:39:24 [INFO] Initiating device reset to factory defaults
+24-02-12 16:39:24 [DEBUG] Searching for the Keyword: 'Factory Defaults / Reboot'
+24-02-12 16:39:24 [DEBUG] Found and Clicked on the Result Containing 'Factory Defaults / Reboot'
+24-02-12 16:42:49 [INFO] Device reset to factory defaults completed successfully
+24-02-12 16:43:49 [DEBUG] Initializing Chrome WebDriver
+24-02-12 16:43:50 [INFO] Try to Login Through WebGUI
+24-02-12 16:43:54 [INFO] Device is in Factory Reset State
+24-02-12 16:44:13 [ERROR] Error Occurred While Login Through WebGUI: catching classes that do not inherit from BaseException is not allowed
+24-02-12 16:44:13 [INFO] Initiating device reboot
+24-02-12 16:44:13 [DEBUG] Searching for the Keyword: 'Factory Defaults / Reboot'
+24-02-12 16:44:29 [ERROR] Error Occurred While Searching for the Keyword: 'Factory Defaults / Reboot': Message: Element not found within the specified timeout
+
+24-02-12 16:44:44 [ERROR] An error occurred while rebooting the device: Message: Element not found within the specified timeout
+
+24-02-12 16:44:56 [DEBUG] Initializing Chrome WebDriver
+24-02-12 16:44:58 [INFO] Try to Login Through WebGUI
+24-02-12 16:45:41 [INFO] Initiating device reboot
+24-02-12 16:45:41 [DEBUG] Searching for the Keyword: 'Factory Defaults / Reboot'
+24-02-12 16:45:41 [DEBUG] Found and Clicked on the Result Containing 'Factory Defaults / Reboot'
+24-02-12 16:49:07 [INFO] Device reboot completed successfully
+24-02-12 16:49:17 [INFO] Try to Login Through WebGUI
+24-02-12 16:50:08 [INFO] Initiating device reset to factory defaults
+24-02-12 16:50:08 [DEBUG] Searching for the Keyword: 'Factory Defaults / Reboot'
+24-02-12 16:50:09 [DEBUG] Found and Clicked on the Result Containing 'Factory Defaults / Reboot'
+24-02-12 16:53:34 [INFO] Device reset to factory defaults completed successfully
+24-02-12 16:54:04 [DEBUG] Initializing Chrome WebDriver
+24-02-12 16:54:05 [INFO] Try to Login Through WebGUI
+24-02-12 16:54:09 [INFO] Device is in Factory Reset State
+24-02-12 16:54:46 [INFO] Initiating device reboot
+24-02-12 16:54:46 [DEBUG] Searching for the Keyword: 'Factory Defaults / Reboot'
+24-02-12 16:54:46 [DEBUG] Found and Clicked on the Result Containing 'Factory Defaults / Reboot'
+24-02-12 16:58:12 [INFO] Device reboot completed successfully
+24-02-12 16:58:22 [INFO] Try to Login Through WebGUI
+24-02-12 16:59:13 [INFO] Initiating device reset to factory defaults
+24-02-12 16:59:13 [DEBUG] Searching for the Keyword: 'Factory Defaults / Reboot'
+24-02-12 16:59:14 [DEBUG] Found and Clicked on the Result Containing 'Factory Defaults / Reboot'
+24-02-12 17:02:39 [INFO] Device reset to factory defaults completed successfully
+24-02-12 17:02:49 [INFO] Try to Login Through WebGUI
+24-02-12 17:02:51 [INFO] Device is in Factory Reset State
