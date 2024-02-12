@@ -2,105 +2,103 @@ import datetime
 import subprocess
 import time
 
-from selenium.common.exceptions import NoSuchElementException, TimeoutException
+from selenium.common.exceptions import NoSuchElementException , TimeoutException
 from selenium.webdriver import Keys
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.ui import WebDriverWait
 
 import input
 import locaters
 from logger import setup_logger
 
-
 # Initialize logger
-logger = setup_logger(__name__)
+logger = setup_logger( __name__ )
+
+
 class Utils:
-    def __init__(self,driver):
+    def __init__(self , driver):
         self.driver = driver
 
-    #Find the element in return
-    def find_element(self,xpath=None, css_selector=None, id=None,timeout=30):
-        if not any([xpath,css_selector,id]):
-            raise ValueError("At least one locator (xpath, css_selector, or ID) must be provided.")
+    # Find the element in return
+    def find_element(self , xpath=None , css_selector=None , id=None , timeout=30):
+        if not any( [xpath , css_selector , id] ):
+            raise ValueError( "At least one locator (xpath, css_selector, or ID) must be provided." )
 
         try:
             if xpath:
-                return WebDriverWait(self.driver,timeout).until(
-                    EC.presence_of_element_located((By.XPATH,xpath))
+                return WebDriverWait( self.driver , timeout ).until(
+                    EC.presence_of_element_located( (By.XPATH , xpath) )
                 )
             elif css_selector:
-                return WebDriverWait(self.driver,timeout).until(
-                    EC.presence_of_element_located((By.CSS_SELECTOR, css_selector))
+                return WebDriverWait( self.driver , timeout ).until(
+                    EC.presence_of_element_located( (By.CSS_SELECTOR , css_selector) )
                 )
             elif id:
-                return WebDriverWait(self.driver,timeout).until(
-                    EC.presence_of_element_located((By.ID,id))
+                return WebDriverWait( self.driver , timeout ).until(
+                    EC.presence_of_element_located( (By.ID , id) )
                 )
         except TimeoutException:
-            raise NoSuchElementException("Element not found within the specified timeout")
+            raise NoSuchElementException( "Element not found within the specified timeout" )
 
-    #Check if element is visible or nor
-    def is_element_visible(self,xpath,timeout=30):
+    # Check if element is visible or nor
+    def is_element_visible(self , xpath , timeout=30):
         try:
-            WebDriverWait(self.driver,timeout).until(
-                EC.visibility_of_element_located((By.XPATH,xpath))
+            WebDriverWait( self.driver , timeout ).until(
+                EC.visibility_of_element_located( (By.XPATH , xpath) )
             )
             return True
-        except (TimeoutException,NoSuchElementException):
+        except (TimeoutException , NoSuchElementException):
             return False
 
-
-    #Find input field and send keys
-    def clear_and_send_keys(self,keys,xpath=None, css_selector=None, id=None,timeout=30):
+    # Find input field and send keys
+    def clear_and_send_keys(self , keys , xpath=None , css_selector=None , id=None , timeout=30):
         try:
-            input_field=self.find_element(xpath,css_selector,id)
+            input_field = self.find_element( xpath , css_selector , id )
             input_field.click()
-            input_field.send_keys(keys)
-        except (TimeoutException,NoSuchElementException,timeout):
-            raise NoSuchElementException("Element not found within the specified timeout")
+            input_field.send_keys( keys )
+        except (TimeoutException , NoSuchElementException , timeout):
+            raise NoSuchElementException( "Element not found within the specified timeout" )
 
-
-    #Searching the keyword in Web GUI search bar
-    def search_WebGUI(self, value):
-        logger.debug(f"Searching for the Keyword: '{value}'")
+    # Searching the keyword in Web GUI search bar
+    def search_WebGUI(self , value):
+        logger.debug( f"Searching for the Keyword: '{value}'" )
         try:
-            search_bar = self.find_element("//div[@class='jioSearchBar']//input[@placeholder='Menu Search']")
+            search_bar = self.find_element( "//div[@class='jioSearchBar']//input[@placeholder='Menu Search']" )
             search_bar.click()
-            search_bar.send_keys(value)
-            search_bar.send_keys(Keys.ENTER)
+            search_bar.send_keys( value )
+            search_bar.send_keys( Keys.ENTER )
 
-            links = self.driver.find_elements(By.XPATH, '//*[@id="root"]/div[1]/div[2]/div[1]/div[1]/div[3]/a')
+            links = self.driver.find_elements( By.XPATH , '//*[@id="root"]/div[1]/div[2]/div[1]/div[1]/div[3]/a' )
 
             for link in links:
                 # Check if the link text matches the desired value\
                 if value.lower() in link.text.lower():
                     link.click()
-                    logger.debug(f"Found and Clicked on the Result Containing '{value}'")
-                    time.sleep(5)
+                    logger.debug( f"Found and Clicked on the Result Containing '{value}'" )
+                    time.sleep( 5 )
                     return
 
-            logger.warning(f"No Search Result Found for Keyword: '{value}'")
+            logger.warning( f"No Search Result Found for Keyword: '{value}'" )
         except Exception as e:
-            logger.error(f"Error Occurred While Searching for the Keyword: '{value}': {str(e)}")
+            logger.error( f"Error Occurred While Searching for the Keyword: '{value}': {str( e )}" )
 
-
-    #Ping check
-    def check_ping(self,target , protocol):
+    # Ping check
+    def check_ping(self , target , protocol):
         try:
             logger.info( f"Checking Ping {str( protocol ).upper()} to {target}" )
             loss_packet_count = 20
             command = f'ping -{protocol} -n 20 {target}'
             p = subprocess.run( command , shell=True , stdin=subprocess.PIPE , capture_output=True , text=True )
 
-            ping_status=""
+            ping_status = ""
             for line in p.stdout.splitlines():
                 if 'Packets: Sent' in line:
-                    ping_status=line
+                    ping_status = line
                     loss_packet_count = int( line.split( 'Lost = ' )[1].split( ' (' )[0] )
                     break
 
-            logger.debug(ping_status)
+            logger.debug( ping_status )
 
             if loss_packet_count < 10:
                 logger.info( f'Ping {str( protocol ).upper()} Passed' )
@@ -112,7 +110,6 @@ class Utils:
         except Exception as e:
             logger.error( f'An error occurred during {str( protocol ).upper()} ping: {e}' )
             return False
-
 
     # Checking IPv6 status
     def get_ipv6_info(self):
@@ -139,7 +136,6 @@ class Utils:
 
         return result
 
-
     # Checking Firmware Version
     def get_firmware_version(self):
         logger.info( "Getting WAN Firmware Version" )
@@ -165,18 +161,16 @@ class Utils:
 
         return result
 
-    #Taking DBG logs
+    # Taking DBG logs
     def get_DBGLogs(self):
-        logger.error( 'Taking DBG log after an issue' )
-        self.driver.get( 'http://192.168.31.1/dbglog.cgi' )
-        logger.debug( 'dbglog taken at: {}'.format( datetime.datetime.now() ) )
-        time.sleep( 30 )
-
-
-
-
-
-
+        try:
+            logger.warning( 'Initiating DBG log collection after encountering an issue' )
+            # Assuming `input.URL` contains the base URL
+            self.driver.get( f'{input.URL}/WCGI/?dbglogs' )
+            logger.warning( 'DBG log collected at: {}'.format( datetime.datetime.now() ) )
+            time.sleep( 30 )
+        except Exception as e:
+            logger.error( f'Error occurred while collecting DBG logs: {e}' )
 
     # Getting System Information
     # def get_system_info(self):
@@ -223,15 +217,3 @@ class Utils:
     #     finally:
     #         logger.debug( result )
     #         return result
-
-
-
-
-
-
-
-
-
-
-
-

@@ -17,7 +17,7 @@ class Login:
     def WebGUI_login(self):
         logger.info( "Try to Login Through WebGUI" )
         try:
-            self.driver.get( "https://192.168.32.1/" )
+            self.driver.get( input.URL )
 
             if self.utils.is_element_visible( "//div[@class='jioWrtErrorColor']" ):
                 logger.info( "Device is in Factory Reset State" )

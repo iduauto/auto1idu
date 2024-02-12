@@ -986,3 +986,69 @@ Stacktrace:
 24-02-12 11:06:22 [DEBUG] Searching for the Keyword: 'WAN Information'
 24-02-12 11:06:22 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
 24-02-12 11:06:27 [INFO] Device is having latest firmware: ARCNJIO_JIDU6101_D1.9.0
+24-02-12 14:43:06 [DEBUG] Initializing Chrome WebDriver
+24-02-12 14:43:08 [INFO] Try to Login Through WebGUI
+24-02-12 14:44:17 [INFO] Performing health check
+24-02-12 14:44:17 [INFO] Getting WAN Firmware Version
+24-02-12 14:44:17 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-12 14:44:18 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-12 14:44:23 [INFO] Device is having latest firmware: ARCNJIO_JIDU6101_D1.9.0
+24-02-12 14:44:23 [INFO] Getting WAN IPv6 Information
+24-02-12 14:44:23 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-12 14:44:23 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-12 14:44:28 [INFO] Successfully retrieved WAN IPv6 address: 2409:4090:17:1000:cf56:c63:de5c:c84d, 2409:4090:17:1208::/64
+24-02-12 14:44:28 [INFO] Checking Ping 4 to google.com
+24-02-12 14:44:47 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-12 14:44:47 [INFO] Ping 4 Passed
+24-02-12 14:44:47 [INFO] Checking Ping 6 to google.com
+24-02-12 14:45:07 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-12 14:45:07 [INFO] Ping 6 Passed
+24-02-12 14:45:07 [INFO] Device health check completed successfully.
+24-02-12 14:45:07 [INFO] Try to Login Through WebGUI
+24-02-12 14:46:14 [ERROR] Error Occurred While Login Through WebGUI: catching classes that do not inherit from BaseException is not allowed
+24-02-12 14:46:14 [ERROR] Taking DBG log after an issue
+24-02-12 14:46:18 [DEBUG] dbglog taken at: 2024-02-12 14:46:18.853428
+24-02-12 14:48:18 [DEBUG] Initializing Chrome WebDriver
+24-02-12 14:48:20 [INFO] Try to Login Through WebGUI
+24-02-12 14:48:58 [INFO] Performing health check
+24-02-12 14:48:58 [INFO] Getting WAN Firmware Version
+24-02-12 14:48:58 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-12 14:48:59 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-12 14:49:04 [INFO] Device is having latest firmware: ARCNJIO_JIDU6101_D1.9.0
+24-02-12 14:49:04 [INFO] Getting WAN IPv6 Information
+24-02-12 14:49:04 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-12 14:49:05 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-12 14:49:10 [INFO] Successfully retrieved WAN IPv6 address: 2409:4090:17:1000:cf56:c63:de5c:c84d, 2409:4090:17:1208::/64
+24-02-12 14:49:10 [INFO] Checking Ping 4 to google.com
+24-02-12 14:49:29 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-12 14:49:29 [INFO] Ping 4 Passed
+24-02-12 14:49:29 [INFO] Checking Ping 6 to google.com
+24-02-12 14:49:48 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-12 14:49:48 [INFO] Ping 6 Passed
+24-02-12 14:49:48 [INFO] Device health check completed successfully.
+24-02-12 14:49:48 [INFO] Try to Login Through WebGUI
+24-02-12 14:50:56 [ERROR] Error Occurred While Login Through WebGUI: catching classes that do not inherit from BaseException is not allowed
+24-02-12 14:50:56 [ERROR] Taking DBG log after an issue
+24-02-12 14:51:00 [DEBUG] dbglog taken at: 2024-02-12 14:51:00.302952
+24-02-12 15:06:01 [DEBUG] Initializing Chrome WebDriver
+24-02-12 15:06:03 [INFO] Try to Login Through WebGUI
+24-02-12 15:06:42 [INFO] Performing health check
+24-02-12 15:06:42 [INFO] Getting WAN Firmware Version
+24-02-12 15:06:42 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-12 15:06:43 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-12 15:06:48 [INFO] Device is having latest firmware: ARCNJIO_JIDU6101_D1.9.0
+24-02-12 15:06:48 [INFO] Getting WAN IPv6 Information
+24-02-12 15:06:48 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-12 15:06:48 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-12 15:06:53 [INFO] Successfully retrieved WAN IPv6 address: 2409:4090:17:1000:cf56:c63:de5c:c84d, 2409:4090:17:1208::/64
+24-02-12 15:06:53 [INFO] Checking Ping 4 to google.com
+24-02-12 15:07:12 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-12 15:07:12 [INFO] Ping 4 Passed
+24-02-12 15:07:12 [INFO] Checking Ping 6 to google.com
+24-02-12 15:07:32 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-12 15:07:32 [INFO] Ping 6 Passed
+24-02-12 15:07:32 [INFO] Device health check completed successfully.
+24-02-12 15:07:32 [INFO] Try to Login Through WebGUI
+24-02-12 15:08:39 [ERROR] Error Occurred While Login Through WebGUI: catching classes that do not inherit from BaseException is not allowed
+24-02-12 15:08:39 [INFO] Initiating DBG log collection after encountering an issue
+24-02-12 15:08:43 [DEBUG] DBG log collected at: 2024-02-12 15:08:43.682796
