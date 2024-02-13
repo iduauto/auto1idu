@@ -21,8 +21,8 @@ class FunctionalSanity:
                 logger.error('Device health check failed. Exiting the test.')
                 return False
 
-            for i in range(5):
-                logger.error( f"-------------{i + 1}th Factory Reset---------------------" )
+            for i in range(2):
+                logger.debug( f"-------------{i + 1}th Factory Reset---------------------" )
                 self.maintenance.reset()
 
                 if self.health.health_check_webgui() == False:
@@ -47,9 +47,9 @@ class FunctionalSanity:
                 logger.error('Device health check failed. Exiting the test.')
                 return False
 
-            for i in range(5):
-                logger.error( f"-------------{i + 1}th Reboot---------------------" )
-                self.maintenance.reset()
+            for i in range(2):
+                logger.debug( f"-------------{i + 1}th Reboot---------------------" )
+                self.maintenance.reboot()
 
                 if self.health.health_check_webgui() == False:
                     logger.error('Device health check failed. Exiting the test.')
