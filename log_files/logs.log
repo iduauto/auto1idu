@@ -1433,6 +1433,7 @@ Stacktrace:
 24-02-12 18:15:24 [DEBUG] ======================================================================================
 24-02-12 18:15:24 [INFO] Validating multiple factory reset
 24-02-12 18:15:24 [INFO] Try to Login Through WebGUI
+<<<<<<< HEAD
 24-02-12 18:23:08 [DEBUG] Initializing Chrome WebDriver
 24-02-12 18:23:09 [DEBUG] ======================================================================================
 24-02-12 18:23:09 [INFO] Validating multiple factory reset
@@ -2912,3 +2913,131 @@ Stacktrace:
 24-02-13 18:21:33 [DEBUG] Found and Clicked on the Result Containing 'Firmware Upgrade'
 24-02-13 18:21:41 [DEBUG] Image File path entered successfully
 24-02-13 18:21:55 [DEBUG] Signature File path entered successfully
+=======
+24-02-13 11:05:39 [DEBUG] Initializing Chrome WebDriver
+24-02-13 11:05:42 [INFO] Initiating set SSID Password from gui
+24-02-13 11:05:42 [DEBUG] Searching for the Keyword: 'Wireless Configuration'
+24-02-13 11:05:57 [ERROR] Error Occurred While Searching for the Keyword: 'Wireless Configuration': Message: Element not found within the specified timeout
+
+24-02-13 11:08:22 [DEBUG] Initializing Chrome WebDriver
+24-02-13 11:08:24 [INFO] Try to Login Through WebGUI
+24-02-13 11:08:52 [INFO] Initiating set SSID Password from gui
+24-02-13 11:08:52 [DEBUG] Searching for the Keyword: 'Wireless Configuration'
+24-02-13 11:08:52 [DEBUG] Found and Clicked on the Result Containing 'Wireless Configuration'
+24-02-13 11:25:55 [DEBUG] Initializing Chrome WebDriver
+24-02-13 11:25:57 [INFO] Try to Login Through WebGUI
+24-02-13 11:26:25 [INFO] Initiating set SSID Password from gui
+24-02-13 11:26:25 [DEBUG] Searching for the Keyword: 'Wireless Configuration'
+24-02-13 11:26:26 [DEBUG] Found and Clicked on the Result Containing 'Wireless Configuration'
+24-02-13 11:28:48 [DEBUG] Initializing Chrome WebDriver
+24-02-13 11:28:49 [INFO] Try to Login Through WebGUI
+24-02-13 11:29:17 [INFO] Initiating set SSID Password from gui
+24-02-13 11:29:17 [DEBUG] Searching for the Keyword: 'Wireless Configuration'
+24-02-13 11:29:18 [DEBUG] Found and Clicked on the Result Containing 'Wireless Configuration'
+24-02-13 11:34:00 [DEBUG] Initializing Chrome WebDriver
+24-02-13 11:34:01 [INFO] Try to Login Through WebGUI
+24-02-13 11:34:30 [INFO] Initiating set SSID Password from gui
+24-02-13 11:34:30 [DEBUG] Searching for the Keyword: 'Wireless Configuration'
+24-02-13 11:34:30 [DEBUG] Found and Clicked on the Result Containing 'Wireless Configuration'
+24-02-13 11:39:46 [DEBUG] Initializing Chrome WebDriver
+24-02-13 11:39:47 [INFO] Try to Login Through WebGUI
+24-02-13 11:40:16 [INFO] Initiating set SSID Password from gui
+24-02-13 11:40:16 [DEBUG] Searching for the Keyword: 'Wireless Configuration'
+24-02-13 11:40:16 [DEBUG] Found and Clicked on the Result Containing 'Wireless Configuration'
+24-02-13 11:40:22 [INFO] Entered SSID as Auto test DK
+24-02-13 11:43:06 [DEBUG] Initializing Chrome WebDriver
+24-02-13 11:43:07 [INFO] Try to Login Through WebGUI
+24-02-13 11:43:37 [INFO] Initiating set SSID Password from gui
+24-02-13 11:43:37 [DEBUG] Searching for the Keyword: 'Wireless Configuration'
+24-02-13 11:43:37 [DEBUG] Found and Clicked on the Result Containing 'Wireless Configuration'
+24-02-13 11:43:42 [INFO] Entered SSID as Auto test DK
+24-02-13 11:43:42 [INFO] Clicked on Change Password Toggle Button
+24-02-13 11:43:43 [INFO] Entered Password as yoloyolo
+24-02-13 11:43:43 [INFO] Entered Confirm Password as yoloyolo
+24-02-13 15:38:59 [DEBUG] Initializing Chrome WebDriver
+24-02-13 15:39:03 [INFO] Try to Login Through WebGUI
+24-02-13 15:39:30 [INFO] Initiating set SSID Password from gui
+24-02-13 15:39:30 [DEBUG] Searching for the Keyword: 'Wireless Configuration'
+24-02-13 15:39:31 [DEBUG] Found and Clicked on the Result Containing 'Wireless Configuration'
+24-02-13 15:39:36 [INFO] Entered SSID as Auto IDU DK
+24-02-13 15:46:14 [DEBUG] Initializing Chrome WebDriver
+24-02-13 15:46:16 [INFO] Try to Login Through WebGUI
+24-02-13 15:46:43 [INFO] Initiating set SSID Password from gui
+24-02-13 15:46:43 [DEBUG] Searching for the Keyword: 'Wireless Configuration'
+24-02-13 15:46:44 [DEBUG] Found and Clicked on the Result Containing 'Wireless Configuration'
+24-02-13 15:46:49 [INFO] Entered SSID as Auto IDU DK
+24-02-13 15:55:52 [DEBUG] Initializing Chrome WebDriver
+24-02-13 15:55:54 [INFO] Try to Login Through WebGUI
+24-02-13 15:56:22 [INFO] Initiating set SSID Password from gui
+24-02-13 15:56:22 [DEBUG] Searching for the Keyword: 'Wireless Configuration'
+24-02-13 15:56:23 [DEBUG] Found and Clicked on the Result Containing 'Wireless Configuration'
+24-02-13 15:56:28 [INFO] Entered SSID as Auto IDU DK
+24-02-13 15:59:53 [DEBUG] Initializing Chrome WebDriver
+24-02-13 15:59:55 [INFO] Try to Login Through WebGUI
+24-02-13 16:00:22 [INFO] Initiating set SSID Password from gui
+24-02-13 16:00:22 [DEBUG] Searching for the Keyword: 'Wireless Configuration'
+24-02-13 16:00:23 [DEBUG] Found and Clicked on the Result Containing 'Wireless Configuration'
+24-02-13 16:00:28 [INFO] Entered SSID as Auto IDU DK
+24-02-13 16:00:44 [INFO] Clicked on Change Password Toggle Button
+24-02-13 16:00:44 [INFO] Entered Password as 123456789
+24-02-13 16:00:44 [INFO] Entered Confirm Password as 123456789
+24-02-13 16:17:33 [DEBUG] Initializing Chrome WebDriver
+24-02-13 16:17:34 [INFO] Try to Login Through WebGUI
+24-02-13 16:18:02 [INFO] Initiating set SSID Password from gui
+24-02-13 16:18:02 [DEBUG] Searching for the Keyword: 'Wireless Configuration'
+24-02-13 16:18:03 [DEBUG] Found and Clicked on the Result Containing 'Wireless Configuration'
+24-02-13 16:18:08 [INFO] Entered SSID as Auto IDU DK
+24-02-13 16:18:23 [INFO] Clicked on Change Password Toggle Button
+24-02-13 16:18:23 [INFO] Entered Password as 123456789
+24-02-13 16:18:23 [INFO] Entered Confirm Password as 123456789
+24-02-13 16:21:44 [DEBUG] Initializing Chrome WebDriver
+24-02-13 16:21:46 [INFO] Try to Login Through WebGUI
+24-02-13 16:22:13 [INFO] Initiating set SSID Password from gui
+24-02-13 16:22:13 [DEBUG] Searching for the Keyword: 'Wireless Configuration'
+24-02-13 16:22:14 [DEBUG] Found and Clicked on the Result Containing 'Wireless Configuration'
+24-02-13 16:22:19 [INFO] Entered SSID as India
+24-02-13 16:22:35 [INFO] Clicked on Change Password Toggle Button
+24-02-13 16:22:35 [INFO] Entered Password as ilovemyindia
+24-02-13 16:22:35 [INFO] Entered Confirm Password as ilovemyindia
+24-02-13 16:22:35 [INFO] Clicked on save button
+24-02-13 16:30:22 [DEBUG] Initializing Chrome WebDriver
+24-02-13 16:30:24 [INFO] Try to Login Through WebGUI
+24-02-13 16:30:51 [INFO] Initiating get SSID from gui
+24-02-13 16:30:51 [DEBUG] Searching for the Keyword: 'Wireless Configuration'
+24-02-13 16:30:52 [DEBUG] Found and Clicked on the Result Containing 'Wireless Configuration'
+24-02-13 16:31:27 [DEBUG] Initializing Chrome WebDriver
+24-02-13 16:31:28 [INFO] Try to Login Through WebGUI
+24-02-13 16:31:56 [INFO] Initiating get SSID from gui
+24-02-13 16:31:56 [DEBUG] Searching for the Keyword: 'Wireless Configuration'
+24-02-13 16:31:57 [DEBUG] Found and Clicked on the Result Containing 'Wireless Configuration'
+24-02-13 16:33:33 [DEBUG] Initializing Chrome WebDriver
+24-02-13 16:33:35 [INFO] Try to Login Through WebGUI
+24-02-13 16:34:03 [INFO] Initiating get SSID from gui
+24-02-13 16:34:03 [DEBUG] Searching for the Keyword: 'Wireless Configuration'
+24-02-13 16:34:03 [DEBUG] Found and Clicked on the Result Containing 'Wireless Configuration'
+24-02-13 16:34:42 [DEBUG] Initializing Chrome WebDriver
+24-02-13 16:34:43 [INFO] Try to Login Through WebGUI
+24-02-13 16:35:11 [INFO] Initiating get SSID from gui
+24-02-13 16:35:11 [DEBUG] Searching for the Keyword: 'Wireless Configuration'
+24-02-13 16:35:12 [DEBUG] Found and Clicked on the Result Containing 'Wireless Configuration'
+24-02-13 16:36:25 [DEBUG] Initializing Chrome WebDriver
+24-02-13 16:36:26 [INFO] Try to Login Through WebGUI
+24-02-13 16:36:54 [INFO] Initiating get SSID from gui
+24-02-13 16:36:54 [DEBUG] Searching for the Keyword: 'Wireless Configuration'
+24-02-13 16:36:55 [DEBUG] Found and Clicked on the Result Containing 'Wireless Configuration'
+24-02-13 16:40:07 [DEBUG] Initializing Chrome WebDriver
+24-02-13 16:40:09 [INFO] Try to Login Through WebGUI
+24-02-13 16:40:37 [INFO] Initiating get SSID from gui
+24-02-13 16:40:37 [DEBUG] Searching for the Keyword: 'Wireless Configuration'
+24-02-13 16:40:37 [DEBUG] Found and Clicked on the Result Containing 'Wireless Configuration'
+24-02-13 16:41:54 [DEBUG] Initializing Chrome WebDriver
+24-02-13 16:41:55 [INFO] Try to Login Through WebGUI
+24-02-13 16:42:23 [INFO] Initiating get SSID from gui
+24-02-13 16:42:23 [DEBUG] Searching for the Keyword: 'Wireless Configuration'
+24-02-13 16:42:24 [DEBUG] Found and Clicked on the Result Containing 'Wireless Configuration'
+24-02-13 17:19:04 [DEBUG] Initializing Chrome WebDriver
+24-02-13 17:19:05 [INFO] Try to Login Through WebGUI
+24-02-13 17:19:33 [INFO] Initiating get SSID from gui
+24-02-13 17:19:33 [DEBUG] Searching for the Keyword: 'Wireless Configuration'
+24-02-13 17:19:34 [DEBUG] Found and Clicked on the Result Containing 'Wireless Configuration'
+>>>>>>> 74082d203898d7e97752f8d8d6dae7524e1a5461
