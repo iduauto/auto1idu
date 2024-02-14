@@ -56,7 +56,7 @@ class Utils:
     def clear_and_send_keys(self , keys , xpath=None , css_selector=None , id=None , timeout=30):
         try:
             input_field = self.find_element( xpath , css_selector , id )
-            input_field.click()
+            input_field.clear()
             input_field.send_keys( keys )
         except (TimeoutException , NoSuchElementException , timeout):
             raise NoSuchElementException( "Element not found within the specified timeout" )

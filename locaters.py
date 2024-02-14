@@ -89,8 +89,31 @@ LANInfo_IPv4DHCPServer = (
     "body > mainapp:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(4) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(3) > div:nth-child(7) > div:nth-child(2) > div:nth-child(1)"
 )
 
+#Wireless
+Wireless_Ssid = (
+    "/html/body/mainapp/div[1]/div[2]/div[4]/div/form/div/div[1]/div[3]/div[9]/input",
+    "#\/Wireless > div.jioWrtSectionContentContainer > div.jioWrtSectionContent > div:nth-child(9) > input[type=text]"
+)
 
+Wireless_ChangePasswordToggle_1 = (
+    "/html/body/mainapp/div[1]/div[2]/div[4]/div/form/div/div[1]/div[3]/div[15]/div/label/span"
+)
 
+Wireless_ChangePasswordToggle_2 = (
+    "/html/body/mainapp/div[1]/div[2]/div[4]/div/form/div/div[1]/div[3]/div[15]/label[2]/span"
+)
+
+Wireless_Password = (
+    '/html/body/mainapp/div[1]/div[2]/div[4]/div/form/div/div[1]/div[3]/div[17]/input'
+)
+
+Wireless_Confirmpassword = (
+    '/html/body/mainapp/div[1]/div[2]/div[4]/div/form/div/div[1]/div[3]/div[19]/input'
+)
+
+Wireless_SaveButton = (
+    '/html/body/mainapp/div[1]/div[2]/div[4]/div/form/div/div[3]/button'
+)
 
 
 

@@ -22,7 +22,6 @@ class Login:
         try:
             self.driver.get( input.URL )
 
-
             if self.utils.is_element_visible( "//div[@class='jioWrtErrorColor']" ):
                 logger.debug( "Device is in Factory Reset State" )
                 self.utils.clear_and_send_keys( input.username , *locaters.Login_Username )
