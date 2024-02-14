@@ -104,36 +104,42 @@ class Maintenance:
 
     #Firmware upgrade and downgrade
     def firmware_upgrade(self,image_file,signature_file):
-        self.utils.search_WebGUI("Firmware Upgrade")
-        self.utils.find_element("/html[1]/body[1]/mainapp[1]/div[1]/div[2]/div[4]/div[1]/form[1]/div[1]/div[1]/div[2]/div[1]/label[3]/*[name()='svg'][1]/*[name()='path'][1]").click()
-        time.sleep(3)
-        if os.path.exists( image_file ):
-            pyautogui.write( image_file )
-            pyautogui.press( 'enter' )
-            logger.debug( "Image File path entered successfully" )
-        else:
-            logger.error( "Image File NOT found" )
-            pyautogui.press( 'esc' )
-            return
+        logger.info("Upgrading firmware version ")
+        try:
+            self.utils.search_WebGUI("Firmware Upgrade")
 
-        time.sleep(10)
-        self.utils.find_element("/html[1]/body[1]/mainapp[1]/div[1]/div[2]/div[4]/div[1]/form[1]/div[1]/div[1]/div[2]/div[3]/label[3]/*[name()='svg'][1]/*[name()='path'][1]" ).click()
-        time.sleep( 3 )
-        if os.path.exists( signature_file ):
-            pyautogui.write( signature_file )
-            pyautogui.press( 'enter' )
-            logger.debug( "Signature File path entered successfully" )
-        else:
-            logger.error( "Signature File NOT found" )
-            pyautogui.press( 'esc' )
-            return
+            #uploading image file
+            self.utils.find_element("/html[1]/body[1]/mainapp[1]/div[1]/div[2]/div[4]/div[1]/form[1]/div[1]/div[1]/div[2]/div[1]/label[3]/*[name()='svg'][1]/*[name()='path'][1]").click()
+            time.sleep(3)
+            if os.path.exists( image_file ):
+                pyautogui.write( image_file )
+                pyautogui.press( 'enter' )
+                logger.debug( "Image File path entered successfully" )
+            else:
+                logger.error( "Image File NOT found" )
+                pyautogui.press( 'esc' )
+                return
+            time.sleep(10)
 
-        time.sleep( 10 )
-        self.utils.find_element("//button[normalize-space()='UPGRADE']").click()
-        time.sleep(5)
-        self.utils.find_element('//*[@id="root"]/div[1]/div[2]/div[4]/div[1]/div[2]/form/div[3]/button').click()
+            #uploading signature file
+            self.utils.find_element("/html[1]/body[1]/mainapp[1]/div[1]/div[2]/div[4]/div[1]/form[1]/div[1]/div[1]/div[2]/div[3]/label[3]/*[name()='svg'][1]/*[name()='path'][1]" ).click()
+            time.sleep( 3 )
+            if os.path.exists( signature_file ):
+                pyautogui.write( signature_file )
+                pyautogui.press( 'enter' )
+                logger.debug( "Signature File path entered successfully" )
+            else:
+                logger.error( "Signature File NOT found" )
+                pyautogui.press( 'esc' )
+                return
+            time.sleep( 10 )
 
-        time.sleep(200)
+            self.utils.find_element("//button[normalize-space()='UPGRADE']").click()
+            time.sleep(5)
+            self.utils.find_element('//*[@id="root"]/div[1]/div[2]/div[4]/div[1]/div[2]/form/div[3]/button').click()
+            time.sleep(200)
 
+        except Exception as e:
+            self.logger.error( f"An error occurred during firmware upgrade: {str( e )}" )
 
 
