@@ -3041,3 +3041,112 @@ Stacktrace:
 24-02-13 17:19:33 [DEBUG] Searching for the Keyword: 'Wireless Configuration'
 24-02-13 17:19:34 [DEBUG] Found and Clicked on the Result Containing 'Wireless Configuration'
 >>>>>>> 74082d203898d7e97752f8d8d6dae7524e1a5461
+24-02-14 11:59:30 [DEBUG] Initializing Chrome WebDriver
+24-02-14 11:59:32 [INFO] Try to Login Through WebGUI
+24-02-14 12:00:15 [INFO] Try to Login Through WebGUI
+24-02-14 12:00:57 [ERROR] Error Occurred While Login Through WebGUI: catching classes that do not inherit from BaseException is not allowed
+24-02-14 12:00:57 [DEBUG] Searching for the Keyword: 'Firmware Upgrade'
+24-02-14 12:00:57 [DEBUG] Found and Clicked on the Result Containing 'Firmware Upgrade'
+24-02-14 12:01:05 [DEBUG] Image File path entered successfully
+24-02-14 12:01:19 [DEBUG] Signature File path entered successfully
+24-02-14 12:08:25 [DEBUG] Initializing Chrome WebDriver
+24-02-14 12:08:26 [INFO] Try to Login Through WebGUI
+24-02-14 12:08:54 [INFO] Try to Login Through WebGUI
+24-02-14 12:09:21 [INFO] Initiating device restore, File Path: C:\Users\ontvi\Downloads\backup-jio-2024-02-13_enc.tar.gz
+24-02-14 12:09:21 [DEBUG] Searching for the Keyword: 'Restore Settings'
+24-02-14 12:09:21 [DEBUG] Found and Clicked on the Result Containing 'Restore Settings'
+24-02-14 12:09:30 [DEBUG] File path entered successfully
+24-02-14 12:09:30 [DEBUG] Wait for the Restore process to complete : 200s
+24-02-14 14:48:51 [DEBUG] Initializing Chrome WebDriver
+24-02-14 14:48:53 [INFO] Try to Login Through WebGUI
+24-02-14 14:51:23 [DEBUG] Initializing Chrome WebDriver
+24-02-14 14:51:24 [INFO] Try to Login Through WebGUI
+24-02-14 14:51:52 [DEBUG] ======================================================================================
+24-02-14 14:51:52 [DEBUG] Validating MAC Address after Reboot and Reset
+24-02-14 14:51:52 [INFO] Try to Login Through WebGUI
+24-02-14 14:52:18 [INFO] Performing health check
+24-02-14 14:52:18 [INFO] Getting WAN Firmware Version
+24-02-14 14:52:18 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-14 14:52:19 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-14 14:52:24 [INFO] Device is having latest firmware: ARCNJIO_JIDU6101_D1.9.0
+24-02-14 14:52:24 [INFO] Getting WAN IPv6 Information
+24-02-14 14:52:24 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-14 14:52:25 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-14 14:52:30 [INFO] Successfully retrieved WAN IPv6 address: 2409:4090:17:1000:db55:d35f:17d1:691f, 2409:4090:17:1008::/64
+24-02-14 14:52:30 [INFO] Checking Ping 4 to google.com
+24-02-14 14:52:49 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-14 14:52:49 [INFO] Ping 4 Passed
+24-02-14 14:52:49 [INFO] Checking Ping 6 to google.com
+24-02-14 14:53:09 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-14 14:53:09 [INFO] Ping 6 Passed
+24-02-14 14:53:09 [INFO] Device health check completed successfully.
+24-02-14 14:53:09 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-14 14:53:09 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-14 14:53:14 [DEBUG] WAN MAC Address before Reboot: 78:c5:7d:04:43:c6
+24-02-14 14:53:14 [INFO] Initiating device reboot
+24-02-14 14:53:14 [DEBUG] Searching for the Keyword: 'Factory Defaults / Reboot'
+24-02-14 14:53:15 [DEBUG] Found and Clicked on the Result Containing 'Factory Defaults / Reboot'
+24-02-14 14:53:20 [DEBUG] Wait for the reboot process to complete : 200s
+24-02-14 14:56:40 [INFO] Try to Login Through WebGUI
+24-02-14 14:57:22 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-14 14:57:22 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-14 14:57:27 [DEBUG] WAN MAC Address after Reboot: 78:c5:7d:04:43:c6
+24-02-14 14:57:27 [INFO] WAN MAC Address after Reboot is the same
+24-02-14 14:57:27 [INFO] Initiating device factory defaults
+24-02-14 14:57:27 [DEBUG] Searching for the Keyword: 'Factory Defaults / Reboot'
+24-02-14 14:57:28 [DEBUG] Found and Clicked on the Result Containing 'Factory Defaults / Reboot'
+24-02-14 14:57:33 [DEBUG] Wait for the reset process to complete : 200s
+24-02-14 15:00:53 [INFO] Device reset to factory defaults completed successfully
+24-02-14 15:00:53 [INFO] Try to Login Through WebGUI
+24-02-14 15:00:55 [DEBUG] Device is in Factory Reset State
+24-02-14 15:01:32 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-14 15:01:32 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-14 15:01:37 [DEBUG] WAN MAC Address after Reset: 78:c5:7d:04:43:c6
+24-02-14 15:01:37 [INFO] WAN MAC Address after Factory Reset is same
+24-02-14 15:01:37 [INFO] MAC Address is same after Reboot and Reset
+24-02-14 15:01:37 [INFO] Try to Login Through WebGUI
+24-02-14 15:02:18 [ERROR] Error Occurred While Login Through WebGUI: catching classes that do not inherit from BaseException is not allowed
+24-02-14 15:07:08 [DEBUG] Initializing Chrome WebDriver
+24-02-14 15:07:09 [DEBUG] ======================================================================================
+24-02-14 15:07:09 [DEBUG] Validating MAC Address after Reboot and Reset
+24-02-14 15:07:09 [INFO] Try to Login Through WebGUI
+24-02-14 15:07:37 [INFO] Performing health check
+24-02-14 15:07:37 [INFO] Getting WAN Firmware Version
+24-02-14 15:07:37 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-14 15:07:38 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-14 15:07:43 [INFO] Device is having latest firmware: ARCNJIO_JIDU6101_D1.9.0
+24-02-14 15:07:43 [INFO] Getting WAN IPv6 Information
+24-02-14 15:07:43 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-14 15:07:43 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-14 15:07:48 [INFO] Successfully retrieved WAN IPv6 address: 2409:4090:17:1000:db55:d35f:17d1:691f, 2409:4090:17:1008::/64
+24-02-14 15:07:48 [INFO] Checking Ping 4 to google.com
+24-02-14 15:08:08 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-14 15:08:08 [INFO] Ping 4 Passed
+24-02-14 15:08:08 [INFO] Checking Ping 6 to google.com
+24-02-14 15:08:27 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-14 15:08:27 [INFO] Ping 6 Passed
+24-02-14 15:08:27 [INFO] Device health check completed successfully.
+24-02-14 15:08:27 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-14 15:08:27 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-14 15:08:32 [DEBUG] WAN MAC Address before Reboot: 78:c5:7d:04:43:c6
+24-02-14 15:08:32 [INFO] Initiating device reboot
+24-02-14 15:08:32 [DEBUG] Searching for the Keyword: 'Factory Defaults / Reboot'
+24-02-14 15:08:33 [DEBUG] Found and Clicked on the Result Containing 'Factory Defaults / Reboot'
+24-02-14 15:08:38 [DEBUG] Wait for the reboot process to complete : 200s
+24-02-14 15:11:58 [INFO] Try to Login Through WebGUI
+24-02-14 15:12:39 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-14 15:12:40 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-14 15:12:45 [DEBUG] WAN MAC Address after Reboot: 78:c5:7d:04:43:c6
+24-02-14 15:12:45 [INFO] WAN MAC Address is same after Reboot 
+24-02-14 15:12:45 [INFO] Initiating device factory defaults
+24-02-14 15:12:45 [DEBUG] Searching for the Keyword: 'Factory Defaults / Reboot'
+24-02-14 15:12:45 [DEBUG] Found and Clicked on the Result Containing 'Factory Defaults / Reboot'
+24-02-14 15:12:51 [DEBUG] Wait for the reset process to complete : 200s
+24-02-14 15:16:11 [INFO] Device reset to factory defaults completed successfully
+24-02-14 15:16:11 [INFO] Try to Login Through WebGUI
+24-02-14 15:16:13 [DEBUG] Device is in Factory Reset State
+24-02-14 15:16:49 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-14 15:16:50 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-14 15:16:55 [DEBUG] WAN MAC Address after Reset: 78:c5:7d:04:43:c6
+24-02-14 15:16:55 [INFO] WAN MAC Address is same after Factory Reset
+24-02-14 15:16:55 [INFO] MAC Address is same after Reboot and Reset
