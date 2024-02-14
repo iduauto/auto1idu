@@ -4,7 +4,7 @@ default_password = "Jiocentrum"
 
 URL="https://192.168.31.1"
 latest_firmware_version="ARCNJIO_JIDU6101_D1.9.0"
-
+ada='adfa'
 
 upgrade='ARCNJIO_JIDU6101_D1.9.0'
 downgrade='ARCNJIO_JIDU6101_D1.8.5'
