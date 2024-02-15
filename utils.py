@@ -139,28 +139,15 @@ class Utils:
 
     # Checking Firmware Version
     def get_firmware_version(self):
-        logger.info( "Getting WAN Firmware Version" )
-        result = {"status": False , "value": ""}
-
+        logger.debug("Retrieving Firmware Version.....")
         try:
             self.search_WebGUI( "WAN Information" )
-            firmware_version_element = self.find_element( *locaters.SysInfo_FirmwareVersion )
-            firmware_version = firmware_version_element.text
-            result["value"] = firmware_version
-
-            if firmware_version and firmware_version == input.latest_firmware_version:
-                result["status"] = True
-                logger.info( f"Device is having latest firmware: {firmware_version}" )
-            else:
-                result["status"] = False
-                logger.error( f"Device is NOT having the latest firmware: {firmware_version}" )
-
-        except NoSuchElementException:
-            logger.error( "Firmware Version element not found on the page " )
+            firmware_version = self.find_element( *locaters.SysInfo_FirmwareVersion ).text
+            logger.info( f"Current firmware version: {firmware_version}" )
+            return firmware_version
         except Exception as e:
             logger.error( f"An error occurred while fetching Firmware Version: {e}" )
 
-        return result
 
     # Taking DBG logs
     def get_DBGLogs(self):

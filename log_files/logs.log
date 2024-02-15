@@ -3150,3 +3150,578 @@ Stacktrace:
 24-02-14 15:16:55 [DEBUG] WAN MAC Address after Reset: 78:c5:7d:04:43:c6
 24-02-14 15:16:55 [INFO] WAN MAC Address is same after Factory Reset
 24-02-14 15:16:55 [INFO] MAC Address is same after Reboot and Reset
+24-02-14 16:52:37 [DEBUG] Initializing Chrome WebDriver
+24-02-14 16:54:11 [DEBUG] Initializing Chrome WebDriver
+24-02-14 16:54:26 [DEBUG] Initializing Chrome WebDriver
+24-02-14 16:54:57 [DEBUG] ======================================================================================
+24-02-14 16:54:57 [DEBUG] Validating MAC Address after Reboot and Reset
+24-02-14 16:54:57 [INFO] Try to Login Through WebGUI
+24-02-14 16:54:57 [ERROR] Error Occurred While Login Through WebGUI: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=121.0.6167.161)
+Stacktrace:
+	GetHandleVerifier [0x00481673+52979]
+	(No symbol) [0x00407961]
+	(No symbol) [0x002EDD3D]
+	(No symbol) [0x002D239A]
+	(No symbol) [0x0034A71B]
+	(No symbol) [0x0035ACB6]
+	(No symbol) [0x00344286]
+	(No symbol) [0x0031C063]
+	(No symbol) [0x0031CECD]
+	GetHandleVerifier [0x00798D83+3294723]
+	GetHandleVerifier [0x007D6CC2+3548482]
+	GetHandleVerifier [0x007D1C9C+3527964]
+	GetHandleVerifier [0x0051870E+671630]
+	(No symbol) [0x00411EB4]
+	(No symbol) [0x0040D808]
+	(No symbol) [0x0040D92D]
+	(No symbol) [0x003FF7E0]
+	BaseThreadInitThunk [0x77D6FCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x77EB7C6E+286]
+	RtlGetAppContainerNamedObjectPath [0x77EB7C3E+238]
+
+24-02-14 16:54:57 [INFO] Performing health check
+24-02-14 16:54:57 [INFO] Getting WAN Firmware Version
+24-02-14 16:54:57 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-14 16:54:57 [ERROR] Error Occurred While Searching for the Keyword: 'WAN Information': Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=121.0.6167.161)
+Stacktrace:
+	GetHandleVerifier [0x00481673+52979]
+	(No symbol) [0x00407961]
+	(No symbol) [0x002EDD3D]
+	(No symbol) [0x002D239A]
+	(No symbol) [0x0034A71B]
+	(No symbol) [0x0035ACB6]
+	(No symbol) [0x00344286]
+	(No symbol) [0x0031C063]
+	(No symbol) [0x0031CECD]
+	GetHandleVerifier [0x00798D83+3294723]
+	GetHandleVerifier [0x007D6CC2+3548482]
+	GetHandleVerifier [0x007D1C9C+3527964]
+	GetHandleVerifier [0x0051870E+671630]
+	(No symbol) [0x00411EB4]
+	(No symbol) [0x0040D808]
+	(No symbol) [0x0040D92D]
+	(No symbol) [0x003FF7E0]
+	BaseThreadInitThunk [0x77D6FCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x77EB7C6E+286]
+	RtlGetAppContainerNamedObjectPath [0x77EB7C3E+238]
+
+24-02-14 16:54:57 [ERROR] An error occurred while fetching Firmware Version: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=121.0.6167.161)
+Stacktrace:
+	GetHandleVerifier [0x00481673+52979]
+	(No symbol) [0x00407961]
+	(No symbol) [0x002EDD3D]
+	(No symbol) [0x002D239A]
+	(No symbol) [0x0034A71B]
+	(No symbol) [0x0035ACB6]
+	(No symbol) [0x00344286]
+	(No symbol) [0x0031C063]
+	(No symbol) [0x0031CECD]
+	GetHandleVerifier [0x00798D83+3294723]
+	GetHandleVerifier [0x007D6CC2+3548482]
+	GetHandleVerifier [0x007D1C9C+3527964]
+	GetHandleVerifier [0x0051870E+671630]
+	(No symbol) [0x00411EB4]
+	(No symbol) [0x0040D808]
+	(No symbol) [0x0040D92D]
+	(No symbol) [0x003FF7E0]
+	BaseThreadInitThunk [0x77D6FCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x77EB7C6E+286]
+	RtlGetAppContainerNamedObjectPath [0x77EB7C3E+238]
+
+24-02-14 16:54:57 [INFO] Getting WAN IPv6 Information
+24-02-14 16:54:57 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-14 16:54:57 [ERROR] Error Occurred While Searching for the Keyword: 'WAN Information': Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=121.0.6167.161)
+Stacktrace:
+	GetHandleVerifier [0x00481673+52979]
+	(No symbol) [0x00407961]
+	(No symbol) [0x002EDD3D]
+	(No symbol) [0x002D239A]
+	(No symbol) [0x0034A71B]
+	(No symbol) [0x0035ACB6]
+	(No symbol) [0x00344286]
+	(No symbol) [0x0031C063]
+	(No symbol) [0x0031CECD]
+	GetHandleVerifier [0x00798D83+3294723]
+	GetHandleVerifier [0x007D6CC2+3548482]
+	GetHandleVerifier [0x007D1C9C+3527964]
+	GetHandleVerifier [0x0051870E+671630]
+	(No symbol) [0x00411EB4]
+	(No symbol) [0x0040D808]
+	(No symbol) [0x0040D92D]
+	(No symbol) [0x003FF7E0]
+	BaseThreadInitThunk [0x77D6FCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x77EB7C6E+286]
+	RtlGetAppContainerNamedObjectPath [0x77EB7C3E+238]
+
+24-02-14 16:54:57 [ERROR] An error occurred while fetching WAN IPv6 info: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=121.0.6167.161)
+Stacktrace:
+	GetHandleVerifier [0x00481673+52979]
+	(No symbol) [0x00407961]
+	(No symbol) [0x002EDD3D]
+	(No symbol) [0x002D239A]
+	(No symbol) [0x0034A71B]
+	(No symbol) [0x0035ACB6]
+	(No symbol) [0x00344286]
+	(No symbol) [0x0031C063]
+	(No symbol) [0x0031CECD]
+	GetHandleVerifier [0x00798D83+3294723]
+	GetHandleVerifier [0x007D6CC2+3548482]
+	GetHandleVerifier [0x007D1C9C+3527964]
+	GetHandleVerifier [0x0051870E+671630]
+	(No symbol) [0x00411EB4]
+	(No symbol) [0x0040D808]
+	(No symbol) [0x0040D92D]
+	(No symbol) [0x003FF7E0]
+	BaseThreadInitThunk [0x77D6FCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x77EB7C6E+286]
+	RtlGetAppContainerNamedObjectPath [0x77EB7C3E+238]
+
+24-02-14 16:54:57 [INFO] Checking Ping 4 to google.com
+24-02-14 16:55:09 [DEBUG] Initializing Chrome WebDriver
+24-02-14 16:57:15 [DEBUG] Initializing Chrome WebDriver
+24-02-14 16:58:59 [DEBUG] Initializing Chrome WebDriver
+24-02-14 16:59:17 [DEBUG] Initializing Chrome WebDriver
+24-02-14 16:59:18 [DEBUG] ======================================================================================
+24-02-14 16:59:18 [INFO] Validating Firmware Upgrade and Downgrade functionality
+24-02-14 16:59:18 [INFO] Try to Login Through WebGUI
+24-02-14 16:59:46 [INFO] Performing health check
+24-02-14 16:59:46 [INFO] Getting WAN Firmware Version
+24-02-14 16:59:46 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-14 16:59:47 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-14 16:59:52 [INFO] Device is having latest firmware: ARCNJIO_JIDU6101_D1.9.0
+24-02-14 16:59:52 [INFO] Getting WAN IPv6 Information
+24-02-14 16:59:52 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-14 16:59:52 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-14 16:59:57 [INFO] Successfully retrieved WAN IPv6 address: 2409:4090:17:1000:db55:d35f:17d1:691f, 2409:4090:17:1008::/64
+24-02-14 16:59:57 [INFO] Checking Ping 4 to google.com
+24-02-14 17:00:16 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-14 17:00:16 [INFO] Ping 4 Passed
+24-02-14 17:00:16 [INFO] Checking Ping 6 to google.com
+24-02-14 17:00:36 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-14 17:00:36 [INFO] Ping 6 Passed
+24-02-14 17:00:36 [INFO] Device health check completed successfully.
+24-02-14 17:00:36 [INFO] Upgrading firmware version 
+24-02-14 17:00:36 [DEBUG] Searching for the Keyword: 'Firmware Upgrade'
+24-02-14 17:00:36 [DEBUG] Found and Clicked on the Result Containing 'Firmware Upgrade'
+24-02-14 17:00:44 [ERROR] Image File NOT found
+24-02-14 17:00:44 [INFO] Try to Login Through WebGUI
+24-02-14 17:01:17 [ERROR] Error Occurred While Login Through WebGUI: catching classes that do not inherit from BaseException is not allowed
+24-02-14 17:01:17 [INFO] Getting WAN Firmware Version
+24-02-14 17:01:17 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-14 17:01:33 [ERROR] Error Occurred While Searching for the Keyword: 'WAN Information': HTTPConnectionPool(host='localhost', port=62788): Max retries exceeded with url: /session/cf3fcd347ed624665f6c9c48069867d1/element (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001285861D120>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+24-02-14 17:01:49 [ERROR] An error occurred while fetching Firmware Version: HTTPConnectionPool(host='localhost', port=62788): Max retries exceeded with url: /session/cf3fcd347ed624665f6c9c48069867d1/element (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001285861DF60>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+24-02-14 17:01:49 [ERROR] Firmware is not Downgraded 
+24-02-14 17:01:49 [INFO] Upgrading firmware version 
+24-02-14 17:01:49 [DEBUG] Searching for the Keyword: 'Firmware Upgrade'
+24-02-14 17:02:06 [ERROR] Error Occurred While Searching for the Keyword: 'Firmware Upgrade': HTTPConnectionPool(host='localhost', port=62788): Max retries exceeded with url: /session/cf3fcd347ed624665f6c9c48069867d1/element (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001285861D420>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+24-02-14 17:02:12 [DEBUG] Initializing Chrome WebDriver
+24-02-14 17:02:13 [DEBUG] ======================================================================================
+24-02-14 17:02:13 [INFO] Validating Firmware Upgrade and Downgrade functionality
+24-02-14 17:02:13 [INFO] Try to Login Through WebGUI
+24-02-14 17:04:08 [DEBUG] Initializing Chrome WebDriver
+24-02-14 17:04:09 [DEBUG] ======================================================================================
+24-02-14 17:04:09 [INFO] Validating Firmware Upgrade and Downgrade functionality
+24-02-14 17:04:09 [INFO] Try to Login Through WebGUI
+24-02-14 17:04:37 [INFO] Performing health check
+24-02-14 17:04:37 [INFO] Getting WAN Firmware Version
+24-02-14 17:04:37 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-14 17:04:38 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-14 17:04:43 [INFO] Device is having latest firmware: ARCNJIO_JIDU6101_D1.9.0
+24-02-14 17:04:43 [INFO] Getting WAN IPv6 Information
+24-02-14 17:04:43 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-14 17:04:43 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-14 17:04:48 [INFO] Successfully retrieved WAN IPv6 address: 2409:4090:17:1000:db55:d35f:17d1:691f, 2409:4090:17:1008::/64
+24-02-14 17:04:48 [INFO] Checking Ping 4 to google.com
+24-02-14 17:05:08 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-14 17:05:08 [INFO] Ping 4 Passed
+24-02-14 17:05:08 [INFO] Checking Ping 6 to google.com
+24-02-14 17:05:27 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-14 17:05:27 [INFO] Ping 6 Passed
+24-02-14 17:05:27 [INFO] Device health check completed successfully.
+24-02-14 17:05:27 [INFO] Upgrading firmware version 
+24-02-14 17:05:27 [DEBUG] Searching for the Keyword: 'Firmware Upgrade'
+24-02-14 17:05:27 [DEBUG] Found and Clicked on the Result Containing 'Firmware Upgrade'
+24-02-14 17:05:36 [DEBUG] Image File path entered successfully
+24-02-14 17:05:49 [DEBUG] Signature File path entered successfully
+24-02-14 17:09:24 [INFO] Try to Login Through WebGUI
+24-02-14 17:10:06 [INFO] Getting WAN Firmware Version
+24-02-14 17:10:06 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-14 17:10:07 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-14 17:10:12 [ERROR] Device is NOT having the latest firmware: ARCNJIO_JIDU6101_D1.8.5
+24-02-14 17:10:12 [ERROR] Firmware is not Downgraded 
+24-02-14 17:10:12 [INFO] Upgrading firmware version 
+24-02-14 17:10:12 [DEBUG] Searching for the Keyword: 'Firmware Upgrade'
+24-02-14 17:10:12 [DEBUG] Found and Clicked on the Result Containing 'Firmware Upgrade'
+24-02-14 17:10:20 [DEBUG] Image File path entered successfully
+24-02-14 17:10:34 [DEBUG] Signature File path entered successfully
+24-02-14 17:14:09 [INFO] Try to Login Through WebGUI
+24-02-14 17:14:51 [INFO] Getting WAN Firmware Version
+24-02-14 17:14:51 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-14 17:14:51 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-14 17:14:56 [INFO] Device is having latest firmware: ARCNJIO_JIDU6101_D1.9.0
+24-02-14 17:14:56 [ERROR] Firmware is not Upgraded 
+24-02-14 17:14:56 [INFO] Try to Login Through WebGUI
+24-02-14 17:15:37 [ERROR] Error Occurred While Login Through WebGUI: catching classes that do not inherit from BaseException is not allowed
+24-02-14 17:15:37 [INFO] Performing health check
+24-02-14 17:15:37 [INFO] Getting WAN Firmware Version
+24-02-14 17:15:37 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-14 17:15:38 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-14 17:15:43 [INFO] Device is having latest firmware: ARCNJIO_JIDU6101_D1.9.0
+24-02-14 17:15:43 [INFO] Getting WAN IPv6 Information
+24-02-14 17:15:43 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-14 17:15:44 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-14 17:15:49 [INFO] Successfully retrieved WAN IPv6 address: 2409:4090:17:1000:db55:d35f:17d1:691f, 2409:4090:17:1008::/64
+24-02-14 17:15:49 [INFO] Checking Ping 4 to google.com
+24-02-14 17:16:08 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-14 17:16:08 [INFO] Ping 4 Passed
+24-02-14 17:16:08 [INFO] Checking Ping 6 to google.com
+24-02-14 17:16:27 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-14 17:16:27 [INFO] Ping 6 Passed
+24-02-14 17:16:27 [INFO] Device health check completed successfully.
+24-02-14 17:16:27 [ERROR] Firmware Upgrade and Downgrade functionality is NOT working as Expected
+24-02-14 17:18:29 [DEBUG] Initializing Chrome WebDriver
+24-02-14 17:18:30 [DEBUG] ======================================================================================
+24-02-14 17:18:30 [INFO] Validating Firmware Upgrade and Downgrade functionality
+24-02-14 17:18:30 [INFO] Try to Login Through WebGUI
+24-02-14 17:18:58 [INFO] Performing health check
+24-02-14 17:18:58 [INFO] Getting WAN Firmware Version
+24-02-14 17:18:58 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-14 17:18:59 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-14 17:19:04 [ERROR] Device is NOT having the latest firmware: ARCNJIO_JIDU6101_D1.9.0
+24-02-14 17:19:04 [INFO] Getting WAN IPv6 Information
+24-02-14 17:19:04 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-14 17:19:04 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-14 17:19:09 [INFO] Successfully retrieved WAN IPv6 address: 2409:4090:17:1000:db55:d35f:17d1:691f, 2409:4090:17:1008::/64
+24-02-14 17:19:09 [INFO] Checking Ping 4 to google.com
+24-02-14 17:19:29 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-14 17:19:29 [INFO] Ping 4 Passed
+24-02-14 17:19:29 [INFO] Checking Ping 6 to google.com
+24-02-14 17:19:48 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-14 17:19:48 [INFO] Ping 6 Passed
+24-02-14 17:19:48 [ERROR] Device health check completed with 1 issue(s): Failed to retrieve firmware version.
+24-02-14 17:19:48 [ERROR] Device health check failed. Exiting the test.
+24-02-14 17:19:48 [WARNING] Initiating DBG log collection after encountering an issue
+24-02-14 17:19:52 [WARNING] DBG log collected at: 2024-02-14 17:19:52.527619
+24-02-14 18:00:37 [DEBUG] Initializing Chrome WebDriver
+24-02-14 18:00:38 [DEBUG] ======================================================================================
+24-02-14 18:00:38 [INFO] Validating Firmware Upgrade and Downgrade functionality
+24-02-14 18:00:38 [INFO] Try to Login Through WebGUI
+24-02-14 18:01:06 [INFO] Performing health check
+24-02-14 18:01:06 [INFO] Getting WAN Firmware Version
+24-02-14 18:01:06 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-14 18:01:06 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-14 18:01:12 [ERROR] Device is NOT having the latest firmware: ARCNJIO_JIDU6101_D1.9.0
+24-02-14 18:01:12 [INFO] Getting WAN IPv6 Information
+24-02-14 18:01:12 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-14 18:01:12 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-14 18:02:41 [DEBUG] Initializing Chrome WebDriver
+24-02-14 18:02:42 [DEBUG] ======================================================================================
+24-02-14 18:02:42 [INFO] Validating Firmware Upgrade and Downgrade functionality
+24-02-14 18:02:42 [INFO] Try to Login Through WebGUI
+24-02-14 18:03:10 [INFO] Performing health check
+24-02-14 18:03:10 [INFO] Getting WAN Firmware Version
+24-02-14 18:03:10 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-14 18:03:11 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-14 18:03:16 [INFO] Device is having latest firmware: ARCNJIO_JIDU6101_D1.9.0
+24-02-14 18:03:16 [INFO] Getting WAN IPv6 Information
+24-02-14 18:03:16 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-14 18:03:16 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-14 18:03:21 [INFO] Successfully retrieved WAN IPv6 address: 2409:4090:17:1000:db55:d35f:17d1:691f, 2409:4090:17:1008::/64
+24-02-14 18:03:21 [INFO] Checking Ping 4 to google.com
+24-02-14 18:03:56 [DEBUG] Initializing Chrome WebDriver
+24-02-14 18:03:58 [DEBUG] ======================================================================================
+24-02-14 18:03:58 [INFO] Validating Firmware Upgrade and Downgrade functionality
+24-02-14 18:03:58 [INFO] Try to Login Through WebGUI
+24-02-14 18:04:26 [INFO] Performing health check
+24-02-14 18:04:26 [INFO] Getting WAN Firmware Version
+24-02-14 18:04:26 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-14 18:04:26 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-14 18:04:31 [INFO] Device is having latest firmware: ARCNJIO_JIDU6101_D1.9.0
+24-02-14 18:04:31 [INFO] Getting WAN IPv6 Information
+24-02-14 18:04:31 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-14 18:04:32 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-14 18:04:37 [INFO] Successfully retrieved WAN IPv6 address: 2409:4090:17:1000:db55:d35f:17d1:691f, 2409:4090:17:1008::/64
+24-02-14 18:04:37 [INFO] Checking Ping 4 to google.com
+24-02-14 18:04:56 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-14 18:04:56 [INFO] Ping 4 Passed
+24-02-14 18:04:56 [INFO] Checking Ping 6 to google.com
+24-02-14 18:05:15 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-14 18:05:15 [INFO] Ping 6 Passed
+24-02-14 18:05:15 [INFO] Device health check completed successfully.
+24-02-14 18:05:15 [INFO] Upgrading firmware version 
+24-02-14 18:05:15 [DEBUG] Searching for the Keyword: 'Firmware Upgrade'
+24-02-14 18:05:16 [DEBUG] Found and Clicked on the Result Containing 'Firmware Upgrade'
+24-02-14 18:05:24 [DEBUG] Image File path entered successfully
+24-02-14 18:05:38 [DEBUG] Signature File path entered successfully
+24-02-14 18:05:53 [DEBUG] Wait for the upgrade process to complete : 200s
+24-02-14 18:09:13 [INFO] Try to Login Through WebGUI
+24-02-14 18:09:55 [INFO] Getting WAN Firmware Version
+24-02-14 18:09:55 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-14 18:09:55 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-14 18:10:00 [ERROR] Device is NOT having the latest firmware: ARCNJIO_JIDU6101_D1.8.5
+24-02-14 18:10:00 [ERROR] Firmware is not Downgraded 
+24-02-14 18:10:00 [INFO] Upgrading firmware version 
+24-02-14 18:10:00 [DEBUG] Searching for the Keyword: 'Firmware Upgrade'
+24-02-14 18:10:01 [DEBUG] Found and Clicked on the Result Containing 'Firmware Upgrade'
+24-02-14 18:10:09 [DEBUG] Image File path entered successfully
+24-02-14 18:10:22 [DEBUG] Signature File path entered successfully
+24-02-14 18:10:53 [ERROR] An error occurred during firmware upgrade: Message: element not interactable
+  (Session info: chrome=121.0.6167.161)
+Stacktrace:
+	GetHandleVerifier [0x00481673+52979]
+	(No symbol) [0x00407961]
+	(No symbol) [0x002EDC00]
+	(No symbol) [0x00326F63]
+	(No symbol) [0x0031E010]
+	(No symbol) [0x003444EC]
+	(No symbol) [0x0031DA4E]
+	(No symbol) [0x00344784]
+	(No symbol) [0x0035B3FE]
+	(No symbol) [0x00344286]
+	(No symbol) [0x0031C063]
+	(No symbol) [0x0031CECD]
+	GetHandleVerifier [0x00798D83+3294723]
+	GetHandleVerifier [0x007D6CC2+3548482]
+	GetHandleVerifier [0x007D1C9C+3527964]
+	GetHandleVerifier [0x0051870E+671630]
+	(No symbol) [0x00411EB4]
+	(No symbol) [0x0040D808]
+	(No symbol) [0x0040D92D]
+	(No symbol) [0x003FF7E0]
+	BaseThreadInitThunk [0x77D6FCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x77EB7C6E+286]
+	RtlGetAppContainerNamedObjectPath [0x77EB7C3E+238]
+
+24-02-14 18:10:53 [INFO] Try to Login Through WebGUI
+24-02-14 18:11:34 [ERROR] Error Occurred While Login Through WebGUI: catching classes that do not inherit from BaseException is not allowed
+24-02-14 18:11:34 [INFO] Getting WAN Firmware Version
+24-02-14 18:11:34 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-14 18:11:35 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-14 18:11:40 [ERROR] Device is NOT having the latest firmware: ARCNJIO_JIDU6101_D1.8.5
+24-02-14 18:11:40 [ERROR] Firmware is not Upgraded 
+24-02-14 18:11:40 [INFO] Try to Login Through WebGUI
+24-02-14 18:12:21 [ERROR] Error Occurred While Login Through WebGUI: catching classes that do not inherit from BaseException is not allowed
+24-02-14 18:12:21 [INFO] Performing health check
+24-02-14 18:12:21 [INFO] Getting WAN Firmware Version
+24-02-14 18:12:21 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-14 18:12:21 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-14 18:12:27 [ERROR] Device is NOT having the latest firmware: ARCNJIO_JIDU6101_D1.8.5
+24-02-14 18:12:27 [INFO] Getting WAN IPv6 Information
+24-02-14 18:12:27 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-14 18:12:27 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-14 18:12:32 [INFO] Successfully retrieved WAN IPv6 address: 2409:4090:17:1000:db55:d35f:17d1:691f, 2409:4090:17:1008::/64
+24-02-14 18:12:32 [INFO] Checking Ping 4 to google.com
+24-02-14 18:12:51 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-14 18:12:51 [INFO] Ping 4 Passed
+24-02-14 18:12:51 [INFO] Checking Ping 6 to google.com
+24-02-14 18:13:11 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-14 18:13:11 [INFO] Ping 6 Passed
+24-02-14 18:13:11 [ERROR] Device health check completed with 1 issue(s): Failed to retrieve firmware version.
+24-02-14 18:13:11 [ERROR] Device health check failed
+24-02-14 18:13:11 [ERROR] Firmware Upgrade and Downgrade functionality is NOT working as Expected
+24-02-14 18:16:39 [DEBUG] Initializing Chrome WebDriver
+24-02-14 18:16:40 [DEBUG] ======================================================================================
+24-02-14 18:16:40 [INFO] Validating Firmware Upgrade and Downgrade functionality
+24-02-14 18:16:40 [INFO] Try to Login Through WebGUI
+24-02-14 18:17:08 [INFO] Performing health check
+24-02-14 18:17:08 [DEBUG] Retrieving Firmware Version.....
+24-02-14 18:17:08 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-14 18:17:09 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-14 18:17:14 [INFO] Current firmware version: ARCNJIO_JIDU6101_D1.8.5
+24-02-14 18:17:14 [INFO] Getting WAN IPv6 Information
+24-02-14 18:17:14 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-14 18:17:14 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-14 18:17:19 [INFO] Successfully retrieved WAN IPv6 address: 2409:4090:17:1000:db55:d35f:17d1:691f, 2409:4090:17:1008::/64
+24-02-14 18:17:19 [INFO] Checking Ping 4 to google.com
+24-02-14 18:17:39 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-14 18:17:39 [INFO] Ping 4 Passed
+24-02-14 18:17:39 [INFO] Checking Ping 6 to google.com
+24-02-14 18:17:58 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-14 18:17:58 [INFO] Ping 6 Passed
+24-02-14 18:17:58 [ERROR] Device health check completed with 1 issue(s): Device is not having latest firmware version
+24-02-14 18:17:58 [ERROR] Device health check failed. Exiting the test.
+24-02-14 18:17:58 [WARNING] Initiating DBG log collection after encountering an issue
+24-02-14 18:22:23 [DEBUG] Initializing Chrome WebDriver
+24-02-14 18:22:24 [DEBUG] ======================================================================================
+24-02-14 18:22:24 [INFO] Validating Firmware Upgrade and Downgrade functionality
+24-02-14 18:22:24 [INFO] Try to Login Through WebGUI
+24-02-14 18:22:52 [INFO] Performing health check
+24-02-14 18:22:52 [DEBUG] Retrieving Firmware Version.....
+24-02-14 18:22:52 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-14 18:22:53 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-14 18:22:58 [INFO] Current firmware version: ARCNJIO_JIDU6101_D1.8.5
+24-02-14 18:22:58 [ERROR] Device is not having latest firmware version
+24-02-14 18:22:58 [INFO] Getting WAN IPv6 Information
+24-02-14 18:22:58 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-14 18:22:58 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-14 18:23:03 [INFO] Successfully retrieved WAN IPv6 address: 2409:4090:17:1000:db55:d35f:17d1:691f, 2409:4090:17:1008::/64
+24-02-14 18:23:03 [INFO] Checking Ping 4 to google.com
+24-02-14 18:23:23 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-14 18:23:23 [INFO] Ping 4 Passed
+24-02-14 18:23:23 [INFO] Checking Ping 6 to google.com
+24-02-14 18:23:42 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-14 18:23:42 [INFO] Ping 6 Passed
+24-02-14 18:23:42 [ERROR] Device health check completed with 1 issue(s): Device is not having latest firmware version
+24-02-14 18:23:42 [ERROR] Device health check failed. Exiting the test.
+24-02-14 18:23:42 [WARNING] Initiating DBG log collection after encountering an issue
+24-02-14 18:23:46 [WARNING] DBG log collected at: 2024-02-14 18:23:46.293407
+24-02-14 18:24:39 [DEBUG] Initializing Chrome WebDriver
+24-02-14 18:24:40 [DEBUG] ======================================================================================
+24-02-14 18:24:40 [INFO] Validating Firmware Upgrade and Downgrade functionality
+24-02-14 18:24:40 [INFO] Try to Login Through WebGUI
+24-02-14 18:25:07 [INFO] Performing health check
+24-02-14 18:25:07 [DEBUG] Retrieving Firmware Version.....
+24-02-14 18:25:07 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-14 18:25:08 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-14 18:25:13 [INFO] Current firmware version: ARCNJIO_JIDU6101_D1.8.5
+24-02-14 18:25:13 [ERROR] Device is not having latest firmware version
+24-02-14 18:25:13 [INFO] Getting WAN IPv6 Information
+24-02-14 18:25:13 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-14 18:25:14 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-14 18:25:19 [INFO] Successfully retrieved WAN IPv6 address: 2409:4090:17:1000:db55:d35f:17d1:691f, 2409:4090:17:1008::/64
+24-02-14 18:25:19 [INFO] Checking Ping 4 to google.com
+24-02-14 18:25:38 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-14 18:25:38 [INFO] Ping 4 Passed
+24-02-14 18:25:38 [INFO] Checking Ping 6 to google.com
+24-02-14 18:25:58 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-14 18:25:58 [INFO] Ping 6 Passed
+24-02-14 18:25:58 [ERROR] Device health check completed with 1 issue(s): Device is not having latest firmware version
+24-02-14 18:25:58 [ERROR] Device health check failed. Exiting the test.
+24-02-14 18:25:58 [WARNING] Initiating DBG log collection after encountering an issue
+24-02-14 18:26:02 [WARNING] DBG log collected at: 2024-02-14 18:26:02.044478
+24-02-14 18:42:56 [DEBUG] Initializing Chrome WebDriver
+24-02-14 18:42:57 [DEBUG] ======================================================================================
+24-02-14 18:42:57 [INFO] Validating Firmware Upgrade and Downgrade functionality
+24-02-14 18:42:57 [INFO] Try to Login Through WebGUI
+24-02-14 18:43:24 [INFO] Performing health check
+24-02-14 18:43:24 [DEBUG] Retrieving Firmware Version.....
+24-02-14 18:43:24 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-14 18:43:25 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-14 18:43:30 [INFO] Current firmware version: ARCNJIO_JIDU6101_D1.9.0
+24-02-14 18:43:30 [INFO] Getting WAN IPv6 Information
+24-02-14 18:43:30 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-14 18:43:31 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-14 18:43:36 [INFO] Successfully retrieved WAN IPv6 address: 2409:4090:17:1000:db55:d35f:17d1:691f, 2409:4090:17:1008::/64
+24-02-14 18:43:36 [INFO] Checking Ping 4 to google.com
+24-02-14 18:43:55 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-14 18:43:55 [INFO] Ping 4 Passed
+24-02-14 18:43:55 [INFO] Checking Ping 6 to google.com
+24-02-14 18:44:14 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-14 18:44:14 [INFO] Ping 6 Passed
+24-02-14 18:44:14 [INFO] Device health check completed successfully.
+24-02-14 18:44:14 [INFO] Upgrading firmware version 
+24-02-14 18:44:14 [DEBUG] Searching for the Keyword: 'Firmware Upgrade'
+24-02-14 18:44:15 [DEBUG] Found and Clicked on the Result Containing 'Firmware Upgrade'
+24-02-14 18:44:23 [DEBUG] Image File path entered successfully
+24-02-14 18:44:36 [DEBUG] Signature File path entered successfully
+24-02-14 18:44:52 [DEBUG] Wait for the upgrade process to complete : 200s
+24-02-14 18:48:12 [INFO] Try to Login Through WebGUI
+24-02-14 18:48:53 [DEBUG] Retrieving Firmware Version.....
+24-02-14 18:48:53 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-14 18:48:54 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-14 18:48:59 [INFO] Current firmware version: ARCNJIO_JIDU6101_D1.8.5
+24-02-14 18:48:59 [INFO] Firmware Downgraded Successfully to ARCNJIO_JIDU6101_D1.8.5
+24-02-14 18:48:59 [INFO] Upgrading firmware version 
+24-02-14 18:48:59 [DEBUG] Searching for the Keyword: 'Firmware Upgrade'
+24-02-14 18:48:59 [DEBUG] Found and Clicked on the Result Containing 'Firmware Upgrade'
+24-02-14 18:49:07 [DEBUG] Image File path entered successfully
+24-02-14 18:49:21 [DEBUG] Signature File path entered successfully
+24-02-14 18:49:36 [DEBUG] Wait for the upgrade process to complete : 200s
+24-02-14 18:52:56 [INFO] Try to Login Through WebGUI
+24-02-14 18:53:37 [DEBUG] Retrieving Firmware Version.....
+24-02-14 18:53:37 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-14 18:53:38 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-14 18:53:43 [INFO] Current firmware version: ARCNJIO_JIDU6101_D1.9.0
+24-02-14 18:53:43 [INFO] Firmware Upgraded Successfully to ARCNJIO_JIDU6101_D1.9.0
+24-02-14 18:53:43 [INFO] Try to Login Through WebGUI
+24-02-14 18:54:24 [ERROR] Error Occurred While Login Through WebGUI: catching classes that do not inherit from BaseException is not allowed
+24-02-14 18:54:24 [INFO] Performing health check
+24-02-14 18:54:24 [DEBUG] Retrieving Firmware Version.....
+24-02-14 18:54:24 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-14 18:54:25 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-14 18:54:30 [INFO] Current firmware version: ARCNJIO_JIDU6101_D1.9.0
+24-02-14 18:54:30 [INFO] Getting WAN IPv6 Information
+24-02-14 18:54:30 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-14 18:54:30 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-14 18:54:35 [INFO] Successfully retrieved WAN IPv6 address: 2409:4090:17:1000:db55:d35f:17d1:691f, 2409:4090:17:1008::/64
+24-02-14 18:54:35 [INFO] Checking Ping 4 to google.com
+24-02-14 18:54:55 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-14 18:54:55 [INFO] Ping 4 Passed
+24-02-14 18:54:55 [INFO] Checking Ping 6 to google.com
+24-02-14 18:55:14 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-14 18:55:14 [INFO] Ping 6 Passed
+24-02-14 18:55:14 [INFO] Device health check completed successfully.
+24-02-14 18:55:14 [INFO] Firmware Upgrade and Downgrade functionality is working as Expected
+24-02-15 10:27:45 [DEBUG] Initializing Chrome WebDriver
+24-02-15 10:27:47 [DEBUG] ======================================================================================
+24-02-15 10:27:47 [INFO] Validating Firmware Upgrade and Downgrade functionality
+24-02-15 10:27:47 [INFO] Try to Login Through WebGUI
+24-02-15 10:28:31 [INFO] Performing health check
+24-02-15 10:28:31 [DEBUG] Retrieving Firmware Version.....
+24-02-15 10:28:31 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-15 10:28:31 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-15 10:28:36 [INFO] Current firmware version: ARCNJIO_JIDU6101_D1.9.0
+24-02-15 10:28:36 [INFO] Getting WAN IPv6 Information
+24-02-15 10:28:36 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-15 10:28:37 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-15 10:28:42 [INFO] Successfully retrieved WAN IPv6 address: 2409:4090:17:1000:db55:d35f:17d1:691f, 2409:4090:17:1008::/64
+24-02-15 10:28:42 [INFO] Checking Ping 4 to google.com
+24-02-15 10:29:01 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-15 10:29:01 [INFO] Ping 4 Passed
+24-02-15 10:29:01 [INFO] Checking Ping 6 to google.com
+24-02-15 10:29:20 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-15 10:29:20 [INFO] Ping 6 Passed
+24-02-15 10:29:20 [INFO] Device health check completed successfully.
+24-02-15 10:29:20 [INFO] Upgrading firmware version 
+24-02-15 10:29:20 [DEBUG] Searching for the Keyword: 'Firmware Upgrade'
+24-02-15 10:29:21 [DEBUG] Found and Clicked on the Result Containing 'Firmware Upgrade'
+24-02-15 10:29:29 [DEBUG] Image File path entered successfully
+24-02-15 10:29:42 [DEBUG] Signature File path entered successfully
+24-02-15 10:29:58 [DEBUG] Wait for the upgrade process to complete : 200s
+24-02-15 10:33:18 [INFO] Try to Login Through WebGUI
+24-02-15 10:33:59 [DEBUG] Retrieving Firmware Version.....
+24-02-15 10:33:59 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-15 10:34:00 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-15 10:34:05 [INFO] Current firmware version: ARCNJIO_JIDU6101_D1.8.5
+24-02-15 10:34:05 [INFO] Firmware Downgraded Successfully to ARCNJIO_JIDU6101_D1.8.5
+24-02-15 10:34:05 [INFO] Upgrading firmware version 
+24-02-15 10:34:05 [DEBUG] Searching for the Keyword: 'Firmware Upgrade'
+24-02-15 10:34:05 [DEBUG] Found and Clicked on the Result Containing 'Firmware Upgrade'
+24-02-15 10:34:13 [DEBUG] Image File path entered successfully
+24-02-15 10:34:27 [DEBUG] Signature File path entered successfully
+24-02-15 10:34:42 [DEBUG] Wait for the upgrade process to complete : 200s
+24-02-15 10:38:02 [INFO] Try to Login Through WebGUI
+24-02-15 10:38:44 [DEBUG] Retrieving Firmware Version.....
+24-02-15 10:38:44 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-15 10:38:44 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-15 10:38:49 [INFO] Current firmware version: ARCNJIO_JIDU6101_D1.9.0
+24-02-15 10:38:49 [INFO] Firmware Upgraded Successfully to ARCNJIO_JIDU6101_D1.9.0
+24-02-15 10:38:49 [INFO] Try to Login Through WebGUI
+24-02-15 10:39:31 [ERROR] Error Occurred While Login Through WebGUI: catching classes that do not inherit from BaseException is not allowed
+24-02-15 10:39:31 [INFO] Performing health check
+24-02-15 10:39:31 [DEBUG] Retrieving Firmware Version.....
+24-02-15 10:39:31 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-15 10:39:31 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-15 10:39:36 [INFO] Current firmware version: ARCNJIO_JIDU6101_D1.9.0
+24-02-15 10:39:36 [INFO] Getting WAN IPv6 Information
+24-02-15 10:39:36 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-15 10:39:37 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-15 10:39:42 [INFO] Successfully retrieved WAN IPv6 address: 2409:4090:17:1000:db55:d35f:17d1:691f, 2409:4090:17:1008::/64
+24-02-15 10:39:42 [INFO] Checking Ping 4 to google.com
+24-02-15 10:40:01 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-15 10:40:01 [INFO] Ping 4 Passed
+24-02-15 10:40:01 [INFO] Checking Ping 6 to google.com
+24-02-15 10:40:20 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-15 10:40:20 [INFO] Ping 6 Passed
+24-02-15 10:40:20 [INFO] Device health check completed successfully.
+24-02-15 10:40:20 [INFO] Firmware Upgrade and Downgrade functionality is working as Expected
