@@ -1,3 +1,4 @@
+import input
 import locaters
 from health_check import HealthCheck
 from login import Login
@@ -15,6 +16,7 @@ class FunctionalSanity:
         self.maintenance = Maintenance(driver)
         self.login=Login(driver)
 
+    #Validate mac address
     def functional_sanity_06(self):
         logger.debug( "======================================================================================" )
         logger.debug( 'Validating MAC Address after Reboot and Reset' )
@@ -61,7 +63,6 @@ class FunctionalSanity:
                 logger.error( 'WAN MAC Address has changed after Factory Reset' )
                 self.utils.get_DBGLogs()
 
-
             if success == 2:
                 logger.info( 'MAC Address is same after Reboot and Reset' )
                 return True
@@ -73,7 +74,6 @@ class FunctionalSanity:
             logger.error( "Error occurred while executing functional_sanity_06: %s" , str( e ) )
             self.utils.get_DBGLogs()
             return False
-
 
     #Multiple Reset
     def functional_sanity_01(self):
@@ -126,3 +126,61 @@ class FunctionalSanity:
             logger.error(f"Error occurred during functional_sanity_01: {str(E)}")
             self.utils.get_DBGLogs()
             return False
+
+
+    #Firmware Upgrade and Downgrade functionality
+    def functional_sanity_14(self):
+        logger.debug( "======================================================================================" )
+        logger.info( "Validating Firmware Upgrade and Downgrade functionality" )
+        try:
+            if not self.health.health_check_webgui():
+                logger.error( 'Device health check failed. Exiting the test.' )
+                self.utils.get_DBGLogs()
+                return False
+
+
+            #downgrade to previous version
+            image_path =f"{input.base_path}\\{input.previous_firmware_version}.img"
+            signature_path = f"{input.base_path}\\{input.previous_firmware_version}.sig"
+
+            self.maintenance.firmware_upgrade( image_path , signature_path )
+            self.login.WebGUI_login()
+
+            succesCount = 0
+            if self.utils.get_firmware_version() == input.previous_firmware_version: #check for update
+                succesCount += 1
+                logger.info( 'Firmware Downgraded Successfully to ' + input.previous_firmware_version )
+            else:
+                logger.error( 'Firmware is not Downgraded ' )
+
+
+            # upgrade to latest version
+            image_path = f"{input.base_path}\\{input.latest_firmware_version}.img"
+            signature_path = f"{input.base_path}\\{input.latest_firmware_version}.sig"
+
+            self.maintenance.firmware_upgrade( image_path , signature_path )
+            self.login.WebGUI_login()
+
+            if self.utils.get_firmware_version() == input.latest_firmware_version:#check for update
+                succesCount += 1
+                logger.info( 'Firmware Upgraded Successfully to ' + input.latest_firmware_version )
+            else:
+                logger.error( 'Firmware is not Upgraded ' )
+
+
+            #conluding the test case
+            if not self.health.health_check_webgui():
+                logger.error( 'Device health check failed' )
+                succesCount -= 1
+
+            if succesCount == 2:
+                logger.info( "Firmware Upgrade and Downgrade functionality is working as Expected" )
+                return True
+            else:
+                logger.error( "Firmware Upgrade and Downgrade functionality is NOT working as Expected" )
+                return False
+
+        except Exception as E:
+            logger.error( "Error occurred while executing functional_sanity_14: %s" , str( E ) )
+            return False
+

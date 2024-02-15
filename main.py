@@ -30,10 +30,16 @@ login=Login(driver)
 # login.WebGUI_login()
 # print(utils.get_DBGLogs())
 # login = Login(driver)
+image_path = f"{input.base_path}\\{input.latest_firmware_version}.img"
+signature_path = input.base_path + "/" + input.previous_firmware_version + ".sign"
+print(image_path)
+print(signature_path)
+
+
 wireless = Wireless(driver)
 functional_sanity=FunctionalSanity(driver)
 #
-print( functional_sanity.functional_sanity_06())
+print( functional_sanity.functional_sanity_14())
 # print( functional_sanity.functional_sanity_01())
 
 # login.WebGUI_login()
