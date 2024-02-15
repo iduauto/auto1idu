@@ -23,6 +23,7 @@ class Utils:
 
     # Find the element in return
     def find_element(self , xpath=None , css_selector=None , id=None , timeout=10):
+        time.sleep(1)
         if not any( [xpath , css_selector , id] ):
             raise ValueError( "At least one locator (xpath, css_selector, or ID) must be provided." )
 
@@ -148,6 +149,22 @@ class Utils:
         except Exception as e:
             logger.error( f"An error occurred while fetching Firmware Version: {e}" )
 
+    # Check internet connectivity
+    def check_website_connectivity(self , urls):
+        logger.info( "Checking website connectivity" )
+        from selenium import webdriver
+        for url in urls:
+            try:
+                driver = webdriver.Chrome()
+                driver.get( url )
+            except Exception as e:
+                logger.error( f"Error accessing {url}" )
+                return False
+            finally:
+                driver.quit()
+
+        logger.info( 'URL access is successful' )
+        return True
 
     # Taking DBG logs
     def get_DBGLogs(self):
