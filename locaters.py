@@ -97,23 +97,28 @@ Wireless_Ssid = (
 )
 
 Wireless_ChangePasswordToggle_1 = (
-    "/html/body/mainapp/div[1]/div[2]/div[4]/div/form/div/div[1]/div[3]/div[15]/div/label/span"
+    "/html/body/mainapp/div[1]/div[2]/div[4]/div/form/div/div[1]/div[3]/div[15]/div/label/span",
+    ""
 )
 
 Wireless_ChangePasswordToggle_2 = (
-    "/html/body/mainapp/div[1]/div[2]/div[4]/div/form/div/div[1]/div[3]/div[15]/label[2]/span"
+    '/html/body/mainapp/div[1]/div[2]/div[4]/div/form/div/div[1]/div[3]/div[15]/label[2]/span',
+    ""
 )
 
 Wireless_Password = (
-    '/html/body/mainapp/div[1]/div[2]/div[4]/div/form/div/div[1]/div[3]/div[17]/input'
+    '/html/body/mainapp/div[1]/div[2]/div[4]/div/form/div/div[1]/div[3]/div[17]/input',
+    ""
 )
 
 Wireless_Confirmpassword = (
-    '/html/body/mainapp/div[1]/div[2]/div[4]/div/form/div/div[1]/div[3]/div[19]/input'
+    '/html/body/mainapp/div[1]/div[2]/div[4]/div/form/div/div[1]/div[3]/div[19]/input',
+    ""
 )
 
 Wireless_SaveButton = (
-    '/html/body/mainapp/div[1]/div[2]/div[4]/div/form/div/div[3]/button'
+    '/html/body/mainapp/div[1]/div[2]/div[4]/div/form/div/div[3]/button',
+    ""
 )
 
 
