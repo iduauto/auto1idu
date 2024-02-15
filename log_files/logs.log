@@ -4169,3 +4169,477 @@ Stacktrace:
 24-02-15 14:55:29 [ERROR] Default firewall functionality is NOT working as expected
 24-02-15 14:55:29 [WARNING] Initiating DBG log collection after encountering an issue
 24-02-15 14:55:33 [WARNING] DBG log collected at: 2024-02-15 14:55:33.176908
+24-02-15 15:35:23 [DEBUG] Initializing Chrome WebDriver
+24-02-15 15:35:24 [INFO] Try to Login Through WebGUI
+24-02-15 15:35:56 [DEBUG] Searching for the Keyword: 'List of IPv4 Firewall Rules'
+24-02-15 15:35:57 [DEBUG] Found and Clicked on the Result Containing 'List of IPv4 Firewall Rules'
+24-02-15 15:38:57 [DEBUG] Initializing Chrome WebDriver
+24-02-15 15:38:58 [INFO] Try to Login Through WebGUI
+24-02-15 15:39:31 [DEBUG] Searching for the Keyword: 'List of IPv4 Firewall Rules'
+24-02-15 15:39:32 [DEBUG] Found and Clicked on the Result Containing 'List of IPv4 Firewall Rules'
+24-02-15 15:42:51 [DEBUG] Initializing Chrome WebDriver
+24-02-15 15:42:52 [INFO] Try to Login Through WebGUI
+24-02-15 15:43:25 [DEBUG] Searching for the Keyword: 'List of IPv4 Firewall Rules'
+24-02-15 15:43:26 [DEBUG] Found and Clicked on the Result Containing 'List of IPv4 Firewall Rules'
+24-02-15 15:51:54 [DEBUG] Initializing Chrome WebDriver
+24-02-15 15:51:55 [INFO] Try to Login Through WebGUI
+24-02-15 15:52:54 [DEBUG] Initializing Chrome WebDriver
+24-02-15 15:52:56 [INFO] Try to Login Through WebGUI
+24-02-15 15:53:28 [DEBUG] Searching for the Keyword: 'List of IPv4 Firewall Rules'
+24-02-15 15:53:29 [DEBUG] Found and Clicked on the Result Containing 'List of IPv4 Firewall Rules'
+24-02-15 15:56:24 [DEBUG] Initializing Chrome WebDriver
+24-02-15 15:56:25 [INFO] Try to Login Through WebGUI
+24-02-15 15:56:28 [ERROR] Error Occurred While Login Through WebGUI: 'NoneType' object has no attribute 'is_displayed'
+24-02-15 15:56:28 [DEBUG] Searching for the Keyword: 'List of IPv4 Firewall Rules'
+24-02-15 15:56:29 [ERROR] Error Occurred While Searching for the Keyword: 'List of IPv4 Firewall Rules': Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=121.0.6167.184)
+Stacktrace:
+	GetHandleVerifier [0x00F01673+52979]
+	(No symbol) [0x00E87961]
+	(No symbol) [0x00D6DD3D]
+	(No symbol) [0x00D5239A]
+	(No symbol) [0x00DCA71B]
+	(No symbol) [0x00DDACB6]
+	(No symbol) [0x00DC4286]
+	(No symbol) [0x00D9C063]
+	(No symbol) [0x00D9CECD]
+	GetHandleVerifier [0x01218D83+3294723]
+	GetHandleVerifier [0x01256CC2+3548482]
+	GetHandleVerifier [0x01251C9C+3527964]
+	GetHandleVerifier [0x00F9870E+671630]
+	(No symbol) [0x00E91EB4]
+	(No symbol) [0x00E8D808]
+	(No symbol) [0x00E8D92D]
+	(No symbol) [0x00E7F7E0]
+	BaseThreadInitThunk [0x758FFCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x77047C5E+286]
+	RtlGetAppContainerNamedObjectPath [0x77047C2E+238]
+
+24-02-15 15:56:47 [DEBUG] Initializing Chrome WebDriver
+24-02-15 15:56:48 [INFO] Try to Login Through WebGUI
+24-02-15 15:57:20 [DEBUG] Searching for the Keyword: 'List of IPv4 Firewall Rules'
+24-02-15 15:57:22 [DEBUG] Found and Clicked on the Result Containing 'List of IPv4 Firewall Rules'
+24-02-15 16:08:29 [DEBUG] Initializing Chrome WebDriver
+24-02-15 16:08:30 [INFO] Try to Login Through WebGUI
+24-02-15 16:09:02 [DEBUG] ======================================================================================
+24-02-15 16:09:02 [INFO] Validating multiple factory reset
+24-02-15 16:09:02 [INFO] Try to Login Through WebGUI
+24-02-15 16:09:32 [INFO] Performing health check
+24-02-15 16:09:32 [DEBUG] Retrieving Firmware Version.....
+24-02-15 16:09:32 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-15 16:09:34 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-15 16:09:40 [INFO] Current firmware version: ARCNJIO_JIDU6101_D1.9.1
+24-02-15 16:09:40 [ERROR] Device is not having latest firmware version
+24-02-15 16:09:40 [INFO] Getting WAN IPv6 Information
+24-02-15 16:09:40 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-15 16:09:41 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-15 16:09:47 [INFO] Successfully retrieved WAN IPv6 address: 2409:4090:17:1000:cf56:c63:de5c:c84d, 2409:4090:17:1208::/64
+24-02-15 16:09:47 [INFO] Checking Ping 4 to google.com
+24-02-15 16:10:06 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-15 16:10:06 [INFO] Ping 4 Passed
+24-02-15 16:10:06 [INFO] Checking Ping 6 to google.com
+24-02-15 16:10:26 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-15 16:10:26 [INFO] Ping 6 Passed
+24-02-15 16:10:26 [ERROR] Device health check completed with 1 issue(s)
+24-02-15 16:10:26 [ERROR] Device health check failed. Exiting the test.
+24-02-15 16:10:26 [DEBUG] ======================================================================================
+24-02-15 16:10:26 [INFO] Validating multiple reboot
+24-02-15 16:10:26 [INFO] Try to Login Through WebGUI
+24-02-15 16:11:08 [ERROR] Error Occurred While Login Through WebGUI: catching classes that do not inherit from BaseException is not allowed
+24-02-15 16:11:08 [INFO] Performing health check
+24-02-15 16:11:08 [DEBUG] Retrieving Firmware Version.....
+24-02-15 16:11:08 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-15 16:11:10 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-15 16:11:16 [INFO] Current firmware version: ARCNJIO_JIDU6101_D1.9.1
+24-02-15 16:11:16 [ERROR] Device is not having latest firmware version
+24-02-15 16:11:16 [INFO] Getting WAN IPv6 Information
+24-02-15 16:11:16 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-15 16:11:17 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-15 16:11:23 [INFO] Successfully retrieved WAN IPv6 address: 2409:4090:17:1000:cf56:c63:de5c:c84d, 2409:4090:17:1208::/64
+24-02-15 16:11:23 [INFO] Checking Ping 4 to google.com
+24-02-15 16:11:43 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-15 16:11:43 [INFO] Ping 4 Passed
+24-02-15 16:11:43 [INFO] Checking Ping 6 to google.com
+24-02-15 16:12:02 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-15 16:12:02 [INFO] Ping 6 Passed
+24-02-15 16:12:02 [ERROR] Device health check completed with 1 issue(s)
+24-02-15 16:12:02 [ERROR] Device health check failed. Exiting the test.
+24-02-15 16:12:02 [DEBUG] ======================================================================================
+24-02-15 16:12:02 [DEBUG] Validating MAC Address after Reboot and Reset
+24-02-15 16:12:02 [INFO] Try to Login Through WebGUI
+24-02-15 16:12:44 [ERROR] Error Occurred While Login Through WebGUI: catching classes that do not inherit from BaseException is not allowed
+24-02-15 16:12:44 [INFO] Performing health check
+24-02-15 16:12:44 [DEBUG] Retrieving Firmware Version.....
+24-02-15 16:12:44 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-15 16:12:46 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-15 16:12:52 [INFO] Current firmware version: ARCNJIO_JIDU6101_D1.9.1
+24-02-15 16:12:52 [ERROR] Device is not having latest firmware version
+24-02-15 16:12:52 [INFO] Getting WAN IPv6 Information
+24-02-15 16:12:52 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-15 16:12:53 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-15 16:12:59 [INFO] Successfully retrieved WAN IPv6 address: 2409:4090:17:1000:cf56:c63:de5c:c84d, 2409:4090:17:1208::/64
+24-02-15 16:12:59 [INFO] Checking Ping 4 to google.com
+24-02-15 16:13:18 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-15 16:13:18 [INFO] Ping 4 Passed
+24-02-15 16:13:18 [INFO] Checking Ping 6 to google.com
+24-02-15 16:13:38 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-15 16:13:38 [INFO] Ping 6 Passed
+24-02-15 16:13:38 [ERROR] Device health check completed with 1 issue(s)
+24-02-15 16:13:38 [ERROR] Device health check failed. Exiting the test.
+24-02-15 16:13:38 [DEBUG] ======================================================================================
+24-02-15 16:13:38 [INFO] Validating Firmware Upgrade and Downgrade functionality
+24-02-15 16:13:38 [INFO] Try to Login Through WebGUI
+24-02-15 16:14:22 [INFO] Performing health check
+24-02-15 16:14:22 [DEBUG] Retrieving Firmware Version.....
+24-02-15 16:14:22 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-15 16:14:39 [ERROR] Error Occurred While Searching for the Keyword: 'WAN Information': Message: Element not found within the specified timeout
+
+24-02-15 16:14:55 [ERROR] An error occurred while fetching Firmware Version: Message: Element not found within the specified timeout
+
+24-02-15 16:14:55 [ERROR] Device is not having latest firmware version
+24-02-15 16:14:55 [INFO] Getting WAN IPv6 Information
+24-02-15 16:14:55 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-15 16:15:12 [ERROR] Error Occurred While Searching for the Keyword: 'WAN Information': Message: Element not found within the specified timeout
+
+24-02-15 16:15:29 [ERROR] WAN IPv6 address element not found on the page
+24-02-15 16:15:29 [ERROR] Failed to retrieve IPv6 information.
+24-02-15 16:15:29 [INFO] Checking Ping 4 to google.com
+24-02-15 16:15:29 [DEBUG] 
+24-02-15 16:15:29 [ERROR] Ping 4 Failed
+24-02-15 16:15:29 [ERROR] Ping to Google IPv4 failed.
+24-02-15 16:15:29 [INFO] Checking Ping 6 to google.com
+24-02-15 16:15:29 [DEBUG] 
+24-02-15 16:15:29 [ERROR] Ping 6 Failed
+24-02-15 16:15:29 [ERROR] Ping to Google IPv6 failed.
+24-02-15 16:15:29 [ERROR] Device health check completed with 4 issue(s)
+24-02-15 16:15:29 [ERROR] Device health check failed. Exiting the test.
+24-02-15 16:15:29 [WARNING] Initiating DBG log collection after encountering an issue
+24-02-15 16:15:29 [WARNING] DBG log collected at: 2024-02-15 16:15:29.479851
+24-02-15 16:16:05 [DEBUG] Initializing Chrome WebDriver
+24-02-15 16:16:06 [INFO] Try to Login Through WebGUI
+24-02-15 16:16:53 [DEBUG] ======================================================================================
+24-02-15 16:16:53 [INFO] Validating multiple factory reset
+24-02-15 16:16:53 [INFO] Try to Login Through WebGUI
+24-02-15 16:17:35 [ERROR] Error Occurred While Login Through WebGUI: catching classes that do not inherit from BaseException is not allowed
+24-02-15 16:17:35 [INFO] Performing health check
+24-02-15 16:17:35 [DEBUG] Retrieving Firmware Version.....
+24-02-15 16:17:35 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-15 16:17:37 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-15 16:17:43 [INFO] Current firmware version: ARCNJIO_JIDU6101_D1.9.0
+24-02-15 16:17:43 [INFO] Getting WAN IPv6 Information
+24-02-15 16:17:43 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-15 16:17:44 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-15 16:17:50 [INFO] Successfully retrieved WAN IPv6 address: 2409:4090:17:1000:cf56:c63:de5c:c84d, 2409:4090:17:1208::/64
+24-02-15 16:17:50 [INFO] Checking Ping 4 to google.com
+24-02-15 16:18:09 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-15 16:18:09 [INFO] Ping 4 Passed
+24-02-15 16:18:09 [INFO] Checking Ping 6 to google.com
+24-02-15 16:18:29 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-15 16:18:29 [INFO] Ping 6 Passed
+24-02-15 16:18:29 [INFO] Device health check completed successfully.
+24-02-15 16:18:29 [DEBUG] -------------1th Factory Reset---------------------
+24-02-15 16:18:29 [INFO] Initiating device factory defaults
+24-02-15 16:18:29 [DEBUG] Searching for the Keyword: 'Factory Defaults / Reboot'
+24-02-15 16:18:30 [DEBUG] Found and Clicked on the Result Containing 'Factory Defaults / Reboot'
+24-02-15 16:18:40 [DEBUG] Wait for the reset process to complete : 200s
+24-02-15 16:22:00 [INFO] Device reset to factory defaults completed successfully
+24-02-15 16:22:00 [INFO] Try to Login Through WebGUI
+24-02-15 16:22:02 [DEBUG] Device is in Factory Reset State
+24-02-15 16:22:50 [INFO] Performing health check
+24-02-15 16:22:50 [DEBUG] Retrieving Firmware Version.....
+24-02-15 16:22:50 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-15 16:22:52 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-15 16:22:58 [INFO] Current firmware version: ARCNJIO_JIDU6101_D1.9.0
+24-02-15 16:22:58 [INFO] Getting WAN IPv6 Information
+24-02-15 16:22:58 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-15 16:22:59 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-15 16:23:05 [INFO] Successfully retrieved WAN IPv6 address: 2409:4090:17:1000:cf56:c63:de5c:c84d, 2409:4090:17:1208::/64
+24-02-15 16:23:05 [INFO] Checking Ping 4 to google.com
+24-02-15 16:23:24 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-15 16:23:24 [INFO] Ping 4 Passed
+24-02-15 16:23:24 [INFO] Checking Ping 6 to google.com
+24-02-15 16:23:44 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-15 16:23:44 [INFO] Ping 6 Passed
+24-02-15 16:23:44 [INFO] Device health check completed successfully.
+24-02-15 16:23:44 [DEBUG] -------------2th Factory Reset---------------------
+24-02-15 16:23:44 [INFO] Initiating device factory defaults
+24-02-15 16:23:44 [DEBUG] Searching for the Keyword: 'Factory Defaults / Reboot'
+24-02-15 16:23:45 [DEBUG] Found and Clicked on the Result Containing 'Factory Defaults / Reboot'
+24-02-15 16:23:55 [DEBUG] Wait for the reset process to complete : 200s
+24-02-15 16:27:15 [INFO] Device reset to factory defaults completed successfully
+24-02-15 16:27:15 [INFO] Try to Login Through WebGUI
+24-02-15 16:27:17 [DEBUG] Device is in Factory Reset State
+24-02-15 16:28:05 [INFO] Performing health check
+24-02-15 16:28:05 [DEBUG] Retrieving Firmware Version.....
+24-02-15 16:28:05 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-15 16:28:07 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-15 16:28:13 [INFO] Current firmware version: ARCNJIO_JIDU6101_D1.9.0
+24-02-15 16:28:13 [INFO] Getting WAN IPv6 Information
+24-02-15 16:28:13 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-15 16:28:14 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-15 16:28:20 [INFO] Successfully retrieved WAN IPv6 address: 2409:4090:17:1000:cf56:c63:de5c:c84d, 2409:4090:17:1208::/64
+24-02-15 16:28:20 [INFO] Checking Ping 4 to google.com
+24-02-15 16:28:39 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-15 16:28:39 [INFO] Ping 4 Passed
+24-02-15 16:28:39 [INFO] Checking Ping 6 to google.com
+24-02-15 16:28:59 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-15 16:28:59 [INFO] Ping 6 Passed
+24-02-15 16:28:59 [INFO] Device health check completed successfully.
+24-02-15 16:28:59 [INFO] Successfully factory reset from Web GUI - 5 Iterations
+24-02-15 16:28:59 [DEBUG] ======================================================================================
+24-02-15 16:28:59 [INFO] Validating multiple reboot
+24-02-15 16:28:59 [INFO] Try to Login Through WebGUI
+24-02-15 16:29:41 [ERROR] Error Occurred While Login Through WebGUI: catching classes that do not inherit from BaseException is not allowed
+24-02-15 16:29:41 [INFO] Performing health check
+24-02-15 16:29:41 [DEBUG] Retrieving Firmware Version.....
+24-02-15 16:29:41 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-15 16:29:43 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-15 16:29:49 [INFO] Current firmware version: ARCNJIO_JIDU6101_D1.9.0
+24-02-15 16:29:49 [INFO] Getting WAN IPv6 Information
+24-02-15 16:29:49 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-15 16:29:50 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-15 16:29:56 [INFO] Successfully retrieved WAN IPv6 address: 2409:4090:17:1000:cf56:c63:de5c:c84d, 2409:4090:17:1208::/64
+24-02-15 16:29:56 [INFO] Checking Ping 4 to google.com
+24-02-15 16:30:16 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-15 16:30:16 [INFO] Ping 4 Passed
+24-02-15 16:30:16 [INFO] Checking Ping 6 to google.com
+24-02-15 16:30:35 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-15 16:30:35 [INFO] Ping 6 Passed
+24-02-15 16:30:35 [INFO] Device health check completed successfully.
+24-02-15 16:30:35 [DEBUG] -------------1th Reboot---------------------
+24-02-15 16:30:35 [INFO] Initiating device reboot
+24-02-15 16:30:35 [DEBUG] Searching for the Keyword: 'Factory Defaults / Reboot'
+24-02-15 16:30:36 [DEBUG] Found and Clicked on the Result Containing 'Factory Defaults / Reboot'
+24-02-15 16:30:46 [DEBUG] Wait for the reboot process to complete : 200s
+24-02-15 16:34:06 [INFO] Try to Login Through WebGUI
+24-02-15 16:34:50 [INFO] Performing health check
+24-02-15 16:34:50 [DEBUG] Retrieving Firmware Version.....
+24-02-15 16:34:50 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-15 16:34:52 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-15 16:34:58 [INFO] Current firmware version: ARCNJIO_JIDU6101_D1.9.0
+24-02-15 16:34:58 [INFO] Getting WAN IPv6 Information
+24-02-15 16:34:58 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-15 16:34:59 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-15 16:35:05 [INFO] Successfully retrieved WAN IPv6 address: 2409:4090:17:1000:cf56:c63:de5c:c84d, 2409:4090:17:1208::/64
+24-02-15 16:35:05 [INFO] Checking Ping 4 to google.com
+24-02-15 16:35:25 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-15 16:35:25 [INFO] Ping 4 Passed
+24-02-15 16:35:25 [INFO] Checking Ping 6 to google.com
+24-02-15 16:35:44 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-15 16:35:44 [INFO] Ping 6 Passed
+24-02-15 16:35:44 [INFO] Device health check completed successfully.
+24-02-15 16:35:44 [DEBUG] -------------2th Reboot---------------------
+24-02-15 16:35:44 [INFO] Initiating device reboot
+24-02-15 16:35:44 [DEBUG] Searching for the Keyword: 'Factory Defaults / Reboot'
+24-02-15 16:35:45 [DEBUG] Found and Clicked on the Result Containing 'Factory Defaults / Reboot'
+24-02-15 16:35:55 [DEBUG] Wait for the reboot process to complete : 200s
+24-02-15 16:39:15 [INFO] Try to Login Through WebGUI
+24-02-15 16:40:00 [INFO] Performing health check
+24-02-15 16:40:00 [DEBUG] Retrieving Firmware Version.....
+24-02-15 16:40:00 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-15 16:40:01 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-15 16:40:07 [INFO] Current firmware version: ARCNJIO_JIDU6101_D1.9.0
+24-02-15 16:40:07 [INFO] Getting WAN IPv6 Information
+24-02-15 16:40:07 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-15 16:40:09 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-15 16:40:15 [INFO] Successfully retrieved WAN IPv6 address: 2409:4090:17:1000:cf56:c63:de5c:c84d, 2409:4090:17:1208::/64
+24-02-15 16:40:15 [INFO] Checking Ping 4 to google.com
+24-02-15 16:40:34 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-15 16:40:34 [INFO] Ping 4 Passed
+24-02-15 16:40:34 [INFO] Checking Ping 6 to google.com
+24-02-15 16:40:53 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-15 16:40:53 [INFO] Ping 6 Passed
+24-02-15 16:40:53 [INFO] Device health check completed successfully.
+24-02-15 16:40:53 [INFO] Successfully reboot from WebGUI - 5 Iterations
+24-02-15 16:40:53 [DEBUG] ======================================================================================
+24-02-15 16:40:53 [DEBUG] Validating MAC Address after Reboot and Reset
+24-02-15 16:40:53 [INFO] Try to Login Through WebGUI
+24-02-15 16:41:36 [ERROR] Error Occurred While Login Through WebGUI: catching classes that do not inherit from BaseException is not allowed
+24-02-15 16:41:36 [INFO] Performing health check
+24-02-15 16:41:36 [DEBUG] Retrieving Firmware Version.....
+24-02-15 16:41:36 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-15 16:41:37 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-15 16:41:43 [INFO] Current firmware version: ARCNJIO_JIDU6101_D1.9.0
+24-02-15 16:41:43 [INFO] Getting WAN IPv6 Information
+24-02-15 16:41:43 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-15 16:41:45 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-15 16:41:51 [INFO] Successfully retrieved WAN IPv6 address: 2409:4090:17:1000:cf56:c63:de5c:c84d, 2409:4090:17:1208::/64
+24-02-15 16:41:51 [INFO] Checking Ping 4 to google.com
+24-02-15 16:42:10 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-15 16:42:10 [INFO] Ping 4 Passed
+24-02-15 16:42:10 [INFO] Checking Ping 6 to google.com
+24-02-15 16:42:29 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-15 16:42:29 [INFO] Ping 6 Passed
+24-02-15 16:42:29 [INFO] Device health check completed successfully.
+24-02-15 16:42:29 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-15 16:42:31 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-15 16:42:37 [DEBUG] WAN MAC Address before Reboot: dc:f5:1b:14:76:4a
+24-02-15 16:42:37 [INFO] Initiating device reboot
+24-02-15 16:42:37 [DEBUG] Searching for the Keyword: 'Factory Defaults / Reboot'
+24-02-15 16:42:38 [DEBUG] Found and Clicked on the Result Containing 'Factory Defaults / Reboot'
+24-02-15 16:42:48 [DEBUG] Wait for the reboot process to complete : 200s
+24-02-15 16:46:08 [INFO] Try to Login Through WebGUI
+24-02-15 16:46:53 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-15 16:46:54 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-15 16:47:00 [DEBUG] WAN MAC Address after Reboot: dc:f5:1b:14:76:4a
+24-02-15 16:47:00 [INFO] WAN MAC Address is same after Reboot 
+24-02-15 16:47:00 [INFO] Initiating device factory defaults
+24-02-15 16:47:00 [DEBUG] Searching for the Keyword: 'Factory Defaults / Reboot'
+24-02-15 16:47:02 [DEBUG] Found and Clicked on the Result Containing 'Factory Defaults / Reboot'
+24-02-15 16:47:11 [DEBUG] Wait for the reset process to complete : 200s
+24-02-15 16:50:31 [INFO] Device reset to factory defaults completed successfully
+24-02-15 16:50:31 [INFO] Try to Login Through WebGUI
+24-02-15 16:50:34 [DEBUG] Device is in Factory Reset State
+24-02-15 16:51:22 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-15 16:51:23 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-15 16:51:29 [DEBUG] WAN MAC Address after Reset: dc:f5:1b:14:76:4a
+24-02-15 16:51:29 [INFO] WAN MAC Address is same after Factory Reset
+24-02-15 16:51:29 [INFO] MAC Address is same after Reboot and Reset
+24-02-15 16:51:29 [DEBUG] ======================================================================================
+24-02-15 16:51:29 [INFO] Validating Firmware Upgrade and Downgrade functionality
+24-02-15 16:51:29 [INFO] Try to Login Through WebGUI
+24-02-15 16:52:12 [ERROR] Error Occurred While Login Through WebGUI: catching classes that do not inherit from BaseException is not allowed
+24-02-15 16:52:12 [INFO] Performing health check
+24-02-15 16:52:12 [DEBUG] Retrieving Firmware Version.....
+24-02-15 16:52:12 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-15 16:52:13 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-15 16:52:19 [INFO] Current firmware version: ARCNJIO_JIDU6101_D1.9.0
+24-02-15 16:52:19 [INFO] Getting WAN IPv6 Information
+24-02-15 16:52:19 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-15 16:52:21 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-15 16:52:27 [INFO] Successfully retrieved WAN IPv6 address: 2409:4090:17:1000:cf56:c63:de5c:c84d, 2409:4090:17:1208::/64
+24-02-15 16:52:27 [INFO] Checking Ping 4 to google.com
+24-02-15 16:52:46 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-15 16:52:46 [INFO] Ping 4 Passed
+24-02-15 16:52:46 [INFO] Checking Ping 6 to google.com
+24-02-15 16:53:09 [DEBUG]     Packets: Sent = 20, Received = 19, Lost = 1 (5% loss),
+24-02-15 16:53:09 [INFO] Ping 6 Passed
+24-02-15 16:53:09 [INFO] Device health check completed successfully.
+24-02-15 16:53:09 [INFO] Initiating firmware changing process
+24-02-15 16:53:09 [DEBUG] Searching for the Keyword: 'Firmware Upgrade'
+24-02-15 16:53:10 [DEBUG] Found and Clicked on the Result Containing 'Firmware Upgrade'
+24-02-15 16:53:20 [DEBUG] Image File path entered successfully
+24-02-15 16:53:34 [DEBUG] Signature File path entered successfully
+24-02-15 16:53:51 [DEBUG] Wait for the upgrade process to complete : 200s
+24-02-15 16:57:11 [INFO] Try to Login Through WebGUI
+24-02-15 16:57:56 [DEBUG] Retrieving Firmware Version.....
+24-02-15 16:57:56 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-15 16:57:58 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-15 16:58:04 [INFO] Current firmware version: ARCNJIO_JIDU6101_D1.8.5
+24-02-15 16:58:04 [INFO] Firmware Downgraded Successfully to ARCNJIO_JIDU6101_D1.8.5
+24-02-15 16:58:04 [INFO] Initiating firmware changing process
+24-02-15 16:58:04 [DEBUG] Searching for the Keyword: 'Firmware Upgrade'
+24-02-15 16:58:05 [DEBUG] Found and Clicked on the Result Containing 'Firmware Upgrade'
+24-02-15 16:58:14 [DEBUG] Image File path entered successfully
+24-02-15 16:58:29 [DEBUG] Signature File path entered successfully
+24-02-15 16:58:46 [DEBUG] Wait for the upgrade process to complete : 200s
+24-02-15 17:02:06 [INFO] Try to Login Through WebGUI
+24-02-15 17:02:51 [DEBUG] Retrieving Firmware Version.....
+24-02-15 17:02:51 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-15 17:02:52 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-15 17:02:58 [INFO] Current firmware version: ARCNJIO_JIDU6101_D1.9.0
+24-02-15 17:02:58 [INFO] Firmware Upgraded Successfully to ARCNJIO_JIDU6101_D1.9.0
+24-02-15 17:02:58 [INFO] Try to Login Through WebGUI
+24-02-15 17:03:41 [ERROR] Error Occurred While Login Through WebGUI: catching classes that do not inherit from BaseException is not allowed
+24-02-15 17:03:41 [INFO] Performing health check
+24-02-15 17:03:41 [DEBUG] Retrieving Firmware Version.....
+24-02-15 17:03:41 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-15 17:03:42 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-15 17:03:48 [INFO] Current firmware version: ARCNJIO_JIDU6101_D1.9.0
+24-02-15 17:03:48 [INFO] Getting WAN IPv6 Information
+24-02-15 17:03:48 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-15 17:03:50 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-15 17:03:56 [INFO] Successfully retrieved WAN IPv6 address: 2409:4090:17:1000:cf56:c63:de5c:c84d, 2409:4090:17:1208::/64
+24-02-15 17:03:56 [INFO] Checking Ping 4 to google.com
+24-02-15 17:04:15 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-15 17:04:15 [INFO] Ping 4 Passed
+24-02-15 17:04:15 [INFO] Checking Ping 6 to google.com
+24-02-15 17:04:34 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-15 17:04:34 [INFO] Ping 6 Passed
+24-02-15 17:04:34 [INFO] Device health check completed successfully.
+24-02-15 17:04:34 [INFO] Firmware Upgrade and Downgrade functionality is working as Expected
+24-02-15 17:04:34 [DEBUG] ======================================================================================
+24-02-15 17:04:34 [INFO] Validate Default firewall functionality
+24-02-15 17:04:34 [INFO] Try to Login Through WebGUI
+24-02-15 17:05:17 [ERROR] Error Occurred While Login Through WebGUI: catching classes that do not inherit from BaseException is not allowed
+24-02-15 17:05:17 [INFO] Performing health check
+24-02-15 17:05:17 [DEBUG] Retrieving Firmware Version.....
+24-02-15 17:05:17 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-15 17:05:18 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-15 17:05:24 [INFO] Current firmware version: ARCNJIO_JIDU6101_D1.9.0
+24-02-15 17:05:24 [INFO] Getting WAN IPv6 Information
+24-02-15 17:05:24 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-15 17:05:26 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-15 17:05:32 [INFO] Successfully retrieved WAN IPv6 address: 2409:4090:17:1000:cf56:c63:de5c:c84d, 2409:4090:17:1208::/64
+24-02-15 17:05:32 [INFO] Checking Ping 4 to google.com
+24-02-15 17:05:51 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-15 17:05:51 [INFO] Ping 4 Passed
+24-02-15 17:05:51 [INFO] Checking Ping 6 to google.com
+24-02-15 17:06:10 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-15 17:06:10 [INFO] Ping 6 Passed
+24-02-15 17:06:10 [INFO] Device health check completed successfully.
+24-02-15 17:06:10 [DEBUG] Searching for the Keyword: 'Default Policy'
+24-02-15 17:06:12 [DEBUG] Found and Clicked on the Result Containing 'Default Policy'
+24-02-15 17:06:20 [DEBUG] Searching for the Keyword: 'Security Status'
+24-02-15 17:06:22 [DEBUG] Found and Clicked on the Result Containing 'Security Status'
+24-02-15 17:06:28 [INFO] Firewall Policy is changed to Block Always
+24-02-15 17:06:28 [INFO] Checking website connectivity
+24-02-15 17:06:50 [INFO] URL access is successful
+24-02-15 17:06:50 [ERROR] Able to access the internet, Block Always functionality is NOT working as expected
+24-02-15 17:07:00 [DEBUG] Searching for the Keyword: 'Default Policy'
+24-02-15 17:07:01 [DEBUG] Found and Clicked on the Result Containing 'Default Policy'
+24-02-15 17:07:09 [DEBUG] Searching for the Keyword: 'Security Status'
+24-02-15 17:07:11 [DEBUG] Found and Clicked on the Result Containing 'Security Status'
+24-02-15 17:07:17 [INFO] Firewall Policy is changed to Allow Always
+24-02-15 17:07:17 [INFO] Checking website connectivity
+24-02-15 17:07:41 [INFO] URL access is successful
+24-02-15 17:07:41 [INFO] Able to access the internet, Allow Always functionality is working as expected
+24-02-15 17:07:41 [ERROR] Default firewall functionality is NOT working as expected
+24-02-15 17:07:41 [WARNING] Initiating DBG log collection after encountering an issue
+24-02-15 17:07:45 [WARNING] DBG log collected at: 2024-02-15 17:07:45.554109
+24-02-15 18:10:27 [DEBUG] Initializing Chrome WebDriver
+24-02-15 18:10:28 [INFO] Try to Login Through WebGUI
+24-02-15 18:11:15 [DEBUG] ======================================================================================
+24-02-15 18:11:15 [INFO] Validating 'Logout' button functionality in WebGUI
+24-02-15 18:11:15 [INFO] Try to Login Through WebGUI
+24-02-15 18:11:57 [ERROR] Error Occurred While Login Through WebGUI: catching classes that do not inherit from BaseException is not allowed
+24-02-15 18:11:57 [INFO] Performing health check
+24-02-15 18:11:57 [DEBUG] Retrieving Firmware Version.....
+24-02-15 18:11:57 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-15 18:11:59 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-15 18:12:05 [INFO] Current firmware version: ARCNJIO_JIDU6101_D1.9.0
+24-02-15 18:12:05 [INFO] Getting WAN IPv6 Information
+24-02-15 18:12:05 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-15 18:12:06 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-15 18:12:12 [INFO] Successfully retrieved WAN IPv6 address: 2409:4090:17:1000:cf56:c63:de5c:c84d, 2409:4090:17:1208::/64
+24-02-15 18:12:12 [INFO] Checking Ping 4 to google.com
+24-02-15 18:12:32 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-15 18:12:32 [INFO] Ping 4 Passed
+24-02-15 18:12:32 [INFO] Checking Ping 6 to google.com
+24-02-15 18:12:51 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-15 18:12:51 [INFO] Ping 6 Passed
+24-02-15 18:12:51 [INFO] Device health check completed successfully.
+24-02-15 18:16:40 [DEBUG] Initializing Chrome WebDriver
+24-02-15 18:16:41 [INFO] Try to Login Through WebGUI
+24-02-15 18:17:27 [DEBUG] ======================================================================================
+24-02-15 18:17:27 [INFO] Validating 'Logout' button functionality in WebGUI
+24-02-15 18:17:27 [INFO] Try to Login Through WebGUI
+24-02-15 18:18:10 [ERROR] Error Occurred While Login Through WebGUI: catching classes that do not inherit from BaseException is not allowed
+24-02-15 18:18:10 [INFO] Performing health check
+24-02-15 18:18:10 [DEBUG] Retrieving Firmware Version.....
+24-02-15 18:18:10 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-15 18:18:11 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-15 18:18:17 [INFO] Current firmware version: ARCNJIO_JIDU6101_D1.9.0
+24-02-15 18:18:17 [INFO] Getting WAN IPv6 Information
+24-02-15 18:18:17 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-15 18:18:19 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-15 18:18:25 [INFO] Successfully retrieved WAN IPv6 address: 2409:4090:17:1000:cf56:c63:de5c:c84d, 2409:4090:17:1208::/64
+24-02-15 18:18:25 [INFO] Checking Ping 4 to google.com
+24-02-15 18:18:44 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-15 18:18:44 [INFO] Ping 4 Passed
+24-02-15 18:18:44 [INFO] Checking Ping 6 to google.com
+24-02-15 18:19:04 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-15 18:19:04 [INFO] Ping 6 Passed
+24-02-15 18:19:04 [INFO] Device health check completed successfully.
+24-02-15 18:19:06 [INFO] 'Logout' button functionality is working as expected
