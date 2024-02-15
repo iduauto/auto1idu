@@ -38,8 +38,15 @@ print(signature_path)
 
 wireless = Wireless(driver)
 functional_sanity=FunctionalSanity(driver)
+print( functional_sanity.functional_sanity_11())
+
 #
-print( functional_sanity.functional_sanity_41())
+# print( functional_sanity.functional_sanity_01())
+# print( functional_sanity.functional_sanity_02())
+# print( functional_sanity.functional_sanity_06())
+# print( functional_sanity.functional_sanity_14())
+# print( functional_sanity.functional_sanity_41())
+
 # print( functional_sanity.functional_sanity_01())
 
 # login.WebGUI_login()

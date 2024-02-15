@@ -21,15 +21,6 @@ class FunctionalSanity:
         self.login=Login(driver)
         self.wireless = Wireless(driver)
 
-
-class FunctionalSanity:
-    def __init__(self , driver):
-        self.driver = driver
-        self.utils = Utils( driver )
-        self.health = HealthCheck( driver )
-        self.maintenance = Maintenance( driver )
-        self.login = Login( driver )
-
     # Multiple Reset
     def functional_sanity_01(self):
         logger.debug( "======================================================================================" )
@@ -141,6 +132,33 @@ class FunctionalSanity:
             self.utils.get_DBGLogs()
             return False
 
+    #Logout functionality
+    def functional_sanity_11(self):
+        logger.debug( "======================================================================================" )
+        logger.info( "Validating 'Logout' button functionality in WebGUI" )
+
+        try:
+            if self.health.health_check_webgui() == False:
+                logger.error('Device health check failed. Exiting the test.')
+                return False
+
+            self.utils.find_element("//div[@class='iconUser']//*[name()='svg']//*[name()='circle' and @id='iconBG']").click()
+            self.utils.find_element("//div[normalize-space()='Logout']").click()
+
+            if self.utils.is_element_visible('//form[@class="jioWrtLoginGrid"]') == True:
+                logger.info("'Logout' button functionality is working as expected")
+                return True
+            else:
+                logger.error("'Logout' button functionality is NOT working as expected")
+                return False
+
+
+        except Exception as E:
+            logger.error(f"Error occurred during functional_sanity_11: {str(E)}")
+            self.utils.get_DBGLogs()
+            return False
+
+
     #Multiple Reset
     def functional_sanity_58(self):
         logger.debug("======================================================================================")
@@ -166,43 +184,6 @@ class FunctionalSanity:
             logger.error(f"Error occurred during functional_sanity_58: {str(E)}")
             self.utils.get_DBGLogs()
             return False
-
-    #Multiple Reboot
-    def functional_sanity_01(self):
-        logger.debug("======================================================================================")
-        logger.info("Validating multiple reboot")
-        n = 2
-        try:
-            if self.health.health_check_webgui() == False:
-                logger.error('Device health check failed. Exiting the test.')
-                return False
-
-            self.wireless.set_ssid_password_from_gui()
-
-            for i in range(n):
-                logger.debug( f"-------------{i + 1}th Reboot---------------------" )
-                self.maintenance.reboot()
-
-                if self.health.health_check_webgui() == False:
-                    logger.error('Device health check failed. Exiting the test.')
-                    logger.error(f"Error occurred after {i + 1}th reboot iteration")
-                    self.utils.get_DBGLogs()
-                    return False
-                ssid_from_gui = self.wireless.get_ssid_from_gui()
-                if ssid_from_gui == input.test_ssid:
-                    logger.info(f'SSID post reboot is the same: {ssid_from_gui}')
-                else:
-                    logger.error(f'SSID post reboot is not the same. '
-                                 f'Expected:{input.test_ssid}, Actual:{ssid_from_gui}')
-                    return False
-
-            logger.info(f"Successfully reboot from WebGUI - {n} Iterations")
-            return True
-        except Exception as E:
-            logger.error(f"Error occurred during functional_sanity_01: {str(E)}")
-            self.utils.get_DBGLogs()
-            return False
-
 
     #Firmware Upgrade and Downgrade functionality
     def functional_sanity_14(self):
@@ -337,6 +318,10 @@ class FunctionalSanity:
         except Exception as e:
             logger.error( "Error occurred while executing functional_sanity_41: %s" , str( e ) )
             return False
+
+
+
+
 
 
 
