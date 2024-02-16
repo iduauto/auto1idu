@@ -238,6 +238,58 @@ class FunctionalSanity:
             logger.error( "Error occurred while executing functional_sanity_14: %s" , str( E ) )
             return False
 
+    def functional_sanity_38(self):
+        logger.debug( "======================================================================================" )
+        logger.info( "Validate whether the WebGUI is redirecting to Login page after Reboot from WebGUI" )
+        try:
+            # Performing health check
+            if not self.health.health_check_webgui():
+                logger.error( 'Device health check failed. Exiting the test.' )
+                self.utils.get_DBGLogs()
+                return False
+
+            self.maintenance.reboot()  # reset device
+
+            # Check for the login page
+            if self.utils.is_element_visible( '//form[@class="jioWrtLoginGrid"]' ) == True:
+                logger.info( "WebGUI is successfully redirecting to Login page after Reboot from WebGUI" )
+                return True
+            else:
+                logger.error( "WebGUI is NOT redirecting to Login page after Reboot from WebGUI" )
+                return False
+
+        except Exception as e:
+            logger.error( "Error occurred while executing functional_sanity_38: %s" , str( e ) )
+            self.utils.get_DBGLogs()
+            return False
+
+    def functional_sanity_39(self):
+        logger.debug( "======================================================================================" )
+        logger.info("Validate whether the WebGUI is redirecting to Login page after Factory Reset from WebGUI")
+        try:
+            # Performing health check
+            if not self.health.health_check_webgui():
+                logger.error( 'Device health check failed. Exiting the test.' )
+                self.utils.get_DBGLogs()
+                return False
+
+            self.maintenance.reset() #reset device
+
+            #Check for the login page
+            if self.utils.is_element_visible( '//form[@class="jioWrtLoginGrid"]' ) == True:
+                logger.info( "WebGUI is successfully redirecting to Login page after Factory Reset from WebGUI" )
+                return True
+            else:
+                logger.error( "WebGUI is NOT redirecting to Login page after Factory Reset from WebGUI" )
+                return False
+
+        except Exception as e:
+            logger.error( "Error occurred while executing functional_sanity_39: %s" , str( e ) )
+            self.utils.get_DBGLogs()
+            return False
+
+
+
     # Validate Default firewall functionality
     def functional_sanity_41(self):
         logger.debug( "======================================================================================" )
