@@ -12,14 +12,15 @@ from logger import setup_logger
 
 logger = setup_logger( __name__ )
 
+
 class FunctionalSanity:
-    def __init__(self,driver):
+    def __init__(self , driver):
         self.driver = driver
-        self.utils=Utils(driver)
-        self.health=HealthCheck(driver)
-        self.maintenance = Maintenance(driver)
-        self.login=Login(driver)
-        self.wireless = Wireless(driver)
+        self.utils = Utils( driver )
+        self.health = HealthCheck( driver )
+        self.maintenance = Maintenance( driver )
+        self.login = Login( driver )
+        self.wireless = Wireless( driver )
 
     # Multiple Reset
     def functional_sanity_01(self):
@@ -132,61 +133,60 @@ class FunctionalSanity:
             self.utils.get_DBGLogs()
             return False
 
-    #Logout functionality
+    # Logout functionality
     def functional_sanity_11(self):
         logger.debug( "======================================================================================" )
         logger.info( "Validating 'Logout' button functionality in WebGUI" )
 
         try:
             if self.health.health_check_webgui() == False:
-                logger.error('Device health check failed. Exiting the test.')
+                logger.error( 'Device health check failed. Exiting the test.' )
                 return False
 
-            self.utils.find_element("//div[@class='iconUser']//*[name()='svg']//*[name()='circle' and @id='iconBG']").click()
-            self.utils.find_element("//div[normalize-space()='Logout']").click()
+            self.utils.find_element(
+                "//div[@class='iconUser']//*[name()='svg']//*[name()='circle' and @id='iconBG']" ).click()
+            self.utils.find_element( "//div[normalize-space()='Logout']" ).click()
 
-            if self.utils.is_element_visible('//form[@class="jioWrtLoginGrid"]') == True:
-                logger.info("'Logout' button functionality is working as expected")
+            if self.utils.is_element_visible( '//form[@class="jioWrtLoginGrid"]' ) == True:
+                logger.info( "'Logout' button functionality is working as expected" )
                 return True
             else:
-                logger.error("'Logout' button functionality is NOT working as expected")
+                logger.error( "'Logout' button functionality is NOT working as expected" )
                 return False
 
 
         except Exception as E:
-            logger.error(f"Error occurred during functional_sanity_11: {str(E)}")
+            logger.error( f"Error occurred during functional_sanity_11: {str( E )}" )
             self.utils.get_DBGLogs()
             return False
 
-
-    #Multiple Reset
+    # Multiple Reset
     def functional_sanity_58(self):
-        logger.debug("======================================================================================")
-        logger.info("Validating multiple factory reset")
+        logger.debug( "======================================================================================" )
+        logger.info( "Validating multiple factory reset" )
         try:
             if self.health.health_check_webgui() == False:
-                logger.error('Device health check failed. Exiting the test.')
+                logger.error( 'Device health check failed. Exiting the test.' )
                 return False
             n = 5
-            for i in range(n):
+            for i in range( n ):
                 logger.debug( f"-------------{i + 1}th Factory Reset---------------------" )
                 self.maintenance.reset()
 
                 if self.health.health_check_webgui() == False:
-                    logger.error('Device health check failed. Exiting the test.')
-                    logger.error(f"Error occurred after {i + 1}th factory reset iteration")
+                    logger.error( 'Device health check failed. Exiting the test.' )
+                    logger.error( f"Error occurred after {i + 1}th factory reset iteration" )
                     self.utils.get_DBGLogs()
                     return False
 
-            logger.info(f"Successfully factory reset from Web GUI - {n} Iterations")
+            logger.info( f"Successfully factory reset from Web GUI - {n} Iterations" )
             return True
         except Exception as E:
-            logger.error(f"Error occurred during functional_sanity_58: {str(E)}")
+            logger.error( f"Error occurred during functional_sanity_58: {str( E )}" )
             self.utils.get_DBGLogs()
             return False
 
-
-    #Firmware Upgrade and Downgrade functionality
+    # Firmware Upgrade and Downgrade functionality
     def functional_sanity_14(self):
         logger.debug( "======================================================================================" )
         logger.info( "Validating Firmware Upgrade and Downgrade functionality" )
@@ -239,8 +239,59 @@ class FunctionalSanity:
             logger.error( "Error occurred while executing functional_sanity_14: %s" , str( E ) )
             return False
 
+    def functional_sanity_35(self):
+        logger.debug( "======================================================================================" )
+        logger.info( "Validating whether the device asks to change the password upon every factory reset from WebGUI" )
 
-    #Redirect to login page or not after firmware upgrade
+        try:
+            # Performing health check
+            if not self.health.health_check_webgui():
+                logger.error( 'Device health check failed. Exiting the test.' )
+                self.utils.get_DBGLogs()
+                return False
+
+            # Resetting device
+            self.maintenance.reset()
+
+            # Entering login credentials
+            logger.debug("Try to login with the credentials")
+            logger.debug("Username : admin")
+            logger.debug("Password : P@ssw0rd")
+            self.utils.clear_and_send_keys( input.username , *locaters.Login_Username )
+            self.utils.clear_and_send_keys( input.password , *locaters.Login_Password )
+            self.utils.find_element( *locaters.Login_LoginBtn ).click()
+
+            # Checking if warning message is displayed after login
+            if self.utils.is_element_visible( '//div[@class="jioWrtValidationSection jioWrtErrorColor"]' ):
+                warning_msg = self.utils.find_element( '//div[normalize-space()="Invalid Credentials!"]' ).text
+                if "Invalid Credentials!" in warning_msg:
+                    logger.info( "As Expected, Device is showing Invalid Credentials!" )
+                    self.utils.find_element('//button[normalize-space()="OK"]').click()
+                else:
+                    logger.error( "Unexpected warning message: %s" , warning_msg )
+            else:
+                logger.error( "No warning message displayed after login. Expected to ask to change password." )
+                return False
+
+            logger.debug( "Try to login with the credentials" )
+            logger.debug( "Username : admin" )
+            logger.debug( "Password : Jiocentrum" )
+            self.utils.clear_and_send_keys( input.username , *locaters.Login_Username )
+            self.utils.clear_and_send_keys( input.default_password , *locaters.Login_Password )
+            self.utils.find_element( *locaters.Login_LoginBtn ).click()
+
+            if self.utils.is_element_visible('//form[@name="jioFrmFactoryReset"]'):
+                logger.debug( "Device is on Update Passwords page" )
+                logger.info( "Successfully, Device is asking to change the password upon factory reset" )
+                return True
+
+
+        except Exception as e:
+            logger.error( "Error occurred while executing functional_sanity_35: %s" , str( e ) )
+            self.utils.get_DBGLogs()
+            return False
+
+    # Redirect to login page or not after firmware upgrade
     def functional_sanity_37(self):
         logger.debug( "======================================================================================" )
         logger.info( "Validate whether the WebGUI is redirecting to Login page after Firmware upgrade from WebGUI" )
@@ -256,19 +307,17 @@ class FunctionalSanity:
             signature_path = f"{input.base_path}\\{input.previous_firmware_version}.sig"
             self.maintenance.firmware_upgrade( image_path , signature_path )
 
-            fail_count=0
+            fail_count = 0
             # Check for the login page after downgrad
             if self.utils.is_element_visible( '//form[@class="jioWrtLoginGrid"]' ) == False:
-                fail_count+=1
-
+                fail_count += 1
 
             self.login.WebGUI_login()
             if self.utils.get_firmware_version() == input.previous_firmware_version:  # check for update
                 logger.debug( 'Firmware Downgraded Successfully to ' + input.previous_firmware_version )
             else:
-                fail_count+=1
+                fail_count += 1
                 logger.error( 'Firmware is not Downgraded ' )
-
 
             # upgrade to latest version
             logger.debug( "Reverting back to latest version" )
@@ -278,8 +327,7 @@ class FunctionalSanity:
 
             # Check for the login page after downgrad
             if self.utils.is_element_visible( '//form[@class="jioWrtLoginGrid"]' ) == False:
-                fail_count+=1
-
+                fail_count += 1
 
             self.login.WebGUI_login()
             if self.utils.get_firmware_version() == input.latest_firmware_version:  # check for update
@@ -288,9 +336,8 @@ class FunctionalSanity:
                 fail_count += 1
                 logger.error( 'Firmware is not Upgraded ' )
 
-
             # concluding the test case
-            if fail_count==0:
+            if fail_count == 0:
                 logger.info( "WebGUI is successfully redirecting to Login page after Firmware upgrade from WebGUI" )
                 return True
             else:
@@ -304,7 +351,7 @@ class FunctionalSanity:
             self.utils.get_DBGLogs()
             return False
 
-    #Redirect to login page or not after reboot
+    # Redirect to login page or not after reboot
     def functional_sanity_38(self):
         logger.debug( "======================================================================================" )
         logger.info( "Validate whether the WebGUI is redirecting to Login page after Reboot from WebGUI" )
@@ -330,11 +377,10 @@ class FunctionalSanity:
             self.utils.get_DBGLogs()
             return False
 
-
     # Redirect to login page or not after reset
     def functional_sanity_39(self):
         logger.debug( "======================================================================================" )
-        logger.info("Validate whether the WebGUI is redirecting to Login page after Factory Reset from WebGUI")
+        logger.info( "Validate whether the WebGUI is redirecting to Login page after Factory Reset from WebGUI" )
         try:
             # Performing health check
             if not self.health.health_check_webgui():
@@ -342,9 +388,9 @@ class FunctionalSanity:
                 self.utils.get_DBGLogs()
                 return False
 
-            self.maintenance.reset() #reset device
+            self.maintenance.reset()  # reset device
 
-            #Check for the login page
+            # Check for the login page
             if self.utils.is_element_visible( '//form[@class="jioWrtLoginGrid"]' ) == True:
                 logger.info( "WebGUI is successfully redirecting to Login page after Factory Reset from WebGUI" )
                 return True
@@ -356,7 +402,6 @@ class FunctionalSanity:
             logger.error( "Error occurred while executing functional_sanity_39: %s" , str( e ) )
             self.utils.get_DBGLogs()
             return False
-
 
     # Validate Default firewall functionality
     def functional_sanity_41(self):
@@ -438,11 +483,3 @@ class FunctionalSanity:
         except Exception as e:
             logger.error( "Error occurred while executing functional_sanity_41: %s" , str( e ) )
             return False
-
-
-
-
-
-
-
-

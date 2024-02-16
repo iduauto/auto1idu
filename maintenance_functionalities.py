@@ -29,7 +29,6 @@ class Maintenance:
                 "//div[@class='jioWrtModalWindowContainer jioFactoyDefaultRebootModal']//button[@type='button'][normalize-space()='RESTORE']" ).click()
             logger.debug( "Wait for the reset process to complete : 200s" )
             time.sleep( 200 )
-            logger.info( "Device reset to factory defaults completed successfully" )
         except Exception as e:
             logger.error( f"An error occurred while resetting the device to factory defaults: {e}" )
 
