@@ -46,9 +46,11 @@ functional_sanity=FunctionalSanity(driver)
 # print( functional_sanity.functional_sanity_11())
 # print( functional_sanity.functional_sanity_14())
 
-print( functional_sanity.functional_sanity_37())
-print( functional_sanity.functional_sanity_38())
-print( functional_sanity.functional_sanity_39())
+print( functional_sanity.functional_sanity_35())
+
+# print( functional_sanity.functional_sanity_37())
+# print( functional_sanity.functional_sanity_38())
+# print( functional_sanity.functional_sanity_39())
 
 
 # print( functional_sanity.functional_sanity_41())

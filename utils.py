@@ -88,7 +88,7 @@ class Utils:
     # Ping check
     def check_ping(self , target , protocol):
         try:
-            logger.info( f"Checking Ping {str( protocol ).upper()} to {target}" )
+            logger.debug( f"Checking Ping {str( protocol ).upper()} to {target}" )
             loss_packet_count = 20
             command = f'ping -{protocol} -n 20 {target}'
             p = subprocess.run( command , shell=True , stdin=subprocess.PIPE , capture_output=True , text=True )
@@ -115,7 +115,7 @@ class Utils:
 
     # Checking IPv6 status
     def get_ipv6_info(self):
-        logger.info( "Getting WAN IPv6 Information" )
+        logger.debug( "Getting WAN IPv6 Information" )
         result = {"status": False , "value": ""}
 
         try:
