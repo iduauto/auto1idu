@@ -185,6 +185,7 @@ class FunctionalSanity:
             self.utils.get_DBGLogs()
             return False
 
+
     #Firmware Upgrade and Downgrade functionality
     def functional_sanity_14(self):
         logger.debug( "======================================================================================" )
@@ -238,6 +239,72 @@ class FunctionalSanity:
             logger.error( "Error occurred while executing functional_sanity_14: %s" , str( E ) )
             return False
 
+
+    #Redirect to login page or not after firmware upgrade
+    def functional_sanity_37(self):
+        logger.debug( "======================================================================================" )
+        logger.info( "Validate whether the WebGUI is redirecting to Login page after Firmware upgrade from WebGUI" )
+        try:
+            # Performing health check
+            if not self.health.health_check_webgui():
+                logger.error( 'Device health check failed. Exiting the test.' )
+                self.utils.get_DBGLogs()
+                return False
+
+                # downgrade to previous version
+            image_path = f"{input.base_path}\\{input.previous_firmware_version}.img"
+            signature_path = f"{input.base_path}\\{input.previous_firmware_version}.sig"
+            self.maintenance.firmware_upgrade( image_path , signature_path )
+
+            fail_count=0
+            # Check for the login page after downgrad
+            if self.utils.is_element_visible( '//form[@class="jioWrtLoginGrid"]' ) == False:
+                fail_count+=1
+
+
+            self.login.WebGUI_login()
+            if self.utils.get_firmware_version() == input.previous_firmware_version:  # check for update
+                logger.debug( 'Firmware Downgraded Successfully to ' + input.previous_firmware_version )
+            else:
+                fail_count+=1
+                logger.error( 'Firmware is not Downgraded ' )
+
+
+            # upgrade to latest version
+            logger.debug( "Reverting back to latest version" )
+            image_path = f"{input.base_path}\\{input.latest_firmware_version}.img"
+            signature_path = f"{input.base_path}\\{input.latest_firmware_version}.sig"
+            self.maintenance.firmware_upgrade( image_path , signature_path )
+
+            # Check for the login page after downgrad
+            if self.utils.is_element_visible( '//form[@class="jioWrtLoginGrid"]' ) == False:
+                fail_count+=1
+
+
+            self.login.WebGUI_login()
+            if self.utils.get_firmware_version() == input.latest_firmware_version:  # check for update
+                logger.debug( 'Firmware Upgraded Successfully to ' + input.latest_firmware_version )
+            else:
+                fail_count += 1
+                logger.error( 'Firmware is not Upgraded ' )
+
+
+            # concluding the test case
+            if fail_count==0:
+                logger.info( "WebGUI is successfully redirecting to Login page after Firmware upgrade from WebGUI" )
+                return True
+            else:
+                logger.error( "WebGUI is NOT redirecting to Login page after Firmware upgrade from WebGUI" )
+                return False
+
+
+
+        except Exception as e:
+            logger.error( "Error occurred while executing functional_sanity_37: %s" , str( e ) )
+            self.utils.get_DBGLogs()
+            return False
+
+    #Redirect to login page or not after reboot
     def functional_sanity_38(self):
         logger.debug( "======================================================================================" )
         logger.info( "Validate whether the WebGUI is redirecting to Login page after Reboot from WebGUI" )
@@ -263,6 +330,8 @@ class FunctionalSanity:
             self.utils.get_DBGLogs()
             return False
 
+
+    # Redirect to login page or not after reset
     def functional_sanity_39(self):
         logger.debug( "======================================================================================" )
         logger.info("Validate whether the WebGUI is redirecting to Login page after Factory Reset from WebGUI")
@@ -287,7 +356,6 @@ class FunctionalSanity:
             logger.error( "Error occurred while executing functional_sanity_39: %s" , str( e ) )
             self.utils.get_DBGLogs()
             return False
-
 
 
     # Validate Default firewall functionality
