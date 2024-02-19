@@ -1,4 +1,6 @@
 import time
+from datetime import datetime, timedelta
+
 
 import input
 import locaters
@@ -160,6 +162,39 @@ class FunctionalSanity:
             self.utils.get_DBGLogs()
             return False
 
+    #Time and Date functionality
+    def functional_sanity_12(self):
+        logger.debug( "======================================================================================" )
+        logger.info( "Validate date/time functionality in IDU" )
+        try:
+            # Performing health check
+            if not self.health.health_check_webgui():
+                logger.error( 'Device health check failed. Exiting the test.' )
+                self.utils.get_DBGLogs()
+                return False
+
+            self.utils.search_WebGUI("Time Configuration")
+            current_time = self.utils.find_element("/html[1]/body[1]/mainapp[1]/div[1]/div[2]/div[4]/div[1]/form[1]/div[1]/div[1]/div[3]/div[1]/div[2]").text
+
+            format_str = "%A, %B %d %Y, %H:%M:%S (GMT %z)"
+            check_time = datetime.strptime( current_time , format_str )
+            current_time = datetime.now( check_time.tzinfo )
+            threshold = timedelta( minutes=1 )
+
+            logger.info(f"Device current time : {current_time}")
+
+            if abs(current_time - check_time) <= threshold:
+                logger.info( "date/time functionality is working as expected" )
+                return True
+            else:
+                logger.error( "date/time functionality is NOT working as expected" )
+                return False
+
+        except Exception as e:
+            logger.error( "Error occurred while executing functional_sanity_12: %s" , str( e ) )
+            self.utils.get_DBGLogs()
+            return False
+
     # Multiple Reset
     def functional_sanity_58(self):
         logger.debug( "======================================================================================" )
@@ -239,10 +274,142 @@ class FunctionalSanity:
             logger.error( "Error occurred while executing functional_sanity_14: %s" , str( E ) )
             return False
 
+    # Administration user password management
+    def functional_sanity_28(self):
+        logger.debug( "======================================================================================" )
+        logger.info( "Validate administration user password management functionality" )
+
+        try:
+            # Performing health check
+            if not self.health.health_check_webgui():
+                logger.error( 'Device health check failed. Exiting the test.' )
+                self.utils.get_DBGLogs()
+                return False
+
+
+            # Changing password
+            logger.info( "Changing admin password to 'PR@sant23'" )
+            self.utils.search_WebGUI( "User Management" )
+            self.utils.find_element(
+                "//tbody/tr[1]/td[5]/div[1]/div[3]/div[1]//*[name()='svg']//*[name()='path' and @id='icon']" ).click()
+            self.utils.clear_and_send_keys( "PR@sant23" , "//input[@name='password']" )
+            self.utils.clear_and_send_keys( "PR@sant23" , "//input[@name='confirmPassword']" )
+
+            self.utils.find_element( "//button[normalize-space()='SAVE']" ).click()
+            time.sleep( 30 )
+
+            succes_count=0
+            # Check if device is logged out
+            if self.utils.is_element_visible( '//form[@class="jioWrtLoginGrid"]' ):
+                succes_count+=1
+                logger.info( "Password changed successfully to 'PR@snt23' and device is logged out" )
+
+
+            # Try to login with new password
+            logger.debug( "Trying to log in with new password" )
+            self.utils.clear_and_send_keys( 'admin' , *locaters.Login_Username )
+            self.utils.clear_and_send_keys( "PR@sant23" , *locaters.Login_Password )
+            self.utils.find_element( *locaters.Login_LoginBtn ).click()
+            time.sleep( 15 )
+            if self.utils.is_element_visible( '//h2[normalize-space()="Dashboard"]' ):
+                succes_count+=1
+                logger.info( "Successfully logged in with new credentials" )
+
+            # Revert back the password
+            logger.debug( "Reverting back the password to its original" )
+            self.utils.search_WebGUI( "User Management" )
+            self.utils.find_element(
+                "//tbody/tr[1]/td[5]/div[1]/div[3]/div[1]//*[name()='svg']//*[name()='path' and @id='icon']" ).click()
+
+            self.utils.clear_and_send_keys( "P@ssw0rd" , "//input[@name='password']" )
+            self.utils.clear_and_send_keys( "P@ssw0rd" , "//input[@name='confirmPassword']" )
+            self.utils.find_element( "//button[normalize-space()='SAVE']" ).click()
+            time.sleep( 30 )
+
+            if self.utils.is_element_visible( '//form[@class="jioWrtLoginGrid"]' ):
+                succes_count += 1
+                logger.info( "Password reverted back to its original : 'P@ssw0rd'" )
+
+            # Check if all steps were successful
+            if succes_count == 3:
+                logger.info( "Administration user password management functionality is working as expected" )
+                return True
+            else:
+                logger.error( "Administration user password management functionality is NOT working as expected" )
+                return False
+
+        except Exception as e:
+            logger.error( "Error occurred while executing functional_sanity_28: %s" , str( e ) )
+            self.utils.get_DBGLogs()
+            return False
+
+    def functional_sanity_29(self):
+        logger.debug( "======================================================================================" )
+        logger.info( "Validate Guest user password management functionality" )
+
+        try:
+            # Performing health check
+            if not self.health.health_check_webgui():
+                logger.error( 'Device health check failed. Exiting the test.' )
+                self.utils.get_DBGLogs()
+                return False
+
+
+            # Changing password
+            logger.info( "Changing guest password to 'PR@sant23'" )
+            self.utils.search_WebGUI( "User Management" )
+            self.utils.find_element(
+                "//tbody/tr[2]/td[5]/div[1]/div[3]/div[1]//*[name()='svg']//*[name()='path' and @id='icon']" ).click()
+            self.utils.clear_and_send_keys( "PR@sant23" , "//input[@name='password']" )
+            self.utils.clear_and_send_keys( "PR@sant23" , "//input[@name='confirmPassword']" )
+
+            self.utils.find_element( "//button[normalize-space()='SAVE']" ).click()
+            time.sleep( 30 )
+
+            self.utils.find_element(
+                "//div[@class='iconUser']//*[name()='svg']//*[name()='circle' and @id='iconBG']" ).click()
+            self.utils.find_element( "//div[normalize-space()='Logout']" ).click()
+
+
+            succes_count=0
+
+            # Try to login with new password
+            logger.debug( "Trying to log in with new password" )
+            self.utils.clear_and_send_keys( 'guest' , *locaters.Login_Username )
+            self.utils.clear_and_send_keys( "PR@sant23" , *locaters.Login_Password )
+            self.utils.find_element( *locaters.Login_LoginBtn ).click()
+            time.sleep( 15 )
+            if self.utils.is_element_visible( '//h2[normalize-space()="Dashboard"]' ):
+                succes_count+=1
+                logger.info( "Successfully logged in with new credentials" )
+
+
+            #checking user rights
+            self.utils.search_WebGUI("Wireless Configuration")
+            if self.utils.find_element("//input[@name='password']").is_enabled()== False:
+                logger.info("Unable to modify wireless config")
+                succes_count += 1
+
+            if succes_count == 2:
+                logger.info( "Administration user password management functionality is working as expected" )
+                return True
+            else:
+                logger.error( "Administration user password management functionality is NOT working as expected" )
+                return False
+
+        except Exception as e:
+            logger.error( "Error occurred while executing functional_sanity_28: %s" , str( e ) )
+            self.utils.get_DBGLogs()
+            return False
+        finally:
+            self.utils.find_element(
+                "//div[@class='iconUser']//*[name()='svg']//*[name()='circle' and @id='iconBG']" ).click()
+            self.utils.find_element( "//div[normalize-space()='Logout']" ).click()
+
+    #change the password upon every factory reset
     def functional_sanity_35(self):
         logger.debug( "======================================================================================" )
         logger.info( "Validating whether the device asks to change the password upon every factory reset from WebGUI" )
-
         try:
             # Performing health check
             if not self.health.health_check_webgui():
@@ -284,8 +451,6 @@ class FunctionalSanity:
                 logger.debug( "Device is on Update Passwords page" )
                 logger.info( "Successfully, Device is asking to change the password upon factory reset" )
                 return True
-
-
         except Exception as e:
             logger.error( "Error occurred while executing functional_sanity_35: %s" , str( e ) )
             self.utils.get_DBGLogs()

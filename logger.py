@@ -1,5 +1,6 @@
 import logging
 import colorlog
+from datetime import datetime
 
 def setup_logger(name=__name__):
     logger = logging.getLogger(name)
@@ -26,8 +27,10 @@ def setup_logger(name=__name__):
     console_handler = logging.StreamHandler()
     console_handler.setFormatter(consol_formatter)
 
-    file_handler = logging.FileHandler('log_files/logs.log')
-    file_handler.setFormatter(file_formatter)
+    current_datetime = datetime.now().strftime( '%Y-%m-%d_%H-%M-%S' )
+    log_file_name = f'log_files/logs_{current_datetime}.log'
+    file_handler = logging.FileHandler( log_file_name )
+    file_handler.setFormatter( file_formatter )
 
     logger.addHandler(console_handler)
     logger.addHandler(file_handler)
