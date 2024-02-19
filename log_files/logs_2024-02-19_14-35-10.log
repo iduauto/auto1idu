@@ -1,0 +1,7 @@
+24-02-19 14:35:11 [DEBUG] Initializing Chrome WebDriver
+24-02-19 14:35:12 [INFO] Try to Login Through WebGUI
+24-02-19 14:35:58 [DEBUG] Searching for the Keyword: 'User Management'
+24-02-19 14:36:15 [ERROR] Error Occurred While Searching for the Keyword: 'User Management': Message: Element not found within the specified timeout
+
+24-02-19 14:36:31 [WARNING] Initiating DBG log collection after encountering an issue
+24-02-19 14:36:31 [WARNING] DBG log collected at: 2024-02-19 14:36:31.818485

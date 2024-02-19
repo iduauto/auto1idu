@@ -1,0 +1,6 @@
+24-02-19 14:14:57 [DEBUG] Initializing Chrome WebDriver
+24-02-19 14:14:58 [INFO] Try to Login Through WebGUI
+24-02-19 14:15:30 [DEBUG] ======================================================================================
+24-02-19 14:15:30 [INFO] Validate administration user password management functionality
+24-02-19 14:15:30 [DEBUG] Searching for the Keyword: 'User Management'
+24-02-19 14:15:32 [DEBUG] Found and Clicked on the Result Containing 'User Management'

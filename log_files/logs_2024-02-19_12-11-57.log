@@ -1,0 +1,82 @@
+24-02-19 12:11:57 [DEBUG] Initializing Chrome WebDriver
+24-02-19 12:11:58 [INFO] Try to Login Through WebGUI
+24-02-19 12:12:01 [ERROR] Error Occurred While Login Through WebGUI: 'NoneType' object has no attribute 'is_displayed'
+24-02-19 12:12:01 [DEBUG] ======================================================================================
+24-02-19 12:12:01 [INFO] Validate date/time functionality in IDU
+24-02-19 12:12:01 [DEBUG] Searching for the Keyword: 'Date & Time Configuration'
+24-02-19 12:12:02 [ERROR] Error Occurred While Searching for the Keyword: 'Date & Time Configuration': Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=121.0.6167.185)
+Stacktrace:
+	GetHandleVerifier [0x00F01673+52979]
+	(No symbol) [0x00E87961]
+	(No symbol) [0x00D6DD3D]
+	(No symbol) [0x00D5239A]
+	(No symbol) [0x00DCA71B]
+	(No symbol) [0x00DDACB6]
+	(No symbol) [0x00DC4286]
+	(No symbol) [0x00D9C063]
+	(No symbol) [0x00D9CECD]
+	GetHandleVerifier [0x01218D83+3294723]
+	GetHandleVerifier [0x01256CC2+3548482]
+	GetHandleVerifier [0x01251C9C+3527964]
+	GetHandleVerifier [0x00F9870E+671630]
+	(No symbol) [0x00E91EB4]
+	(No symbol) [0x00E8D808]
+	(No symbol) [0x00E8D92D]
+	(No symbol) [0x00E7F7E0]
+	BaseThreadInitThunk [0x758FFCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x77047C5E+286]
+	RtlGetAppContainerNamedObjectPath [0x77047C2E+238]
+
+24-02-19 12:12:03 [ERROR] Error occurred while executing functional_sanity_12: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=121.0.6167.185)
+Stacktrace:
+	GetHandleVerifier [0x00F01673+52979]
+	(No symbol) [0x00E87961]
+	(No symbol) [0x00D6DD3D]
+	(No symbol) [0x00D5239A]
+	(No symbol) [0x00DCA71B]
+	(No symbol) [0x00DDACB6]
+	(No symbol) [0x00DC4286]
+	(No symbol) [0x00D9C063]
+	(No symbol) [0x00D9CECD]
+	GetHandleVerifier [0x01218D83+3294723]
+	GetHandleVerifier [0x01256CC2+3548482]
+	GetHandleVerifier [0x01251C9C+3527964]
+	GetHandleVerifier [0x00F9870E+671630]
+	(No symbol) [0x00E91EB4]
+	(No symbol) [0x00E8D808]
+	(No symbol) [0x00E8D92D]
+	(No symbol) [0x00E7F7E0]
+	BaseThreadInitThunk [0x758FFCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x77047C5E+286]
+	RtlGetAppContainerNamedObjectPath [0x77047C2E+238]
+
+24-02-19 12:12:03 [WARNING] Initiating DBG log collection after encountering an issue
+24-02-19 12:12:03 [ERROR] Error occurred while collecting DBG logs: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=121.0.6167.185)
+Stacktrace:
+	GetHandleVerifier [0x00F01673+52979]
+	(No symbol) [0x00E87961]
+	(No symbol) [0x00D6DD3D]
+	(No symbol) [0x00D5239A]
+	(No symbol) [0x00DCA71B]
+	(No symbol) [0x00DDACB6]
+	(No symbol) [0x00DC4286]
+	(No symbol) [0x00D9C063]
+	(No symbol) [0x00D9CECD]
+	GetHandleVerifier [0x01218D83+3294723]
+	GetHandleVerifier [0x01256CC2+3548482]
+	GetHandleVerifier [0x01251C9C+3527964]
+	GetHandleVerifier [0x00F9870E+671630]
+	(No symbol) [0x00E91EB4]
+	(No symbol) [0x00E8D808]
+	(No symbol) [0x00E8D92D]
+	(No symbol) [0x00E7F7E0]
+	BaseThreadInitThunk [0x758FFCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x77047C5E+286]
+	RtlGetAppContainerNamedObjectPath [0x77047C2E+238]
+

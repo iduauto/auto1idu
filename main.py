@@ -17,52 +17,32 @@ from utils import Utils
 logger = setup_logger(__name__)
 
 driver=setup.get_driver()
+login = Login(driver)
 
-#
-# health_check = HealthCheck(driver)
-# health_check.health_check_webgui()
-
-login=Login(driver)
-# utils=Utils(driver)
-#
-# print('him')
-#
-#login.WebGUI_login()
-# print(utils.get_DBGLogs())
-# login = Login(driver)
-image_path = f"{input.base_path}\\{input.latest_firmware_version}.img"
-signature_path = input.base_path + "/" + input.previous_firmware_version + ".sign"
-print(image_path)
-print(signature_path)
-
-
-wireless = Wireless(driver)
+login.WebGUI_login()
 functional_sanity=FunctionalSanity(driver)
+print(functional_sanity.functional_sanity_28())
+
+count=0
+# while(count != 10):
+#     logger.warning("---------------------------------------------------------------------------------------------------")
+#     logger.warning(f"                              Execution Iteration {count}                                        ")
+#     logger.warning("---------------------------------------------------------------------------------------------------")
+#     print( functional_sanity.functional_sanity_01())
+#     print( functional_sanity.functional_sanity_02())
+#     print( functional_sanity.functional_sanity_06())
+#     print( functional_sanity.functional_sanity_11())
+#     print( functional_sanity.functional_sanity_12())
+#     print( functional_sanity.functional_sanity_14())
+#     print( functional_sanity.functional_sanity_35())
+#     print( functional_sanity.functional_sanity_37())
+#     print( functional_sanity.functional_sanity_38())
+#     print( functional_sanity.functional_sanity_39())
+#     print( functional_sanity.functional_sanity_41())
+#     count+=1
 
 
-# print( functional_sanity.functional_sanity_01())
-# print( functional_sanity.functional_sanity_02())
-# print( functional_sanity.functional_sanity_06())
-# print( functional_sanity.functional_sanity_11())
-# print( functional_sanity.functional_sanity_14())
-
-print( functional_sanity.functional_sanity_35())
-
-# print( functional_sanity.functional_sanity_37())
-# print( functional_sanity.functional_sanity_38())
-# print( functional_sanity.functional_sanity_39())
-
-
-# print( functional_sanity.functional_sanity_41())
-
-# print( functional_sanity.functional_sanity_01())
-
-# login.WebGUI_login()
-# wireless.set_ssid_password_from_gui('India', 'ilovemyindia')
-# ssid = wireless.get_ssid_from_gui()
-# print(f'SSID value returned from gui is {ssid}')
-#
-# driver.quit()
+driver.quit()
 
 
 

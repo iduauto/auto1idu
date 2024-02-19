@@ -1,0 +1,4 @@
+24-02-19 14:35:58 [DEBUG] ======================================================================================
+24-02-19 14:35:58 [INFO] Validate administration user password management functionality
+24-02-19 14:36:31 [ERROR] Error occurred while executing functional_sanity_12: Message: Element not found within the specified timeout
+
