@@ -1,7 +1,0 @@
-24-02-19 14:20:21 [DEBUG] Initializing Chrome WebDriver
-24-02-19 14:20:22 [INFO] Try to Login Through WebGUI
-24-02-19 14:21:08 [DEBUG] ======================================================================================
-24-02-19 14:21:08 [INFO] Validate administration user password management functionality
-24-02-19 14:21:08 [DEBUG] Searching for the Keyword: 'User Management'
-24-02-19 14:21:25 [ERROR] Error Occurred While Searching for the Keyword: 'User Management': Message: Element not found within the specified timeout
-

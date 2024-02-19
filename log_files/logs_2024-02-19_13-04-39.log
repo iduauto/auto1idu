@@ -1,6 +1,0 @@
-24-02-19 13:04:39 [DEBUG] Initializing Chrome WebDriver
-24-02-19 13:04:40 [INFO] Try to Login Through WebGUI
-24-02-19 13:05:12 [DEBUG] ======================================================================================
-24-02-19 13:05:12 [INFO] Validate administration user password management functionality
-24-02-19 13:05:12 [DEBUG] Searching for the Keyword: 'Time User Management'
-24-02-19 13:05:13 [WARNING] No Search Result Found for Keyword: 'Time User Management'
