@@ -288,7 +288,7 @@ class FunctionalSanity:
 
 
             # Changing password
-            logger.info( "Changing admin password to 'PR@sant23'" )
+            logger.debug( "Changing the admin credentials to:\nUsername: 'admin'\nPassword: 'PR@sant23' " )
             self.utils.search_WebGUI( "User Management" )
             self.utils.find_element(
                 "//tbody/tr[1]/td[5]/div[1]/div[3]/div[1]//*[name()='svg']//*[name()='path' and @id='icon']" ).click()
@@ -302,11 +302,11 @@ class FunctionalSanity:
             # Check if device is logged out
             if self.utils.is_element_visible( '//form[@class="jioWrtLoginGrid"]' ):
                 succes_count+=1
-                logger.info( "Password changed successfully to 'PR@snt23' and device is logged out" )
+                logger.info( "Password changed successfully" )
 
 
             # Try to login with new password
-            logger.debug( "Trying to log in with new password" )
+            logger.debug("Attempting login with the new admin credentials:\nUsername: 'admin'\nPassword: 'PR@sant23'")
             self.utils.clear_and_send_keys( 'admin' , *locaters.Login_Username )
             self.utils.clear_and_send_keys( "PR@sant23" , *locaters.Login_Password )
             self.utils.find_element( *locaters.Login_LoginBtn ).click()
@@ -316,7 +316,7 @@ class FunctionalSanity:
                 logger.info( "Successfully logged in with new credentials" )
 
             # Revert back the password
-            logger.debug( "Reverting back the password to its original" )
+            logger.debug( "Reverting back the admin credentials to:\nUsername: 'admin'\nPassword: 'P@ssw0rd' " )
             self.utils.search_WebGUI( "User Management" )
             self.utils.find_element(
                 "//tbody/tr[1]/td[5]/div[1]/div[3]/div[1]//*[name()='svg']//*[name()='path' and @id='icon']" ).click()
@@ -328,7 +328,7 @@ class FunctionalSanity:
 
             if self.utils.is_element_visible( '//form[@class="jioWrtLoginGrid"]' ):
                 succes_count += 1
-                logger.info( "Password reverted back to its original : 'P@ssw0rd'" )
+                logger.info("Password reverted back successfully")
 
             # Check if all steps were successful
             if succes_count == 3:
@@ -343,6 +343,7 @@ class FunctionalSanity:
             self.utils.get_DBGLogs()
             return False
 
+    #Guest user password management
     def functional_sanity_29(self):
         logger.debug( "======================================================================================" )
         logger.info( "Validate Guest user password management functionality" )
@@ -356,7 +357,7 @@ class FunctionalSanity:
 
 
             # Changing password
-            logger.info( "Changing guest password to 'PR@sant23'" )
+            logger.debug( "Changing the guest credentials to:\nUsername: 'guest'\nPassword: 'PR@sant23' " )
             self.utils.search_WebGUI( "User Management" )
             self.utils.find_element(
                 "//tbody/tr[2]/td[5]/div[1]/div[3]/div[1]//*[name()='svg']//*[name()='path' and @id='icon']" ).click()
@@ -374,7 +375,8 @@ class FunctionalSanity:
             succes_count=0
 
             # Try to login with new password
-            logger.debug( "Trying to log in with new password" )
+            logger.debug("Attempting login with the new guest credentials:\nUsername: 'guest'\nPassword: 'PR@sant23'")
+
             self.utils.clear_and_send_keys( 'guest' , *locaters.Login_Username )
             self.utils.clear_and_send_keys( "PR@sant23" , *locaters.Login_Password )
             self.utils.find_element( *locaters.Login_LoginBtn ).click()
