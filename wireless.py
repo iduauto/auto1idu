@@ -11,7 +11,7 @@ class Wireless:
         self.driver = driver
         self.utils = Utils(driver)
 
-    def set_ssid_password_from_gui(self, ssid=input.test_ssid, password=input.test_password):
+    def set_ssid_password_from_gui(self , ssid=input.test_ssid , password=input.test_ssid_password):
         logger.info('Initiating set SSID Password from gui')
         self.utils.search_WebGUI('Wireless Configuration')
         self.utils.clear_and_send_keys(ssid, *locaters.Wireless_Ssid)
