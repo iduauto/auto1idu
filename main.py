@@ -27,6 +27,10 @@ print( firewall.add_ipv4_firewall_rule("HTTPS") )
 time.sleep(5)
 print( firewall.add_ipv6_firewall_rule("HTTPS") )
 time.sleep(5)
+print( firewall.delete_ipv4_firewall_rule() )
+time.sleep(5)
+print( firewall.delete_ipv6_firewall_rule() )
+time.sleep(5)
 
 
 
