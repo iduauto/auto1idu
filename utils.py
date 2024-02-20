@@ -23,6 +23,7 @@ class Utils:
 
     # Find the element in return
     def find_element(self , xpath=None , css_selector=None , id=None , timeout=10):
+        time.sleep(1)
         if not any( [xpath , css_selector , id] ):
             raise ValueError( "At least one locator (xpath, css_selector, or ID) must be provided." )
 
@@ -87,7 +88,7 @@ class Utils:
     # Ping check
     def check_ping(self , target , protocol):
         try:
-            logger.info( f"Checking Ping {str( protocol ).upper()} to {target}" )
+            logger.debug( f"Checking Ping {str( protocol ).upper()} to {target}" )
             loss_packet_count = 20
             command = f'ping -{protocol} -n 20 {target}'
             p = subprocess.run( command , shell=True , stdin=subprocess.PIPE , capture_output=True , text=True )
@@ -114,7 +115,7 @@ class Utils:
 
     # Checking IPv6 status
     def get_ipv6_info(self):
-        logger.info( "Getting WAN IPv6 Information" )
+        logger.debug( "Getting WAN IPv6 Information" )
         result = {"status": False , "value": ""}
 
         try:
@@ -139,28 +140,31 @@ class Utils:
 
     # Checking Firmware Version
     def get_firmware_version(self):
-        logger.info( "Getting WAN Firmware Version" )
-        result = {"status": False , "value": ""}
-
+        logger.debug("Retrieving Firmware Version.....")
         try:
             self.search_WebGUI( "WAN Information" )
-            firmware_version_element = self.find_element( *locaters.SysInfo_FirmwareVersion )
-            firmware_version = firmware_version_element.text
-            result["value"] = firmware_version
-
-            if firmware_version and firmware_version == input.latest_firmware_version:
-                result["status"] = True
-                logger.info( f"Device is having latest firmware: {firmware_version}" )
-            else:
-                result["status"] = False
-                logger.error( f"Device is NOT having the latest firmware: {firmware_version}" )
-
-        except NoSuchElementException:
-            logger.error( "Firmware Version element not found on the page " )
+            firmware_version = self.find_element( *locaters.SysInfo_FirmwareVersion ).text
+            logger.info( f"Current firmware version: {firmware_version}" )
+            return firmware_version
         except Exception as e:
             logger.error( f"An error occurred while fetching Firmware Version: {e}" )
 
-        return result
+    # Check internet connectivity
+    def check_website_connectivity(self , urls):
+        logger.info( "Checking website connectivity" )
+        from selenium import webdriver
+        for url in urls:
+            try:
+                driver = webdriver.Chrome()
+                driver.get( url )
+            except Exception as e:
+                logger.error( f"Error accessing {url}" )
+                return False
+            finally:
+                driver.quit()
+
+        logger.info( 'URL access is successful' )
+        return True
 
     # Taking DBG logs
     def get_DBGLogs(self):

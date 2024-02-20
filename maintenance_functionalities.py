@@ -29,7 +29,6 @@ class Maintenance:
                 "//div[@class='jioWrtModalWindowContainer jioFactoyDefaultRebootModal']//button[@type='button'][normalize-space()='RESTORE']" ).click()
             logger.debug( "Wait for the reset process to complete : 200s" )
             time.sleep( 200 )
-            logger.info( "Device reset to factory defaults completed successfully" )
         except Exception as e:
             logger.error( f"An error occurred while resetting the device to factory defaults: {e}" )
 
@@ -104,7 +103,7 @@ class Maintenance:
 
     #Firmware upgrade and downgrade
     def firmware_upgrade(self,image_file,signature_file):
-        logger.info("Upgrading firmware version ")
+        logger.info("Initiating firmware changing process")
         try:
             self.utils.search_WebGUI("Firmware Upgrade")
 
@@ -137,9 +136,11 @@ class Maintenance:
             self.utils.find_element("//button[normalize-space()='UPGRADE']").click()
             time.sleep(5)
             self.utils.find_element('//*[@id="root"]/div[1]/div[2]/div[4]/div[1]/div[2]/form/div[3]/button').click()
+
+            logger.debug( "Wait for the upgrade process to complete : 200s" )
             time.sleep(200)
 
         except Exception as e:
-            self.logger.error( f"An error occurred during firmware upgrade: {str( e )}" )
+            logger.error( f"An error occurred during firmware upgrade: {str( e )}" )
 
 
