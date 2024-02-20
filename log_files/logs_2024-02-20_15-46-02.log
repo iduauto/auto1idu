@@ -1,9 +1,0 @@
-24-02-20 15:46:03 [DEBUG] Initializing Chrome WebDriver
-24-02-20 15:46:04 [INFO] Try to Login Through WebGUI
-24-02-20 15:46:15 [INFO] Adding IPv4 rule
-24-02-20 15:46:15 [DEBUG] Searching for the Keyword: 'List of IPv4 Firewall Rules'
-24-02-20 15:46:16 [DEBUG] Found and Clicked on the Result Containing 'List of IPv4 Firewall Rules'
-24-02-20 15:46:23 [INFO] Adding IPv6 rule
-24-02-20 15:46:23 [DEBUG] Searching for the Keyword: 'List of IPv6 Firewall Rules'
-24-02-20 15:46:25 [DEBUG] Found and Clicked on the Result Containing 'List of IPv6 Firewall Rules'
-24-02-20 15:46:40 [INFO] IPv6 firewall rule added - Service: HTTPS, Action: Block Always, Rule Type: Inbound
