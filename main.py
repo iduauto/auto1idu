@@ -13,6 +13,7 @@ from login import Login
 
 from logger import setup_logger
 from login import Login
+
 from utils import Utils
 
 logger = setup_logger(__name__)
@@ -22,16 +23,9 @@ functional_sanity=FunctionalSanity(driver)
 firewall = Firewall(driver)
 login = Login(driver)
 login.WebGUI_login()
+maintenance = Maintenance( driver )
 
-print( firewall.add_ipv4_firewall_rule("HTTPS") )
-time.sleep(5)
-print( firewall.add_ipv6_firewall_rule("HTTPS") )
-time.sleep(5)
-print( firewall.delete_ipv4_firewall_rule() )
-time.sleep(5)
-print( firewall.delete_ipv6_firewall_rule() )
-time.sleep(5)
-
+print(functional_sanity.functional_sanity_47())
 
 
 # count=0
@@ -52,6 +46,17 @@ time.sleep(5)
 #     print( functional_sanity.functional_sanity_38())
 #     print( functional_sanity.functional_sanity_39())
 #     print( functional_sanity.functional_sanity_41())
+#
+#     login.WebGUI_login()
+#     print( firewall.add_ipv4_firewall_rule( "HTTPS" ) )
+#     time.sleep( 5 )
+#     print( firewall.add_ipv6_firewall_rule( "HTTPS" ) )
+#     time.sleep( 5 )
+#     print( firewall.delete_ipv4_firewall_rule() )
+#     time.sleep( 5 )
+#     print( firewall.delete_ipv6_firewall_rule() )
+#     time.sleep( 5 )
+#
 #     count+=1
 
 

@@ -5,6 +5,7 @@ import os
 import glob
 import re
 import time
+from datetime import datetime
 
 from utils import Utils
 from logger import setup_logger
@@ -58,9 +59,11 @@ class Maintenance:
             time.sleep( 15 )  # Wait for the backup process to complete
 
             # Check if the backup file exists in the default download directory
-            default_download_dir = "C:/Users/ontvi/Downloads"  # Update with your default download directory
+            today_date = datetime.now().strftime( "%Y-%m-%d" )
+            expected_file_name = f"backup-jio-{today_date}_enc.tar.gz"
+            default_download_dir = rf"C:\Users\ontvi\Downloads"
             for file_name in os.listdir( default_download_dir ):
-                if file_name.startswith( "backup-jio-" ) and file_name.endswith( "_enc.tar.gz" ):
+                if file_name == expected_file_name:
                     backup_file_path = os.path.join( default_download_dir , file_name )
                     break
 
@@ -73,6 +76,7 @@ class Maintenance:
 
         except Exception as e:
             logger.error( f"An error occurred during device backup: {e}" )
+            return e
 
         return backup_file_path
 
