@@ -1,0 +1,36 @@
+24-02-23 16:04:55 [DEBUG] Initializing Chrome WebDriver
+24-02-23 16:04:56 [INFO] Try to Login Through WebGUI
+24-02-23 16:05:23 [INFO] Initiating device factory defaults
+24-02-23 16:05:23 [DEBUG] Searching for the Keyword: 'Factory Defaults / Reboot'
+24-02-23 16:05:24 [DEBUG] Found and Clicked on the Result Containing 'Factory Defaults / Reboot'
+24-02-23 16:05:34 [ERROR] An error occurred while resetting the device to factory defaults: Message: invalid selector: Unable to locate an element with the xpath expression div[class='jioWrtModalWindowContainer jioFactoyDefaultRebootModal'] button[type='button'] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string 'div[class='jioWrtModalWindowContainer jioFactoyDefaultRebootModal'] button[type='button']' is not a valid XPath expression.
+  (Session info: chrome=121.0.6167.187)
+Stacktrace:
+	GetHandleVerifier [0x00BA1673+52979]
+	(No symbol) [0x00B27961]
+	(No symbol) [0x00A0DD3D]
+	(No symbol) [0x00A11F90]
+	(No symbol) [0x00A13AC2]
+	(No symbol) [0x00A13B50]
+	(No symbol) [0x00A45D19]
+	(No symbol) [0x00A460FB]
+	(No symbol) [0x00A7CF92]
+	(No symbol) [0x00A64534]
+	(No symbol) [0x00A7B3FE]
+	(No symbol) [0x00A64286]
+	(No symbol) [0x00A3C063]
+	(No symbol) [0x00A3CECD]
+	GetHandleVerifier [0x00EB8D83+3294723]
+	GetHandleVerifier [0x00EF6CC2+3548482]
+	GetHandleVerifier [0x00EF1C9C+3527964]
+	GetHandleVerifier [0x00C3870E+671630]
+	(No symbol) [0x00B31EB4]
+	(No symbol) [0x00B2D808]
+	(No symbol) [0x00B2D92D]
+	(No symbol) [0x00B1F7E0]
+	BaseThreadInitThunk [0x76B6FCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x77467C5E+286]
+	RtlGetAppContainerNamedObjectPath [0x77467C2E+238]
+
+24-02-23 16:05:39 [INFO] Try to Login Through WebGUI

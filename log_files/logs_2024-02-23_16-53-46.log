@@ -1,0 +1,18 @@
+24-02-23 16:53:46 [DEBUG] Initializing Chrome WebDriver
+24-02-23 16:53:47 [INFO] Try to Login Through WebGUI
+24-02-23 16:54:14 [INFO] Initiating device factory defaults
+24-02-23 16:54:14 [DEBUG] Searching for the Keyword: 'Factory Defaults / Reboot'
+24-02-23 16:54:16 [DEBUG] Found and Clicked on the Result Containing 'Factory Defaults / Reboot'
+24-02-23 16:54:25 [DEBUG] Wait for the reset process to complete : 200s
+24-02-23 16:57:50 [INFO] Try to Login Through WebGUI
+24-02-23 16:57:52 [DEBUG] Device is in Factory Reset State
+24-02-23 16:58:37 [INFO] Initiating device reboot
+24-02-23 16:58:37 [DEBUG] Searching for the Keyword: 'Factory Defaults / Reboot'
+24-02-23 16:58:38 [DEBUG] Found and Clicked on the Result Containing 'Factory Defaults / Reboot'
+24-02-23 16:58:48 [DEBUG] Wait for the reboot process to complete : 200s
+24-02-23 17:02:13 [INFO] Try to Login Through WebGUI
+24-02-23 17:02:52 [INFO] Initiating device backup
+24-02-23 17:02:52 [DEBUG] Searching for the Keyword: 'Backup Settings'
+24-02-23 17:02:54 [DEBUG] Found and Clicked on the Result Containing 'Backup Settings'
+24-02-23 17:03:15 [DEBUG] Backup file found -> 'C:\Users\ontvi\Downloads\backup-jio-2024-02-23_enc.tar.gz'
+24-02-23 17:03:15 [INFO] Backup process initiated successfully

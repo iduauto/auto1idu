@@ -1,0 +1,147 @@
+24-02-22 16:59:26 [DEBUG] ======================================================================================
+24-02-22 16:59:26 [INFO] Validating after Factory Default functionality that the old configuration is removed from the IDU.
+24-02-22 17:00:06 [INFO] Initiating device backup
+24-02-22 17:00:29 [DEBUG] Backup file found -> 'C:\Users\ontvi\Downloads\backup-jio-2024-02-22_enc.tar.gz'
+24-02-22 17:00:29 [INFO] Backup process initiated successfully
+24-02-22 17:00:29 [INFO] Initiating device factory defaults
+24-02-22 17:00:40 [DEBUG] Wait for the reset process to complete : 200s
+24-02-22 17:04:55 [INFO] Old configuration removed successfully after reset.
+24-02-22 17:04:55 [INFO] Initiating device restore, File Path: C:\Users\ontvi\Downloads\backup-jio-2024-02-22_enc.tar.gz
+24-02-22 17:05:06 [DEBUG] File path entered successfully
+24-02-22 17:05:08 [DEBUG] Wait for the Restore process to complete : 200s
+24-02-22 17:09:16 [INFO] Old configuration restored successfully.
+24-02-22 17:09:16 [INFO] Reset, Backup, and restore functionality working as expected.
+24-02-22 17:09:46 [WARNING] ---------------------------------------------------------------------------------------------------
+24-02-22 17:09:46 [WARNING]                               Execution Iteration 0                                        
+24-02-22 17:09:46 [WARNING] ---------------------------------------------------------------------------------------------------
+24-02-22 17:09:46 [DEBUG] ======================================================================================
+24-02-22 17:09:46 [INFO] Validating multiple factory reset
+24-02-22 17:11:17 [DEBUG] -------------1th Factory Reset---------------------
+24-02-22 17:11:17 [INFO] Initiating device factory defaults
+24-02-22 17:11:28 [DEBUG] Wait for the reset process to complete : 200s
+24-02-22 17:16:28 [DEBUG] -------------2th Factory Reset---------------------
+24-02-22 17:16:28 [INFO] Initiating device factory defaults
+24-02-22 17:16:39 [DEBUG] Wait for the reset process to complete : 200s
+24-02-22 17:21:39 [INFO] Successfully factory reset from Web GUI - 5 Iterations
+24-02-22 17:21:39 [DEBUG] ======================================================================================
+24-02-22 17:21:39 [INFO] Validating multiple reboot
+24-02-22 17:23:10 [DEBUG] -------------1th Reboot---------------------
+24-02-22 17:23:10 [INFO] Initiating device reboot
+24-02-22 17:23:21 [DEBUG] Wait for the reboot process to complete : 200s
+24-02-22 17:28:15 [DEBUG] -------------2th Reboot---------------------
+24-02-22 17:28:15 [INFO] Initiating device reboot
+24-02-22 17:28:25 [DEBUG] Wait for the reboot process to complete : 200s
+24-02-22 17:33:19 [INFO] Successfully reboot from WebGUI - 5 Iterations
+24-02-22 17:33:19 [DEBUG] ======================================================================================
+24-02-22 17:33:19 [DEBUG] Validating MAC Address after Reboot and Reset
+24-02-22 17:34:57 [DEBUG] WAN MAC Address before Reboot: dc:f5:1b:14:76:4a
+24-02-22 17:34:57 [INFO] Initiating device reboot
+24-02-22 17:35:08 [DEBUG] Wait for the reboot process to complete : 200s
+24-02-22 17:39:16 [DEBUG] WAN MAC Address after Reboot: dc:f5:1b:14:76:4a
+24-02-22 17:39:16 [INFO] WAN MAC Address is same after Reboot 
+24-02-22 17:39:16 [INFO] Initiating device factory defaults
+24-02-22 17:39:26 [DEBUG] Wait for the reset process to complete : 200s
+24-02-22 17:43:41 [DEBUG] WAN MAC Address after Reset: dc:f5:1b:14:76:4a
+24-02-22 17:43:41 [INFO] WAN MAC Address is same after Factory Reset
+24-02-22 17:43:41 [INFO] MAC Address is same after Reboot and Reset
+24-02-22 17:43:41 [DEBUG] ======================================================================================
+24-02-22 17:43:41 [INFO] Validating 'Logout' button functionality in WebGUI
+24-02-22 17:45:14 [INFO] 'Logout' button functionality is working as expected
+24-02-22 17:45:14 [DEBUG] ======================================================================================
+24-02-22 17:45:14 [INFO] Validate date/time functionality in IDU
+24-02-22 17:46:55 [INFO] Device current time : 2024-02-22 17:46:55.413393+05:30
+24-02-22 17:46:55 [INFO] date/time functionality is working as expected
+24-02-22 17:46:55 [DEBUG] ======================================================================================
+24-02-22 17:46:55 [INFO] Validating Firmware Upgrade and Downgrade functionality
+24-02-22 17:48:26 [INFO] Initiating firmware changing process
+24-02-22 17:48:37 [DEBUG] Image File path entered successfully
+24-02-22 17:48:51 [DEBUG] Signature File path entered successfully
+24-02-22 17:49:08 [DEBUG] Wait for the upgrade process to complete : 200s
+24-02-22 17:53:16 [INFO] Firmware Downgraded Successfully to ARCNJIO_JIDU6101_D1.8.5
+24-02-22 17:53:16 [INFO] Initiating firmware changing process
+24-02-22 17:53:26 [DEBUG] Image File path entered successfully
+24-02-22 17:53:41 [DEBUG] Signature File path entered successfully
+24-02-22 17:53:58 [DEBUG] Wait for the upgrade process to complete : 200s
+24-02-22 17:58:05 [INFO] Firmware Upgraded Successfully to ARCNJIO_JIDU6101_D1.9.0
+24-02-22 17:59:36 [INFO] Firmware Upgrade and Downgrade functionality is working as Expected
+24-02-22 17:59:36 [DEBUG] ======================================================================================
+24-02-22 17:59:36 [INFO] Validate administration user password management functionality
+24-02-22 18:01:07 [DEBUG] Changing the admin credentials to:
+Username: 'admin'
+Password: 'PR@sant23' 
+24-02-22 18:01:48 [INFO] Password changed successfully
+24-02-22 18:01:48 [DEBUG] Attempting login with the new admin credentials:
+Username: 'admin'
+Password: 'PR@sant23'
+24-02-22 18:02:07 [INFO] Successfully logged in with new credentials
+24-02-22 18:02:07 [DEBUG] Reverting back the admin credentials to:
+Username: 'admin'
+Password: 'P@ssw0rd' 
+24-02-22 18:02:48 [INFO] Password reverted back successfully
+24-02-22 18:02:48 [INFO] Administration user password management functionality is working as expected
+24-02-22 18:02:48 [DEBUG] ======================================================================================
+24-02-22 18:02:48 [INFO] Validate Guest user password management functionality
+24-02-22 18:04:21 [DEBUG] Changing the guest credentials to:
+Username: 'guest'
+Password: 'PR@sant23' 
+24-02-22 18:05:04 [DEBUG] Attempting login with the new guest credentials:
+Username: 'guest'
+Password: 'PR@sant23'
+24-02-22 18:05:23 [INFO] Successfully logged in with new credentials
+24-02-22 18:05:31 [INFO] Unable to modify wireless config
+24-02-22 18:05:31 [INFO] Administration user password management functionality is working as expected
+24-02-22 18:05:33 [DEBUG] ======================================================================================
+24-02-22 18:05:33 [INFO] Validating whether the device asks to change the password upon every factory reset from WebGUI
+24-02-22 18:07:06 [INFO] Initiating device factory defaults
+24-02-22 18:07:17 [DEBUG] Wait for the reset process to complete : 200s
+24-02-22 18:10:37 [DEBUG] Try to login with the credentials
+24-02-22 18:10:37 [DEBUG] Username : admin
+24-02-22 18:10:37 [DEBUG] Password : P@ssw0rd
+24-02-22 18:10:41 [INFO] As Expected, Device is showing Invalid Credentials!
+24-02-22 18:10:43 [DEBUG] Try to login with the credentials
+24-02-22 18:10:43 [DEBUG] Username : admin
+24-02-22 18:10:43 [DEBUG] Password : Jiocentrum
+24-02-22 18:10:47 [DEBUG] Device is on Update Passwords page
+24-02-22 18:10:47 [INFO] Successfully, Device is asking to change the password upon factory reset
+24-02-22 18:10:47 [DEBUG] ======================================================================================
+24-02-22 18:10:47 [INFO] Validate whether the WebGUI is redirecting to Login page after Firmware upgrade from WebGUI
+24-02-22 18:12:27 [INFO] Initiating firmware changing process
+24-02-22 18:12:38 [DEBUG] Image File path entered successfully
+24-02-22 18:12:52 [DEBUG] Signature File path entered successfully
+24-02-22 18:13:09 [DEBUG] Wait for the upgrade process to complete : 200s
+24-02-22 18:17:17 [DEBUG] Firmware Downgraded Successfully to ARCNJIO_JIDU6101_D1.8.5
+24-02-22 18:17:17 [DEBUG] Reverting back to latest version
+24-02-22 18:17:17 [INFO] Initiating firmware changing process
+24-02-22 18:17:28 [DEBUG] Image File path entered successfully
+24-02-22 18:17:42 [DEBUG] Signature File path entered successfully
+24-02-22 18:17:59 [DEBUG] Wait for the upgrade process to complete : 200s
+24-02-22 18:22:07 [DEBUG] Firmware Upgraded Successfully to ARCNJIO_JIDU6101_D1.9.0
+24-02-22 18:22:07 [INFO] WebGUI is successfully redirecting to Login page after Firmware upgrade from WebGUI
+24-02-22 18:22:07 [DEBUG] ======================================================================================
+24-02-22 18:22:07 [INFO] Validate whether the WebGUI is redirecting to Login page after Reboot from WebGUI
+24-02-22 18:23:38 [INFO] Initiating device reboot
+24-02-22 18:23:48 [DEBUG] Wait for the reboot process to complete : 200s
+24-02-22 18:27:08 [INFO] WebGUI is successfully redirecting to Login page after Reboot from WebGUI
+24-02-22 18:27:08 [DEBUG] ======================================================================================
+24-02-22 18:27:08 [INFO] Validate whether the WebGUI is redirecting to Login page after Factory Reset from WebGUI
+24-02-22 18:28:42 [INFO] Initiating device factory defaults
+24-02-22 18:28:53 [DEBUG] Wait for the reset process to complete : 200s
+24-02-22 18:32:13 [INFO] WebGUI is successfully redirecting to Login page after Factory Reset from WebGUI
+24-02-22 18:32:13 [DEBUG] ======================================================================================
+24-02-22 18:32:13 [INFO] Validate Default firewall functionality
+24-02-22 18:34:11 [INFO] Firewall Policy is changed to Block Always
+24-02-22 18:34:35 [ERROR] Able to access the internet, Block Always functionality is NOT working as expected
+24-02-22 18:35:03 [INFO] Firewall Policy is changed to Allow Always
+24-02-22 18:35:27 [INFO] Able to access the internet, Allow Always functionality is working as expected
+24-02-22 18:35:27 [ERROR] Default firewall functionality is NOT working as expected
+24-02-22 18:36:01 [DEBUG] ======================================================================================
+24-02-22 18:36:01 [INFO] Validating after Factory Default functionality that the old configuration is removed from the IDU.
+24-02-22 18:36:18 [INFO] Initiating device backup
+24-02-22 18:36:41 [WARNING] Backup file not found
+24-02-22 18:36:41 [INFO] Initiating device factory defaults
+24-02-22 18:36:52 [DEBUG] Wait for the reset process to complete : 200s
+24-02-22 18:41:00 [INFO] Old configuration removed successfully after reset.
+24-02-22 18:41:00 [INFO] Initiating device restore, File Path: None
+24-02-22 18:41:11 [ERROR] An error occurred during device restore: stat: path should be string, bytes, os.PathLike or integer, not NoneType
+24-02-22 18:41:56 [ERROR] Old configuration NOT restored.
+24-02-22 18:41:56 [ERROR] Reset, Backup, and restore functionality did not work as expected.

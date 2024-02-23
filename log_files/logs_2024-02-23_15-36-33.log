@@ -1,0 +1,12 @@
+24-02-23 15:36:33 [DEBUG] Initializing Chrome WebDriver
+24-02-23 15:36:35 [INFO] Try to Login Through WebGUI
+24-02-23 15:37:01 [INFO] Initiating device factory defaults
+24-02-23 15:37:01 [DEBUG] Searching for the Keyword: 'Factory Defaults / Reboot'
+24-02-23 15:37:03 [DEBUG] Found and Clicked on the Result Containing 'Factory Defaults / Reboot'
+24-02-23 15:37:12 [DEBUG] Wait for the reset process to complete : 200s
+24-02-23 15:40:32 [INFO] Try to Login Through WebGUI
+24-02-23 15:40:35 [DEBUG] Device is in Factory Reset State
+24-02-23 15:41:19 [INFO] Initiating device reboot
+24-02-23 15:41:19 [DEBUG] Searching for the Keyword: 'Factory Defaults / Reboot'
+24-02-23 15:41:21 [DEBUG] Found and Clicked on the Result Containing 'Factory Defaults / Reboot'
+24-02-23 15:41:30 [DEBUG] Wait for the reboot process to complete : 200s

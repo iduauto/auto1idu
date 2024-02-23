@@ -22,14 +22,35 @@ driver=setup.get_driver()
 functional_sanity=FunctionalSanity(driver)
 firewall = Firewall(driver)
 login = Login(driver)
-login.WebGUI_login()
 maintenance = Maintenance( driver )
 
-print(functional_sanity.functional_sanity_47())
+
+login.WebGUI_login()
+maintenance.reset()
+
+time.sleep(5)
+login.WebGUI_login()
+maintenance.reboot()
+
+time.sleep(5)
+login.WebGUI_login()
+maintenance.backup()
+
+time.sleep(20)
+
+# C:\Users\ontvi\Downloads\Firmware\idu\ARCNJIO_JIDU6101_D1.8.5.img
+#C:\Users\ontvi\Downloads\Firmware\idu\ARCNJIO_JIDU6101_D1.9.0.img
+# C:\Users\ontvi\Downloads\Firmware\idu\ARCNJIO_JIDU6101_D1.9.0.sig
+# C:\Users\ontvi\Downloads\Firmware\idu\ARCNJIO_JIDU6101_D1.8.5.img
+# C:\Users\ontvi\Downloads\Firmware\idu\ARCNJIO_JIDU6101_D1.8.5.sig
+# C:\Users\ontvi\Downloads\Firmware\idu\ARCNJIO_JIDU6101_D1.9.0.img
+# C:\Users\ontvi\Downloads\Firmware\idu\ARCNJIO_JIDU6101_D1.9.0.sig
+# C:\Users\ontvi\Downloads\Firmware\idu\ARCNJIO_JIDU6101_D1.8.5.sig
+
 
 
 # count=0
-# while(count != 10):
+# while(count != 1):
 #     logger.warning("---------------------------------------------------------------------------------------------------")
 #     logger.warning(f"                              Execution Iteration {count}                                        ")
 #     logger.warning("---------------------------------------------------------------------------------------------------")
@@ -46,21 +67,10 @@ print(functional_sanity.functional_sanity_47())
 #     print( functional_sanity.functional_sanity_38())
 #     print( functional_sanity.functional_sanity_39())
 #     print( functional_sanity.functional_sanity_41())
-#
-#     login.WebGUI_login()
-#     print( firewall.add_ipv4_firewall_rule( "HTTPS" ) )
-#     time.sleep( 5 )
-#     print( firewall.add_ipv6_firewall_rule( "HTTPS" ) )
-#     time.sleep( 5 )
-#     print( firewall.delete_ipv4_firewall_rule() )
-#     time.sleep( 5 )
-#     print( firewall.delete_ipv6_firewall_rule() )
-#     time.sleep( 5 )
-#
+#     print( functional_sanity.functional_sanity_47() )
 #     count+=1
-
-
-driver.quit()
+#
+# driver.quit()
 
 
 

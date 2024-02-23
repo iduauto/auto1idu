@@ -1,0 +1,11 @@
+24-02-23 16:41:14 [DEBUG] Initializing Chrome WebDriver
+24-02-23 16:41:15 [INFO] Try to Login Through WebGUI
+24-02-23 16:41:42 [DEBUG] Searching for the Keyword: 'Factory Defaults / Reboot'
+24-02-23 16:41:44 [DEBUG] Found and Clicked on the Result Containing 'Factory Defaults / Reboot'
+24-02-23 16:45:18 [INFO] Try to Login Through WebGUI
+24-02-23 16:45:20 [DEBUG] Device is in Factory Reset State
+24-02-23 16:46:05 [DEBUG] Searching for the Keyword: 'Factory Defaults / Reboot'
+24-02-23 16:46:06 [DEBUG] Found and Clicked on the Result Containing 'Factory Defaults / Reboot'
+24-02-23 16:49:41 [INFO] Try to Login Through WebGUI
+24-02-23 16:50:20 [DEBUG] Searching for the Keyword: 'Backup Settings'
+24-02-23 16:50:22 [DEBUG] Found and Clicked on the Result Containing 'Backup Settings'

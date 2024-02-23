@@ -660,11 +660,11 @@ class FunctionalSanity:
             "Validating after Factory Default functionality that the old configuration is removed from the IDU." )
         backup_file_path = ""
         try:
-            # Performing health check
-            # if not self.health.health_check_webgui():
-            #     logger.error( 'Device health check failed. Exiting the test.' )
-            #     self.utils.get_DBGLogs()
-            #     return False
+            #Performing health check
+            if not self.health.health_check_webgui():
+                logger.error( 'Device health check failed. Exiting the test.' )
+                self.utils.get_DBGLogs()
+                return False
 
             # Adding IPv6 and IPv4 firewall rule
             self.firewall.add_ipv6_firewall_rule( "HTTPS" , "Block Always" , "Inbound" )

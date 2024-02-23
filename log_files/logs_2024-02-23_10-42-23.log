@@ -1,0 +1,307 @@
+24-02-23 10:43:05 [WARNING] ---------------------------------------------------------------------------------------------------
+24-02-23 10:43:05 [WARNING]                               Execution Iteration 0                                        
+24-02-23 10:43:05 [WARNING] ---------------------------------------------------------------------------------------------------
+24-02-23 10:43:05 [DEBUG] ======================================================================================
+24-02-23 10:43:05 [INFO] Validating multiple factory reset
+24-02-23 10:44:37 [DEBUG] -------------1th Factory Reset---------------------
+24-02-23 10:44:37 [INFO] Initiating device factory defaults
+24-02-23 10:44:47 [DEBUG] Wait for the reset process to complete : 200s
+24-02-23 10:49:48 [DEBUG] -------------2th Factory Reset---------------------
+24-02-23 10:49:48 [INFO] Initiating device factory defaults
+24-02-23 10:49:59 [DEBUG] Wait for the reset process to complete : 200s
+24-02-23 10:55:00 [INFO] Successfully factory reset from Web GUI - 5 Iterations
+24-02-23 10:55:00 [DEBUG] ======================================================================================
+24-02-23 10:55:00 [INFO] Validating multiple reboot
+24-02-23 10:56:31 [DEBUG] -------------1th Reboot---------------------
+24-02-23 10:56:31 [INFO] Initiating device reboot
+24-02-23 10:56:42 [DEBUG] Wait for the reboot process to complete : 200s
+24-02-23 11:01:35 [DEBUG] -------------2th Reboot---------------------
+24-02-23 11:01:35 [INFO] Initiating device reboot
+24-02-23 11:01:46 [DEBUG] Wait for the reboot process to complete : 200s
+24-02-23 11:06:39 [INFO] Successfully reboot from WebGUI - 5 Iterations
+24-02-23 11:06:39 [DEBUG] ======================================================================================
+24-02-23 11:06:39 [DEBUG] Validating MAC Address after Reboot and Reset
+24-02-23 11:08:18 [DEBUG] WAN MAC Address before Reboot: dc:f5:1b:14:76:4a
+24-02-23 11:08:18 [INFO] Initiating device reboot
+24-02-23 11:08:29 [DEBUG] Wait for the reboot process to complete : 200s
+24-02-23 11:12:36 [DEBUG] WAN MAC Address after Reboot: dc:f5:1b:14:76:4a
+24-02-23 11:12:36 [INFO] WAN MAC Address is same after Reboot 
+24-02-23 11:12:36 [INFO] Initiating device factory defaults
+24-02-23 11:12:47 [DEBUG] Wait for the reset process to complete : 200s
+24-02-23 11:17:01 [DEBUG] WAN MAC Address after Reset: dc:f5:1b:14:76:4a
+24-02-23 11:17:01 [INFO] WAN MAC Address is same after Factory Reset
+24-02-23 11:17:01 [INFO] MAC Address is same after Reboot and Reset
+24-02-23 11:17:01 [DEBUG] ======================================================================================
+24-02-23 11:17:01 [INFO] Validating 'Logout' button functionality in WebGUI
+24-02-23 11:19:07 [INFO] 'Logout' button functionality is working as expected
+24-02-23 11:19:07 [DEBUG] ======================================================================================
+24-02-23 11:19:07 [INFO] Validate date/time functionality in IDU
+24-02-23 11:20:48 [INFO] Device current time : 2024-02-23 11:20:48.730903+05:30
+24-02-23 11:20:48 [INFO] date/time functionality is working as expected
+24-02-23 11:20:48 [DEBUG] ======================================================================================
+24-02-23 11:20:48 [INFO] Validating Firmware Upgrade and Downgrade functionality
+24-02-23 11:22:49 [INFO] Initiating firmware changing process
+24-02-23 11:23:00 [DEBUG] Image File path entered successfully
+24-02-23 11:23:14 [DEBUG] Signature File path entered successfully
+24-02-23 11:23:46 [ERROR] An error occurred during firmware upgrade: Message: element not interactable
+  (Session info: chrome=121.0.6167.187)
+Stacktrace:
+	GetHandleVerifier [0x00BA1673+52979]
+	(No symbol) [0x00B27961]
+	(No symbol) [0x00A0DC00]
+	(No symbol) [0x00A46F63]
+	(No symbol) [0x00A3E010]
+	(No symbol) [0x00A644EC]
+	(No symbol) [0x00A3DA4E]
+	(No symbol) [0x00A64784]
+	(No symbol) [0x00A7B3FE]
+	(No symbol) [0x00A64286]
+	(No symbol) [0x00A3C063]
+	(No symbol) [0x00A3CECD]
+	GetHandleVerifier [0x00EB8D83+3294723]
+	GetHandleVerifier [0x00EF6CC2+3548482]
+	GetHandleVerifier [0x00EF1C9C+3527964]
+	GetHandleVerifier [0x00C3870E+671630]
+	(No symbol) [0x00B31EB4]
+	(No symbol) [0x00B2D808]
+	(No symbol) [0x00B2D92D]
+	(No symbol) [0x00B1F7E0]
+	BaseThreadInitThunk [0x76B6FCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x77467C5E+286]
+	RtlGetAppContainerNamedObjectPath [0x77467C2E+238]
+
+24-02-23 11:24:31 [ERROR] Firmware is not Downgraded 
+24-02-23 11:24:31 [INFO] Initiating firmware changing process
+24-02-23 11:24:42 [DEBUG] Image File path entered successfully
+24-02-23 11:24:57 [DEBUG] Signature File path entered successfully
+24-02-23 11:25:29 [ERROR] An error occurred during firmware upgrade: Message: element not interactable
+  (Session info: chrome=121.0.6167.187)
+Stacktrace:
+	GetHandleVerifier [0x00BA1673+52979]
+	(No symbol) [0x00B27961]
+	(No symbol) [0x00A0DC00]
+	(No symbol) [0x00A46F63]
+	(No symbol) [0x00A3E010]
+	(No symbol) [0x00A644EC]
+	(No symbol) [0x00A3DA4E]
+	(No symbol) [0x00A64784]
+	(No symbol) [0x00A7B3FE]
+	(No symbol) [0x00A64286]
+	(No symbol) [0x00A3C063]
+	(No symbol) [0x00A3CECD]
+	GetHandleVerifier [0x00EB8D83+3294723]
+	GetHandleVerifier [0x00EF6CC2+3548482]
+	GetHandleVerifier [0x00EF1C9C+3527964]
+	GetHandleVerifier [0x00C3870E+671630]
+	(No symbol) [0x00B31EB4]
+	(No symbol) [0x00B2D808]
+	(No symbol) [0x00B2D92D]
+	(No symbol) [0x00B1F7E0]
+	BaseThreadInitThunk [0x76B6FCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x77467C5E+286]
+	RtlGetAppContainerNamedObjectPath [0x77467C2E+238]
+
+24-02-23 11:26:14 [INFO] Firmware Upgraded Successfully to ARCNJIO_JIDU6101_D1.9.0
+24-02-23 11:27:45 [ERROR] Firmware Upgrade and Downgrade functionality is NOT working as Expected
+24-02-23 11:27:45 [DEBUG] ======================================================================================
+24-02-23 11:27:45 [INFO] Validate administration user password management functionality
+24-02-23 11:29:17 [DEBUG] Changing the admin credentials to:
+Username: 'admin'
+Password: 'PR@sant23' 
+24-02-23 11:29:58 [INFO] Password changed successfully
+24-02-23 11:29:58 [DEBUG] Attempting login with the new admin credentials:
+Username: 'admin'
+Password: 'PR@sant23'
+24-02-23 11:30:16 [INFO] Successfully logged in with new credentials
+24-02-23 11:30:16 [DEBUG] Reverting back the admin credentials to:
+Username: 'admin'
+Password: 'P@ssw0rd' 
+24-02-23 11:30:57 [INFO] Password reverted back successfully
+24-02-23 11:30:57 [INFO] Administration user password management functionality is working as expected
+24-02-23 11:30:57 [DEBUG] ======================================================================================
+24-02-23 11:30:57 [INFO] Validate Guest user password management functionality
+24-02-23 11:32:30 [DEBUG] Changing the guest credentials to:
+Username: 'guest'
+Password: 'PR@sant23' 
+24-02-23 11:33:14 [DEBUG] Attempting login with the new guest credentials:
+Username: 'guest'
+Password: 'PR@sant23'
+24-02-23 11:33:32 [INFO] Successfully logged in with new credentials
+24-02-23 11:33:39 [INFO] Unable to modify wireless config
+24-02-23 11:33:39 [INFO] Administration user password management functionality is working as expected
+24-02-23 11:33:42 [DEBUG] ======================================================================================
+24-02-23 11:33:42 [INFO] Validating whether the device asks to change the password upon every factory reset from WebGUI
+24-02-23 11:35:15 [INFO] Initiating device factory defaults
+24-02-23 11:35:38 [ERROR] An error occurred while resetting the device to factory defaults: Message: element not interactable
+  (Session info: chrome=121.0.6167.187)
+Stacktrace:
+	GetHandleVerifier [0x00BA1673+52979]
+	(No symbol) [0x00B27961]
+	(No symbol) [0x00A0DC00]
+	(No symbol) [0x00A46F63]
+	(No symbol) [0x00A3E010]
+	(No symbol) [0x00A644EC]
+	(No symbol) [0x00A3DA4E]
+	(No symbol) [0x00A64784]
+	(No symbol) [0x00A7B3FE]
+	(No symbol) [0x00A64286]
+	(No symbol) [0x00A3C063]
+	(No symbol) [0x00A3CECD]
+	GetHandleVerifier [0x00EB8D83+3294723]
+	GetHandleVerifier [0x00EF6CC2+3548482]
+	GetHandleVerifier [0x00EF1C9C+3527964]
+	GetHandleVerifier [0x00C3870E+671630]
+	(No symbol) [0x00B31EB4]
+	(No symbol) [0x00B2D808]
+	(No symbol) [0x00B2D92D]
+	(No symbol) [0x00B1F7E0]
+	BaseThreadInitThunk [0x76B6FCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x77467C5E+286]
+	RtlGetAppContainerNamedObjectPath [0x77467C2E+238]
+
+24-02-23 11:35:38 [DEBUG] Try to login with the credentials
+24-02-23 11:35:38 [DEBUG] Username : admin
+24-02-23 11:35:38 [DEBUG] Password : P@ssw0rd
+24-02-23 11:35:55 [ERROR] Error occurred while executing functional_sanity_35: catching classes that do not inherit from BaseException is not allowed
+24-02-23 11:36:29 [DEBUG] ======================================================================================
+24-02-23 11:36:29 [INFO] Validate whether the WebGUI is redirecting to Login page after Firmware upgrade from WebGUI
+24-02-23 11:38:00 [INFO] Initiating firmware changing process
+24-02-23 11:38:11 [DEBUG] Image File path entered successfully
+24-02-23 11:38:25 [DEBUG] Signature File path entered successfully
+24-02-23 11:38:57 [ERROR] An error occurred during firmware upgrade: Message: element not interactable
+  (Session info: chrome=121.0.6167.187)
+Stacktrace:
+	GetHandleVerifier [0x00BA1673+52979]
+	(No symbol) [0x00B27961]
+	(No symbol) [0x00A0DC00]
+	(No symbol) [0x00A46F63]
+	(No symbol) [0x00A3E010]
+	(No symbol) [0x00A644EC]
+	(No symbol) [0x00A3DA4E]
+	(No symbol) [0x00A64784]
+	(No symbol) [0x00A7B3FE]
+	(No symbol) [0x00A64286]
+	(No symbol) [0x00A3C063]
+	(No symbol) [0x00A3CECD]
+	GetHandleVerifier [0x00EB8D83+3294723]
+	GetHandleVerifier [0x00EF6CC2+3548482]
+	GetHandleVerifier [0x00EF1C9C+3527964]
+	GetHandleVerifier [0x00C3870E+671630]
+	(No symbol) [0x00B31EB4]
+	(No symbol) [0x00B2D808]
+	(No symbol) [0x00B2D92D]
+	(No symbol) [0x00B1F7E0]
+	BaseThreadInitThunk [0x76B6FCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x77467C5E+286]
+	RtlGetAppContainerNamedObjectPath [0x77467C2E+238]
+
+24-02-23 11:39:58 [ERROR] Firmware is not Downgraded 
+24-02-23 11:39:58 [DEBUG] Reverting back to latest version
+24-02-23 11:39:58 [INFO] Initiating firmware changing process
+24-02-23 11:40:09 [DEBUG] Image File path entered successfully
+24-02-23 11:40:23 [DEBUG] Signature File path entered successfully
+24-02-23 11:40:55 [ERROR] An error occurred during firmware upgrade: Message: element not interactable
+  (Session info: chrome=121.0.6167.187)
+Stacktrace:
+	GetHandleVerifier [0x00BA1673+52979]
+	(No symbol) [0x00B27961]
+	(No symbol) [0x00A0DC00]
+	(No symbol) [0x00A46F63]
+	(No symbol) [0x00A3E010]
+	(No symbol) [0x00A644EC]
+	(No symbol) [0x00A3DA4E]
+	(No symbol) [0x00A64784]
+	(No symbol) [0x00A7B3FE]
+	(No symbol) [0x00A64286]
+	(No symbol) [0x00A3C063]
+	(No symbol) [0x00A3CECD]
+	GetHandleVerifier [0x00EB8D83+3294723]
+	GetHandleVerifier [0x00EF6CC2+3548482]
+	GetHandleVerifier [0x00EF1C9C+3527964]
+	GetHandleVerifier [0x00C3870E+671630]
+	(No symbol) [0x00B31EB4]
+	(No symbol) [0x00B2D808]
+	(No symbol) [0x00B2D92D]
+	(No symbol) [0x00B1F7E0]
+	BaseThreadInitThunk [0x76B6FCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x77467C5E+286]
+	RtlGetAppContainerNamedObjectPath [0x77467C2E+238]
+
+24-02-23 11:41:56 [DEBUG] Firmware Upgraded Successfully to ARCNJIO_JIDU6101_D1.9.0
+24-02-23 11:41:56 [ERROR] WebGUI is NOT redirecting to Login page after Firmware upgrade from WebGUI
+24-02-23 11:41:56 [DEBUG] ======================================================================================
+24-02-23 11:41:56 [INFO] Validate whether the WebGUI is redirecting to Login page after Reboot from WebGUI
+24-02-23 11:43:27 [INFO] Initiating device reboot
+24-02-23 11:43:38 [DEBUG] Wait for the reboot process to complete : 200s
+24-02-23 11:47:13 [ERROR] WebGUI is NOT redirecting to Login page after Reboot from WebGUI
+24-02-23 11:47:13 [DEBUG] ======================================================================================
+24-02-23 11:47:13 [INFO] Validate whether the WebGUI is redirecting to Login page after Factory Reset from WebGUI
+24-02-23 11:48:47 [INFO] Initiating device factory defaults
+24-02-23 11:49:10 [ERROR] An error occurred while resetting the device to factory defaults: Message: element not interactable
+  (Session info: chrome=121.0.6167.187)
+Stacktrace:
+	GetHandleVerifier [0x00BA1673+52979]
+	(No symbol) [0x00B27961]
+	(No symbol) [0x00A0DC00]
+	(No symbol) [0x00A46F63]
+	(No symbol) [0x00A3E010]
+	(No symbol) [0x00A644EC]
+	(No symbol) [0x00A3DA4E]
+	(No symbol) [0x00A64784]
+	(No symbol) [0x00A7B3FE]
+	(No symbol) [0x00A64286]
+	(No symbol) [0x00A3C063]
+	(No symbol) [0x00A3CECD]
+	GetHandleVerifier [0x00EB8D83+3294723]
+	GetHandleVerifier [0x00EF6CC2+3548482]
+	GetHandleVerifier [0x00EF1C9C+3527964]
+	GetHandleVerifier [0x00C3870E+671630]
+	(No symbol) [0x00B31EB4]
+	(No symbol) [0x00B2D808]
+	(No symbol) [0x00B2D92D]
+	(No symbol) [0x00B1F7E0]
+	BaseThreadInitThunk [0x76B6FCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x77467C5E+286]
+	RtlGetAppContainerNamedObjectPath [0x77467C2E+238]
+
+24-02-23 11:49:26 [ERROR] WebGUI is NOT redirecting to Login page after Factory Reset from WebGUI
+24-02-23 11:49:26 [DEBUG] ======================================================================================
+24-02-23 11:49:26 [INFO] Validate Default firewall functionality
+24-02-23 11:51:31 [ERROR] Error occurred while executing functional_sanity_41: Message: element not interactable
+  (Session info: chrome=121.0.6167.187)
+Stacktrace:
+	GetHandleVerifier [0x00BA1673+52979]
+	(No symbol) [0x00B27961]
+	(No symbol) [0x00A0DC00]
+	(No symbol) [0x00A46F63]
+	(No symbol) [0x00A3E010]
+	(No symbol) [0x00A644EC]
+	(No symbol) [0x00A3DA4E]
+	(No symbol) [0x00A64784]
+	(No symbol) [0x00A7B3FE]
+	(No symbol) [0x00A64286]
+	(No symbol) [0x00A3C063]
+	(No symbol) [0x00A3CECD]
+	GetHandleVerifier [0x00EB8D83+3294723]
+	GetHandleVerifier [0x00EF6CC2+3548482]
+	GetHandleVerifier [0x00EF1C9C+3527964]
+	GetHandleVerifier [0x00C3870E+671630]
+	(No symbol) [0x00B31EB4]
+	(No symbol) [0x00B2D808]
+	(No symbol) [0x00B2D92D]
+	(No symbol) [0x00B1F7E0]
+	BaseThreadInitThunk [0x76B6FCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x77467C5E+286]
+	RtlGetAppContainerNamedObjectPath [0x77467C2E+238]
+
+24-02-23 11:51:31 [DEBUG] ======================================================================================
+24-02-23 11:51:31 [INFO] Validating after Factory Default functionality that the old configuration is removed from the IDU.
+24-02-23 11:54:01 [INFO] Initiating device backup
+24-02-23 11:54:19 [ERROR] An error occurred during device backup: Message: Element not found within the specified timeout
+
+24-02-23 11:54:19 [INFO] Initiating device factory defaults
+24-02-23 11:54:39 [ERROR] An error occurred while resetting the device to factory defaults: Message: Element not found within the specified timeout
+
+24-02-23 11:55:25 [INFO] Old configuration removed successfully after reset.
+24-02-23 11:55:25 [INFO] Initiating device restore, File Path: Message: Element not found within the specified timeout
+
