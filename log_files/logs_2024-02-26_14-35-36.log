@@ -1,0 +1,41 @@
+24-02-26 14:36:19 [DEBUG] ======================================================================================
+24-02-26 14:36:19 [INFO] Validate the Maintenance functionality like Backup from Web GUI.
+24-02-26 14:38:31 [INFO] Initiating device backup
+24-02-26 14:38:54 [DEBUG] Backup file found -> 'C:\Users\ontvi\Downloads\backup-jio-2024-02-26_enc.tar.gz'
+24-02-26 14:38:54 [INFO] Backup process initiated successfully
+24-02-26 14:38:54 [INFO] Initiating device factory defaults
+24-02-26 14:39:05 [DEBUG] Wait for the reset process to complete : 200s
+24-02-26 14:43:20 [INFO] Old configuration removed successfully after reset.
+24-02-26 14:43:20 [INFO] Initiating device restore, File Path: C:\Users\ontvi\Downloads\backup-jio-2024-02-26_enc.tar.gz
+24-02-26 14:43:34 [DEBUG] File path entered successfully
+24-02-26 14:43:36 [DEBUG] Wait for the Restore process to complete : 200s
+24-02-26 14:47:45 [INFO] Old configuration restored successfully.
+24-02-26 14:47:45 [INFO] Maintenance functionality like Backup is working as expected
+24-02-26 14:48:14 [DEBUG] ======================================================================================
+24-02-26 14:48:14 [INFO] Validate the Maintenance functionality like Restore from Web GUI.
+24-02-26 14:50:26 [INFO] Initiating device backup
+24-02-26 14:50:48 [DEBUG] Backup file found -> 'C:\Users\ontvi\Downloads\backup-jio-2024-02-26_enc.tar.gz'
+24-02-26 14:50:48 [INFO] Backup process initiated successfully
+24-02-26 14:50:48 [INFO] Initiating device factory defaults
+24-02-26 14:50:59 [DEBUG] Wait for the reset process to complete : 200s
+24-02-26 14:55:15 [INFO] Old configuration removed successfully after reset.
+24-02-26 14:55:15 [INFO] Initiating device restore, File Path: C:\Users\ontvi\Downloads\backup-jio-2024-02-26_enc.tar.gz
+24-02-26 14:55:29 [DEBUG] File path entered successfully
+24-02-26 14:55:31 [DEBUG] Wait for the Restore process to complete : 200s
+24-02-26 14:59:39 [INFO] Old configuration restored successfully.
+24-02-26 14:59:39 [INFO] Maintenance functionality like Restore is working as expected.
+24-02-26 15:00:09 [DEBUG] ======================================================================================
+24-02-26 15:00:09 [INFO] Validate the Maintenance functionality like Factory default from Web GUI.
+24-02-26 15:02:21 [INFO] Initiating device backup
+24-02-26 15:02:43 [DEBUG] Backup file found -> 'C:\Users\ontvi\Downloads\backup-jio-2024-02-26_enc.tar.gz'
+24-02-26 15:02:43 [INFO] Backup process initiated successfully
+24-02-26 15:02:43 [INFO] Initiating device factory defaults
+24-02-26 15:02:54 [DEBUG] Wait for the reset process to complete : 200s
+24-02-26 15:07:09 [INFO] Old configuration removed successfully after reset.
+24-02-26 15:07:09 [INFO] Maintenance functionality like Factory default is working as expected.
+24-02-26 15:07:24 [DEBUG] ======================================================================================
+24-02-26 15:07:24 [INFO] Validate the Maintenance functionality like Reboot from Web GUI.
+24-02-26 15:09:36 [INFO] Initiating device factory defaults
+24-02-26 15:09:47 [DEBUG] Wait for the reset process to complete : 200s
+24-02-26 15:14:02 [INFO] Old configuration NOT removed after reboot.
+24-02-26 15:14:02 [INFO] Maintenance functionality like Reboot is working as expected.
