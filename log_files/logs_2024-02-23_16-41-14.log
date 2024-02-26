@@ -1,7 +1,0 @@
-24-02-23 16:41:42 [INFO] Initiating device factory defaults
-24-02-23 16:41:53 [DEBUG] Wait for the reset process to complete : 200s
-24-02-23 16:46:05 [INFO] Initiating device reboot
-24-02-23 16:46:16 [DEBUG] Wait for the reboot process to complete : 200s
-24-02-23 16:50:20 [INFO] Initiating device backup
-24-02-23 16:50:43 [DEBUG] Backup file found -> 'C:\Users\ontvi\Downloads\backup-jio-2024-02-23_enc.tar.gz'
-24-02-23 16:50:43 [INFO] Backup process initiated successfully

@@ -1,4 +1,5 @@
 import os
+import subprocess
 import time
 from datetime import datetime, timedelta
 
@@ -653,6 +654,94 @@ class FunctionalSanity:
         except Exception as e:
             logger.error( "Error occurred while executing functional_sanity_41: %s" , str( e ) )
             return False
+
+    #DNS proxy functionality
+    def functional_sanity_43(self):
+        logger.debug( "======================================================================================" )
+        logger.info( "Validate the LAN side DNS proxy functionality of the IDU" )
+        try:
+            # Performing health check
+            if not self.health.health_check_webgui():
+                logger.error( 'Device health check failed. Exiting the test.' )
+                self.utils.get_DBGLogs()
+                return False
+
+            self.utils.search_WebGUI( "LAN IPv4 Configuration" )
+            self.utils.find_element(
+                "/html[1]/body[1]/mainapp[1]/div[1]/div[2]/div[4]/div[1]/form[1]/div[1]/div[1]/div[2]/div[2]/div[7]/div[1]/span[1]" ).click()
+            self.utils.find_element( "//li[normalize-space()='Use DNS Proxy']" ).click()
+            time.sleep( 30 )
+            # Run the ipconfig /renew command
+            subprocess.run( ["ipconfig" , "/renew"] , check=True )
+
+            # Run the ipconfig /all command to fetch the renewed configuration
+            time.sleep( 30 )
+            ipconfig_output = subprocess.run( ["ipconfig" , "/all"] , capture_output=True , text=True ).stdout
+            dns_server = ""
+            for line in ipconfig_output.splitlines():
+                if "DNS Servers" in line:
+                    # Extract the IP address part from the line
+                    dns_server = line.split( ":" )[-1].strip()
+                    if dns_server:
+                        logger.debug( "DNS Server: %s" , dns_server )
+                    else:
+                        logger.info( "DNS Server not found in the ipconfig output." )
+                        return False
+
+            if dns_server == '192.168.31.1':
+                logger.info( "The LAN side DNS proxy functionality is working as expected" )
+                return True
+            else:
+                logger.error( "The LAN side DNS proxy functionality is NOT working as expected" )
+                return False
+        except Exception as e:
+            logger.error( "Error occurred while executing functional_sanity_43: %s" , str( e ) )
+            return False
+
+    #DNS from IPS functionality
+    def functional_sanity_44(self):
+        logger.debug( "======================================================================================" )
+        logger.info( "Validate the LAN side DNS from IPS functionality" )
+        try:
+            # Performing health check
+            if not self.health.health_check_webgui():
+                logger.error( 'Device health check failed. Exiting the test.' )
+                self.utils.get_DBGLogs()
+                return False
+
+            self.utils.search_WebGUI( "LAN IPv4 Configuration" )
+            self.utils.find_element(
+                "/html[1]/body[1]/mainapp[1]/div[1]/div[2]/div[4]/div[1]/form[1]/div[1]/div[1]/div[2]/div[2]/div[7]/div[1]/span[1]" ).click()
+            self.utils.find_element( "//li[normalize-space()='Use DNS from ISP']" ).click()
+            time.sleep( 30 )
+            # Run the ipconfig /renew command
+            subprocess.run( ["ipconfig" , "/renew"] , check=True )
+
+            # Run the ipconfig /all command to fetch the renewed configuration
+            time.sleep( 30 )
+            ipconfig_output = subprocess.run( ["ipconfig" , "/all"] , capture_output=True , text=True ).stdout
+            dns_server = ""
+            for line in ipconfig_output.splitlines():
+                if "DNS Servers" in line:
+                    # Extract the IP address part from the line
+                    dns_server = line.split( ":" )[-1].strip()
+                    if dns_server:
+                        logger.debug( "DNS Server: %s" , dns_server )
+                    else:
+                        logger.info( "DNS Server not found in the ipconfig output." )
+                        return False
+
+            if dns_server == '172.16.56.142':
+                logger.info( "The LAN side DNS from IPS functionality is working as expected" )
+                return True
+            else:
+                logger.error( "The LAN side DNS from IPS functionality is NOT working as expected" )
+                return False
+        except Exception as e:
+            logger.error( "Error occurred while executing functional_sanity_44: %s" , str( e ) )
+            return False
+
+
 
     def functional_sanity_47(self):
         logger.debug( "======================================================================================" )

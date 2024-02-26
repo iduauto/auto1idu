@@ -26,31 +26,14 @@ maintenance = Maintenance( driver )
 
 
 login.WebGUI_login()
-maintenance.reset()
+print( functional_sanity.functional_sanity_43())
+print( functional_sanity.functional_sanity_44())
 
-time.sleep(5)
-login.WebGUI_login()
-maintenance.reboot()
-
-time.sleep(5)
-login.WebGUI_login()
-maintenance.backup()
-
-time.sleep(20)
-
-# C:\Users\ontvi\Downloads\Firmware\idu\ARCNJIO_JIDU6101_D1.8.5.img
-#C:\Users\ontvi\Downloads\Firmware\idu\ARCNJIO_JIDU6101_D1.9.0.img
-# C:\Users\ontvi\Downloads\Firmware\idu\ARCNJIO_JIDU6101_D1.9.0.sig
-# C:\Users\ontvi\Downloads\Firmware\idu\ARCNJIO_JIDU6101_D1.8.5.img
-# C:\Users\ontvi\Downloads\Firmware\idu\ARCNJIO_JIDU6101_D1.8.5.sig
-# C:\Users\ontvi\Downloads\Firmware\idu\ARCNJIO_JIDU6101_D1.9.0.img
-# C:\Users\ontvi\Downloads\Firmware\idu\ARCNJIO_JIDU6101_D1.9.0.sig
-# C:\Users\ontvi\Downloads\Firmware\idu\ARCNJIO_JIDU6101_D1.8.5.sig
 
 
 
 # count=0
-# while(count != 1):
+# while(count != 10):
 #     logger.warning("---------------------------------------------------------------------------------------------------")
 #     logger.warning(f"                              Execution Iteration {count}                                        ")
 #     logger.warning("---------------------------------------------------------------------------------------------------")
