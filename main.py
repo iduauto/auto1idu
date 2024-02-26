@@ -26,8 +26,7 @@ maintenance = Maintenance( driver )
 
 
 login.WebGUI_login()
-print( functional_sanity.functional_sanity_43())
-print( functional_sanity.functional_sanity_44())
+print(functional_sanity.functional_sanity_49())
 
 
 
@@ -45,6 +44,10 @@ print( functional_sanity.functional_sanity_44())
 #     print( functional_sanity.functional_sanity_14())
 #     print( functional_sanity.functional_sanity_28())
 #     print( functional_sanity.functional_sanity_29())
+#     print( functional_sanity.functional_sanity_31())
+#     print( functional_sanity.functional_sanity_32())
+#     print( functional_sanity.functional_sanity_33())
+#     print( functional_sanity.functional_sanity_34())
 #     print( functional_sanity.functional_sanity_35())
 #     print( functional_sanity.functional_sanity_37())
 #     print( functional_sanity.functional_sanity_38())

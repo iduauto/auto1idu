@@ -2,6 +2,7 @@ import os
 import subprocess
 import time
 from datetime import datetime, timedelta
+import datetime
 
 
 import input
@@ -412,6 +413,293 @@ class FunctionalSanity:
                 "//div[@class='iconUser']//*[name()='svg']//*[name()='circle' and @id='iconBG']" ).click()
             self.utils.find_element( "//div[normalize-space()='Logout']" ).click()
 
+    #Backup functionality
+    def functional_sanity_31(self):
+        logger.debug( "======================================================================================" )
+        logger.info(
+            "Validate the Maintenance functionality like Backup from Web GUI." )
+        backup_file_path = ""
+        try:
+            #Performing health check
+            if not self.health.health_check_webgui():
+                logger.error( 'Device health check failed. Exiting the test.' )
+                self.utils.get_DBGLogs()
+                return False
+
+            # Adding IPv6 and IPv4 firewall rule
+            self.firewall.add_ipv6_firewall_rule( "HTTPS" , "Block Always" , "Inbound" )
+            self.firewall.add_ipv4_firewall_rule( "HTTPS" , "Block Always" )
+
+            # Backup the device
+            backup_file_path = self.maintenance.backup()
+
+            # Reset the device
+            self.maintenance.reset()
+
+            # Check if the previous configurations are removed or not
+            success_count = 0
+            self.login.WebGUI_login()
+
+            self.utils.search_WebGUI("List of IPv4 Firewall Rules")
+            ipv4_counter_element = self.utils.find_element(
+                "/html/body/mainapp/div[1]/div[2]/div[4]/div[2]/div[3]/div[4]" ).text
+            total_ipv4_rules = int(
+                ipv4_counter_element.split( "/" )[1].strip() )  # total number of ipv4 firewall rules present
+
+            ipv6_counter_element = self.utils.find_element(
+                "/html/body/mainapp/div[1]/div[2]/div[4]/div[3]/div[3]/div[4]" ).text
+            total_ipv6_rules = int(
+                ipv6_counter_element.split( "/" )[1].strip() )  # total number of ipv6 firewall rules present
+
+            # check if firewall rules are removes are not
+            if total_ipv4_rules == 0 and total_ipv6_rules == 0:
+                logger.info( "Old configuration removed successfully after reset." )
+                success_count += 1
+            else:
+                logger.error( "Old configuration NOT removed after reset." )
+
+
+            self.maintenance.restore( backup_file_path )# Restore the device with previous backup file
+
+            self.login.WebGUI_login()
+            self.utils.search_WebGUI( "List of IPv4 Firewall Rules" )
+            ipv4_counter_element = self.utils.find_element(
+                "/html/body/mainapp/div[1]/div[2]/div[4]/div[2]/div[3]/div[4]" ).text
+            total_ipv4_rules = int(
+                ipv4_counter_element.split( "/" )[1].strip() )  # total number of ipv4 firewall rules present
+
+            ipv6_counter_element = self.utils.find_element(
+                "/html/body/mainapp/div[1]/div[2]/div[4]/div[3]/div[3]/div[4]" ).text
+            total_ipv6_rules = int(
+                ipv6_counter_element.split( "/" )[1].strip() )  # total number of ipv6 firewall rules present
+
+
+            #check if firewall rules are restored are not
+            if total_ipv4_rules == 1 and total_ipv6_rules == 1:
+                logger.info( "Old configuration restored successfully." )
+                success_count += 1
+            else:
+                logger.error( "Old configuration NOT restored." )
+
+
+            #concluding the test
+            if success_count == 2:
+                logger.info( "Maintenance functionality like Backup is working as expected" )
+                return True
+            else:
+                logger.error( "Maintenance functionality like Backup is NOT working as expected" )
+                return False
+
+        except Exception as e:
+            logger.error( "Error occurred while executing functional_sanity_31: %s" , str( e ) )
+            return False
+        finally:
+            if os.path.exists( backup_file_path ):#deleting backup file
+                os.remove( backup_file_path )
+
+            self.firewall.delete_ipv6_firewall_rule()#deleting  ipv6 firewall rule
+            self.firewall.delete_ipv4_firewall_rule()#deleting  ipv4 firewall rule
+
+    #Restore functionality
+    def functional_sanity_32(self):
+        logger.debug( "======================================================================================" )
+        logger.info(
+            "Validate the Maintenance functionality like Restore from Web GUI." )
+        backup_file_path = ""
+        try:
+            #Performing health check
+            if not self.health.health_check_webgui():
+                logger.error( 'Device health check failed. Exiting the test.' )
+                self.utils.get_DBGLogs()
+                return False
+
+            # Adding IPv6 and IPv4 firewall rule
+            self.firewall.add_ipv6_firewall_rule( "HTTPS" , "Block Always" , "Inbound" )
+            self.firewall.add_ipv4_firewall_rule( "HTTPS" , "Block Always" )
+
+            # Backup the device
+            backup_file_path = self.maintenance.backup()
+
+            # Reset the device
+            self.maintenance.reset()
+
+            # Check if the previous configurations are removed or not
+            success_count = 0
+            self.login.WebGUI_login()
+
+            self.utils.search_WebGUI("List of IPv4 Firewall Rules")
+            ipv4_counter_element = self.utils.find_element(
+                "/html/body/mainapp/div[1]/div[2]/div[4]/div[2]/div[3]/div[4]" ).text
+            total_ipv4_rules = int(
+                ipv4_counter_element.split( "/" )[1].strip() )  # total number of ipv4 firewall rules present
+
+            ipv6_counter_element = self.utils.find_element(
+                "/html/body/mainapp/div[1]/div[2]/div[4]/div[3]/div[3]/div[4]" ).text
+            total_ipv6_rules = int(
+                ipv6_counter_element.split( "/" )[1].strip() )  # total number of ipv6 firewall rules present
+
+            # check if firewall rules are removes are not
+            if total_ipv4_rules == 0 and total_ipv6_rules == 0:
+                logger.info( "Old configuration removed successfully after reset." )
+                success_count += 1
+            else:
+                logger.error( "Old configuration NOT removed after reset." )
+
+
+            self.maintenance.restore( backup_file_path )# Restore the device with previous backup file
+
+            self.login.WebGUI_login()
+            self.utils.search_WebGUI( "List of IPv4 Firewall Rules" )
+            ipv4_counter_element = self.utils.find_element(
+                "/html/body/mainapp/div[1]/div[2]/div[4]/div[2]/div[3]/div[4]" ).text
+            total_ipv4_rules = int(
+                ipv4_counter_element.split( "/" )[1].strip() )  # total number of ipv4 firewall rules present
+
+            ipv6_counter_element = self.utils.find_element(
+                "/html/body/mainapp/div[1]/div[2]/div[4]/div[3]/div[3]/div[4]" ).text
+            total_ipv6_rules = int(
+                ipv6_counter_element.split( "/" )[1].strip() )  # total number of ipv6 firewall rules present
+
+
+            #check if firewall rules are restored are not
+            if total_ipv4_rules == 1 and total_ipv6_rules == 1:
+                logger.info( "Old configuration restored successfully." )
+                success_count += 1
+            else:
+                logger.error( "Old configuration NOT restored." )
+
+
+            #concluding the test
+            if success_count == 2:
+                logger.info( "Maintenance functionality like Restore is working as expected." )
+                return True
+            else:
+                logger.error( "Maintenance functionality like Restore is working as expected." )
+                return False
+
+        except Exception as e:
+            logger.error( "Error occurred while executing functional_sanity_47: %s" , str( e ) )
+            return False
+        finally:
+            if os.path.exists( backup_file_path ):#deleting backup file
+                os.remove( backup_file_path )
+
+            self.firewall.delete_ipv6_firewall_rule()#deleting  ipv6 firewall rule
+            self.firewall.delete_ipv4_firewall_rule()#deleting  ipv4 firewall rule
+
+    # Factory Default
+    def functional_sanity_33(self):
+        logger.debug( "======================================================================================" )
+        logger.info(
+            "Validate the Maintenance functionality like Factory default from Web GUI." )
+        backup_file_path = ""
+        try:
+            # Performing health check
+            if not self.health.health_check_webgui():
+                logger.error( 'Device health check failed. Exiting the test.' )
+                self.utils.get_DBGLogs()
+                return False
+
+            # Adding IPv6 and IPv4 firewall rule
+            self.firewall.add_ipv6_firewall_rule( "HTTPS" , "Block Always" , "Inbound" )
+            self.firewall.add_ipv4_firewall_rule( "HTTPS" , "Block Always" )
+
+            # Backup the device
+            backup_file_path = self.maintenance.backup()
+
+            # Reset the device
+            self.maintenance.reset()
+
+            # Check if the previous configurations are removed or not
+            success_count = 0
+            self.login.WebGUI_login()
+
+            self.utils.search_WebGUI( "List of IPv4 Firewall Rules" )
+            ipv4_counter_element = self.utils.find_element(
+                "/html/body/mainapp/div[1]/div[2]/div[4]/div[2]/div[3]/div[4]" ).text
+            total_ipv4_rules = int(
+                ipv4_counter_element.split( "/" )[1].strip() )  # total number of ipv4 firewall rules present
+
+            ipv6_counter_element = self.utils.find_element(
+                "/html/body/mainapp/div[1]/div[2]/div[4]/div[3]/div[3]/div[4]" ).text
+            total_ipv6_rules = int(
+                ipv6_counter_element.split( "/" )[1].strip() )  # total number of ipv6 firewall rules present
+
+            # check if firewall rules are removes are not
+            if total_ipv4_rules == 0 and total_ipv6_rules == 0:
+                logger.info( "Old configuration removed successfully after reset." )
+                logger.info( "Maintenance functionality like Factory default is working as expected." )
+                return True
+            else:
+                logger.error( "Old configuration NOT removed after reset." )
+                logger.error( "Maintenance functionality like Factory default is working as expected." )
+                return  False
+        except Exception as e:
+            logger.error( "Error occurred while executing functional_sanity_33: %s" , str( e ) )
+            return False
+        finally:
+            if os.path.exists( backup_file_path ):  # deleting backup file
+                os.remove( backup_file_path )
+
+            self.firewall.delete_ipv6_firewall_rule()  # deleting  ipv6 firewall rule
+            self.firewall.delete_ipv4_firewall_rule()  # deleting  ipv4 firewall rule
+    # Reboot functionality
+    def functional_sanity_34(self):
+        logger.debug( "======================================================================================" )
+        logger.info(
+            "Validate the Maintenance functionality like Reboot from Web GUI." )
+        backup_file_path = ""
+        try:
+            # Performing health check
+            if not self.health.health_check_webgui():
+                logger.error( 'Device health check failed. Exiting the test.' )
+                self.utils.get_DBGLogs()
+                return False
+
+            # Adding IPv6 and IPv4 firewall rule
+            self.firewall.add_ipv6_firewall_rule( "HTTPS" , "Block Always" , "Inbound" )
+            self.firewall.add_ipv4_firewall_rule( "HTTPS" , "Block Always" )
+
+
+            # Reboot the device
+            self.maintenance.reset()
+
+            # Check if the previous configurations are removed or not
+            success_count = 0
+            self.login.WebGUI_login()
+
+            self.utils.search_WebGUI( "List of IPv4 Firewall Rules" )
+            ipv4_counter_element = self.utils.find_element(
+                "/html/body/mainapp/div[1]/div[2]/div[4]/div[2]/div[3]/div[4]" ).text
+            total_ipv4_rules = int(
+                ipv4_counter_element.split( "/" )[1].strip() )  # total number of ipv4 firewall rules present
+
+            ipv6_counter_element = self.utils.find_element(
+                "/html/body/mainapp/div[1]/div[2]/div[4]/div[3]/div[3]/div[4]" ).text
+            total_ipv6_rules = int(
+                ipv6_counter_element.split( "/" )[1].strip() )  # total number of ipv6 firewall rules present
+
+            # check if firewall rules are removes are not
+            if total_ipv4_rules == 0 and total_ipv6_rules == 0:
+                logger.info( "Old configuration NOT removed after reboot." )
+                logger.info( "Maintenance functionality like Reboot is working as expected." )
+                return True
+            else:
+                logger.error( "Old configuration removed after reset." )
+                logger.error( "Maintenance functionality like Reboot is NOT working as expected." )
+                return False
+
+        except Exception as e:
+            logger.error( "Error occurred while executing functional_sanity_34: %s" , str( e ) )
+            return False
+        finally:
+            if os.path.exists( backup_file_path ):  # deleting backup file
+                os.remove( backup_file_path )
+
+            self.firewall.delete_ipv6_firewall_rule()  # deleting  ipv6 firewall rule
+            self.firewall.delete_ipv4_firewall_rule()  # deleting  ipv4 firewall rule
+
+
     #change the password upon every factory reset
     def functional_sanity_35(self):
         logger.debug( "======================================================================================" )
@@ -813,10 +1101,10 @@ class FunctionalSanity:
 
             #concluding the test
             if success_count == 2:
-                logger.info( "Reset, Backup, and restore functionality working as expected." )
+                logger.info( "After Factory Default functionality that the old configuration is removed Successful." )
                 return True
             else:
-                logger.error( "Reset, Backup, and restore functionality did not work as expected." )
+                logger.error( "After Factory Default functionality that the old configuration is NOT removed ." )
                 return False
 
         except Exception as e:
@@ -829,3 +1117,33 @@ class FunctionalSanity:
             self.firewall.delete_ipv6_firewall_rule()#deleting  ipv6 firewall rule
             self.firewall.delete_ipv4_firewall_rule()#deleting  ipv4 firewall rule
 
+
+    def functional_sanity_49(self):
+        logger.debug( "======================================================================================" )
+        logger.info( "Validate user should able to take DBGLOG from IDU GUI." )
+        try:
+            self.driver.get( f'{input.URL}/WCGI/?dbglogs' )
+            current_time = time.time()
+            logger.info( 'DBG log collected at: {}'.format( datetime.datetime.now() ) )
+            time.sleep( 30 )
+
+            directory = rf"C:\Users\ontvi\Downloads"
+            # Iterate over files in the directory
+            for filename in os.listdir( directory ):
+                if filename.startswith( "enc_dbglog" ):
+                    filepath = os.path.join( directory , filename )
+                    # Get the modification time of the file
+                    modification_time = os.path.getmtime( filepath )
+                    # Calculate the time difference in seconds
+                    time_difference = current_time - modification_time
+                    # Check if the file was modified in the last 1 minute
+                    if time_difference <= 60:
+                        logger.debug( f"File '{filename}' was downloaded in the last 1 minute." )
+                        logger.debug( "Successfully taken DBGLOG" )
+                        return True
+            logger.error( "Unable to take DBGLOG" )
+            return False
+
+        except Exception as e:
+            logger.error( "Error occurred while executing functional_sanity_49: %s" , str( e ) )
+            return False
