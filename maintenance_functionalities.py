@@ -5,7 +5,9 @@ import os
 import glob
 import re
 import time
+from datetime import datetime
 
+import locaters
 from utils import Utils
 from logger import setup_logger
 
@@ -22,11 +24,10 @@ class Maintenance:
         logger.info( "Initiating device factory defaults" )
         try:
             self.utils.search_WebGUI( "Factory Defaults / Reboot" )
-            self.utils.find_element( "//span[normalize-space()='Select Option']" ).click()
-            self.utils.find_element( "//li[normalize-space()='Restore to Factory Defaults']" ).click()
-            self.utils.find_element( "//button[normalize-space()='DEFAULTS']" ).click()
-            self.utils.find_element(
-                "//div[@class='jioWrtModalWindowContainer jioFactoyDefaultRebootModal']//button[@type='button'][normalize-space()='RESTORE']" ).click()
+            self.utils.find_element( *locaters.FactoryDefaultsReboot_DropDown ).click()
+            self.utils.find_element( *locaters.FactoryDefaultsReboot_FactoryDefaultopt ).click()
+            self.utils.find_element( *locaters.FactoryDefaultsReboot_FactoryDefaultBtn ).click()
+            self.utils.find_element( *locaters.FactoryDefaultsReboot_FactoryDefaultCnfBtn ).click()
             logger.debug( "Wait for the reset process to complete : 200s" )
             time.sleep( 200 )
         except Exception as e:
@@ -37,11 +38,10 @@ class Maintenance:
         logger.info( "Initiating device reboot" )
         try:
             self.utils.search_WebGUI( "Factory Defaults / Reboot" )
-            self.utils.find_element( "//span[normalize-space()='Select Option']" ).click()
-            self.utils.find_element( "//li[normalize-space()='Reboot']" ).click()
-            self.utils.find_element( "//button[normalize-space()='Reboot']" ).click()
-            self.utils.find_element(
-                "//div[@class='jioModalWindowFooter']//button[@type='button'][normalize-space()='Reboot']" ).click()
+            self.utils.find_element( *locaters.FactoryDefaultsReboot_DropDown ).click()
+            self.utils.find_element( *locaters.FactoryDefaultsReboot_RebootOpt ).click()
+            self.utils.find_element( *locaters.FactoryDefaultsReboot_RebootBtn ).click()
+            self.utils.find_element( *locaters.FactoryDefaultsReboot_RebootCnfBtn ).click()
             logger.debug("Wait for the reboot process to complete : 200s")
             time.sleep( 200 )
         except Exception as e:
@@ -53,14 +53,15 @@ class Maintenance:
         backup_file_path = None
         try:
             self.utils.search_WebGUI( "Backup Settings" )
-            self.utils.find_element(
-                "//div[@class='iconActionDownload']//*[name()='svg']//*[name()='path' and @id='icon']" ).click()
+            self.utils.find_element(*locaters.BackupSettings_BackupIcon).click()
             time.sleep( 15 )  # Wait for the backup process to complete
 
             # Check if the backup file exists in the default download directory
-            default_download_dir = "C:/Users/ontvi/Downloads"  # Update with your default download directory
+            today_date = datetime.now().strftime( "%Y-%m-%d" )
+            expected_file_name = f"backup-jio-{today_date}_enc.tar.gz"
+            default_download_dir = rf"C:\Users\ontvi\Downloads"
             for file_name in os.listdir( default_download_dir ):
-                if file_name.startswith( "backup-jio-" ) and file_name.endswith( "_enc.tar.gz" ):
+                if file_name == expected_file_name:
                     backup_file_path = os.path.join( default_download_dir , file_name )
                     break
 
@@ -73,6 +74,7 @@ class Maintenance:
 
         except Exception as e:
             logger.error( f"An error occurred during device backup: {e}" )
+            return e
 
         return backup_file_path
 
@@ -81,20 +83,20 @@ class Maintenance:
         logger.info( f"Initiating device restore, File Path: {file_path}" )
         try:
             self.utils.search_WebGUI( "Restore Settings" )
-            self.utils.find_element(
-                "//label[@for='selectTheSavedSettings'][normalize-space()='Browse & Upload']" ).click()
+            self.utils.find_element( *locaters.RestoreSettings_RestoreOpt ).click()
             time.sleep( 3 )
             if os.path.exists( file_path ):
                 pyautogui.write( file_path )
                 pyautogui.press( 'enter' )
+                time.sleep( 3 )
                 logger.debug( "File path entered successfully" )
             else:
                 logger.error( "File not found" )
                 pyautogui.press( 'esc' )
                 return
 
-            self.utils.find_element("//div[@class='jioWrtSectionBottom']//button[@type='button'][normalize-space()='RESTORE']" ).click()
-            self.utils.find_element("//div[@class='jioModalWindowFooter']//button[@type='button'][normalize-space()='RESTORE']" ).click()
+            self.utils.find_element( *locaters.RestoreSettings_RestoreBtn ).click()
+            self.utils.find_element( *locaters.RestoreSettings_RestoreCnfBtn ).click()
 
             logger.debug( "Wait for the Restore process to complete : 200s" )
             time.sleep( 200 )
@@ -108,11 +110,12 @@ class Maintenance:
             self.utils.search_WebGUI("Firmware Upgrade")
 
             #uploading image file
-            self.utils.find_element("/html[1]/body[1]/mainapp[1]/div[1]/div[2]/div[4]/div[1]/form[1]/div[1]/div[1]/div[2]/div[1]/label[3]/*[name()='svg'][1]/*[name()='path'][1]").click()
+            self.utils.find_element(*locaters.FirmwareUpgrade_ImgFile).click()
             time.sleep(3)
             if os.path.exists( image_file ):
                 pyautogui.write( image_file )
                 pyautogui.press( 'enter' )
+                time.sleep(3)
                 logger.debug( "Image File path entered successfully" )
             else:
                 logger.error( "Image File NOT found" )
@@ -121,11 +124,12 @@ class Maintenance:
             time.sleep(10)
 
             #uploading signature file
-            self.utils.find_element("/html[1]/body[1]/mainapp[1]/div[1]/div[2]/div[4]/div[1]/form[1]/div[1]/div[1]/div[2]/div[3]/label[3]/*[name()='svg'][1]/*[name()='path'][1]" ).click()
+            self.utils.find_element( *locaters.FirmwareUpgrade_SignFile).click()
             time.sleep( 3 )
             if os.path.exists( signature_file ):
                 pyautogui.write( signature_file )
                 pyautogui.press( 'enter' )
+                time.sleep( 3 )
                 logger.debug( "Signature File path entered successfully" )
             else:
                 logger.error( "Signature File NOT found" )
@@ -133,9 +137,9 @@ class Maintenance:
                 return
             time.sleep( 10 )
 
-            self.utils.find_element("//button[normalize-space()='UPGRADE']").click()
+            self.utils.find_element(*locaters.FirmwareUpgrade_UpgradeBtn).click()
             time.sleep(5)
-            self.utils.find_element('//*[@id="root"]/div[1]/div[2]/div[4]/div[1]/div[2]/form/div[3]/button').click()
+            self.utils.find_element( *locaters.FirmwareUpgrade_UpgradeCnfBtn ).click()
 
             logger.debug( "Wait for the upgrade process to complete : 200s" )
             time.sleep(200)

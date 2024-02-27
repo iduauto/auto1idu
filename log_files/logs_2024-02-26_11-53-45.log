@@ -1,0 +1,25 @@
+24-02-26 11:53:45 [DEBUG] Initializing Chrome WebDriver
+24-02-26 11:53:46 [INFO] Try to Login Through WebGUI
+24-02-26 11:54:13 [DEBUG] ======================================================================================
+24-02-26 11:54:13 [INFO] Validate the LAN side DNS proxy functionality of the IDU
+24-02-26 11:54:13 [INFO] Try to Login Through WebGUI
+24-02-26 11:54:38 [INFO] Performing health check
+24-02-26 11:54:38 [DEBUG] Retrieving Firmware Version.....
+24-02-26 11:54:38 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-26 11:54:40 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-26 11:54:46 [INFO] Current firmware version: ARCNJIO_JIDU6101_D1.9.0
+24-02-26 11:54:46 [DEBUG] Getting WAN IPv6 Information
+24-02-26 11:54:46 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-26 11:54:48 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-26 11:54:54 [INFO] Successfully retrieved WAN IPv6 address: 2409:4090:17:1000:cf56:c63:de5c:c84d, 2409:4090:17:1208::/64
+24-02-26 11:54:54 [DEBUG] Checking Ping 4 to google.com
+24-02-26 11:55:13 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-26 11:55:13 [INFO] Ping 4 Passed
+24-02-26 11:55:13 [DEBUG] Checking Ping 6 to google.com
+24-02-26 11:55:32 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-26 11:55:32 [INFO] Ping 6 Passed
+24-02-26 11:55:32 [INFO] Device health check completed successfully.
+24-02-26 11:55:32 [DEBUG] Searching for the Keyword: 'LAN IPv4 Configuration'
+24-02-26 11:55:33 [DEBUG] Found and Clicked on the Result Containing 'LAN IPv4 Configuration'
+24-02-26 11:56:45 [DEBUG] DNS Server: 192.168.31.1
+24-02-26 11:56:45 [INFO] The LAN side DNS proxy functionality is working as expected

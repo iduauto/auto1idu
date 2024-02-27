@@ -121,5 +121,80 @@ Wireless_SaveButton = (
     ""
 )
 
+#maintainence >> Reset/Reboot
+FactoryDefaultsReboot_DropDown = (
+    "//span[normalize-space()='Select Option']",
+    "div[data-name='selectDefaultsReboot_jioSelectLabelContainer'] span[class='jioDropdown']",
+    ""
+)
+
+FactoryDefaultsReboot_FactoryDefaultopt = (
+    "//li[normalize-space()='Restore to Factory Defaults']",
+    "li[data-enable='-1'][data-value='2']"
+)
+
+FactoryDefaultsReboot_FactoryDefaultBtn = (
+    "//button[normalize-space()='DEFAULTS']" ,
+    "body > mainapp:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(4) > div:nth-child(2) > form:nth-child(4) > div:nth-child(1) > div:nth-child(3) > button:nth-child(3)"
+)
+
+FactoryDefaultsReboot_FactoryDefaultCnfBtn = (
+    "//div[@class='jioWrtModalWindowContainer jioFactoyDefaultRebootModal']//button[@type='button'][normalize-space()='RESTORE']",
+    "div[class='jioWrtModalWindowContainer jioFactoyDefaultRebootModal'] button[type='button']"
+)
+
+FactoryDefaultsReboot_RebootOpt = (
+    "//li[normalize-space()='Reboot']",
+    "li[data-enable='-1'][data-value='3']"
+)
+
+FactoryDefaultsReboot_RebootBtn = (
+    "//button[normalize-space()='Reboot']",
+    "body > mainapp:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(4) > div:nth-child(2) > form:nth-child(4) > div:nth-child(1) > div:nth-child(3) > button:nth-child(3)"
+)
+
+FactoryDefaultsReboot_RebootCnfBtn =(
+    "//div[@class='jioModalWindowFooter']//button[@type='button'][normalize-space()='Reboot']" ,
+    "div[class='jioWrtModalWindowContainer jioFactoyDefaultRebootModal'] button[type='button']"
+)
+
+#maintainence >> BackUp
+BackupSettings_BackupIcon = (
+    "//div[@class='iconActionDownload']//*[name()='svg']//*[name()='path' and @id='icon']" ,
+    "body > mainapp:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(4) > div:nth-child(3) > form:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > svg:nth-child(1) > path:nth-child(3)"
+)
+
+#maintainence >> Restor
+RestoreSettings_RestoreOpt = (
+    "//label[@for='selectTheSavedSettings'][normalize-space()='Browse & Upload']",
+    "body > mainapp:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(4) > div:nth-child(2) > form:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > label:nth-child(2)"
+)
+RestoreSettings_RestoreBtn = (
+    "//div[@class='jioWrtSectionBottom']//button[@type='button'][normalize-space()='RESTORE']",
+    "body > mainapp:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(4) > div:nth-child(2) > form:nth-child(1) > div:nth-child(1) > div:nth-child(3) > button:nth-child(3)",
+)
+
+RestoreSettings_RestoreCnfBtn = (
+    "//div[@class='jioModalWindowFooter']//button[@type='button'][normalize-space()='RESTORE']",
+    'div[class="jioWrtModalWindowContainer jioRestoreModal1708683448635bc6721d4-2887-0ce5-ea9b-a4b4646f3422"] button[type="button"]')
+
+
+#Firmware Upgrade
+FirmwareUpgrade_ImgFile = (
+    "/html[1]/body[1]/mainapp[1]/div[1]/div[2]/div[4]/div[1]/form[1]/div[1]/div[1]/div[2]/div[1]/label[3]/*[name()='svg'][1]/*[name()='path'][1]",
+    "body > mainapp:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(4) > div:nth-child(1) > form:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > label:nth-child(2)"
+)
+FirmwareUpgrade_SignFile = (
+    "/html[1]/body[1]/mainapp[1]/div[1]/div[2]/div[4]/div[1]/form[1]/div[1]/div[1]/div[2]/div[3]/label[3]/*[name()='svg'][1]/*[name()='path'][1]" ,
+    "body > mainapp:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(4) > div:nth-child(1) > form:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(3) > label:nth-child(2)"
+)
+FirmwareUpgrade_UpgradeBtn = (
+    "//button[normalize-space()='UPGRADE']" ,
+    "body > mainapp:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(4) > div:nth-child(1) > form:nth-child(2) > div:nth-child(1) > div:nth-child(3) > button:nth-child(3)"
+)
+FirmwareUpgrade_UpgradeCnfBtn = (
+'//*[@id="root"]/div[1]/div[2]/div[4]/div[1]/div[2]/form/div[3]/button',
+"form[class='jioWrtPromptWindow jioWrtUpdateWindow'] button[type='button']"
+    )
 
 

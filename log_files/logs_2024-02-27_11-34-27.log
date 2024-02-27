@@ -1,0 +1,227 @@
+24-02-27 11:34:27 [DEBUG] Initializing Chrome WebDriver
+24-02-27 11:34:29 [INFO] Try to Login Through WebGUI
+24-02-27 11:34:57 [DEBUG] ======================================================================================
+24-02-27 11:34:57 [INFO] Validating multiple factory reset
+24-02-27 11:34:57 [INFO] Try to Login Through WebGUI
+24-02-27 11:35:22 [INFO] Performing health check
+24-02-27 11:35:22 [DEBUG] Retrieving Firmware Version.....
+24-02-27 11:35:22 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-27 11:35:24 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-27 11:35:30 [INFO] Current firmware version: ARCNJIO_JIDU6101_D1.9.0
+24-02-27 11:35:30 [DEBUG] Getting WAN IPv6 Information
+24-02-27 11:35:30 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-27 11:35:31 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-27 11:35:37 [INFO] Successfully retrieved WAN IPv6 address: 2409:4090:17:1000:bbd7:e5d2:5903:b145, 2409:4090:17:1203::/64
+24-02-27 11:35:37 [DEBUG] Checking Ping 4 to google.com
+24-02-27 11:35:57 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-27 11:35:57 [INFO] Ping 4 Passed
+24-02-27 11:35:57 [DEBUG] Checking Ping 6 to google.com
+24-02-27 11:36:16 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-27 11:36:16 [INFO] Ping 6 Passed
+24-02-27 11:36:16 [INFO] Device health check completed successfully.
+24-02-27 11:36:16 [DEBUG] -------------1th Factory Reset---------------------
+24-02-27 11:36:16 [INFO] Adding IPv6 rule
+24-02-27 11:36:16 [DEBUG] Searching for the Keyword: 'List of IPv6 Firewall Rules'
+24-02-27 11:36:17 [DEBUG] Found and Clicked on the Result Containing 'List of IPv6 Firewall Rules'
+24-02-27 11:36:32 [INFO] IPv6 firewall rule added - Service: HTTPS, Action: Block Always, Rule Type: Inbound
+24-02-27 11:36:37 [INFO] Adding IPv4 rule
+24-02-27 11:36:37 [DEBUG] Searching for the Keyword: 'List of IPv4 Firewall Rules'
+24-02-27 11:36:39 [DEBUG] Found and Clicked on the Result Containing 'List of IPv4 Firewall Rules'
+24-02-27 11:36:51 [INFO] IPv4 firewall rule added - Service: HTTPS, Action: Block Always
+24-02-27 11:36:56 [INFO] Initiating device factory defaults
+24-02-27 11:36:56 [DEBUG] Searching for the Keyword: 'Factory Defaults / Reboot'
+24-02-27 11:36:58 [DEBUG] Found and Clicked on the Result Containing 'Factory Defaults / Reboot'
+24-02-27 11:37:07 [DEBUG] Wait for the reset process to complete : 200s
+24-02-27 11:40:27 [INFO] Try to Login Through WebGUI
+24-02-27 11:40:30 [DEBUG] Device is in Factory Reset State
+24-02-27 11:41:14 [INFO] Performing health check
+24-02-27 11:41:14 [DEBUG] Retrieving Firmware Version.....
+24-02-27 11:41:14 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-27 11:41:15 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-27 11:41:21 [INFO] Current firmware version: ARCNJIO_JIDU6101_D1.9.0
+24-02-27 11:41:21 [DEBUG] Getting WAN IPv6 Information
+24-02-27 11:41:21 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-27 11:41:23 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-27 11:41:29 [INFO] Successfully retrieved WAN IPv6 address: 2409:4090:17:1000:bbd7:e5d2:5903:b145, 2409:4090:17:1203::/64
+24-02-27 11:41:29 [DEBUG] Checking Ping 4 to google.com
+24-02-27 11:41:48 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-27 11:41:48 [INFO] Ping 4 Passed
+24-02-27 11:41:48 [DEBUG] Checking Ping 6 to google.com
+24-02-27 11:42:08 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-27 11:42:08 [INFO] Ping 6 Passed
+24-02-27 11:42:08 [INFO] Device health check completed successfully.
+24-02-27 11:42:08 [DEBUG] Counting IPv6 Firewall Rules
+24-02-27 11:42:08 [DEBUG] Searching for the Keyword: 'List of IPv4 Firewall Rules'
+24-02-27 11:42:09 [DEBUG] Found and Clicked on the Result Containing 'List of IPv4 Firewall Rules'
+24-02-27 11:42:15 [DEBUG] Total IPv4 rules : 0
+24-02-27 11:42:15 [DEBUG] Counting IPv6 Firewall Rules
+24-02-27 11:42:15 [DEBUG] Searching for the Keyword: 'List of IPv6 Firewall Rules'
+24-02-27 11:42:16 [DEBUG] Found and Clicked on the Result Containing 'List of IPv6 Firewall Rules'
+24-02-27 11:42:22 [DEBUG] Total IPv6 rules : 0
+24-02-27 11:42:22 [INFO] Old configuration removed after reset.
+24-02-27 11:42:22 [INFO] Maintenance functionality like Reset is working as expected.
+24-02-27 11:42:22 [DEBUG] -------------2th Factory Reset---------------------
+24-02-27 11:42:22 [INFO] Adding IPv6 rule
+24-02-27 11:42:22 [DEBUG] Searching for the Keyword: 'List of IPv6 Firewall Rules'
+24-02-27 11:42:24 [DEBUG] Found and Clicked on the Result Containing 'List of IPv6 Firewall Rules'
+24-02-27 11:42:39 [INFO] IPv6 firewall rule added - Service: HTTPS, Action: Block Always, Rule Type: Inbound
+24-02-27 11:42:44 [INFO] Adding IPv4 rule
+24-02-27 11:42:44 [DEBUG] Searching for the Keyword: 'List of IPv4 Firewall Rules'
+24-02-27 11:42:45 [DEBUG] Found and Clicked on the Result Containing 'List of IPv4 Firewall Rules'
+24-02-27 11:42:58 [INFO] IPv4 firewall rule added - Service: HTTPS, Action: Block Always
+24-02-27 11:43:03 [INFO] Initiating device factory defaults
+24-02-27 11:43:03 [DEBUG] Searching for the Keyword: 'Factory Defaults / Reboot'
+24-02-27 11:43:05 [DEBUG] Found and Clicked on the Result Containing 'Factory Defaults / Reboot'
+24-02-27 11:43:14 [DEBUG] Wait for the reset process to complete : 200s
+24-02-27 11:46:34 [INFO] Try to Login Through WebGUI
+24-02-27 11:46:36 [DEBUG] Device is in Factory Reset State
+24-02-27 11:47:21 [INFO] Performing health check
+24-02-27 11:47:21 [DEBUG] Retrieving Firmware Version.....
+24-02-27 11:47:21 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-27 11:47:22 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-27 11:47:29 [INFO] Current firmware version: ARCNJIO_JIDU6101_D1.9.0
+24-02-27 11:47:29 [DEBUG] Getting WAN IPv6 Information
+24-02-27 11:47:29 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-27 11:47:30 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-27 11:47:36 [INFO] Successfully retrieved WAN IPv6 address: 2409:4090:17:1000:bbd7:e5d2:5903:b145, 2409:4090:17:1203::/64
+24-02-27 11:47:36 [DEBUG] Checking Ping 4 to google.com
+24-02-27 11:47:55 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-27 11:47:55 [INFO] Ping 4 Passed
+24-02-27 11:47:55 [DEBUG] Checking Ping 6 to google.com
+24-02-27 11:48:15 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-27 11:48:15 [INFO] Ping 6 Passed
+24-02-27 11:48:15 [INFO] Device health check completed successfully.
+24-02-27 11:48:15 [DEBUG] Counting IPv6 Firewall Rules
+24-02-27 11:48:15 [DEBUG] Searching for the Keyword: 'List of IPv4 Firewall Rules'
+24-02-27 11:48:16 [DEBUG] Found and Clicked on the Result Containing 'List of IPv4 Firewall Rules'
+24-02-27 11:48:22 [DEBUG] Total IPv4 rules : 0
+24-02-27 11:48:22 [DEBUG] Counting IPv6 Firewall Rules
+24-02-27 11:48:22 [DEBUG] Searching for the Keyword: 'List of IPv6 Firewall Rules'
+24-02-27 11:48:23 [DEBUG] Found and Clicked on the Result Containing 'List of IPv6 Firewall Rules'
+24-02-27 11:48:30 [DEBUG] Total IPv6 rules : 0
+24-02-27 11:48:30 [INFO] Old configuration removed after reset.
+24-02-27 11:48:30 [INFO] Maintenance functionality like Reset is working as expected.
+24-02-27 11:48:30 [DEBUG] -------------3th Factory Reset---------------------
+24-02-27 11:48:30 [INFO] Adding IPv6 rule
+24-02-27 11:48:30 [DEBUG] Searching for the Keyword: 'List of IPv6 Firewall Rules'
+24-02-27 11:48:31 [DEBUG] Found and Clicked on the Result Containing 'List of IPv6 Firewall Rules'
+24-02-27 11:48:46 [INFO] IPv6 firewall rule added - Service: HTTPS, Action: Block Always, Rule Type: Inbound
+24-02-27 11:48:51 [INFO] Adding IPv4 rule
+24-02-27 11:48:51 [DEBUG] Searching for the Keyword: 'List of IPv4 Firewall Rules'
+24-02-27 11:48:52 [DEBUG] Found and Clicked on the Result Containing 'List of IPv4 Firewall Rules'
+24-02-27 11:49:05 [INFO] IPv4 firewall rule added - Service: HTTPS, Action: Block Always
+24-02-27 11:49:10 [INFO] Initiating device factory defaults
+24-02-27 11:49:10 [DEBUG] Searching for the Keyword: 'Factory Defaults / Reboot'
+24-02-27 11:49:12 [DEBUG] Found and Clicked on the Result Containing 'Factory Defaults / Reboot'
+24-02-27 11:49:21 [DEBUG] Wait for the reset process to complete : 200s
+24-02-27 11:52:41 [INFO] Try to Login Through WebGUI
+24-02-27 11:52:44 [DEBUG] Device is in Factory Reset State
+24-02-27 11:53:28 [INFO] Performing health check
+24-02-27 11:53:28 [DEBUG] Retrieving Firmware Version.....
+24-02-27 11:53:28 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-27 11:53:30 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-27 11:53:36 [INFO] Current firmware version: ARCNJIO_JIDU6101_D1.9.0
+24-02-27 11:53:36 [DEBUG] Getting WAN IPv6 Information
+24-02-27 11:53:36 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-27 11:53:37 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-27 11:53:44 [INFO] Successfully retrieved WAN IPv6 address: 2409:4090:17:1000:bbd7:e5d2:5903:b145, 2409:4090:17:1203::/64
+24-02-27 11:53:44 [DEBUG] Checking Ping 4 to google.com
+24-02-27 11:54:03 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-27 11:54:03 [INFO] Ping 4 Passed
+24-02-27 11:54:03 [DEBUG] Checking Ping 6 to google.com
+24-02-27 11:54:22 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-27 11:54:22 [INFO] Ping 6 Passed
+24-02-27 11:54:22 [INFO] Device health check completed successfully.
+24-02-27 11:54:22 [DEBUG] Counting IPv6 Firewall Rules
+24-02-27 11:54:22 [DEBUG] Searching for the Keyword: 'List of IPv4 Firewall Rules'
+24-02-27 11:54:23 [DEBUG] Found and Clicked on the Result Containing 'List of IPv4 Firewall Rules'
+24-02-27 11:54:29 [DEBUG] Total IPv4 rules : 0
+24-02-27 11:54:29 [DEBUG] Counting IPv6 Firewall Rules
+24-02-27 11:54:29 [DEBUG] Searching for the Keyword: 'List of IPv6 Firewall Rules'
+24-02-27 11:54:31 [DEBUG] Found and Clicked on the Result Containing 'List of IPv6 Firewall Rules'
+24-02-27 11:54:37 [DEBUG] Total IPv6 rules : 0
+24-02-27 11:54:37 [INFO] Old configuration removed after reset.
+24-02-27 11:54:37 [INFO] Maintenance functionality like Reset is working as expected.
+24-02-27 11:54:37 [DEBUG] -------------4th Factory Reset---------------------
+24-02-27 11:54:37 [INFO] Adding IPv6 rule
+24-02-27 11:54:37 [DEBUG] Searching for the Keyword: 'List of IPv6 Firewall Rules'
+24-02-27 11:54:38 [DEBUG] Found and Clicked on the Result Containing 'List of IPv6 Firewall Rules'
+24-02-27 11:54:53 [INFO] IPv6 firewall rule added - Service: HTTPS, Action: Block Always, Rule Type: Inbound
+24-02-27 11:54:58 [INFO] Adding IPv4 rule
+24-02-27 11:54:58 [DEBUG] Searching for the Keyword: 'List of IPv4 Firewall Rules'
+24-02-27 11:55:00 [DEBUG] Found and Clicked on the Result Containing 'List of IPv4 Firewall Rules'
+24-02-27 11:55:12 [INFO] IPv4 firewall rule added - Service: HTTPS, Action: Block Always
+24-02-27 11:55:17 [INFO] Initiating device factory defaults
+24-02-27 11:55:17 [DEBUG] Searching for the Keyword: 'Factory Defaults / Reboot'
+24-02-27 11:55:19 [DEBUG] Found and Clicked on the Result Containing 'Factory Defaults / Reboot'
+24-02-27 11:55:28 [DEBUG] Wait for the reset process to complete : 200s
+24-02-27 11:58:48 [INFO] Try to Login Through WebGUI
+24-02-27 11:58:51 [DEBUG] Device is in Factory Reset State
+24-02-27 11:59:35 [INFO] Performing health check
+24-02-27 11:59:35 [DEBUG] Retrieving Firmware Version.....
+24-02-27 11:59:35 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-27 11:59:37 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-27 11:59:43 [INFO] Current firmware version: ARCNJIO_JIDU6101_D1.9.0
+24-02-27 11:59:43 [DEBUG] Getting WAN IPv6 Information
+24-02-27 11:59:43 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-27 11:59:45 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-27 11:59:51 [INFO] Successfully retrieved WAN IPv6 address: 2409:4090:17:1000:bbd7:e5d2:5903:b145, 2409:4090:17:1203::/64
+24-02-27 11:59:51 [DEBUG] Checking Ping 4 to google.com
+24-02-27 12:00:10 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-27 12:00:10 [INFO] Ping 4 Passed
+24-02-27 12:00:10 [DEBUG] Checking Ping 6 to google.com
+24-02-27 12:00:29 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-27 12:00:29 [INFO] Ping 6 Passed
+24-02-27 12:00:29 [INFO] Device health check completed successfully.
+24-02-27 12:00:29 [DEBUG] Counting IPv6 Firewall Rules
+24-02-27 12:00:29 [DEBUG] Searching for the Keyword: 'List of IPv4 Firewall Rules'
+24-02-27 12:00:30 [DEBUG] Found and Clicked on the Result Containing 'List of IPv4 Firewall Rules'
+24-02-27 12:00:37 [DEBUG] Total IPv4 rules : 0
+24-02-27 12:00:37 [DEBUG] Counting IPv6 Firewall Rules
+24-02-27 12:00:37 [DEBUG] Searching for the Keyword: 'List of IPv6 Firewall Rules'
+24-02-27 12:00:38 [DEBUG] Found and Clicked on the Result Containing 'List of IPv6 Firewall Rules'
+24-02-27 12:00:44 [DEBUG] Total IPv6 rules : 0
+24-02-27 12:00:44 [INFO] Old configuration removed after reset.
+24-02-27 12:00:44 [INFO] Maintenance functionality like Reset is working as expected.
+24-02-27 12:00:44 [DEBUG] -------------5th Factory Reset---------------------
+24-02-27 12:00:44 [INFO] Adding IPv6 rule
+24-02-27 12:00:44 [DEBUG] Searching for the Keyword: 'List of IPv6 Firewall Rules'
+24-02-27 12:00:45 [DEBUG] Found and Clicked on the Result Containing 'List of IPv6 Firewall Rules'
+24-02-27 12:01:00 [INFO] IPv6 firewall rule added - Service: HTTPS, Action: Block Always, Rule Type: Inbound
+24-02-27 12:01:05 [INFO] Adding IPv4 rule
+24-02-27 12:01:05 [DEBUG] Searching for the Keyword: 'List of IPv4 Firewall Rules'
+24-02-27 12:01:07 [DEBUG] Found and Clicked on the Result Containing 'List of IPv4 Firewall Rules'
+24-02-27 12:01:20 [INFO] IPv4 firewall rule added - Service: HTTPS, Action: Block Always
+24-02-27 12:01:25 [INFO] Initiating device factory defaults
+24-02-27 12:01:25 [DEBUG] Searching for the Keyword: 'Factory Defaults / Reboot'
+24-02-27 12:01:26 [DEBUG] Found and Clicked on the Result Containing 'Factory Defaults / Reboot'
+24-02-27 12:01:35 [DEBUG] Wait for the reset process to complete : 200s
+24-02-27 12:04:55 [INFO] Try to Login Through WebGUI
+24-02-27 12:04:58 [DEBUG] Device is in Factory Reset State
+24-02-27 12:05:42 [INFO] Performing health check
+24-02-27 12:05:42 [DEBUG] Retrieving Firmware Version.....
+24-02-27 12:05:42 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-27 12:05:44 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-27 12:05:50 [INFO] Current firmware version: ARCNJIO_JIDU6101_D1.9.0
+24-02-27 12:05:50 [DEBUG] Getting WAN IPv6 Information
+24-02-27 12:05:50 [DEBUG] Searching for the Keyword: 'WAN Information'
+24-02-27 12:05:51 [DEBUG] Found and Clicked on the Result Containing 'WAN Information'
+24-02-27 12:05:57 [INFO] Successfully retrieved WAN IPv6 address: 2409:4090:17:1000:bbd7:e5d2:5903:b145, 2409:4090:17:1203::/64
+24-02-27 12:05:57 [DEBUG] Checking Ping 4 to google.com
+24-02-27 12:06:17 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-27 12:06:17 [INFO] Ping 4 Passed
+24-02-27 12:06:17 [DEBUG] Checking Ping 6 to google.com
+24-02-27 12:06:36 [DEBUG]     Packets: Sent = 20, Received = 20, Lost = 0 (0% loss),
+24-02-27 12:06:36 [INFO] Ping 6 Passed
+24-02-27 12:06:36 [INFO] Device health check completed successfully.
+24-02-27 12:06:36 [DEBUG] Counting IPv6 Firewall Rules
+24-02-27 12:06:36 [DEBUG] Searching for the Keyword: 'List of IPv4 Firewall Rules'
+24-02-27 12:06:37 [DEBUG] Found and Clicked on the Result Containing 'List of IPv4 Firewall Rules'
+24-02-27 12:06:43 [DEBUG] Total IPv4 rules : 0
+24-02-27 12:06:43 [DEBUG] Counting IPv6 Firewall Rules
+24-02-27 12:06:43 [DEBUG] Searching for the Keyword: 'List of IPv6 Firewall Rules'
+24-02-27 12:06:45 [DEBUG] Found and Clicked on the Result Containing 'List of IPv6 Firewall Rules'
+24-02-27 12:06:51 [DEBUG] Total IPv6 rules : 0
+24-02-27 12:06:51 [INFO] Old configuration removed after reset.
+24-02-27 12:06:51 [INFO] Maintenance functionality like Reset is working as expected.
+24-02-27 12:06:51 [INFO] Successfully factory reset from Web GUI - 5 Iterations

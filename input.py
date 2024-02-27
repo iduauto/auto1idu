@@ -14,9 +14,10 @@ downgrade='ARCNJIO_JIDU6101_D1.8.5'
 base_path = rf'C:\Users\ontvi\Downloads\Firmware\idu'
 
 
+
 test_ssid = 'Auto IDU DK'
-test_password = '123456789'
+test_ssid_password = '123456789'
 plume_build = 0
 factory_ssid = 'AirFiber-RJ6X4K'
-factory_password = 'GBfRpmpQCKnxtQ5k'
+factory_ssid_password = 'GBfRpmpQCKnxtQ5k'
 
