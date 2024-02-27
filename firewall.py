@@ -90,10 +90,40 @@ class Firewall:
                 logger.info( f"IPv6 firewall rule Deleted")
         except Exception as e:
             logger.error( "Error occurred while Deleting IPv6 firewall rule" , str( e ) )
-            return False
+            return e
 
     def delete_port_forwarding_rule(self):
         self.utils.search_WebGUI( "List of Port Forwarding" )
         self.utils.find_element(
             "/html[1]/body[1]/mainapp[1]/div[1]/div[2]/div[4]/div[4]/div[1]/div[1]/div[1]/div[3]/div[1]/div[2]" )
         pass
+
+    def total_ipv4_rules(self):
+        logger.debug("Counting IPv6 Firewall Rules")
+        try:
+            self.utils.search_WebGUI( "List of IPv4 Firewall Rules" )
+            ipv4_counter_element = self.utils.find_element(
+                "/html/body/mainapp/div[1]/div[2]/div[4]/div[2]/div[3]/div[4]" ).text
+            total_ipv4_rules = int(
+                ipv4_counter_element.split( "/" )[1].strip() )  # total number of ipv4 firewall rules present
+
+            logger.debug(f"Total IPv4 rules : {total_ipv4_rules}")
+            return total_ipv4_rules
+        except Exception as e:
+            logger.error( "Error occurred while Counting IPv4 firewall rule" , str( e ) )
+            return e
+
+    def total_ipv6_rules(self):
+        logger.debug( "Counting IPv6 Firewall Rules" )
+        try:
+            self.utils.search_WebGUI( "List of IPv6 Firewall Rules" )
+            ipv6_counter_element = self.utils.find_element(
+                "/html/body/mainapp/div[1]/div[2]/div[4]/div[3]/div[3]/div[4]" ).text
+            total_ipv6_rules = int(
+                ipv6_counter_element.split( "/" )[1].strip() )  # total number of ipv6 firewall rules present
+
+            logger.debug( f"Total IPv6 rules : {total_ipv6_rules}" )
+            return total_ipv6_rules
+        except Exception as e:
+            logger.error( "Error occurred while Counting IPv6 firewall rule" , str( e ) )
+            return e
