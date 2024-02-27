@@ -55,32 +55,6 @@ class FunctionalSanity:
             self.utils.get_DBGLogs()
             return False
 
-    # Multiple Reboot
-    def functional_sanity_02(self):
-        logger.debug( "======================================================================================" )
-        logger.info( "Validating multiple reboot" )
-        try:
-            if self.health.health_check_webgui() == False:
-                logger.error( 'Device health check failed. Exiting the test.' )
-                return False
-
-            for i in range( 2 ):
-                logger.debug( f"-------------{i + 1}th Reboot---------------------" )
-                self.maintenance.reboot()
-
-                if self.health.health_check_webgui() == False:
-                    logger.error( 'Device health check failed. Exiting the test.' )
-                    logger.error( f"Error occurred after {i + 1}th reboot iteration" )
-                    self.utils.get_DBGLogs()
-                    return False
-
-            logger.info( "Successfully reboot from WebGUI - 5 Iterations" )
-            return True
-        except Exception as E:
-            logger.error( f"Error occurred during functional_sanity_01: {str( E )}" )
-            self.utils.get_DBGLogs()
-            return False
-
     # Validate mac address
     def functional_sanity_06(self):
         logger.debug( "======================================================================================" )
@@ -197,32 +171,6 @@ class FunctionalSanity:
 
         except Exception as e:
             logger.error( "Error occurred while executing functional_sanity_12: %s" , str( e ) )
-            self.utils.get_DBGLogs()
-            return False
-
-    # Multiple Reset
-    def functional_sanity_58(self):
-        logger.debug( "======================================================================================" )
-        logger.info( "Validating multiple factory reset" )
-        try:
-            if self.health.health_check_webgui() == False:
-                logger.error( 'Device health check failed. Exiting the test.' )
-                return False
-            n = 5
-            for i in range( n ):
-                logger.debug( f"-------------{i + 1}th Factory Reset---------------------" )
-                self.maintenance.reset()
-
-                if self.health.health_check_webgui() == False:
-                    logger.error( 'Device health check failed. Exiting the test.' )
-                    logger.error( f"Error occurred after {i + 1}th factory reset iteration" )
-                    self.utils.get_DBGLogs()
-                    return False
-
-            logger.info( f"Successfully factory reset from Web GUI - {n} Iterations" )
-            return True
-        except Exception as E:
-            logger.error( f"Error occurred during functional_sanity_58: {str( E )}" )
             self.utils.get_DBGLogs()
             return False
 
@@ -643,6 +591,7 @@ class FunctionalSanity:
 
             self.firewall.delete_ipv6_firewall_rule()  # deleting  ipv6 firewall rule
             self.firewall.delete_ipv4_firewall_rule()  # deleting  ipv4 firewall rule
+
     # Reboot functionality
     def functional_sanity_34(self):
         logger.debug( "======================================================================================" )
@@ -698,7 +647,6 @@ class FunctionalSanity:
 
             self.firewall.delete_ipv6_firewall_rule()  # deleting  ipv6 firewall rule
             self.firewall.delete_ipv4_firewall_rule()  # deleting  ipv4 firewall rule
-
 
     #change the password upon every factory reset
     def functional_sanity_35(self):
@@ -1029,8 +977,7 @@ class FunctionalSanity:
             logger.error( "Error occurred while executing functional_sanity_44: %s" , str( e ) )
             return False
 
-
-
+    #Factory default functionality
     def functional_sanity_47(self):
         logger.debug( "======================================================================================" )
         logger.info(
@@ -1117,7 +1064,7 @@ class FunctionalSanity:
             self.firewall.delete_ipv6_firewall_rule()#deleting  ipv6 firewall rule
             self.firewall.delete_ipv4_firewall_rule()#deleting  ipv4 firewall rule
 
-
+    #Taking dbj log
     def functional_sanity_49(self):
         logger.debug( "======================================================================================" )
         logger.info( "Validate user should able to take DBGLOG from IDU GUI." )
@@ -1146,4 +1093,94 @@ class FunctionalSanity:
 
         except Exception as e:
             logger.error( "Error occurred while executing functional_sanity_49: %s" , str( e ) )
+            return False
+
+    # Multiple Reboot
+    def functional_sanity_57(self,number_of_iteration=5):
+        logger.debug( "======================================================================================" )
+        logger.info( "Validating multiple reboot" )
+
+        try:
+            if self.health.health_check_webgui() == False:
+                logger.error( 'Device health check failed. Exiting the test.' )
+                return False
+
+            # Adding IPv6 and IPv4 firewall rule
+            self.firewall.add_ipv6_firewall_rule( "HTTPS" , "Block Always" , "Inbound" )
+            self.firewall.add_ipv4_firewall_rule( "HTTPS" , "Block Always" )
+
+            for i in range( number_of_iteration ):
+                logger.debug( f"-------------{i + 1}th Reboot---------------------" )
+                self.maintenance.reboot()
+
+                if self.health.health_check_webgui() == False:
+                    logger.error( 'Device health check failed. Exiting the test.' )
+                    logger.error( f"Error occurred after {i + 1}th reboot iteration" )
+                    self.utils.get_DBGLogs()
+                    return False
+
+                # check if firewall rules are removes are not
+                total_ipv4_rules = self.firewall.total_ipv4_rules()
+                total_ipv6_rules = self.firewall.total_ipv6_rules()
+                if total_ipv4_rules == 0 and total_ipv6_rules == 0:
+                    logger.error( "Old configuration removed after reboot." )
+                    logger.error( "Maintenance functionality like Reboot is NOT working as expected." )
+                    logger.error( f"Error occurred after {i + 1}th reboot iteration" )
+                    return False
+                else:
+                    logger.info( "Old configuration NOT removed after reboot." )
+                    logger.info( "Maintenance functionality like Reboot is working as expected." )
+
+            logger.info( "Successfully reboot from WebGUI - 5 Iterations" )
+            return True
+        except Exception as E:
+            logger.error( f"Error occurred during functional_sanity_01: {str( E )}" )
+            self.utils.get_DBGLogs()
+            return False
+        finally:
+            self.firewall.delete_ipv4_firewall_rule()
+            self.firewall.delete_ipv6_firewall_rule()
+
+     # Multiple Reset
+    def functional_sanity_58(self,number_of_iteration=5):
+        logger.debug( "======================================================================================" )
+        logger.info( "Validating multiple factory reset" )
+        try:
+            if self.health.health_check_webgui() == False:
+                logger.error( 'Device health check failed. Exiting the test.' )
+                return False
+            n = 5
+            for i in range( number_of_iteration ):
+                logger.debug( f"-------------{i + 1}th Factory Reset---------------------" )
+                # Adding IPv6 and IPv4 firewall rule
+                self.firewall.add_ipv6_firewall_rule( "HTTPS" , "Block Always" , "Inbound" )
+                self.firewall.add_ipv4_firewall_rule( "HTTPS" , "Block Always" )
+
+                self.maintenance.reset()
+
+                if self.health.health_check_webgui() == False:
+                    logger.error( 'Device health check failed. Exiting the test.' )
+                    logger.error( f"Error occurred after {i + 1}th factory reset iteration" )
+                    self.utils.get_DBGLogs()
+                    return False
+
+                # check if firewall rules are removes are not
+                total_ipv4_rules = self.firewall.total_ipv4_rules()
+                total_ipv6_rules = self.firewall.total_ipv6_rules()
+                if total_ipv4_rules == 0 and total_ipv6_rules == 0:
+                    logger.info( "Old configuration removed after reset." )
+                    logger.info( "Maintenance functionality like Reset is working as expected." )
+
+                else:
+                    logger.error( f"Error occurred after {i + 1}th reboot iteration" )
+                    logger.info( "Old configuration NOT removed after Reset." )
+                    logger.error( "Maintenance functionality like Reset is NOT working as expected." )
+                    return False
+
+
+            logger.info( f"Successfully factory reset from Web GUI - {n} Iterations" )
+            return True
+        except Exception as E:
+            logger.error( f"Error occurred during functional_sanity_58: {str( E )}" )
+            self.utils.get_DBGLogs()
             return False

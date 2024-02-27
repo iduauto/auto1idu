@@ -26,7 +26,7 @@ maintenance = Maintenance( driver )
 
 
 login.WebGUI_login()
-print(functional_sanity.functional_sanity_49())
+print(functional_sanity.functional_sanity_58())
 
 
 
@@ -37,7 +37,7 @@ print(functional_sanity.functional_sanity_49())
 #     logger.warning(f"                              Execution Iteration {count}                                        ")
 #     logger.warning("---------------------------------------------------------------------------------------------------")
 #     print( functional_sanity.functional_sanity_01())
-#     print( functional_sanity.functional_sanity_02())
+#     # print( functional_sanity.functional_sanity_02())
 #     print( functional_sanity.functional_sanity_06())
 #     print( functional_sanity.functional_sanity_11())
 #     print( functional_sanity.functional_sanity_12())
@@ -54,6 +54,8 @@ print(functional_sanity.functional_sanity_49())
 #     print( functional_sanity.functional_sanity_39())
 #     print( functional_sanity.functional_sanity_41())
 #     print( functional_sanity.functional_sanity_47() )
+#
+#     print( functional_sanity.functional_sanity_57() )
 #     count+=1
 #
 # driver.quit()
