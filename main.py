@@ -6,7 +6,7 @@ from firewall import Firewall
 
 from health_check import HealthCheck
 from maintenance_functionalities import Maintenance
-
+from adb_client_functions import Adb
 from functional_sanity import FunctionalSanity
 from wireless import Wireless
 from login import Login
@@ -18,19 +18,19 @@ from utils import Utils
 
 logger = setup_logger(__name__)
 
-driver=setup.get_driver()
-functional_sanity=FunctionalSanity(driver)
-firewall = Firewall(driver)
-login = Login(driver)
-maintenance = Maintenance( driver )
+# driver=setup.get_driver()
+# functional_sanity=FunctionalSanity(driver)
+# firewall = Firewall(driver)
+# login = Login(driver)
+# maintenance = Maintenance( driver )
 
 
-login.WebGUI_login()
-print(functional_sanity.functional_sanity_58())
+# login.WebGUI_login()
+# print(functional_sanity.functional_sanity_58())
 
 
-
-
+adb = Adb()
+adb.set_wifi_enable()
 # count=0
 # while(count != 10):
 #     logger.warning("---------------------------------------------------------------------------------------------------")
@@ -69,7 +69,7 @@ print(functional_sanity.functional_sanity_58())
 # maintenance.restore(rf"C:\Users\ontvi\Downloads\backup-jio-2024-02-13_enc.tar.gz")
 #maintenance.restore(r"C:\Users\ontvi\Downloads\backup-jio-2024-02-13_enc.tar.gz")
 
-time.sleep(5)
+# time.sleep(5)
 # login.WebGUI_login()
 # time.sleep(10)C:\Users\ontvi\Downloads\Firmware\idu\ARCNJIO_JIDU6101_D1.8.5.img
 # C:\Users\ontvi\Downloads\Firmware\idu\ARCNJIO_JIDU6101_D1.8.5.sig
@@ -80,6 +80,6 @@ time.sleep(5)
 
 # time.sleep(10)
 # login.WebGUI_login()
-driver.quit()
+# driver.quit()
 
 
