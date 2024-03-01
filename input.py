@@ -4,12 +4,12 @@ default_password = "Jiocentrum"
 
 URL="https://192.168.31.1"
 
-latest_firmware_version="ARCNJIO_JIDU6101_D1.9.0"
-previous_firmware_version="ARCNJIO_JIDU6101_D1.8.5"
+latest_firmware_version="GMOBJIO_JIDU6801_D1.9.2"
+previous_firmware_version="ARCNJIO_JIDU6101_D1.9.1"
 
 
-upgrade='ARCNJIO_JIDU6101_D1.9.0'
-downgrade='ARCNJIO_JIDU6101_D1.8.5'
+upgrade='ARCNJIO_JIDU6101_D1.9.2'
+downgrade='ARCNJIO_JIDU6101_D1.9.1'
 
 base_path = rf'C:\Users\ontvi\Downloads\Firmware\idu'
 

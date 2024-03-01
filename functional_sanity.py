@@ -28,32 +28,6 @@ class FunctionalSanity:
         self.login = Login(driver)
         self.wireless = Wireless(driver)
 
-    # Multiple Reset
-    def functional_sanity_01(self):
-        logger.debug("======================================================================================")
-        logger.info("Validating multiple factory reset")
-        try:
-            if self.health.health_check_webgui() == False:
-                logger.error('Device health check failed. Exiting the test.')
-                return False
-
-            for i in range(2):
-                logger.debug(f"-------------{i + 1}th Factory Reset---------------------")
-                self.maintenance.reset()
-
-                if self.health.health_check_webgui() == False:
-                    logger.error('Device health check failed. Exiting the test.')
-                    logger.error(f"Error occurred after {i + 1}th factory reset iteration")
-                    self.utils.get_DBGLogs()
-                    return False
-
-            logger.info("Successfully factory reset from Web GUI - 5 Iterations")
-            return True
-        except Exception as E:
-            logger.error(f"Error occurred during functional_sanity_01: {str(E)}")
-            self.utils.get_DBGLogs()
-            return False
-
     # Validate mac address
     def functional_sanity_06(self):
         logger.debug("======================================================================================")
@@ -107,7 +81,6 @@ class FunctionalSanity:
             else:
                 logger.error('MAC Address has changed after Reboot or Reset')
                 return False
-
         except Exception as e:
             logger.error("Error occurred while executing functional_sanity_06: %s", str(e))
             self.utils.get_DBGLogs()
@@ -127,7 +100,7 @@ class FunctionalSanity:
                 "//div[@class='iconUser']//*[name()='svg']//*[name()='circle' and @id='iconBG']").click()
             self.utils.find_element("//div[normalize-space()='Logout']").click()
 
-            if self.utils.is_element_visible('//form[@class="jioWrtLoginGrid"]') == True:
+            if self.utils.is_element_visible('//form[@class="jioWrtLoginGrid"]'):
                 logger.info("'Logout' button functionality is working as expected")
                 return True
             else:
@@ -141,6 +114,8 @@ class FunctionalSanity:
             return False
 
     # Time and Date functionality
+    from datetime import datetime, timedelta
+
     def functional_sanity_12(self):
         logger.debug("======================================================================================")
         logger.info("Validate date/time functionality in IDU")
@@ -163,10 +138,10 @@ class FunctionalSanity:
             logger.info(f"Device current time : {current_time}")
 
             if abs(current_time - check_time) <= threshold:
-                logger.info("date/time functionality is working as expected")
+                logger.info("Date/time functionality is working as expected")
                 return True
             else:
-                logger.error("date/time functionality is NOT working as expected")
+                logger.error("Date/time functionality is NOT working as expected")
                 return False
 
         except Exception as e:
@@ -954,8 +929,61 @@ class FunctionalSanity:
             self.firewall.delete_ipv6_firewall_rule()  # deleting  ipv6 firewall rule
             self.firewall.delete_ipv4_firewall_rule()  # deleting  ipv4 firewall rule
 
-    # Taking dbj log
+    # Firmware Upgrade and Downgrade functionality
     def functional_sanity_49(self):
+        logger.debug("======================================================================================")
+        logger.info("Validating Firmware Upgrade and Downgrade functionality")
+        try:
+            if not self.health.health_check_webgui():
+                logger.error('Device health check failed. Exiting the test.')
+                self.utils.get_DBGLogs()
+                return False
+
+            # downgrade to previous version
+            image_path = f"{input.base_path}\\{input.previous_firmware_version}.img"
+            signature_path = f"{input.base_path}\\{input.previous_firmware_version}.sig"
+
+            self.maintenance.firmware_upgrade(image_path, signature_path)
+            self.login.WebGUI_login()
+
+            succesCount = 0
+            if self.utils.get_firmware_version() == input.previous_firmware_version:  # check for update
+                succesCount += 1
+                logger.info('Firmware Downgraded Successfully to ' + input.previous_firmware_version)
+            else:
+                logger.error('Firmware is not Downgraded ')
+
+            # upgrade to latest version
+            image_path = f"{input.base_path}\\{input.latest_firmware_version}.img"
+            signature_path = f"{input.base_path}\\{input.latest_firmware_version}.sig"
+
+            self.maintenance.firmware_upgrade(image_path, signature_path)
+            self.login.WebGUI_login()
+
+            if self.utils.get_firmware_version() == input.latest_firmware_version:  # check for update
+                succesCount += 1
+                logger.info('Firmware Upgraded Successfully to ' + input.latest_firmware_version)
+            else:
+                logger.error('Firmware is not Upgraded ')
+
+            # conluding the test case
+            if not self.health.health_check_webgui():
+                logger.error('Device health check failed')
+                succesCount -= 1
+
+            if succesCount == 2:
+                logger.info("Firmware Upgrade and Downgrade functionality is working as Expected")
+                return True
+            else:
+                logger.error("Firmware Upgrade and Downgrade functionality is NOT working as Expected")
+                return False
+
+        except Exception as E:
+            logger.error("Error occurred while executing functional_sanity_49: %s", str(E))
+            return False
+
+    # Taking dbj log
+    def functional_sanity_50(self):
         logger.debug("======================================================================================")
         logger.info("Validate user should able to take DBGLOG from IDU GUI.")
         try:
@@ -980,9 +1008,8 @@ class FunctionalSanity:
                         return True
             logger.error("Unable to take DBGLOG")
             return False
-
         except Exception as e:
-            logger.error("Error occurred while executing functional_sanity_49: %s", str(e))
+            logger.error("Error occurred while executing functional_sanity_50: %s", str(e))
             return False
 
     # Multiple Reboot
@@ -991,7 +1018,7 @@ class FunctionalSanity:
         logger.info("Validating multiple reboot")
 
         try:
-            if self.health.health_check_webgui() == False:
+            if not self.health.health_check_webgui():
                 logger.error('Device health check failed. Exiting the test.')
                 return False
 
@@ -1003,7 +1030,7 @@ class FunctionalSanity:
                 logger.debug(f"-------------{i + 1}th Reboot---------------------")
                 self.maintenance.reboot()
 
-                if self.health.health_check_webgui() == False:
+                if not self.health.health_check_webgui():
                     logger.error('Device health check failed. Exiting the test.')
                     logger.error(f"Error occurred after {i + 1}th reboot iteration")
                     self.utils.get_DBGLogs()
@@ -1024,7 +1051,7 @@ class FunctionalSanity:
             logger.info("Successfully reboot from WebGUI - 5 Iterations")
             return True
         except Exception as E:
-            logger.error(f"Error occurred during functional_sanity_01: {str(E)}")
+            logger.error(f"Error occurred during functional_sanity_57: {str(E)}")
             self.utils.get_DBGLogs()
             return False
         finally:
@@ -1036,7 +1063,7 @@ class FunctionalSanity:
         logger.debug("======================================================================================")
         logger.info("Validating multiple factory reset")
         try:
-            if self.health.health_check_webgui() == False:
+            if not self.health.health_check_webgui():
                 logger.error('Device health check failed. Exiting the test.')
                 return False
             n = 5
@@ -1048,7 +1075,7 @@ class FunctionalSanity:
 
                 self.maintenance.reset()
 
-                if self.health.health_check_webgui() == False:
+                if not self.health.health_check_webgui():
                     logger.error('Device health check failed. Exiting the test.')
                     logger.error(f"Error occurred after {i + 1}th factory reset iteration")
                     self.utils.get_DBGLogs()

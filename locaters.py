@@ -166,8 +166,8 @@ BackupSettings_BackupIcon = (
 
 #maintainence >> Restor
 RestoreSettings_RestoreOpt = (
-    "//label[@for='selectTheSavedSettings'][normalize-space()='Browse & Upload']",
-    "body > mainapp:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(4) > div:nth-child(2) > form:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > label:nth-child(2)"
+    "/html/body/mainapp/div[1]/div[2]/div[4]/div[2]/form[1]/div/div[1]/div[2]/div[1]/input",
+    "#selectTheSavedSettings"
 )
 RestoreSettings_RestoreBtn = (
     "//div[@class='jioWrtSectionBottom']//button[@type='button'][normalize-space()='RESTORE']",
@@ -181,12 +181,12 @@ RestoreSettings_RestoreCnfBtn = (
 
 #Firmware Upgrade
 FirmwareUpgrade_ImgFile = (
-    "/html[1]/body[1]/mainapp[1]/div[1]/div[2]/div[4]/div[1]/form[1]/div[1]/div[1]/div[2]/div[1]/label[3]/*[name()='svg'][1]/*[name()='path'][1]",
-    "body > mainapp:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(4) > div:nth-child(1) > form:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > label:nth-child(2)"
+    "/html/body/mainapp/div[1]/div[2]/div[4]/div[1]/form/div/div[1]/div[2]/div[1]/input",
+    "#selectTheNewFirmware"
 )
 FirmwareUpgrade_SignFile = (
-    "/html[1]/body[1]/mainapp[1]/div[1]/div[2]/div[4]/div[1]/form[1]/div[1]/div[1]/div[2]/div[3]/label[3]/*[name()='svg'][1]/*[name()='path'][1]" ,
-    "body > mainapp:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(4) > div:nth-child(1) > form:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(3) > label:nth-child(2)"
+    "/html/body/mainapp/div[1]/div[2]/div[4]/div[1]/form/div/div[1]/div[2]/div[3]/input",
+    "#selectTheNewSignature"
 )
 FirmwareUpgrade_UpgradeBtn = (
     "//button[normalize-space()='UPGRADE']" ,

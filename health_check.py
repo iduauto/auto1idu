@@ -15,7 +15,7 @@ class HealthCheck:
         try:
             self.login.WebGUI_login()
 
-            logger.info( "Performing health check" )
+            logger.debug( "Performing health check" )
 
             health_issues = 0
 

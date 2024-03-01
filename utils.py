@@ -63,27 +63,27 @@ class Utils:
             raise NoSuchElementException( "Element not found within the specified timeout" )
 
     # Searching the keyword in Web GUI search bar
-    def search_WebGUI(self , value):
-        logger.debug( f"Searching for the Keyword: '{value}'" )
+    def search_WebGUI(self, value):
+        logger.debug(f"Searching for the keyword: '{value}'")
         try:
-            search_bar = self.find_element( "//div[@class='jioSearchBar']//input[@placeholder='Menu Search']" )
+            search_bar = self.find_element("//div[@class='jioSearchBar']//input[@placeholder='Menu Search']")
             search_bar.click()
-            search_bar.send_keys( value )
-            search_bar.send_keys( Keys.ENTER )
+            search_bar.send_keys(value)
+            search_bar.send_keys(Keys.ENTER)
 
-            links = self.driver.find_elements( By.XPATH , '//*[@id="root"]/div[1]/div[2]/div[1]/div[1]/div[3]/a' )
+            links = self.driver.find_elements(By.XPATH, '//*[@id="root"]/div[1]/div[2]/div[1]/div[1]/div[3]/a')
 
             for link in links:
-                # Check if the link text matches the desired value\
+                # Check if the link text matches the desired value
                 if value.lower() in link.text.lower():
                     link.click()
-                    logger.debug( f"Found and Clicked on the Result Containing '{value}'" )
-                    time.sleep( 5 )
+                    logger.debug(f"Found and clicked on the result containing '{value}'")
+                    time.sleep(5)
                     return
 
-            logger.warning( f"No Search Result Found for Keyword: '{value}'" )
+            logger.warning(f"No search result found for keyword: '{value}'")
         except Exception as e:
-            logger.error( f"Error Occurred While Searching for the Keyword: '{value}': {str( e )}" )
+            logger.error(f"Error occurred while searching for the keyword: '{value}': {str(e)}")
 
     # Ping check
     def check_ping(self , target , protocol):
