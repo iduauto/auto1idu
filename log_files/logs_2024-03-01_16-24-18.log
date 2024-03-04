@@ -1,0 +1,4 @@
+24-03-01 16:28:20 [INFO] IPv4 ping connectivity check passed
+24-03-01 16:30:22 [ERROR] IPv6 ping connectivity check failed: 
+24-03-01 16:33:09 [ERROR] IPv6 ping connectivity check failed even after reset: 
+24-03-01 16:33:09 [ERROR] An error occurred: 
