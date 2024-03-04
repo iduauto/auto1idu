@@ -1,0 +1,5 @@
+24-03-01 16:53:56 [INFO] Old Packet T :  676
+24-03-01 16:53:56 [INFO] Old Packet R :  659
+24-03-01 16:55:56 [INFO] New Packet T :  3376
+24-03-01 16:55:56 [INFO] New Packet R :  11113
+24-03-01 16:55:56 [INFO] Transmit and receive packets difference meet the threshold.

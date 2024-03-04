@@ -21,3 +21,4 @@ plume_build = 0
 factory_ssid = 'AirFiber-RJ6X4K'
 factory_ssid_password = 'GBfRpmpQCKnxtQ5k'
 
+live_feed_link = 'https://www.youtube.com/watch?v=21X5lGlDOfg'

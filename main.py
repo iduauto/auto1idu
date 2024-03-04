@@ -30,7 +30,8 @@ logger = setup_logger(__name__)
 
 
 adb = Adb()
-adb.set_wifi_enable()
+
+adb.connect_ap('AP4_autoDeepti')
 # count=0
 # while(count != 10):
 #     logger.warning("---------------------------------------------------------------------------------------------------")
