@@ -1100,3 +1100,93 @@ class FunctionalSanity:
             logger.error(f"Error occurred during functional_sanity_58: {str(E)}")
             self.utils.get_DBGLogs()
             return False
+
+    def traceroute_ipv4(self, domain_name):
+        try:
+            logger.info(f"Initiating IPv4 Traceroute for domain: {domain_name}")
+            self.utils.search_WebGUI("Ping / Traceroute")
+            self.utils.clear_and_send_keys(domain_name,*locaters.PingTraceroute4_DomainName)
+            self.utils.find_element(*locaters.PingTraceroute4_Type).click()
+            self.utils.find_element("//li[normalize-space()='Traceroute']").click()
+            self.utils.find_element(*locaters.PingTraceroute4_StartBtn).click()
+
+            time.sleep(60)
+
+            msg = self.utils.find_element(
+                "/html/body/mainapp/div[1]/div[2]/div[4]/div[1]/div[1]/form/div[2]/div/div/code").text
+            time.sleep(5)
+            self.utils.find_element("/html/body/mainapp/div[1]/div[2]/div[4]/div[1]/div[1]/form/div[1]/div/div").click()
+
+            if "bad address" in msg:
+                return False
+            else:
+                return True
+        except Exception as e:
+            logger.error(f"An error occurred during IPv4 Traceroute for domain '{domain_name}': {str(e)}")
+            return False
+
+    def traceroute_ipv6(self, domain_name):
+        try:
+            logger.info(f"Initiating IPv6 Traceroute for domain: {domain_name}")
+            self.utils.search_WebGUI("Ping6 / Traceroute6")
+            self.utils.clear_and_send_keys(domain_name, "/html/body/mainapp/div[1]/div[2]/div[4]/div[1]/form[2]/div/div[1]/div[3]/div[1]/input")
+
+            self.utils.find_element(
+                "/html[1]/body[1]/mainapp[1]/div[1]/div[2]/div[4]/div[1]/form[2]/div[1]/div[1]/div[3]/div[3]/div[1]/span[1]").click()
+            self.utils.find_element("//li[normalize-space()='Traceroute6']").click()
+            self.utils.find_element(
+                "/html[1]/body[1]/mainapp[1]/div[1]/div[2]/div[4]/div[1]/form[2]/div[1]/div[3]/button[1]").click()
+
+            time.sleep(60)
+
+            msg = self.utils.find_element(
+                "/html/body/mainapp/div[1]/div[2]/div[4]/div[1]/div[1]/form/div[2]/div/div/code").text
+            time.sleep(5)
+            self.utils.find_element("/html/body/mainapp/div[1]/div[2]/div[4]/div[1]/div[1]/form/div[1]/div/div").click()
+
+            if "bad address" in msg:
+                return False
+            else:
+                return True
+        except Exception as e:
+            logger.error(f"An error occurred during IPv6 Traceroute for domain '{domain_name}': {str(e)}")
+            return False
+    def functional_sanity_62(self):
+        try:
+            logger.info("Validating IPv4 Diagnostics 'Traceroute' functionality")
+            if not self.health.health_check_webgui():
+                logger.error('Device health check failed. Exiting the test.')
+                return False
+
+            fail_count = 0
+            domains_names = ["onlinesbi.sbi", "youtube.com", "www.google.com"]
+            for domain_name in domains_names:
+                if self.traceroute_ipv4(domain_name):
+                    logger.info(f"Successfully traceroute 4 : {domain_name}")
+                else:
+                    fail_count+=1
+                    logger.error(f"Unable traceroute 4: {domain_name}")
+
+            domains_names = ["onlinesbi.sbi", "youtube.com", "www.google.com"]
+            for domain_name in domains_names:
+                if self.traceroute_ipv6(domain_name):
+                    logger.info(f"Successfully traceroute 6 : {domain_name}")
+                else:
+                    fail_count+=1
+                    logger.error(f"Unable traceroute 6: {domain_name}")
+
+
+
+            if fail_count == 0:
+                logger.info("'Traceroute' functionality is working as expected")
+                return True
+            else:
+                logger.error("'Traceroute' functionality is NOT working as expected")
+                return False
+
+        except Exception as e:
+            logger.error(f"Error occurred during functional_sanity_62: {str(e)}")
+            self.utils.get_DBGLogs()
+            return False
+
+
