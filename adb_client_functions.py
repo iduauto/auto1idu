@@ -1,15 +1,5 @@
-import subprocess
-import time
-
-import input
-from adb_setup import adb_setup
-from logger import setup_logger
-
-logger = setup_logger( __name__ )
 
 class Adb:
-    def __init__(self):
-        adb_setup()
 
     def set_wifi_enable(self):
         command = ['cmd /c adb shell cmd -w wifi set-wifi-enabled disabled',
@@ -327,6 +317,20 @@ class Adb:
                 print('Client is not connected to ' + ssid_)
         assert connect == 1
 
-    def practice(self):
-        print('Yo')
+
+
+# __pycache__/firewall.cpython-310.pyc
+# __pycache__/functional_sanity.cpython-310.pyc
+# __pycache__/health_check.cpython-310.pyc
+# __pycache__/input.cpython-310.pyc
+# __pycache__/locaters.cpython-310.pyc
+# __pycache__/logger.cpython-310.pyc
+# __pycache__/login.cpython-310.pyc
+# __pycache__/maintenance_functionalities.cpython-310.pyc
+# __pycache__/setup.cpython-310.pyc
+# __pycache__/utils.cpython-310.pyc
+# __pycache__/wireless.cpython-310.pyc
+# adb_client_functions.py
+# input.py
+# main.py
 

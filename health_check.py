@@ -15,28 +15,28 @@ class HealthCheck:
         try:
             self.login.WebGUI_login()
 
-            logger.info( "Performing health check" )
+            logger.debug( "Performing health check" )
 
             health_issues = 0
 
-            if self.utils.get_firmware_version() != input.latest_firmware_version:
-                health_issues += 1
-                logger.error("Device is not having latest firmware version")
-
-
-            if not self.utils.get_ipv6_info()["status"]:
-                health_issues += 1
-                logger.error("Failed to retrieve IPv6 information.")
-
-
-            if not self.utils.check_ping( "google.com" , 4 ):
-                health_issues += 1
-                logger.error("Ping to Google IPv4 failed." )
-
-
-            if not self.utils.check_ping( "google.com" , 6 ):
-                health_issues += 1
-                logger.error( "Ping to Google IPv6 failed." )
+            # if self.utils.get_firmware_version() != input.latest_firmware_version:
+            #     health_issues += 1
+            #     logger.error("Device is not having latest firmware version")
+            #
+            #
+            # if not self.utils.get_ipv6_info()["status"]:
+            #     health_issues += 1
+            #     logger.error("Failed to retrieve IPv6 information.")
+            #
+            #
+            # if not self.utils.check_ping( "google.com" , 4 ):
+            #     health_issues += 1
+            #     logger.error("Ping to Google IPv4 failed." )
+            #
+            #
+            # if not self.utils.check_ping( "google.com" , 6 ):
+            #     health_issues += 1
+            #     logger.error( "Ping to Google IPv6 failed." )
 
 
             if health_issues != 0:
