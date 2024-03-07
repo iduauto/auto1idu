@@ -1,0 +1,13 @@
+24-03-01 17:02:58 [INFO] Loss %= ['0', '']
+24-03-01 17:02:58 [INFO] Loss percentage meets the threshold.
+24-03-01 17:02:58 [INFO] IPv4 ping connectivity check passed
+24-03-01 17:03:57 [INFO] Loss %= ['100', '']
+24-03-01 17:03:57 [ERROR] Error occurred during IPv6 ping connectivity check: 
+24-03-01 17:03:57 [INFO] IPv6 ping connectivity check passed
+24-03-01 17:03:57 [INFO] Ping tests passed, checking YouTube run
+24-03-01 17:03:57 [INFO] Old Packet T :  237
+24-03-01 17:03:57 [INFO] Old Packet R :  230
+24-03-01 17:05:58 [INFO] New Packet T :  3690
+24-03-01 17:05:58 [INFO] New Packet R :  7199
+24-03-01 17:05:58 [INFO] Transmit and receive packets difference meet the threshold.
+24-03-01 17:05:58 [INFO] YouTube run complete
