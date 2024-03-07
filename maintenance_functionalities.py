@@ -23,7 +23,8 @@ class Maintenance:
     def reset(self):
         logger.info( "Initiating device factory defaults" )
         try:
-            self.utils.search_WebGUI( "Factory Defaults / Reboot" )
+            # self.utils.search_WebGUI( "Factory Defaults / Reboot" )
+            self.utils.navigate("Maintenance")
             self.utils.find_element( *locaters.FactoryDefaultsReboot_DropDown ).click()
             self.utils.find_element( *locaters.FactoryDefaultsReboot_FactoryDefaultopt ).click()
             self.utils.find_element( *locaters.FactoryDefaultsReboot_FactoryDefaultBtn ).click()
@@ -37,7 +38,8 @@ class Maintenance:
     def reboot(self):
         logger.info( "Initiating device reboot" )
         try:
-            self.utils.search_WebGUI( "Factory Defaults / Reboot" )
+            # self.utils.search_WebGUI( "Factory Defaults / Reboot" )
+            self.utils.navigate("Maintenance")
             self.utils.find_element( *locaters.FactoryDefaultsReboot_DropDown ).click()
             self.utils.find_element( *locaters.FactoryDefaultsReboot_RebootOpt ).click()
             self.utils.find_element( *locaters.FactoryDefaultsReboot_RebootBtn ).click()

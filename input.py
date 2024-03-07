@@ -18,6 +18,6 @@ base_path = rf'C:\Users\ontvi\Downloads\Firmware\idu'
 test_ssid = 'Auto IDU DK'
 test_ssid_password = '123456789'
 plume_build = 0
-factory_ssid = 'AirFiber-RJ6X4K'
+factory_ssid = 'AirFiber-VLLAi5'
 factory_ssid_password = 'GBfRpmpQCKnxtQ5k'
 

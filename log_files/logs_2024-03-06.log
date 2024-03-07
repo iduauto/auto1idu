@@ -1,0 +1,419 @@
+24-03-06 18:07:05 [DEBUG] Initializing Chrome WebDriver
+24-03-06 18:07:06 [DEBUG] Attempting to login through WebGUI
+24-03-06 18:07:34 [INFO] Successfully logged in through WebGUI.
+24-03-06 18:07:39 [DEBUG] ======================================================================================
+24-03-06 18:07:39 [INFO] Validating multiple reboot
+24-03-06 18:07:39 [DEBUG] Attempting to login through WebGUI
+24-03-06 18:07:55 [INFO] Successfully logged in through WebGUI.
+24-03-06 18:08:00 [DEBUG] Performing health check
+24-03-06 18:08:00 [INFO] Device health check completed successfully.
+24-03-06 18:08:00 [INFO] Adding IPv6 rule
+24-03-06 18:08:08 [DEBUG] Navigating to Firewall Page 
+24-03-06 18:08:23 [INFO] IPv6 firewall rule added - Service: HTTPS, Action: Block Always, Rule Type: Inbound
+24-03-06 18:08:28 [INFO] Adding IPv4 rule
+24-03-06 18:08:36 [DEBUG] Navigating to Firewall Page 
+24-03-06 18:08:49 [INFO] IPv4 firewall rule added - Service: HTTPS, Action: Block Always
+24-03-06 18:08:54 [DEBUG] -------------1th Reboot---------------------
+24-03-06 18:08:54 [INFO] Initiating device reboot
+24-03-06 18:09:02 [DEBUG] Navigating to Maintenance Page 
+24-03-06 18:09:11 [DEBUG] Wait for the reboot process to complete : 200s
+24-03-06 18:12:31 [DEBUG] Attempting to login through WebGUI
+24-03-06 18:13:11 [INFO] Successfully logged in through WebGUI.
+24-03-06 18:13:16 [DEBUG] Performing health check
+24-03-06 18:13:16 [INFO] Device health check completed successfully.
+24-03-06 18:13:16 [DEBUG] Counting IPv6 Firewall Rules
+24-03-06 18:13:24 [DEBUG] Navigating to Firewall Page 
+24-03-06 18:13:30 [DEBUG] Total IPv4 rules : 1
+24-03-06 18:13:30 [DEBUG] Counting IPv6 Firewall Rules
+24-03-06 18:13:38 [DEBUG] Navigating to Firewall Page 
+24-03-06 18:13:44 [DEBUG] Total IPv6 rules : 1
+24-03-06 18:13:44 [INFO] Old configuration NOT removed after reboot.
+24-03-06 18:13:44 [INFO] Maintenance functionality like Reboot is working as expected.
+24-03-06 18:13:44 [DEBUG] -------------2th Reboot---------------------
+24-03-06 18:13:44 [INFO] Initiating device reboot
+24-03-06 18:13:52 [DEBUG] Navigating to Maintenance Page 
+24-03-06 18:14:02 [DEBUG] Wait for the reboot process to complete : 200s
+24-03-06 18:17:22 [DEBUG] Attempting to login through WebGUI
+24-03-06 18:18:02 [INFO] Successfully logged in through WebGUI.
+24-03-06 18:18:07 [DEBUG] Performing health check
+24-03-06 18:18:07 [INFO] Device health check completed successfully.
+24-03-06 18:18:07 [DEBUG] Counting IPv6 Firewall Rules
+24-03-06 18:18:15 [DEBUG] Navigating to Firewall Page 
+24-03-06 18:18:21 [DEBUG] Total IPv4 rules : 1
+24-03-06 18:18:21 [DEBUG] Counting IPv6 Firewall Rules
+24-03-06 18:18:29 [DEBUG] Navigating to Firewall Page 
+24-03-06 18:18:35 [DEBUG] Total IPv6 rules : 1
+24-03-06 18:18:35 [INFO] Old configuration NOT removed after reboot.
+24-03-06 18:18:35 [INFO] Maintenance functionality like Reboot is working as expected.
+24-03-06 18:18:35 [DEBUG] -------------3th Reboot---------------------
+24-03-06 18:18:35 [INFO] Initiating device reboot
+24-03-06 18:18:43 [DEBUG] Navigating to Maintenance Page 
+24-03-06 18:18:53 [DEBUG] Wait for the reboot process to complete : 200s
+24-03-06 18:22:13 [DEBUG] Attempting to login through WebGUI
+24-03-06 18:22:53 [INFO] Successfully logged in through WebGUI.
+24-03-06 18:22:58 [DEBUG] Performing health check
+24-03-06 18:22:58 [INFO] Device health check completed successfully.
+24-03-06 18:22:58 [DEBUG] Counting IPv6 Firewall Rules
+24-03-06 18:23:06 [DEBUG] Navigating to Firewall Page 
+24-03-06 18:23:12 [DEBUG] Total IPv4 rules : 1
+24-03-06 18:23:12 [DEBUG] Counting IPv6 Firewall Rules
+24-03-06 18:23:20 [DEBUG] Navigating to Firewall Page 
+24-03-06 18:23:26 [DEBUG] Total IPv6 rules : 1
+24-03-06 18:23:26 [INFO] Old configuration NOT removed after reboot.
+24-03-06 18:23:26 [INFO] Maintenance functionality like Reboot is working as expected.
+24-03-06 18:23:26 [DEBUG] -------------4th Reboot---------------------
+24-03-06 18:23:26 [INFO] Initiating device reboot
+24-03-06 18:23:34 [DEBUG] Navigating to Maintenance Page 
+24-03-06 18:23:44 [DEBUG] Wait for the reboot process to complete : 200s
+24-03-06 18:27:04 [DEBUG] Attempting to login through WebGUI
+24-03-06 18:27:43 [INFO] Successfully logged in through WebGUI.
+24-03-06 18:27:48 [DEBUG] Performing health check
+24-03-06 18:27:48 [INFO] Device health check completed successfully.
+24-03-06 18:27:48 [DEBUG] Counting IPv6 Firewall Rules
+24-03-06 18:27:56 [DEBUG] Navigating to Firewall Page 
+24-03-06 18:28:03 [DEBUG] Total IPv4 rules : 1
+24-03-06 18:28:03 [DEBUG] Counting IPv6 Firewall Rules
+24-03-06 18:28:11 [DEBUG] Navigating to Firewall Page 
+24-03-06 18:28:17 [DEBUG] Total IPv6 rules : 1
+24-03-06 18:28:17 [INFO] Old configuration NOT removed after reboot.
+24-03-06 18:28:17 [INFO] Maintenance functionality like Reboot is working as expected.
+24-03-06 18:28:17 [DEBUG] -------------5th Reboot---------------------
+24-03-06 18:28:17 [INFO] Initiating device reboot
+24-03-06 18:28:25 [DEBUG] Navigating to Maintenance Page 
+24-03-06 18:28:34 [DEBUG] Wait for the reboot process to complete : 200s
+24-03-06 18:31:54 [DEBUG] Attempting to login through WebGUI
+24-03-06 18:32:34 [INFO] Successfully logged in through WebGUI.
+24-03-06 18:32:39 [DEBUG] Performing health check
+24-03-06 18:32:39 [INFO] Device health check completed successfully.
+24-03-06 18:32:39 [DEBUG] Counting IPv6 Firewall Rules
+24-03-06 18:32:47 [DEBUG] Navigating to Firewall Page 
+24-03-06 18:32:53 [DEBUG] Total IPv4 rules : 1
+24-03-06 18:32:53 [DEBUG] Counting IPv6 Firewall Rules
+24-03-06 18:33:02 [DEBUG] Navigating to Firewall Page 
+24-03-06 18:33:08 [DEBUG] Total IPv6 rules : 1
+24-03-06 18:33:08 [INFO] Old configuration NOT removed after reboot.
+24-03-06 18:33:08 [INFO] Maintenance functionality like Reboot is working as expected.
+24-03-06 18:33:08 [DEBUG] -------------6th Reboot---------------------
+24-03-06 18:33:08 [INFO] Initiating device reboot
+24-03-06 18:33:16 [DEBUG] Navigating to Maintenance Page 
+24-03-06 18:33:25 [DEBUG] Wait for the reboot process to complete : 200s
+24-03-06 18:36:45 [DEBUG] Attempting to login through WebGUI
+24-03-06 18:37:25 [INFO] Successfully logged in through WebGUI.
+24-03-06 18:37:30 [DEBUG] Performing health check
+24-03-06 18:37:30 [INFO] Device health check completed successfully.
+24-03-06 18:37:30 [DEBUG] Counting IPv6 Firewall Rules
+24-03-06 18:37:38 [DEBUG] Navigating to Firewall Page 
+24-03-06 18:37:44 [DEBUG] Total IPv4 rules : 1
+24-03-06 18:37:44 [DEBUG] Counting IPv6 Firewall Rules
+24-03-06 18:37:52 [DEBUG] Navigating to Firewall Page 
+24-03-06 18:37:59 [DEBUG] Total IPv6 rules : 1
+24-03-06 18:37:59 [INFO] Old configuration NOT removed after reboot.
+24-03-06 18:37:59 [INFO] Maintenance functionality like Reboot is working as expected.
+24-03-06 18:37:59 [DEBUG] -------------7th Reboot---------------------
+24-03-06 18:37:59 [INFO] Initiating device reboot
+24-03-06 18:38:07 [DEBUG] Navigating to Maintenance Page 
+24-03-06 18:38:16 [DEBUG] Wait for the reboot process to complete : 200s
+24-03-06 18:41:36 [DEBUG] Attempting to login through WebGUI
+24-03-06 18:42:16 [INFO] Successfully logged in through WebGUI.
+24-03-06 18:42:21 [DEBUG] Performing health check
+24-03-06 18:42:21 [INFO] Device health check completed successfully.
+24-03-06 18:42:21 [DEBUG] Counting IPv6 Firewall Rules
+24-03-06 18:42:29 [DEBUG] Navigating to Firewall Page 
+24-03-06 18:42:35 [DEBUG] Total IPv4 rules : 1
+24-03-06 18:42:35 [DEBUG] Counting IPv6 Firewall Rules
+24-03-06 18:42:43 [DEBUG] Navigating to Firewall Page 
+24-03-06 18:42:49 [DEBUG] Total IPv6 rules : 1
+24-03-06 18:42:49 [INFO] Old configuration NOT removed after reboot.
+24-03-06 18:42:49 [INFO] Maintenance functionality like Reboot is working as expected.
+24-03-06 18:42:49 [DEBUG] -------------8th Reboot---------------------
+24-03-06 18:42:49 [INFO] Initiating device reboot
+24-03-06 18:42:58 [DEBUG] Navigating to Maintenance Page 
+24-03-06 18:43:07 [DEBUG] Wait for the reboot process to complete : 200s
+24-03-06 18:46:27 [DEBUG] Attempting to login through WebGUI
+24-03-06 18:47:07 [INFO] Successfully logged in through WebGUI.
+24-03-06 18:47:12 [DEBUG] Performing health check
+24-03-06 18:47:12 [INFO] Device health check completed successfully.
+24-03-06 18:47:12 [DEBUG] Counting IPv6 Firewall Rules
+24-03-06 18:47:20 [DEBUG] Navigating to Firewall Page 
+24-03-06 18:47:26 [DEBUG] Total IPv4 rules : 1
+24-03-06 18:47:26 [DEBUG] Counting IPv6 Firewall Rules
+24-03-06 18:47:34 [DEBUG] Navigating to Firewall Page 
+24-03-06 18:47:40 [DEBUG] Total IPv6 rules : 1
+24-03-06 18:47:40 [INFO] Old configuration NOT removed after reboot.
+24-03-06 18:47:40 [INFO] Maintenance functionality like Reboot is working as expected.
+24-03-06 18:47:40 [DEBUG] -------------9th Reboot---------------------
+24-03-06 18:47:40 [INFO] Initiating device reboot
+24-03-06 18:47:48 [DEBUG] Navigating to Maintenance Page 
+24-03-06 18:47:58 [DEBUG] Wait for the reboot process to complete : 200s
+24-03-06 18:51:18 [DEBUG] Attempting to login through WebGUI
+24-03-06 18:51:58 [INFO] Successfully logged in through WebGUI.
+24-03-06 18:52:03 [DEBUG] Performing health check
+24-03-06 18:52:03 [INFO] Device health check completed successfully.
+24-03-06 18:52:03 [DEBUG] Counting IPv6 Firewall Rules
+24-03-06 18:52:11 [DEBUG] Navigating to Firewall Page 
+24-03-06 18:52:17 [DEBUG] Total IPv4 rules : 1
+24-03-06 18:52:17 [DEBUG] Counting IPv6 Firewall Rules
+24-03-06 18:52:25 [DEBUG] Navigating to Firewall Page 
+24-03-06 18:52:31 [DEBUG] Total IPv6 rules : 1
+24-03-06 18:52:31 [INFO] Old configuration NOT removed after reboot.
+24-03-06 18:52:31 [INFO] Maintenance functionality like Reboot is working as expected.
+24-03-06 18:52:31 [DEBUG] -------------10th Reboot---------------------
+24-03-06 18:52:31 [INFO] Initiating device reboot
+24-03-06 18:52:39 [DEBUG] Navigating to Maintenance Page 
+24-03-06 18:52:49 [DEBUG] Wait for the reboot process to complete : 200s
+24-03-06 18:56:09 [DEBUG] Attempting to login through WebGUI
+24-03-06 18:56:48 [INFO] Successfully logged in through WebGUI.
+24-03-06 18:56:53 [DEBUG] Performing health check
+24-03-06 18:56:53 [INFO] Device health check completed successfully.
+24-03-06 18:56:53 [DEBUG] Counting IPv6 Firewall Rules
+24-03-06 18:57:02 [DEBUG] Navigating to Firewall Page 
+24-03-06 18:57:08 [DEBUG] Total IPv4 rules : 1
+24-03-06 18:57:08 [DEBUG] Counting IPv6 Firewall Rules
+24-03-06 18:57:16 [DEBUG] Navigating to Firewall Page 
+24-03-06 18:57:22 [DEBUG] Total IPv6 rules : 1
+24-03-06 18:57:22 [INFO] Old configuration NOT removed after reboot.
+24-03-06 18:57:22 [INFO] Maintenance functionality like Reboot is working as expected.
+24-03-06 18:57:22 [INFO] Successfully reboot from WebGUI - 5 Iterations
+24-03-06 18:57:22 [INFO] Deleting IPv4 rule
+24-03-06 18:57:30 [DEBUG] Navigating to Firewall Page 
+24-03-06 18:57:43 [INFO] IPv4 firewall rule Deleted 
+24-03-06 18:57:43 [INFO] Deleting IPv6 rule
+24-03-06 18:57:51 [DEBUG] Navigating to Firewall Page 
+24-03-06 18:58:05 [INFO] IPv6 firewall rule Deleted
+24-03-06 18:58:05 [DEBUG] ======================================================================================
+24-03-06 18:58:05 [INFO] Validating multiple factory reset
+24-03-06 18:58:05 [DEBUG] Attempting to login through WebGUI
+24-03-06 18:58:20 [INFO] Successfully logged in through WebGUI.
+24-03-06 18:58:26 [DEBUG] Performing health check
+24-03-06 18:58:26 [INFO] Device health check completed successfully.
+24-03-06 18:58:26 [DEBUG] -------------1th Factory Reset---------------------
+24-03-06 18:58:26 [INFO] Adding IPv6 rule
+24-03-06 18:58:34 [DEBUG] Navigating to Firewall Page 
+24-03-06 18:58:49 [INFO] IPv6 firewall rule added - Service: HTTPS, Action: Block Always, Rule Type: Inbound
+24-03-06 18:58:54 [INFO] Adding IPv4 rule
+24-03-06 18:59:02 [DEBUG] Navigating to Firewall Page 
+24-03-06 18:59:14 [INFO] IPv4 firewall rule added - Service: HTTPS, Action: Block Always
+24-03-06 18:59:19 [INFO] Initiating device factory defaults
+24-03-06 18:59:28 [DEBUG] Navigating to Maintenance Page 
+24-03-06 18:59:37 [DEBUG] Wait for the reset process to complete : 200s
+24-03-06 19:02:57 [DEBUG] Attempting to login through WebGUI
+24-03-06 19:02:59 [DEBUG] Device is in Factory Reset State
+24-03-06 19:03:44 [INFO] Successfully logged in through WebGUI.
+24-03-06 19:03:49 [DEBUG] Performing health check
+24-03-06 19:03:49 [INFO] Device health check completed successfully.
+24-03-06 19:03:49 [DEBUG] Counting IPv6 Firewall Rules
+24-03-06 19:03:57 [DEBUG] Navigating to Firewall Page 
+24-03-06 19:04:03 [DEBUG] Total IPv4 rules : 0
+24-03-06 19:04:03 [DEBUG] Counting IPv6 Firewall Rules
+24-03-06 19:04:11 [DEBUG] Navigating to Firewall Page 
+24-03-06 19:04:18 [DEBUG] Total IPv6 rules : 0
+24-03-06 19:04:18 [INFO] Old configuration removed after reset.
+24-03-06 19:04:18 [INFO] Maintenance functionality like Reset is working as expected.
+24-03-06 19:04:18 [DEBUG] -------------2th Factory Reset---------------------
+24-03-06 19:04:18 [INFO] Adding IPv6 rule
+24-03-06 19:04:26 [DEBUG] Navigating to Firewall Page 
+24-03-06 19:04:41 [INFO] IPv6 firewall rule added - Service: HTTPS, Action: Block Always, Rule Type: Inbound
+24-03-06 19:04:46 [INFO] Adding IPv4 rule
+24-03-06 19:04:54 [DEBUG] Navigating to Firewall Page 
+24-03-06 19:05:07 [INFO] IPv4 firewall rule added - Service: HTTPS, Action: Block Always
+24-03-06 19:05:12 [INFO] Initiating device factory defaults
+24-03-06 19:05:20 [DEBUG] Navigating to Maintenance Page 
+24-03-06 19:05:29 [DEBUG] Wait for the reset process to complete : 200s
+24-03-06 19:08:49 [DEBUG] Attempting to login through WebGUI
+24-03-06 19:08:52 [DEBUG] Device is in Factory Reset State
+24-03-06 19:09:36 [INFO] Successfully logged in through WebGUI.
+24-03-06 19:09:41 [DEBUG] Performing health check
+24-03-06 19:09:41 [INFO] Device health check completed successfully.
+24-03-06 19:09:41 [DEBUG] Counting IPv6 Firewall Rules
+24-03-06 19:09:49 [DEBUG] Navigating to Firewall Page 
+24-03-06 19:09:55 [DEBUG] Total IPv4 rules : 0
+24-03-06 19:09:55 [DEBUG] Counting IPv6 Firewall Rules
+24-03-06 19:10:03 [DEBUG] Navigating to Firewall Page 
+24-03-06 19:10:10 [DEBUG] Total IPv6 rules : 0
+24-03-06 19:10:10 [INFO] Old configuration removed after reset.
+24-03-06 19:10:10 [INFO] Maintenance functionality like Reset is working as expected.
+24-03-06 19:10:10 [DEBUG] -------------3th Factory Reset---------------------
+24-03-06 19:10:10 [INFO] Adding IPv6 rule
+24-03-06 19:10:18 [DEBUG] Navigating to Firewall Page 
+24-03-06 19:10:33 [INFO] IPv6 firewall rule added - Service: HTTPS, Action: Block Always, Rule Type: Inbound
+24-03-06 19:10:38 [INFO] Adding IPv4 rule
+24-03-06 19:10:46 [DEBUG] Navigating to Firewall Page 
+24-03-06 19:10:59 [INFO] IPv4 firewall rule added - Service: HTTPS, Action: Block Always
+24-03-06 19:11:04 [INFO] Initiating device factory defaults
+24-03-06 19:11:12 [DEBUG] Navigating to Maintenance Page 
+24-03-06 19:11:21 [DEBUG] Wait for the reset process to complete : 200s
+24-03-06 19:14:41 [DEBUG] Attempting to login through WebGUI
+24-03-06 19:14:44 [DEBUG] Device is in Factory Reset State
+24-03-06 19:15:28 [INFO] Successfully logged in through WebGUI.
+24-03-06 19:15:33 [DEBUG] Performing health check
+24-03-06 19:15:33 [INFO] Device health check completed successfully.
+24-03-06 19:15:33 [DEBUG] Counting IPv6 Firewall Rules
+24-03-06 19:15:41 [DEBUG] Navigating to Firewall Page 
+24-03-06 19:15:47 [DEBUG] Total IPv4 rules : 0
+24-03-06 19:15:47 [DEBUG] Counting IPv6 Firewall Rules
+24-03-06 19:15:55 [DEBUG] Navigating to Firewall Page 
+24-03-06 19:16:01 [DEBUG] Total IPv6 rules : 0
+24-03-06 19:16:01 [INFO] Old configuration removed after reset.
+24-03-06 19:16:01 [INFO] Maintenance functionality like Reset is working as expected.
+24-03-06 19:16:01 [DEBUG] -------------4th Factory Reset---------------------
+24-03-06 19:16:01 [INFO] Adding IPv6 rule
+24-03-06 19:16:09 [DEBUG] Navigating to Firewall Page 
+24-03-06 19:16:24 [INFO] IPv6 firewall rule added - Service: HTTPS, Action: Block Always, Rule Type: Inbound
+24-03-06 19:16:29 [INFO] Adding IPv4 rule
+24-03-06 19:16:37 [DEBUG] Navigating to Firewall Page 
+24-03-06 19:16:50 [INFO] IPv4 firewall rule added - Service: HTTPS, Action: Block Always
+24-03-06 19:16:55 [INFO] Initiating device factory defaults
+24-03-06 19:17:03 [DEBUG] Navigating to Maintenance Page 
+24-03-06 19:17:13 [DEBUG] Wait for the reset process to complete : 200s
+24-03-06 19:20:33 [DEBUG] Attempting to login through WebGUI
+24-03-06 19:20:35 [DEBUG] Device is in Factory Reset State
+24-03-06 19:21:20 [INFO] Successfully logged in through WebGUI.
+24-03-06 19:21:25 [DEBUG] Performing health check
+24-03-06 19:21:25 [INFO] Device health check completed successfully.
+24-03-06 19:21:25 [DEBUG] Counting IPv6 Firewall Rules
+24-03-06 19:21:33 [DEBUG] Navigating to Firewall Page 
+24-03-06 19:21:39 [DEBUG] Total IPv4 rules : 0
+24-03-06 19:21:39 [DEBUG] Counting IPv6 Firewall Rules
+24-03-06 19:21:47 [DEBUG] Navigating to Firewall Page 
+24-03-06 19:21:53 [DEBUG] Total IPv6 rules : 0
+24-03-06 19:21:53 [INFO] Old configuration removed after reset.
+24-03-06 19:21:53 [INFO] Maintenance functionality like Reset is working as expected.
+24-03-06 19:21:53 [DEBUG] -------------5th Factory Reset---------------------
+24-03-06 19:21:53 [INFO] Adding IPv6 rule
+24-03-06 19:22:01 [DEBUG] Navigating to Firewall Page 
+24-03-06 19:22:16 [INFO] IPv6 firewall rule added - Service: HTTPS, Action: Block Always, Rule Type: Inbound
+24-03-06 19:22:21 [INFO] Adding IPv4 rule
+24-03-06 19:22:29 [DEBUG] Navigating to Firewall Page 
+24-03-06 19:22:42 [INFO] IPv4 firewall rule added - Service: HTTPS, Action: Block Always
+24-03-06 19:22:47 [INFO] Initiating device factory defaults
+24-03-06 19:22:55 [DEBUG] Navigating to Maintenance Page 
+24-03-06 19:23:05 [DEBUG] Wait for the reset process to complete : 200s
+24-03-06 19:26:25 [DEBUG] Attempting to login through WebGUI
+24-03-06 19:26:27 [DEBUG] Device is in Factory Reset State
+24-03-06 19:27:12 [INFO] Successfully logged in through WebGUI.
+24-03-06 19:27:17 [DEBUG] Performing health check
+24-03-06 19:27:17 [INFO] Device health check completed successfully.
+24-03-06 19:27:17 [DEBUG] Counting IPv6 Firewall Rules
+24-03-06 19:27:25 [DEBUG] Navigating to Firewall Page 
+24-03-06 19:27:31 [DEBUG] Total IPv4 rules : 0
+24-03-06 19:27:31 [DEBUG] Counting IPv6 Firewall Rules
+24-03-06 19:27:39 [DEBUG] Navigating to Firewall Page 
+24-03-06 19:27:45 [DEBUG] Total IPv6 rules : 0
+24-03-06 19:27:45 [INFO] Old configuration removed after reset.
+24-03-06 19:27:45 [INFO] Maintenance functionality like Reset is working as expected.
+24-03-06 19:27:45 [DEBUG] -------------6th Factory Reset---------------------
+24-03-06 19:27:45 [INFO] Adding IPv6 rule
+24-03-06 19:27:53 [DEBUG] Navigating to Firewall Page 
+24-03-06 19:28:08 [INFO] IPv6 firewall rule added - Service: HTTPS, Action: Block Always, Rule Type: Inbound
+24-03-06 19:28:13 [INFO] Adding IPv4 rule
+24-03-06 19:28:21 [DEBUG] Navigating to Firewall Page 
+24-03-06 19:28:34 [INFO] IPv4 firewall rule added - Service: HTTPS, Action: Block Always
+24-03-06 19:28:39 [INFO] Initiating device factory defaults
+24-03-06 19:28:47 [DEBUG] Navigating to Maintenance Page 
+24-03-06 19:28:57 [DEBUG] Wait for the reset process to complete : 200s
+24-03-06 19:32:17 [DEBUG] Attempting to login through WebGUI
+24-03-06 19:32:19 [DEBUG] Device is in Factory Reset State
+24-03-06 19:33:03 [INFO] Successfully logged in through WebGUI.
+24-03-06 19:33:08 [DEBUG] Performing health check
+24-03-06 19:33:08 [INFO] Device health check completed successfully.
+24-03-06 19:33:08 [DEBUG] Counting IPv6 Firewall Rules
+24-03-06 19:33:17 [DEBUG] Navigating to Firewall Page 
+24-03-06 19:33:23 [DEBUG] Total IPv4 rules : 0
+24-03-06 19:33:23 [DEBUG] Counting IPv6 Firewall Rules
+24-03-06 19:33:31 [DEBUG] Navigating to Firewall Page 
+24-03-06 19:33:37 [DEBUG] Total IPv6 rules : 0
+24-03-06 19:33:37 [INFO] Old configuration removed after reset.
+24-03-06 19:33:37 [INFO] Maintenance functionality like Reset is working as expected.
+24-03-06 19:33:37 [DEBUG] -------------7th Factory Reset---------------------
+24-03-06 19:33:37 [INFO] Adding IPv6 rule
+24-03-06 19:33:45 [DEBUG] Navigating to Firewall Page 
+24-03-06 19:34:00 [INFO] IPv6 firewall rule added - Service: HTTPS, Action: Block Always, Rule Type: Inbound
+24-03-06 19:34:05 [INFO] Adding IPv4 rule
+24-03-06 19:34:13 [DEBUG] Navigating to Firewall Page 
+24-03-06 19:34:26 [INFO] IPv4 firewall rule added - Service: HTTPS, Action: Block Always
+24-03-06 19:34:31 [INFO] Initiating device factory defaults
+24-03-06 19:34:39 [DEBUG] Navigating to Maintenance Page 
+24-03-06 19:34:48 [DEBUG] Wait for the reset process to complete : 200s
+24-03-06 19:38:08 [DEBUG] Attempting to login through WebGUI
+24-03-06 19:38:11 [DEBUG] Device is in Factory Reset State
+24-03-06 19:38:55 [INFO] Successfully logged in through WebGUI.
+24-03-06 19:39:00 [DEBUG] Performing health check
+24-03-06 19:39:00 [INFO] Device health check completed successfully.
+24-03-06 19:39:00 [DEBUG] Counting IPv6 Firewall Rules
+24-03-06 19:39:08 [DEBUG] Navigating to Firewall Page 
+24-03-06 19:39:15 [DEBUG] Total IPv4 rules : 0
+24-03-06 19:39:15 [DEBUG] Counting IPv6 Firewall Rules
+24-03-06 19:39:23 [DEBUG] Navigating to Firewall Page 
+24-03-06 19:39:29 [DEBUG] Total IPv6 rules : 0
+24-03-06 19:39:29 [INFO] Old configuration removed after reset.
+24-03-06 19:39:29 [INFO] Maintenance functionality like Reset is working as expected.
+24-03-06 19:39:29 [DEBUG] -------------8th Factory Reset---------------------
+24-03-06 19:39:29 [INFO] Adding IPv6 rule
+24-03-06 19:39:37 [DEBUG] Navigating to Firewall Page 
+24-03-06 19:39:52 [INFO] IPv6 firewall rule added - Service: HTTPS, Action: Block Always, Rule Type: Inbound
+24-03-06 19:39:57 [INFO] Adding IPv4 rule
+24-03-06 19:40:05 [DEBUG] Navigating to Firewall Page 
+24-03-06 19:40:18 [INFO] IPv4 firewall rule added - Service: HTTPS, Action: Block Always
+24-03-06 19:40:23 [INFO] Initiating device factory defaults
+24-03-06 19:40:31 [DEBUG] Navigating to Maintenance Page 
+24-03-06 19:40:40 [DEBUG] Wait for the reset process to complete : 200s
+24-03-06 19:44:00 [DEBUG] Attempting to login through WebGUI
+24-03-06 19:44:03 [DEBUG] Device is in Factory Reset State
+24-03-06 19:44:47 [INFO] Successfully logged in through WebGUI.
+24-03-06 19:44:52 [DEBUG] Performing health check
+24-03-06 19:44:52 [INFO] Device health check completed successfully.
+24-03-06 19:44:52 [DEBUG] Counting IPv6 Firewall Rules
+24-03-06 19:45:01 [DEBUG] Navigating to Firewall Page 
+24-03-06 19:45:07 [DEBUG] Total IPv4 rules : 0
+24-03-06 19:45:07 [DEBUG] Counting IPv6 Firewall Rules
+24-03-06 19:45:15 [DEBUG] Navigating to Firewall Page 
+24-03-06 19:45:21 [DEBUG] Total IPv6 rules : 0
+24-03-06 19:45:21 [INFO] Old configuration removed after reset.
+24-03-06 19:45:21 [INFO] Maintenance functionality like Reset is working as expected.
+24-03-06 19:45:21 [DEBUG] -------------9th Factory Reset---------------------
+24-03-06 19:45:21 [INFO] Adding IPv6 rule
+24-03-06 19:45:29 [DEBUG] Navigating to Firewall Page 
+24-03-06 19:45:44 [INFO] IPv6 firewall rule added - Service: HTTPS, Action: Block Always, Rule Type: Inbound
+24-03-06 19:45:49 [INFO] Adding IPv4 rule
+24-03-06 19:45:57 [DEBUG] Navigating to Firewall Page 
+24-03-06 19:46:10 [INFO] IPv4 firewall rule added - Service: HTTPS, Action: Block Always
+24-03-06 19:46:15 [INFO] Initiating device factory defaults
+24-03-06 19:46:23 [DEBUG] Navigating to Maintenance Page 
+24-03-06 19:46:32 [DEBUG] Wait for the reset process to complete : 200s
+24-03-06 19:49:52 [DEBUG] Attempting to login through WebGUI
+24-03-06 19:49:55 [DEBUG] Device is in Factory Reset State
+24-03-06 19:50:39 [INFO] Successfully logged in through WebGUI.
+24-03-06 19:50:44 [DEBUG] Performing health check
+24-03-06 19:50:44 [INFO] Device health check completed successfully.
+24-03-06 19:50:44 [DEBUG] Counting IPv6 Firewall Rules
+24-03-06 19:50:52 [DEBUG] Navigating to Firewall Page 
+24-03-06 19:50:59 [DEBUG] Total IPv4 rules : 0
+24-03-06 19:50:59 [DEBUG] Counting IPv6 Firewall Rules
+24-03-06 19:51:07 [DEBUG] Navigating to Firewall Page 
+24-03-06 19:51:13 [DEBUG] Total IPv6 rules : 0
+24-03-06 19:51:13 [INFO] Old configuration removed after reset.
+24-03-06 19:51:13 [INFO] Maintenance functionality like Reset is working as expected.
+24-03-06 19:51:13 [DEBUG] -------------10th Factory Reset---------------------
+24-03-06 19:51:13 [INFO] Adding IPv6 rule
+24-03-06 19:51:21 [DEBUG] Navigating to Firewall Page 
+24-03-06 19:51:36 [INFO] IPv6 firewall rule added - Service: HTTPS, Action: Block Always, Rule Type: Inbound
+24-03-06 19:51:41 [INFO] Adding IPv4 rule
+24-03-06 19:51:49 [DEBUG] Navigating to Firewall Page 
+24-03-06 19:52:02 [INFO] IPv4 firewall rule added - Service: HTTPS, Action: Block Always
+24-03-06 19:52:07 [INFO] Initiating device factory defaults
+24-03-06 19:52:15 [DEBUG] Navigating to Maintenance Page 
+24-03-06 19:52:24 [DEBUG] Wait for the reset process to complete : 200s
+24-03-06 19:55:44 [DEBUG] Attempting to login through WebGUI
+24-03-06 19:55:47 [DEBUG] Device is in Factory Reset State
+24-03-06 19:56:31 [INFO] Successfully logged in through WebGUI.
+24-03-06 19:56:36 [DEBUG] Performing health check
+24-03-06 19:56:36 [INFO] Device health check completed successfully.
+24-03-06 19:56:36 [DEBUG] Counting IPv6 Firewall Rules
+24-03-06 19:56:44 [DEBUG] Navigating to Firewall Page 
+24-03-06 19:56:51 [DEBUG] Total IPv4 rules : 0
+24-03-06 19:56:51 [DEBUG] Counting IPv6 Firewall Rules
+24-03-06 19:56:59 [DEBUG] Navigating to Firewall Page 
+24-03-06 19:57:05 [DEBUG] Total IPv6 rules : 0
+24-03-06 19:57:05 [INFO] Old configuration removed after reset.
+24-03-06 19:57:05 [INFO] Maintenance functionality like Reset is working as expected.
+24-03-06 19:57:05 [INFO] Successfully factory reset from Web GUI - 5 Iterations

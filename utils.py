@@ -12,6 +12,7 @@ import input
 import locaters
 from logger import setup_logger
 
+
 # Initialize logger
 logger = setup_logger(__name__)
 
@@ -175,6 +176,25 @@ class Utils:
             time.sleep(30)
         except Exception as e:
             logger.error(f'Error occurred while collecting DBG logs: {e}')
+
+    # Navigate to page
+    def navigate(self, page_name):
+        try:
+            time.sleep(5)
+            excepted_url = f'{input.URL}/#/{page_name}'
+
+            self.driver.get(excepted_url)
+            time.sleep(3)
+            current_url = self.driver.current_url
+            if current_url == excepted_url:
+                logger.debug(f'Navigating to {page_name} Page ')
+            else:
+                logger.error(f'Unable Navigate to {excepted_url}')
+
+        except Exception as e:
+            logger.error(f"Error occurred while navigating to {page_name} page: {e}")
+        finally:
+            time.sleep(5)
 
     # Getting System Information
     # def get_system_info(self):

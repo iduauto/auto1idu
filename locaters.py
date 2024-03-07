@@ -203,25 +203,41 @@ PingTraceroute4_DomainName = (
     'input[placeholder=""][name="ipv4AddressDomainName"]'
 )
 PingTraceroute4_Type = (
-    "/html[1]/body[1]/mainapp[1]/div[1]/div[2]/div[4]/div[1]/form[1]/div[1]/div[1]/div[3]/div[3]/div[1]/span[1]"
+    "/html[1]/body[1]/mainapp[1]/div[1]/div[2]/div[4]/div[1]/form[1]/div[1]/div[1]/div[3]/div[3]/div[1]/span[1]",
     "div[data-name='traceroutePing_jioSelectLabelContainer'] span[class='jioDropdown']"
 )
 
 PingTraceroute4_StartBtn = (
-    "/html/body/mainapp/div[1]/div[2]/div[4]/div[1]/form[1]/div/div[3]/button"
+    "/html/body/mainapp/div[1]/div[2]/div[4]/div[1]/form[1]/div/div[3]/button",
     "body > mainapp:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(4) > div:nth-child(1) > form:nth-child(1) > div:nth-child(1) > div:nth-child(3) > button:nth-child(3)"
 )
 
+PingTraceroute4_Msg = (
+    "/html/body/mainapp/div[1]/div[2]/div[4]/div[1]/div[1]/form/div[2]/div/div/code",
+    "#root > div.jioMainGrid > div.jioGridRight > div.jioGridRightMain > div:nth-child(1) > div.jioWrtModalWindowContainer.jioPingModal1709718241604f8baa250-2c87-fdf1-0b92-93b01b4f6da8 > form > div.jioModalWindowContentContainer > div > div > code")
+PingTraceroute4_Msg_CancleBtn = (
+    "/html[1]/body[1]/mainapp[1]/div[1]/div[2]/div[4]/div[1]/div[1]/form[1]/div[1]/div[1]/div[1]/*[name()='svg'][1]",
+    "body > mainapp:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(4) > div:nth-child(1) > div:nth-child(2) > form:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > svg:nth-child(1) > path:nth-child(2)")
+
 PingTraceroute6_DomainName = (
     "/html/body/mainapp/div[1]/div[2]/div[4]/div[1]/form[2]/div/div[1]/div[3]/div[1]/input",
-    'input[placeholder=""][value="google.com"][name="ipv6AddressDomainName"]'
+    'input[placeholder=""][name="ipv6AddressDomainName"]'
 )
 PingTraceroute6_Type = (
-    "/html[1]/body[1]/mainapp[1]/div[1]/div[2]/div[4]/div[1]/form[2]/div[1]/div[1]/div[3]/div[3]/div[1]/span[1]"
+    "/html[1]/body[1]/mainapp[1]/div[1]/div[2]/div[4]/div[1]/form[2]/div[1]/div[1]/div[3]/div[3]/div[1]/span[1]",
     "body > mainapp:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(4) > div:nth-child(1) > form:nth-child(3) > div:nth-child(1) > div:nth-child(1) > div:nth-child(3) > div:nth-child(3) > div:nth-child(3) > span:nth-child(1)"
 )
 
 PingTraceroute6_StartBtn = (
-    "/html/body/mainapp/div[1]/div[2]/div[4]/div[1]/form[1]/div/div[3]/button"
-    "body > mainapp:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(4) > div:nth-child(1) > form:nth-child(1) > div:nth-child(1) > div:nth-child(3) > button:nth-child(3)"
+    "/html/body/mainapp/div[1]/div[2]/div[4]/div[1]/form[2]/div/div[3]/button",
+    "#\/Diagnostics\/Ping6 > div.jioWrtSectionBottom > button"
+
+)
+PingTraceroute6_Msg = (
+    "/html/body/mainapp/div[1]/div[2]/div[4]/div[1]/div[2]/form/div[2]/div/div/code",
+    "#root > div.jioMainGrid > div.jioGridRight > div.jioGridRightMain > div:nth-child(1) > div.jioWrtModalWindowContainer.jioPing6Modal170971120538788a9d69a-82e8-6565-5f52-cdb2268adf6a > form > div.jioModalWindowContentContainer > div > div > code"
+)
+PingTraceroute6_Msg_CancleBtn = (
+    "/html[1]/body[1]/mainapp[1]/div[1]/div[2]/div[4]/div[1]/div[2]/form[1]/div[1]/div[1]/div[1]/*[name()='svg'][1]/*[name()='path'][1]",
+    "body > mainapp:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(4) > div:nth-child(1) > div:nth-child(4) > form:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > svg:nth-child(1) > path:nth-child(2)"
 )

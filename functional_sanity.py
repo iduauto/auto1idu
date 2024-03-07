@@ -1025,6 +1025,7 @@ class FunctionalSanity:
             # Adding IPv6 and IPv4 firewall rule
             self.firewall.add_ipv6_firewall_rule("HTTPS", "Block Always", "Inbound")
             self.firewall.add_ipv4_firewall_rule("HTTPS", "Block Always")
+            # self.wireless.set_ssid_password_from_gui()
 
             for i in range(number_of_iteration):
                 logger.debug(f"-------------{i + 1}th Reboot---------------------")
@@ -1039,7 +1040,17 @@ class FunctionalSanity:
                 # check if firewall rules are removes are not
                 total_ipv4_rules = self.firewall.total_ipv4_rules()
                 total_ipv6_rules = self.firewall.total_ipv6_rules()
-                if total_ipv4_rules == 0 and total_ipv6_rules == 0:
+                # ssid_name = self.wireless.get_ssid_from_gui()
+
+                fail_count = 0
+                if total_ipv4_rules == 0:
+                    fail_count += 1
+                if total_ipv6_rules == 0:
+                    fail_count += 1
+                # if ssid_name == input.factory_ssid:
+                #     fail_count += 1
+
+                if fail_count > 0:
                     logger.error("Old configuration removed after reboot.")
                     logger.error("Maintenance functionality like Reboot is NOT working as expected.")
                     logger.error(f"Error occurred after {i + 1}th reboot iteration")
@@ -1072,6 +1083,7 @@ class FunctionalSanity:
                 # Adding IPv6 and IPv4 firewall rule
                 self.firewall.add_ipv6_firewall_rule("HTTPS", "Block Always", "Inbound")
                 self.firewall.add_ipv4_firewall_rule("HTTPS", "Block Always")
+                # self.wireless.set_ssid_password_from_gui()
 
                 self.maintenance.reset()
 
@@ -1084,7 +1096,17 @@ class FunctionalSanity:
                 # check if firewall rules are removes are not
                 total_ipv4_rules = self.firewall.total_ipv4_rules()
                 total_ipv6_rules = self.firewall.total_ipv6_rules()
-                if total_ipv4_rules == 0 and total_ipv6_rules == 0:
+                # ssid_name = self.wireless.get_ssid_from_gui()
+
+                success_count = 0
+                if total_ipv4_rules == 0:
+                    success_count += 1
+                if total_ipv6_rules == 0:
+                    success_count += 1
+                # if ssid_name == input.factory_ssid:
+                #     success_count += 1
+
+                if success_count == 2:
                     logger.info("Old configuration removed after reset.")
                     logger.info("Maintenance functionality like Reset is working as expected.")
 
@@ -1101,21 +1123,22 @@ class FunctionalSanity:
             self.utils.get_DBGLogs()
             return False
 
+    # ipv4 traceroute
     def traceroute_ipv4(self, domain_name):
         try:
             logger.info(f"Initiating IPv4 Traceroute for domain: {domain_name}")
-            self.utils.search_WebGUI("Ping / Traceroute")
-            self.utils.clear_and_send_keys(domain_name,*locaters.PingTraceroute4_DomainName)
+            # self.utils.search_WebGUI("Ping / Traceroute")
+            self.utils.navigate("Diagnostics")
+            self.utils.clear_and_send_keys(domain_name, *locaters.PingTraceroute4_DomainName)
             self.utils.find_element(*locaters.PingTraceroute4_Type).click()
             self.utils.find_element("//li[normalize-space()='Traceroute']").click()
             self.utils.find_element(*locaters.PingTraceroute4_StartBtn).click()
 
             time.sleep(60)
 
-            msg = self.utils.find_element(
-                "/html/body/mainapp/div[1]/div[2]/div[4]/div[1]/div[1]/form/div[2]/div/div/code").text
+            msg = self.utils.find_element(*locaters.PingTraceroute4_Msg).text
             time.sleep(5)
-            self.utils.find_element("/html/body/mainapp/div[1]/div[2]/div[4]/div[1]/div[1]/form/div[1]/div/div").click()
+            self.utils.find_element(*locaters.PingTraceroute4_Msg_CancleBtn).click()
 
             if "bad address" in msg:
                 return False
@@ -1125,24 +1148,23 @@ class FunctionalSanity:
             logger.error(f"An error occurred during IPv4 Traceroute for domain '{domain_name}': {str(e)}")
             return False
 
+    # ipv4 traceroute
     def traceroute_ipv6(self, domain_name):
         try:
-            logger.info(f"Initiating IPv6 Traceroute for domain: {domain_name}")
-            self.utils.search_WebGUI("Ping6 / Traceroute6")
-            self.utils.clear_and_send_keys(domain_name, "/html/body/mainapp/div[1]/div[2]/div[4]/div[1]/form[2]/div/div[1]/div[3]/div[1]/input")
+            logger.debug(f"Initiating IPv6 Traceroute for domain: {domain_name}")
+            # self.utils.search_WebGUI("Ping6 / Traceroute6")
+            self.utils.navigate("Diagnostics")
 
-            self.utils.find_element(
-                "/html[1]/body[1]/mainapp[1]/div[1]/div[2]/div[4]/div[1]/form[2]/div[1]/div[1]/div[3]/div[3]/div[1]/span[1]").click()
+            self.utils.clear_and_send_keys(domain_name, *locaters.PingTraceroute6_DomainName)
+            self.utils.find_element(*locaters.PingTraceroute6_Type).click()
             self.utils.find_element("//li[normalize-space()='Traceroute6']").click()
-            self.utils.find_element(
-                "/html[1]/body[1]/mainapp[1]/div[1]/div[2]/div[4]/div[1]/form[2]/div[1]/div[3]/button[1]").click()
+            self.utils.find_element(*locaters.PingTraceroute6_StartBtn).click()
 
             time.sleep(60)
 
-            msg = self.utils.find_element(
-                "/html/body/mainapp/div[1]/div[2]/div[4]/div[1]/div[1]/form/div[2]/div/div/code").text
+            msg = self.utils.find_element(*locaters.PingTraceroute6_Msg).text
             time.sleep(5)
-            self.utils.find_element("/html/body/mainapp/div[1]/div[2]/div[4]/div[1]/div[1]/form/div[1]/div/div").click()
+            self.utils.find_element(*locaters.PingTraceroute6_Msg_CancleBtn).click()
 
             if "bad address" in msg:
                 return False
@@ -1151,9 +1173,11 @@ class FunctionalSanity:
         except Exception as e:
             logger.error(f"An error occurred during IPv6 Traceroute for domain '{domain_name}': {str(e)}")
             return False
+
+    # traceroute functionality
     def functional_sanity_62(self):
         try:
-            logger.info("Validating IPv4 Diagnostics 'Traceroute' functionality")
+            logger.debug("Validating IPv4 Diagnostics 'Traceroute' functionality")
             if not self.health.health_check_webgui():
                 logger.error('Device health check failed. Exiting the test.')
                 return False
@@ -1164,7 +1188,7 @@ class FunctionalSanity:
                 if self.traceroute_ipv4(domain_name):
                     logger.info(f"Successfully traceroute 4 : {domain_name}")
                 else:
-                    fail_count+=1
+                    fail_count += 1
                     logger.error(f"Unable traceroute 4: {domain_name}")
 
             domains_names = ["onlinesbi.sbi", "youtube.com", "www.google.com"]
@@ -1172,10 +1196,8 @@ class FunctionalSanity:
                 if self.traceroute_ipv6(domain_name):
                     logger.info(f"Successfully traceroute 6 : {domain_name}")
                 else:
-                    fail_count+=1
+                    fail_count += 1
                     logger.error(f"Unable traceroute 6: {domain_name}")
-
-
 
             if fail_count == 0:
                 logger.info("'Traceroute' functionality is working as expected")
@@ -1188,5 +1210,3 @@ class FunctionalSanity:
             logger.error(f"Error occurred during functional_sanity_62: {str(e)}")
             self.utils.get_DBGLogs()
             return False
-
-
