@@ -15,3 +15,17 @@ class Adb:
                 if 'Wifi is enabled' in str(wifi_status[0]):
                     print('Mobile client Wifi is Enabled')
             time.sleep(5)
+# __pycache__/firewall.cpython-310.pyc
+# __pycache__/functional_sanity.cpython-310.pyc
+# __pycache__/health_check.cpython-310.pyc
+# __pycache__/input.cpython-310.pyc
+# __pycache__/locaters.cpython-310.pyc
+# __pycache__/logger.cpython-310.pyc
+# __pycache__/login.cpython-310.pyc
+# __pycache__/maintenance_functionalities.cpython-310.pyc
+# __pycache__/setup.cpython-310.pyc
+# __pycache__/utils.cpython-310.pyc
+# __pycache__/wireless.cpython-310.pyc
+# adb_client_functions.py
+# input.py
+# main.py
