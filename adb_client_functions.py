@@ -327,4 +327,6 @@ class Adb:
                 print('Client is not connected to ' + ssid_)
         assert connect == 1
 
+    def practice(self):
+        print('Yo')
 
